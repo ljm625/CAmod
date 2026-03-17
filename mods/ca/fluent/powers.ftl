@@ -1,8 +1,8 @@
 supportpower-ironcurtain =
-    .name = Iron Curtain
-    .desc = Makes up to 5 selected vehicles or structures
-            temporarily immune to damage.
+    .name = 铁幕
+    .desc = 使最多 5 个选中的载具或建筑
+            在短时间内免疫伤害。
 
-            Affected units have limited movement speed.
+            受影响单位的移动速度会受限。
 
-            Warning: Harmful to infantry.
+            警告：对步兵有害。

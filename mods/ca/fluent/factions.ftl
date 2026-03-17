@@ -1,404 +1,404 @@
 ## Factions
 faction-england =
-    .name = England
-    .description = England: Subterfuge
-    Units:
-      • Sniper
-      • Mirage Tank (replaces Scout Tank)
-      • Camo Pillbox (replaces Pillbox)
+    .name = 英国
+    .description = 英国：渗透诡计
+    单位：
+      • 狙击手
+      • 幻影坦克（替代侦察坦克）
+      • 伪装机枪碉堡（替代机枪碉堡）
 
-    Powers:
-      • Veil of War
+    支援技能：
+      • 战争迷雾
 
-    Upgrades:
-      • Raufoss Ammo
+    升级：
+      • 劳福斯弹药
 
-    Bonuses:
-      • Fake Buildings
+    加成：
+      • 假建筑
 
 faction-france =
-    .name = France
-    .description = France: Fortification
-    Units:
-      • Battle Fortress
-      • Grand Cannon (replaces Prism Tower)
+    .name = 法国
+    .description = 法国：防御工事
+    单位：
+      • 战斗要塞
+      • 巨炮（替代光棱塔）
 
-    Powers:
-      • Cluster Mines
+    支援技能：
+      • 集束地雷
 
-    Upgrades:
-      • Entrenchment
+    升级：
+      • 堑壕防御
 
-    Bonuses:
-      • Walls & Defenses (10% discount)
+    加成：
+      • 围墙与防御建筑（-10%）
 
 faction-germany =
-    .name = Germany
-    .description = Germany: Innovation
-    Units:
-      • Chrono Prison
-      • Tank Destroyer
+    .name = 德国
+    .description = 德国：创新科技
+    单位：
+      • 时空监牢
+      • 坦克歼击车
 
-    Powers:
-      • Temporal Incursion
-      • Time Warp
+    支援技能：
+      • 时空突袭
+      • 时间扭曲
 
-    Upgrades:
-      • Temporal Flux
+    升级：
+      • 时空通量
 
-    Bonuses:
-      • Chrono Tanks (10% discount)
-      • Chronosphere (20% discount)
+    加成：
+      • 超时空坦克（-10%）
+      • 超时空传送仪（-20%）
 
 faction-usa =
-    .name = USA
-    .description = USA: Airborne Forces
-    Units:
-      • SEAL
-      • Nighthawk (replaces Chinook)
-      • Guardian GI (via Airdrop)
-      • Grizzly Tank (via Airdrop)
+    .name = 美国
+    .description = 美国：空降部队
+    单位：
+      • 海豹部队
+      • 夜鹰（替代支奴干）
+      • 守护者大兵（通过空投）
+      • 灰熊坦克（通过空投）
 
-    Powers:
-      • Strafing Run
+    支援技能：
+      • 机炮扫射
 
-    Upgrades:
-      • Advanced Airborne Training
+    升级：
+      • 进阶空降训练
 
-    Bonuses:
-      • Airdrop Units
+    加成：
+      • 空投单位
 
 faction-russia =
-    .name = Russia
-    .description = Russia: Tesla Techology
-    Units:
-      • Tesla Tank
-      • Tesla Reactor (replaces Advanced Power Plant)
+    .name = 俄罗斯
+    .description = 俄罗斯：特斯拉科技
+    单位：
+      • 特斯拉坦克
+      • 特斯拉反应堆（替代高级发电厂）
 
-    Powers:
-      • Storm Troopers
-      • Parabombs
+    支援技能：
+      • 风暴兵
+      • 伞投炸弹
 
-    Upgrades:
-      • Tesla Arcing
+    升级：
+      • 特斯拉电弧
 
-    Bonuses:
-      • Tesla Coil (10% discount)
-      • Free Tesla Trooper Upgrade
-      • Kirov Tesla Bombs
+    加成：
+      • 特斯拉线圈（-10%）
+      • 免费特斯拉兵升级
+      • 基洛夫特斯拉炸弹
 
 faction-ukraine =
-    .name = Ukraine
-    .description = Ukraine: Demolition
-    Units:
-      • V3 Launcher
-      • Siege Tank (replaces V2)
-      • Crazy Ivan (replaces Grenadier)
+    .name = 乌克兰
+    .description = 乌克兰：爆破专家
+    单位：
+      • V3 发射车
+      • 攻城坦克（替代 V2）
+      • 疯狂伊万（替代掷弹兵）
 
-    Powers:
-      • Carpet Bomb
-      • Paratroopers
+    支援技能：
+      • 地毯轰炸
+      • 伞兵
 
-    Upgrades:
-      • Seismic Missiles
+    升级：
+      • 地震导弹
 
-    Bonuses:
-      • Terror Dog (20% discount)
-      • Kirov Cluster Bombs
+    加成：
+      • 恐怖犬（-20%）
+      • 基洛夫集束炸弹
 
 faction-iraq =
-    .name = Iraq
-    .description = Iraq: Nuclear Warfare
-    Units:
-      • Rad Trooper (replaces Shock Trooper)
-      • Chem Tower (replaces Flame Tower)
+    .name = 伊拉克
+    .description = 伊拉克：核战争
+    单位：
+      • 辐射兵（替代震击兵）
+      • 化学塔（替代火焰塔）
 
-    Powers:
-      • A-Bomb
-      • Paratroopers
+    支援技能：
+      • 原子弹
+      • 伞兵
 
-    Upgrades:
-      • Desolator (replaces Rad Trooper)
-      • Eradicator (replaces Mammoth Tank)
+    升级：
+      • 辐射毁灭者（替代辐射兵）
+      • 歼灭者（替代猛犸坦克）
 
-    Bonuses:
-      • Heavy Hazmat Suits equipped as standard
-      • Missile Silo (40% discount)
-      • Kirov Atom Bombs
+    加成：
+      • 标配重型防化服
+      • 导弹井（-40%）
+      • 基洛夫原子炸弹
 
 faction-yuri =
-    .name = Psi-Corps
-    .description = Psychic Corps: Mind Control & Genetics
-    Units:
-      • Brute
-      • Floating Disc (replaces Kirov)
-      • Chaos Drone (replaces MAD Tank)
-      • Yuri (replaces Boris)
+    .name = 心灵军团
+    .description = 心灵军团：心灵控制与基因改造
+    单位：
+      • 狂兽人
+      • 浮空飞碟（替代基洛夫）
+      • 混沌无人机（替代 MAD 坦克）
+      • 尤里（替代鲍里斯）
 
-    Powers:
-      • Genetic Mutation Bomb
-      • Chaos Bombs
+    支援技能：
+      • 基因突变炸弹
+      • 混沌炸弹
 
-    Upgrades:
-      • Lasher Tank
-      • Gattling BTR
+    升级：
+      • 鞭挞坦克
+      • 加特林 BTR
 
 faction-talon =
-    .name = Talon
-    .description = Steel Talon: Mech Warfare
-    Units:
-      • Wolverine
-      • Juggernaut
-      • Titan (replaces Mammoth Tank)
+    .name = 利爪军团
+    .description = 钢铁利爪：机甲战争
+    单位：
+      • 金刚狼机甲
+      • 主宰机甲
+      • 泰坦（替代猛犸坦克）
 
-    Powers:
-      • X-O Drop
+    支援技能：
+      • X-O 空投
 
-    Upgrades:
-      • Railgun Titan (replaces Titan)
-      • Gyro Stabilizers
+    升级：
+      • 轨道炮泰坦（替代泰坦）
+      • 陀螺稳定器
 
-    Bonuses:
-      • Tech Center (10% discount)
-      • Upgrade Center (20% discount)
+    加成：
+      • 科技中心（-10%）
+      • 升级中心（-20%）
 
 faction-zocom =
     .name = ZOCOM
-    .description = ZOCOM: Experimental Weapons
-    Units:
-      • X-O Powersuit
-      • Disruptor
-      • Sonic Tower (replaces Advanced Guard Tower)
+    .description = ZOCOM：实验武器
+    单位：
+      • X-O 动力装甲
+      • 干扰者
+      • 声波塔（替代高级机枪塔）
 
-    Powers:
-      • Drop Pods
-      • Surgical Strike
+    支援技能：
+      • 空降舱
+      • 外科打击
 
-    Upgrades:
-      • Ion Mammoth (replaces Mammoth Tank)
-      • Sonic Amplifiers
+    升级：
+      • 离子猛犸（替代猛犸坦克）
+      • 声波增幅器
 
-    Bonuses:
-      • Adv. Communication Center (40% discount)
-      • Hazmat Suits equipped as standard
+    加成：
+      • 高级通讯中心（-40%）
+      • 标配防化服
 
 faction-eagle =
-    .name = Eagle
-    .description = Eagle Corps: Rapid Reaction Force
-    Units:
-      • Pitbull
-      • Aurora
-      • Hover MLRS (replaces MLRS)
+    .name = 鹰隼军团
+    .description = 鹰隼军团：快速反应部队
+    单位：
+      • 斗牛犬
+      • 极光战机
+      • 气垫 MLRS（替代 MLRS）
 
-    Powers:
-      • Reinforcements
+    支援技能：
+      • 增援部队
 
-    Upgrades:
-      • Hover Mammoth (replaces Mammoth Tank)
-      • Afterburners
+    升级：
+      • 气垫猛犸（替代猛犸坦克）
+      • 加力燃烧器
 
-    Bonuses:
-      • Aircraft (10% discount)
+    加成：
+      • 飞机（-10%）
 
 faction-arc =
     .name = ARC
-    .description = Advanced Robotics Command: Robotics
-    Units:
-      • Mini Drone
-      • Jackknife
-      • Guardian Drone (replaces Hum-Vee)
+    .description = 先进机器人指挥部：机器人军团
+    单位：
+      • 微型无人机
+      • 折刀机甲
+      • 守护者无人机（替代 Hum-Vee）
 
-    Powers:
-      • Nanite Repair
+    支援技能：
+      • 纳米修复
 
-    Upgrades:
-      • Mammoth Drone (replaces Mammoth Tank)
-      • Battle Drone (replaces Battle Tank)
+    升级：
+      • 猛犸无人机（替代猛犸坦克）
+      • 战斗无人机（替代主战坦克）
 
-    Bonuses:
-      • Recon Drone (-20% cooldown)
-      • Mobile Sensor Array (20% discount)
-      • Drone Carrier (10% discount)
-      • Additional Comms. Centers (50% discount)
-      • Comms. Center emergency backup power
+    加成：
+      • 侦察无人机（冷却 -20%）
+      • 移动传感阵列（-20%）
+      • 无人机航母（-10%）
+      • 额外通讯中心（-50%）
+      • 通讯中心应急备用电力
 
 faction-blackh =
-    .name = Black Hand
-    .description = Black Hand: Flame Weaponry
-    Units:
-      • Black Hand Trooper
-      • Heavy Flame Tank (replaces Flame Tank)
+    .name = 黑手
+    .description = 黑手：火焰武器
+    单位：
+      • 黑手兵
+      • 重型火焰坦克（替代火焰坦克）
 
-    Powers:
-      • Inferno Bomb
-      • Heavy Flame Tank Drop
+    支援技能：
+      • 炼狱炸弹
+      • 重型火焰坦克空投
 
-    Upgrades:
-      • Black Napalm
+    升级：
+      • 黑色凝固汽油
 
-    Bonuses:
-      • SSM (10% discount)
-      • Free Howitzer Upgrade
+    加成：
+      • SSM（-10%）
+      • 免费榴弹炮升级
 
 faction-marked =
-    .name = Marked
-    .description = Marked of Kane: Alien Weaponry
-    Units:
-      • Acolyte/Templar
-      • Venom (replaces Apache)
+    .name = 烙印军
+    .description = 凯恩烙印：异星武器
+    单位：
+      • 信徒/圣殿武士
+      • 毒液战机（替代阿帕奇）
 
-    Powers:
-      • Frenzy
-      • Subterranean Strike
+    支援技能：
+      • 狂暴
+      • 地下突袭
 
-    Upgrades:
-      • Quantum Capacitors
+    升级：
+      • 量子电容
 
-    Bonuses:
-      • Banshee (10% discount)
-      • Temple Prime (10% discount)
+    加成：
+      • 女妖战机（-10%）
+      • 圣殿核心（-10%）
 
 faction-legion =
-    .name = Legion
-    .description = Legion: Stolen Technology
-    Units:
-      • Microwave Tank
+    .name = 军团
+    .description = 军团：窃取科技
+    单位：
+      • 微波坦克
       • APC
-      • Battle Tank (replaces Light Tank)
+      • 主战坦克（替代轻型坦克）
 
-    Powers:
-      • Cash Hack
-      • Technology Hack
+    支援技能：
+      • 资金入侵
+      • 科技入侵
 
-    Upgrades:
-      • Intensified Microwaves
+    升级：
+      • 强化微波
 
-    Bonuses:
-      • Stolen Technology Units (10% discount)
-      • Hack Satellite (-33% cooldown)
+    加成：
+      • 窃取科技单位（-10%）
+      • 入侵卫星（冷却 -33%）
 
 faction-shadow =
-    .name = Shadow
-    .description = Shadow Sect: Stealth Technology
-    Units:
-      • Mobile Stealth Generator
-      • Spectre (replaces SSM)
+    .name = 暗影教团
+    .description = 暗影教团：隐形科技
+    单位：
+      • 机动隐形发生器
+      • 魅影火炮（替代 SSM）
 
-    Powers:
-      • Shadow Team
-      • Stealth Tank Drop
+    支援技能：
+      • 阴影小队
+      • 隐形坦克空投
 
-    Upgrades:
-      • Heavy Stealth Tank
+    升级：
+      • 重型隐形坦克
 
-    Bonuses:
-      • Comanche (10% discount)
-      • Stealth Generator (+4 passive range, remains cloaked during Tiberium Stealth)
+    加成：
+      • 科曼奇（-10%）
+      • 隐形发生器（被动范围 +4，泰伯利亚隐形期间保持隐形）
 
 faction-reaper =
     .name = Reaper-17
-    .description = Reaper-17: Frontal Assault
-    Units:
-      • Stormcrawler
-      • Reaper Tripod (replaces Annihilator Tripod)
+    .description = Reaper-17：正面强攻
+    单位：
+      • 风暴爬行者
+      • 收割者三足机甲（替代湮灭三足机甲）
 
-    Powers:
-      • Storm Spike
+    支援技能：
+      • 风暴尖塔
 
-    Upgrades:
-      • Shard Walker
+    升级：
+      • 碎晶行者
 
-    Bonuses:
-      • Devourer (10% discount)
-      • Ichor Seed (-20% cooldown)
+    加成：
+      • 吞噬者（-10%）
+      • 伊寇孢种（冷却 -20%）
 
 faction-traveler =
     .name = Traveler-59
-    .description = Traveler-59: Fast Attack
-    Units:
-      • Enervator
-      • Lacerator (replaces Seeker)
+    .description = Traveler-59：快速打击
+    单位：
+      • 衰弱者
+      • 裂伤者（替代追猎者）
 
-    Powers:
-      • Ion Surge
+    支援技能：
+      • 离子激涌
 
-    Upgrades:
-      • Advanced Articulators
+    升级：
+      • 高级关节驱动
 
-    Bonuses:
-      • Fast Walkers (+15% Speed)
+    加成：
+      • 快速行者（速度 +15%）
 
 faction-harbinger =
     .name = Harbinger-31
-    .description = Harbinger-31: Heavy Weapons
-    Units:
-      • Obliterator
-      • Marauder (replaces Intruder)
+    .description = Harbinger-31：重型武装
+    单位：
+      • 湮灭者
+      • 掠夺者（替代入侵者）
 
-    Powers:
-      • Buzzer Swarm
+    支援技能：
+      • 蜂群虫潮
 
-    Upgrades:
-      • Stellar Fusion Cannon
+    升级：
+      • 恒星聚变炮
 
-    Bonuses:
-      • Devastator Warship (10% discount)
-      • Mothership (10% discount)
+    加成：
+      • 毁灭战舰（-10%）
+      • 母舰（-10%）
 
 faction-collector =
     .name = Collector-73
-    .description = Collector-73: Leeching & Degeneration
-    Units:
-      • Atomizer
-      • Leecher (replaces Corrupter)
+    .description = Collector-73：吸取与衰变
+    单位：
+      • 原子裂解者
+      • 吸取者（替代腐化者）
 
-    Powers:
-      • Greater Coalescence
+    支援技能：
+      • 高阶聚合
 
-    Upgrades:
-      • Coalescence
+    升级：
+      • 聚合
 
-    Bonuses:
-      • Field Manipulator (20% discount)
-      • Suppression Field (-15% cooldown, +10% duration)
+    加成：
+      • 战场操控器（-20%）
+      • 压制力场（冷却 -15%，持续 +10%）
 
 faction-randomallies =
-    .name = Allies
-    .description = Random Allied Faction
-    A random Allied faction will be chosen when the game starts.
+    .name = 盟军
+    .description = 随机盟军子阵营
+    游戏开始时会随机选择一个盟军子阵营。
 
 faction-randomsoviet =
-    .name = Soviet
-    .description = Random Soviet Faction
-    A random Soviet faction will be chosen when the game starts.
+    .name = 苏军
+    .description = 随机苏军子阵营
+    游戏开始时会随机选择一个苏军子阵营。
 
 faction-randomgdi =
     .name = GDI
-    .description = Random GDI Faction
-    A random GDI faction will be chosen when the game starts.
+    .description = 随机 GDI 子阵营
+    游戏开始时会随机选择一个 GDI 子阵营。
 
 faction-randomnod =
     .name = Nod
-    .description = Random Nod Faction
-    A random Nod faction will be chosen when the game starts.
+    .description = 随机 Nod 子阵营
+    游戏开始时会随机选择一个 Nod 子阵营。
 
 faction-randomscrin =
     .name = Scrin
-    .description = Random Scrin Faction
-    A random Scrin faction will be chosen when the game starts.
+    .description = 随机 Scrin 子阵营
+    游戏开始时会随机选择一个 Scrin 子阵营。
 
 faction-random =
-    .name = Any
-    .description = Random Faction
-    A random faction will be chosen when the game starts.
+    .name = 任意
+    .description = 随机阵营
+    游戏开始时会随机选择一个阵营。
 
 faction-allies =
-    .name = Allies
-    .description = Allies
+    .name = 盟军
+    .description = 盟军
 
 faction-soviet =
-    .name = Soviet
-    .description = Soviet
+    .name = 苏军
+    .description = 苏军
 
 faction-gdi =
     .name = GDI

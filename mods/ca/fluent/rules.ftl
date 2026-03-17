@@ -1,4 +1,4 @@
 ## vehicles.yaml
 actor-v2rl =
-    .name = V2 Rocket Launcher
-    .description = Long-range rocket artillery with low rate of fire.
+    .name = V2 火箭发射车
+    .description = 低射速的远程火箭炮兵单位。

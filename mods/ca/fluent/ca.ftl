@@ -1,25 +1,25 @@
 ## Metadata
-mod-title = Combined Arms
-mod-windowtitle = OpenRA Combined Arms
+mod-title = 联合武装
+mod-windowtitle = OpenRA 联合武装
 
 ## Debug Commands
-description-squadpaths-debug-overlay = Toggles visualization of AI squad pathfinding routes
+description-squadpaths-debug-overlay = 切换显示 AI 小队寻路路线可视化
 
 ## Bots
 bot-easy-ai =
-    .name = Easy AI
+    .name = 简单 AI
 
 bot-normal-ai =
-    .name = Normal AI
+    .name = 普通 AI
 
 bot-hard-ai =
-    .name = Hard AI
+    .name = 困难 AI
 
 bot-vhard-ai =
-    .name = Very Hard AI
+    .name = 非常困难 AI
 
 bot-brutal-ai =
-    .name = Brutal AI
+    .name = 残酷 AI
 
 bot-naval-ai =
-    .name = Naval AI
+    .name = 海军 AI
