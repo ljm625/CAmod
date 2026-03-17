@@ -2440,7 +2440,7 @@ encyclopedia.buffs.ionsurge:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由 Traveler-59 支援技能赋予的效果，可提高移动速度。
+		Description: 由旅行者-59支援技能赋予的效果，可提高移动速度。
 	TooltipExtras:
 		Strengths: +50% 移动速度
 	WithColoredOverlayCA@IONSURGE:
@@ -2523,7 +2523,7 @@ encyclopedia.debuffs.atomized:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 仅可由 Collector-73 的原子裂解者施加。造成持续伤害，并降低移动速度与火力。
+		Description: 仅可由收藏者-73的原子裂解者施加。造成持续伤害，并降低移动速度与火力。
 	TooltipExtras:
 		Weaknesses: • 造成周期性伤害\n-33% 移动速度\n-33% 伤害输出
 	WithIdleOverlay@ATOMIZED:

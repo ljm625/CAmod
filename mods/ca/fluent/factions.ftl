@@ -296,8 +296,8 @@ faction-shadow =
       • 隐形发生器（被动范围 +4，泰伯利亚隐形期间保持隐形）
 
 faction-reaper =
-    .name = Reaper-17
-    .description = Reaper-17：正面强攻
+    .name = 收割者-17
+    .description = 收割者-17：正面强攻
     单位：
       • 风暴爬行者
       • 收割者三足机甲（替代湮灭三足机甲）
@@ -313,8 +313,8 @@ faction-reaper =
       • 伊寇孢种（冷却 -20%）
 
 faction-traveler =
-    .name = Traveler-59
-    .description = Traveler-59：快速打击
+    .name = 旅行者-59
+    .description = 旅行者-59：快速打击
     单位：
       • 衰弱者
       • 裂伤者（替代追猎者）
@@ -346,8 +346,8 @@ faction-harbinger =
       • 母舰（-10%）
 
 faction-collector =
-    .name = Collector-73
-    .description = Collector-73：吸取与衰变
+    .name = 收藏者-73
+    .description = 收藏者-73：吸取与衰变
     单位：
       • 原子裂解者
       • 吸取者（替代腐化者）
