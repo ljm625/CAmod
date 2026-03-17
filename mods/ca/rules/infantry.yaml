@@ -5,11 +5,11 @@ DOG:
 		BuildAtProductionType: Dog
 		BuildPaletteOrder: 51
 		Prerequisites: kenn, ~infantry.dog, ~!tdog.upgrade
-		Description: Melee anti-infantry scout unit.
+		Description: 近战反步兵侦察单位。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Can only attack Infantry
-		Attributes: • Detects cloaked units, spies and mines\n• Detects the scent of enemy infantry beyond vision range\n• Immune to mind control
+		Strengths: • 对步兵强势
+		Weaknesses: • 仅能攻击步兵
+		Attributes: • 侦测隐形单位、间谍与地雷\n• 可在视野外嗅探敌方步兵\n• 免疫心灵控制
 	RenderSprites:
 		PlayerPalette: player
 	WithDeathAnimation:
@@ -17,7 +17,7 @@ DOG:
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Attack Dog
+		Name: 攻击犬
 		GenericName: Dog
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -98,7 +98,7 @@ DOG:
 		ValidOrders: AttackMove, AssaultMove, ForceAttack, KeepDistance
 		ValidTargets: Infantry, Vehicle
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 TDOG:
 	Inherits: DOG
@@ -106,13 +106,13 @@ TDOG:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Prerequisites: kenn, ~infantry.dog, ~tdog.upgrade
-		Description: Scout with attached explosives that will detonate on contact with a target.
+		Description: 携带炸药的侦察单位，接触目标即爆炸。
 	Tooltip:
-		Name: Terror Dog
+		Name: 恐怖犬
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Heavy Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects cloaked units, spies and mines\n• Detects the scent of enemy infantry beyond vision range\n• Immune to mind control\n• Explodes on death or on contact with a target
+		Strengths: • 对步兵、轻甲单位、重甲单位强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 侦测隐形单位、间谍与地雷\n• 可在视野外嗅探敌方步兵\n• 免疫心灵控制\n• 死亡或接触目标时爆炸
 	Valued:
 		Cost: 300
 	KillsSelf:
@@ -146,14 +146,14 @@ E1:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
 		Prerequisites: ~infantry.ra
-		Description: General-purpose infantry.
+		Description: 通用步兵单位。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对步兵强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Rifle Infantry
+		Name: 步枪兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -178,7 +178,7 @@ E1:
 	Convertible:
 		SpawnActors: N1C
 	Encyclopedia:
-		Category: Allies/Infantry; Soviets/Infantry
+		Category: 盟军/步兵; 苏军/步兵
 
 E1R1:
 	Inherits: E1
@@ -200,14 +200,14 @@ E2:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
 		Prerequisites: ~infantry.e2
-		Description: Infantry armed with grenades.
+		Description: 配备手雷的步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 对建筑、防御建筑、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
 	Valued:
 		Cost: 160
 	Tooltip:
-		Name: Grenadier
+		Name: 掷弹兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -242,7 +242,7 @@ E2:
 		Types: Veterancy
 		Prerequisites: barracks.upgraded
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 E3:
 	Inherits: ^Soldier
@@ -254,14 +254,14 @@ E3:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 20
 		Prerequisites: ~infantry.ra
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: 反坦克/防空步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: • 对重甲单位、空中单位、建筑、防御建筑强势
+		Weaknesses: • 对步兵、轻甲单位弱势
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Rocket Soldier
+		Name: 火箭兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -355,7 +355,7 @@ E3:
 	Convertible:
 		SpawnActors: N3C
 	Encyclopedia:
-		Category: Allies/Infantry; Soviets/Infantry
+		Category: 盟军/步兵; 苏军/步兵
 
 U3:
 	Inherits: ^Soldier
@@ -363,15 +363,15 @@ U3:
 	Inherits@BOTHELPER: ^BotCaptureHelper
 	Buildable:
 		Queue: GuardianGI
-		Description: Allied specialist paradropped infantry.
+		Description: 盟军特种空投步兵。
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Guardian G.I
+		Name: 守护者大兵
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
-		Attributes: • Deploys for personal anti-tank fortification\n• Uncrushable when deployed
+		Strengths: • 对重甲单位、空中单位、建筑、防御建筑强势
+		Weaknesses: • 对步兵、轻甲单位弱势\n• 未部署时反步兵火力较弱
+		Attributes: • 可部署为个人反坦克据点\n• 部署后不可被碾压
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -536,7 +536,7 @@ U3:
 		DeployTicks: 5
 		UndeployTicks: 50
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
 		Subfaction: usa
 
@@ -558,17 +558,17 @@ U3.squad:
 	ScriptTriggers:
 	ProvidesPrerequisite@squadname:
 	Tooltip:
-		Name: Airdrop: Guardian GIs
+		Name: 空投：守护者大兵
 	Buildable:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: ParadropInfantry
 		BuildPaletteOrder: 300
 		Prerequisites: radaroraircraft, ~infantry.usa, ~techlevel.medium
-		Description: Prepare five Guardian GIs for airdrop.
+		Description: 准备 5 名守护者大兵进行空投。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor\n• Weak anti-infantry weapon when not deployed
-		Attributes: • Deploys for personal anti-tank fortification\n• Uncrushable when deployed
+		Strengths: • 对重甲单位、空中单位、建筑、防御建筑强势
+		Weaknesses: • 对步兵、轻甲单位弱势\n• 未部署时反步兵火力较弱
+		Attributes: • 可部署为个人反坦克据点\n• 部署后不可被碾压
 	Valued:
 		Cost: 1750
 	RenderSprites:
@@ -605,14 +605,14 @@ E4:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
 		Prerequisites: ~barr, fturorradar, ~techlevel.low
-		Description: Short-range anti-infantry/anti-structure infantry.
+		Description: 短程反步兵/反建筑步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Soviet Flamethrower
+		Name: 苏军喷火兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -647,7 +647,7 @@ E4:
 	Convertible:
 		SpawnActors: N5
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 E6:
 	Inherits: ^Soldier
@@ -659,7 +659,7 @@ E6:
 		BuildPaletteOrder: 31
 		Prerequisites: ~infantry.ra
 	Tooltip:
-		Name: Engineer
+		Name: 工程师
 	Voiced:
 		VoiceSet: EngineerVoice
 	WithInfantryBody:
@@ -715,7 +715,7 @@ E6:
 	-ReloadAmmoDelayMultiplier@Inspiration1:
 	-ReloadAmmoDelayMultiplier@Inspiration2:
 	Encyclopedia:
-		Category: Allies/Infantry; Soviets/Infantry
+		Category: 盟军/步兵; 苏军/步兵
 	EncyclopediaExtras:
 		RenderPreviewActor: e6.preview
 
@@ -736,15 +736,15 @@ SPY:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 82
 		Prerequisites: ~tent, anyradar, ~techlevel.medium
-		Description: Infiltrates enemy structures for intel or sabotage. Effects depend on the building infiltrated.
+		Description: 潜入敌方建筑获取情报或实施破坏，效果取决于潜入目标。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Disguise as enemy infantry by right-clicking them\n• Detects cloaked ground units and spies\n • Infiltration effects:\n    • Power Plants: Power outage\n    • Barracks/Factory: Infantry/vehicles produced as veteran\n    • Superweapons: Reset timer\n    • Radar: Reset shroud\n    • Helipad: Single-use paratroopers\n    • Airfield/Gravity Stabilizer: Single-use airstrike
+		Weaknesses: • 无武装
+		Attributes: • 右键敌方步兵可伪装成其外观\n• 侦测隐形地面单位与间谍\n• 潜入效果：\n• 发电厂：断电\n• 兵营/战车工厂：后续生产单位为老兵级\n• 超级武器：重置计时器\n• 雷达：重置战争迷雾\n• 直升机场：一次性伞兵\n• 机场/重力稳定器：一次性空袭
 	Valued:
 		Cost: 500
 	-Tooltip:
 	DisguiseTooltip:
-		Name: Spy
+		Name: 间谍
 		GenericName: Soldier
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -831,7 +831,7 @@ SPY:
 		RequiresCondition: disguise
 		ColorSource: Player
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 
 E7:
 	Inherits: ^Soldier
@@ -845,15 +845,15 @@ E7:
 		BuildPaletteOrder: 200
 		Prerequisites: ~tent, atek, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite commando infantry armed with dual pistols and C4.
+		Description: 精英突击步兵，配备双手枪与 C4。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Plants C4 to destroy structures and vehicles
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 最多只能训练 1 名\n• 侦测隐形地面单位与间谍\n• 免疫心灵控制\n• 可安放 C4 摧毁建筑与载具
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Tanya
+		Name: 谭雅
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -932,7 +932,7 @@ E7:
 	ChangesHealth@ELITE:
 		Delay: 50
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 
 MEDI:
 	Inherits: ^Soldier
@@ -942,13 +942,13 @@ MEDI:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 50
 		Prerequisites: ~infantry.medi
-		Description: Heals nearby infantry.
+		Description: 治疗附近步兵。
 	TooltipExtras:
-		Weaknesses: • Unarmed
+		Weaknesses: • 无武装
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Medic
+		Name: 医疗兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -992,7 +992,7 @@ MEDI:
 		ValidTargets: Infantry
 	KeepsDistance:
 	Encyclopedia:
-		Category: Allies/Infantry; GDI/Infantry
+		Category: 盟军/步兵; GDI/步兵
 
 MECH:
 	Inherits: ^Soldier
@@ -1002,14 +1002,14 @@ MECH:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 80
 		Prerequisites: repair, ~!tmpp, ~infantry.mech, ~techlevel.low
-		Description: Repairs nearby vehicles.
+		Description: 修理附近载具。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: • 无武装
+		Attributes: • 可回收被摧毁载具获取资金
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Mechanic
+		Name: 机械师
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1085,7 +1085,7 @@ MECH:
 		Actors: cmec
 	KeepsDistance:
 	Encyclopedia:
-		Category: Allies/Infantry; Nod/Infantry
+		Category: 盟军/步兵; Nod/步兵
 
 CMEC:
 	Inherits: ^Cyborg
@@ -1094,14 +1094,14 @@ CMEC:
 		BuildAtProductionType: Cyborg
 		BuildPaletteOrder: 81
 		Prerequisites: repair, tmpp, ~tmpp, ~infantry.mech, ~techlevel.high
-		Description: Repairs nearby vehicles and advanced cyborgs.
+		Description: 修理附近载具和高级半机械单位。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Can salvage destroyed vehicles for credits
+		Weaknesses: • 无武装
+		Attributes: • 可回收被摧毁载具获取资金
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Cyborg Mechanic
+		Name: 半机械机械师
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1175,7 +1175,7 @@ CMEC:
 	-TakeCover:
 	KeepsDistance:
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 HACK:
 	Inherits: ^Soldier
@@ -1183,15 +1183,15 @@ HACK:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Queue: HackerCell
-		Description: Specialist able to take control of enemy structures & drones from range.
+		Description: 特种单位，可远程接管敌方建筑与无人机。
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Hacker
+		Name: 黑客
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Drones
-		Weaknesses: • Cannot attack Infantry, Aircraft, Vehicles (other than Drones)
-		Attributes: • Control lost if the Hacker dies\n• Generates income when inside Internet Center\n• Hack production buildings to steal technology\n    • Allies: Cryo Mortar, Reckoner, Phantom\n    • Soviets: Cyberdog, Cyclops, Kamov\n    • GDI: Sonic Mortar, Basilisk, Shade\n    • Nod: Chem Mortar, Mantis, Vertigo\n    • Scrin: Cyberscrin, Viper, Manticore
+		Strengths: • 对建筑、防御建筑、无人机强势
+		Weaknesses: • 无法攻击步兵、空中单位与载具（无人机除外）
+		Attributes: • 黑客死亡后失去控制\n• 驻入互联网中心时可持续产生资金\n• 黑入生产建筑以窃取科技\n• 盟军：冷冻迫击炮兵、清算者、幻影战机\n• 苏军：机械犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮兵、蛇怪、暗影战机\n• Nod：化学迫击炮兵、螳螂、维提戈\n• Scrin：赛博 Scrin、毒蛇、蝎尾兽
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1285,11 +1285,11 @@ HACK:
 		Condition: botowner
 		Bots: brutal, vhard, hard, normal, easy, naval
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 		HideBuildable: True
 	EncyclopediaExtras:
 		RenderPreviewActor: hack.preview
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要统一誓约。
 
 HACK.Preview:
 	Inherits: ^PreviewDummy
@@ -1308,7 +1308,7 @@ EINSTEIN:
 		DeathSequencePalette: player
 	-Wanders:
 	Tooltip:
-		Name: Prof. Einstein
+		Name: 爱因斯坦教授
 	Mobile:
 		Speed: 54
 	Voiced:
@@ -1318,7 +1318,7 @@ DELPHI:
 	Inherits: ^CivInfantry
 	-Wanders:
 	Tooltip:
-		Name: Agent Delphi
+		Name: 戴尔菲特工
 	Mobile:
 		Speed: 54
 
@@ -1332,7 +1332,7 @@ CHAN:
 	Selectable:
 		Class: chan
 	Tooltip:
-		Name: Scientist
+		Name: 科学家
 
 MOEBIUS:
 	Inherits: ^CivInfantry
@@ -1340,7 +1340,7 @@ MOEBIUS:
 	Voiced:
 		VoiceSet: MoebiusVoice
 	Tooltip:
-		Name: Dr. Moebius
+		Name: 莫比乌斯博士
 	Mobile:
 		Speed: 54
 
@@ -1350,7 +1350,7 @@ GNRL:
 		Image: boris
 	-Wanders:
 	Tooltip:
-		Name: General
+		Name: 将军
 	Selectable:
 		Class: gnrl
 	Mobile:
@@ -1382,14 +1382,14 @@ THF:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 95
 		Prerequisites: anyradar, ~barr, ~techlevel.medium
-		Description: Steals enemy credits and hijacks enemy vehicles.
+		Description: 窃取敌方资金并劫持敌方载具。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Cloaked when not moving\n• Gains vision range while cloaked
+		Weaknesses: • 无武装
+		Attributes: • 静止时隐形\n• 隐形时提升视野范围
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Thief
+		Name: 窃贼
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1449,7 +1449,7 @@ THF:
 			Vehicle: Hijack
 			Building: Steal
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 SHOK:
 	Inherits: ^Soldier
@@ -1470,15 +1470,15 @@ SHOK:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~!ttrp.upgrade, ~techlevel.medium
-		Description: Elite infantry with portable Tesla weapon.
+		Description: 配备便携特斯拉武器的精英步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Can overcharge nearby Tesla Coils
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 可为附近特斯拉线圈过载充能
 	Valued:
 		Cost: 425
 	Tooltip:
-		Name: Shock Trooper
+		Name: 震击兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1537,7 +1537,7 @@ SHOK:
 	ReplacedInQueue:
 		Actors: ttrp
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 TTRP:
 	Inherits: SHOK
@@ -1546,7 +1546,7 @@ TTRP:
 		BuildPaletteOrder: 91
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~ttrp.upgrade, ~techlevel.medium
 	Tooltip:
-		Name: Tesla Trooper
+		Name: 特斯拉兵
 	Valued:
 		Cost: 600
 	Health:
@@ -1577,14 +1577,14 @@ N1:
 		BuildPaletteOrder: 11
 		Prerequisites: ~!tmpp, ~infantry.td
 		IconPalette: chrometd
-		Description: General-purpose infantry.
+		Description: 通用步兵单位。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对步兵强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Mini-Gunner
+		Name: 迷你机枪兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1613,7 +1613,7 @@ N1:
 	ReplacedInQueue:
 		Actors: n1c
 	Encyclopedia:
-		Category: GDI/Infantry; Nod/Infantry
+		Category: GDI/步兵; Nod/步兵
 
 N1R1:
 	Inherits: N1
@@ -1638,14 +1638,14 @@ N2:
 		BuildPaletteOrder: 42
 		Prerequisites: ~pyle
 		IconPalette: chrometd
-		Description: Infantry armed with grenades.
+		Description: 配备手雷的步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 对建筑、防御建筑、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
 	Valued:
 		Cost: 160
 	Tooltip:
-		Name: Grenadier
+		Name: 掷弹兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1691,7 +1691,7 @@ N2:
 	RangeMultiplier@HeroOfTheUnion:
 		RequiresCondition: herooftheunion && !empgren-upgrade
 	Encyclopedia:
-		Category: GDI/Infantry
+		Category: GDI/步兵
 
 N2R1:
 	Inherits: N2
@@ -1716,14 +1716,14 @@ N3:
 		BuildPaletteOrder: 21
 		Prerequisites: ~!tmpp, ~infantry.td
 		IconPalette: chrometd
-		Description: Anti-tank/anti-aircraft infantry.
+		Description: 反坦克/防空步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
+		Strengths: • 对重甲单位、空中单位、建筑、防御建筑强势
+		Weaknesses: • 对步兵、轻甲单位弱势
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Rocket Soldier
+		Name: 火箭兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1794,7 +1794,7 @@ N3:
 	ReplacedInQueue:
 		Actors: n3c
 	Encyclopedia:
-		Category: GDI/Infantry; Nod/Infantry
+		Category: GDI/步兵; Nod/步兵
 
 N3R1:
 	Inherits: N3
@@ -1819,14 +1819,14 @@ N4:
 		BuildPaletteOrder: 71
 		Prerequisites: ~hand, ~!tmpp
 		IconPalette: chrometd
-		Description: Short-range anti-infantry/anti-structure infantry.
+		Description: 短程反步兵/反建筑步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Nod Flamethrower
+		Name: Nod喷火兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1872,7 +1872,7 @@ N4:
 		RequiresCondition: herooftheunion
 		Modifier: 120
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 N5:
 	Inherits: ^Cyborg
@@ -1884,15 +1884,15 @@ N5:
 		BuildPaletteOrder: 72
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: Short-range anti-infantry/anti-structure cyborg infantry.
+		Description: 短程反步兵/反建筑半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Ability: Tiberium Surge
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 特殊技能：泰伯利亚涌动
 	Valued:
 		Cost: 325
 	Tooltip:
-		Name: Chemical Warrior
+		Name: 化学兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1974,7 +1974,7 @@ N5:
 	Targetable@ChemWarrior:
 		TargetTypes: ChemWarrior
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 N5R1:
 	Inherits: N5
@@ -1997,7 +1997,7 @@ RMBO:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Commando
+		Name: 突击队员
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2006,11 +2006,11 @@ RMBO:
 		Queue: InfantrySQ, InfantryMQ
 		IconPalette: chrometd
 		BuildLimit: 1
-		Description: Elite infantry armed with an SMG and C4.
+		Description: 配备冲锋枪与 C4 的精英步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Plants C4 to destroy structures and vehicles
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 最多只能训练 1 名\n• 侦测隐形地面单位与间谍\n• 免疫心灵控制\n• 可安放 C4 摧毁建筑与载具
 	Mobile:
 		Speed: 60
 		Voice: Move
@@ -2088,7 +2088,7 @@ RMBO:
 	ChangesHealth@ELITE:
 		Delay: 50
 	Encyclopedia:
-		Category: GDI/Infantry; Nod/Infantry
+		Category: GDI/步兵; Nod/步兵
 
 N6:
 	Inherits: ^Soldier
@@ -2098,7 +2098,7 @@ N6:
 		Prerequisites: ~infantry.td
 		IconPalette: chrometd
 	Tooltip:
-		Name: Engineer
+		Name: 工程师
 	Voiced:
 		VoiceSet: EngineerVoice
 	WithInfantryBody:
@@ -2106,7 +2106,7 @@ N6:
 	-ReloadAmmoDelayMultiplier@Inspiration1:
 	-ReloadAmmoDelayMultiplier@Inspiration2:
 	Encyclopedia:
-		Category: GDI/Infantry; Nod/Infantry
+		Category: GDI/步兵; Nod/步兵
 
 VICE:
 	Inherits: ^Viceroid
@@ -2136,15 +2136,15 @@ SNIP:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 83
 		Prerequisites: ~infantry.england, anyradar, ~techlevel.medium
-		Description: Elite marksman infantry armed with a powerful sniper rifle.
+		Description: 配备强力狙击步枪的精英射手步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles (with upgrade)
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack aircraft
-		Attributes: • Camouflaged when not moving\n• When elite, kills crew of vehicles with less than 50% HP
+		Strengths: • 对步兵、载具（升级后）强势
+		Weaknesses: • 对建筑、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 静止时伪装\n• 精英后可击杀生命值低于 50% 载具中的乘员
 	Valued:
 		Cost: 550
 	Tooltip:
-		Name: Sniper
+		Name: 狙击手
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2242,7 +2242,7 @@ SNIP:
 		RequiresCondition: invisibility || hidden
 		ColorSource: Player
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
 		Subfaction: england
 
@@ -2260,15 +2260,15 @@ BORI:
 		BuildPaletteOrder: 205
 		Prerequisites: ~barr, stek, ~infantry.boris, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite commando infantry armed with a high-powered assault rifle.
+		Description: 配备高威力突击步枪的精英突击步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Calls airstrike on targeted structures
+		Strengths: • 对步兵、建筑、防御建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 最多只能训练 1 名\n• 侦测隐形地面单位与间谍\n• 免疫心灵控制\n• 可对目标建筑呼叫空袭
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Boris
+		Name: 鲍里斯
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2353,7 +2353,7 @@ BORI:
 	ChangesHealth@ELITE:
 		Delay: 50
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 SAB:
 	Inherits: ^Soldier
@@ -2364,15 +2364,15 @@ SAB:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 113
 		Prerequisites: anyradar, ~hand, ~techlevel.medium
-		Description: Covert infantry that infiltrates enemy structures to steal or lock technology.
+		Description: 秘密步兵，可潜入敌方建筑窃取或锁定科技。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Can only attack Infantry
-		Attributes: • Detects cloaked ground units and spies\n• Limited stealth (drains while moving)\n• Infiltrates production buildings to steal technology\n    • Allies: Cryo Mortar, Reckoner, Phantom\n    • Soviets: Cyberdog, Cyclops, Kamov\n    • GDI: Sonic Mortar, Basilisk, Shade\n    • Nod: Chem Mortar, Mantis, Vertigo\n    • Scrin: Cyberscrin, Viper, Manticore\n• Infiltrates radars/tech centers to lock technology\n• Infiltrates any building for vision
+		Strengths: • 对步兵强势
+		Weaknesses: • 仅能攻击步兵
+		Attributes: • 侦测隐形地面单位与间谍\n• 有限隐形（移动时会消耗）\n• 潜入生产建筑以窃取科技\n• 盟军：冷冻迫击炮兵、清算者、幻影战机\n• 苏军：机械犬、独眼巨人、卡莫夫\n• GDI：声波迫击炮兵、蛇怪、暗影战机\n• Nod：化学迫击炮兵、螳螂、维提戈\n• Scrin：赛博 Scrin、毒蛇、蝎尾兽\n• 潜入雷达/科技中心以锁定科技\n• 潜入任意建筑以获取视野
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Infiltrator
+		Name: 渗透者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	RevealsShroud:
@@ -2455,23 +2455,23 @@ SAB:
 		RequiresCondition: invisibility || hidden
 		ColorSource: Player
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 ASSA:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: AssassinSquad
-		Description: Specialist armed with a sniper rifle and C4 explosives.
+		Description: 配备狙击步枪与 C4 炸药的特种单位。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings, Defenses
-		Weaknesses: • Weak vs Heavy Armor, Light Armor\n• Cannot attack aircraft
-		Attributes: • Plants C4 to destroy structures\n• Resistant to mind control
+		Strengths: • 对步兵、建筑、防御建筑强势
+		Weaknesses: • 对重甲单位、轻甲单位弱势\n• 无法攻击空中单位
+		Attributes: • 可安放 C4 摧毁建筑\n• 抗心灵控制
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Assassin
+		Name: 刺客
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2558,26 +2558,26 @@ ASSA:
 	Targetable@MindControlResistant:
 		TargetTypes: MindControlResistant
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要愤怒誓约。
 
 CONF:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Idol of Kane (max 1 per Confessor)\n• Immune to mind control
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 特殊技能：凯恩神像（每名忏悔者最多 1 个）\n• 免疫心灵控制
 	Buildable:
 		Queue: ConfessorCabal
-		Description: Fanatical elite infantry that can deploy Idols of Kane to inspire allies and demoralize enemies.
+		Description: 狂热精英步兵，可部署凯恩神像以鼓舞友军并打击敌军士气。
 		IconPalette: chrometd
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Confessor
+		Name: 忏悔者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2639,10 +2639,10 @@ CONF:
 	Targetable@ChaosImmune:
 		TargetTypes: ChaosImmune
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 		HideBuildable: True
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要狂热誓约。
 
 ACOL:
 	Inherits: ^Cyborg
@@ -2653,15 +2653,15 @@ ACOL:
 		BuildPaletteOrder: 111
 		IconPalette: chrometd
 		Prerequisites: obliortmpl, anyradar, ~infantry.marked, ~!tmpp, ~techlevel.medium
-		Description: Cyborg infantry with a laser weapon.
+		Description: 配备激光武器的半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Heals rapidly on Tiberium
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 在泰伯利亚上快速恢复生命
 	Valued:
 		Cost: 475
 	Tooltip:
-		Name: Acolyte
+		Name: 信徒
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2706,7 +2706,7 @@ ACOL:
 	ReplacedInQueue:
 		Actors: tplr
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
 		Subfaction: marked
 	ChangesHealth@THEAL:
@@ -2716,7 +2716,7 @@ TPLR:
 	Inherits: ACOL
 	Inherits@HEALINGCOOLDOWN: ^HealingCooldown
 	Tooltip:
-		Name: Templar
+		Name: 圣殿武士
 	Valued:
 		Cost: 550
 	Health:
@@ -2816,15 +2816,15 @@ JJET:
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~pyle, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Flying general-purpose infantry.
+		Description: 飞行通用步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Aircraft
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses
-		Attributes: • Detects cloaked ground units
+		Strengths: • 对步兵、空中单位强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势
+		Attributes: • 侦测隐形地面单位
 	Valued:
 		Cost: 350
 	Tooltip:
-		Name: Jump-Jet Trooper
+		Name: 跳喷兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2934,7 +2934,7 @@ JJET:
 		TargetTypes: MindControlImmune
 		RequiresCondition: airborne
 	Encyclopedia:
-		Category: GDI/Infantry
+		Category: GDI/步兵
 		Scale: 2
 
 BJET:
@@ -2946,13 +2946,13 @@ BJET:
 	Buildable:
 		Prerequisites: anyradar, ~pyle, bjet.upgrade, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Flying infantry with a grenade launcher.
+		Description: 配备榴弹发射器的飞行步兵。
 		BuildPaletteOrder: 101
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Has difficulty hitting moving targets\n• Cannot attack Aircraft
+		Strengths: • 对建筑、防御建筑、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 难以命中移动目标\n• 无法攻击空中单位
 	Tooltip:
-		Name: Bombardier
+		Name: 轰炸兵
 	Aircraft:
 		Speed: 100
 	Armament@AIRBORNE:
@@ -2985,7 +2985,7 @@ JJET.Husk:
 		Type: GroundPosition
 	ScriptTriggers:
 	Tooltip:
-		Name: Jumpjet Infantry
+		Name: 跳喷步兵
 	FallsToEarth:
 		Velocity: 70
 		Explosion:
@@ -3029,14 +3029,14 @@ E8:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 92
 		Prerequisites: ~infantry.iraq, tturorstek, anyradar, ~!deso.upgrade, ~techlevel.medium
-		Description: Anti-infantry unit with radiation based weaponry.
+		Description: 使用辐射武器的反步兵单位。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 425
 	Tooltip:
-		Name: Rad Trooper
+		Name: 辐射兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3097,7 +3097,7 @@ E8:
 	ReplacedInQueue:
 		Actors: deso
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 	EncyclopediaExtras:
 		Subfaction: iraq
 
@@ -3108,9 +3108,9 @@ DESO:
 		BuildPaletteOrder: 93
 		Prerequisites: ~infantry.iraq, tturorstek, anyradar, ~deso.upgrade, ~techlevel.medium
 	Tooltip:
-		Name: Desolator
+		Name: 辐射毁灭者
 	TooltipExtras:
-		Attributes: • Irradiates vehicles causing them to take more damage, deal less damage, and damage nearby units\n• Special Ability: Desolate Ground
+		Attributes: • 辐照载具，使其承受更多伤害、输出降低并伤害附近单位\n• 特殊技能：荒芜地带
 	Valued:
 		Cost: 600
 	Health:
@@ -3199,15 +3199,15 @@ N1C:
 		BuildPaletteOrder: 13
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: General-purpose cyborg infantry.
+		Description: 通用半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Heals on Tiberium
+		Strengths: • 对步兵强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 在泰伯利亚上恢复生命
 	Valued:
 		Cost: 250
 	Tooltip:
-		Name: Cyborg
+		Name: 半机械人
 	-TakeCover:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3240,7 +3240,7 @@ N1C:
 		Types: Veterancy
 		Prerequisites: barracks.upgraded
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 N3C:
 	Inherits: ^Cyborg
@@ -3252,15 +3252,15 @@ N3C:
 		BuildPaletteOrder: 23
 		Prerequisites: tmpp, ~tmpp, ~techlevel.high
 		IconPalette: chrometd
-		Description: Anti-tank/anti-aircraft cyborg infantry.
+		Description: 反坦克/防空半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Aircraft, Buildings, Defenses
-		Weaknesses: • Weak vs Infantry, Light Armor
-		Attributes: • Heals on Tiberium
+		Strengths: • 对重甲单位、空中单位、建筑、防御建筑强势
+		Weaknesses: • 对步兵、轻甲单位弱势
+		Attributes: • 在泰伯利亚上恢复生命
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Cyborg Rocket Soldier
+		Name: 半机械火箭兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	-TakeCover:
@@ -3334,7 +3334,7 @@ N3C:
 		Types: Veterancy
 		Prerequisites: barracks.upgraded
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 RMBC:
 	Inherits: ^Cyborg
@@ -3349,15 +3349,15 @@ RMBC:
 		BuildPaletteOrder: 232
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~techlevel.high
-		Description: Elite cyborg infantry unit armed with a plasma cannon.
+		Description: 配备等离子炮的精英半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Heals on Tiberium
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 在泰伯利亚上恢复生命
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Cyborg Elite
+		Name: 精英半机械人
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3424,7 +3424,7 @@ RMBC:
 		DamageTypes: DirectRepair
 		ShowSelectionBar: true
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 
 IVAN:
 	Inherits: ^Soldier
@@ -3435,15 +3435,15 @@ IVAN:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 41
 		Prerequisites: ~infantry.ukraine, weap, ~techlevel.low
-		Description: Specialist demolition infantry armed with explosives.
+		Description: 配备爆炸物的特种爆破步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Bombs will bounce if they hit the ground
+		Strengths: • 对建筑、防御建筑、轻甲单位强势
+		Weaknesses: • 无法攻击空中单位\n• 难以命中移动目标
+		Attributes: • 炸弹命中地面后会弹跳
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Crazy Ivan
+		Name: 疯狂伊万
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3489,7 +3489,7 @@ IVAN:
 	Voiced:
 		VoiceSet: CrazyIvanVoice
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 	EncyclopediaExtras:
 		Subfaction: ukraine
 
@@ -3505,16 +3505,16 @@ BRUT:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 94
 		Prerequisites: anyradar, ~infantry.yuri, ~techlevel.medium
-		Description: Melee range genetically engineered hulk.
+		Description: 近战型基因改造巨汉。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Immune to mind control\n• Self heals to 50% out of combat
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 免疫心灵控制\n• 脱离战斗后可自愈至 50%
 	RenderSprites:
 	Valued:
 		Cost: 450
 	Tooltip:
-		Name: Brute
+		Name: 狂兽人
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3598,7 +3598,7 @@ BRUT:
 	-Targetable@GMUT:
 	-Targetable@SpyDisguise:
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 	EncyclopediaExtras:
 		Subfaction: yuri
 
@@ -3643,15 +3643,15 @@ SHAD:
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Buildable:
 		Queue: ShadowTeam
-		Description: Stealth infantry armed with a machine pistol and grenades.
+		Description: 配备机枪手枪与手雷的隐形步兵。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shadow Operative
+		Name: 暗影特工
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
-		Attributes: • Cloaked when not in combat\n• Shadow beacons provide vision and attach to enemy vehicles that pass over them\n• Detects cloaked ground units and spies\n• Special Ability: Shadow Beacon
+		Strengths: • 对建筑、防御建筑、步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动载具
+		Attributes: • 非战斗状态下隐形\n• 暗影信标可提供视野，并附着在经过其上的敌方载具上\n• 侦测隐形地面单位与间谍\n• 特殊技能：暗影信标
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	RevealsShroud:
@@ -3748,7 +3748,7 @@ SHAD:
 		Margin: 4, 3
 		RequiresSelection: true
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 		HideBuildable: True
 	EncyclopediaExtras:
 		Subfaction: shadow
@@ -3759,10 +3759,10 @@ SGLI:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Shadow Glider
+		Name: 暗影滑翔机
 	TooltipExtras:
-		Strengths: • Strong vs Buildings, Defenses, Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving vehicles
+		Strengths: • 对建筑、防御建筑、步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动载具
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3934,14 +3934,14 @@ BH:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~infantry.blackh, ~techlevel.medium
-		Description: Elite precision anti-tank flamethrower unit.
+		Description: 精英高精度反坦克喷火单位。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
+		Strengths: • 对重甲单位、轻甲单位强势
+		Weaknesses: • 对建筑、防御建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Black Hand Trooper
+		Name: 黑手兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3991,7 +3991,7 @@ BH:
 	Targetable@STEALTHBUBBLEIMMUNE:
 		TargetTypes: StealthBubbleImmune
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
 		Subfaction: blackh
 
@@ -4009,15 +4009,15 @@ YURI:
 		BuildPaletteOrder: 206
 		Prerequisites: ~barr, stek, ~infantry.yuri, ~techlevel.high
 		BuildLimit: 1
-		Description: Elite specialist infantry able to mind-control enemy units (up to 3, increases with veterancy).
+		Description: 精英特种步兵，可心灵控制敌方单位（最多 3 个，随老兵等级提升）。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Vehicles, Defenses, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked ground units and spies\n• Immune to mind control\n• Shorter range and longer reload against vehicles\n• Psychic detection radius\n• Special Ability: Mind Blast
+		Strengths: • 对步兵、载具、防御建筑、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 最多只能训练 1 名\n• 侦测隐形地面单位与间谍\n• 免疫心灵控制\n• 对载具射程更短且装填更慢\n• 心灵侦测半径\n• 特殊技能：心灵冲击
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Yuri
+		Name: 尤里
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4194,7 +4194,7 @@ YURI:
 	ChangesHealth@ELITE:
 		Delay: 50
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 	EncyclopediaExtras:
 		Subfaction: yuri
 
@@ -4206,7 +4206,7 @@ SEAL:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Navy SEAL
+		Name: 海豹部队
 	Health:
 		HP: 16000
 	UpdatesPlayerStatistics:
@@ -4224,11 +4224,11 @@ SEAL:
 		Queue: InfantrySQ, InfantryMQ
 		IconPalette: chrome
 		BuildLimit: -1
-		Description: Elite infantry armed with an SMG and C4.
+		Description: 配备冲锋枪与 C4 的精英步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Detects spies\n• Plants C4 to destroy structures
+		Strengths: • 对步兵、轻甲单位、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 侦测间谍\n• 可安放 C4 摧毁建筑
 	Voiced:
 		VoiceSet: SealVoice
 	Mobile:
@@ -4328,7 +4328,7 @@ SEAL:
 	WithDecoration@COMMANDOSKULL:
 		Sequence: pip-seal
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
 		Subfaction: usa
 
@@ -4346,15 +4346,15 @@ ENLI:
 		BuildPaletteOrder: 230
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~zeal.covenant, ~techlevel.high
-		Description: Heavy cyborg infantry unit armed with a particle cannon.
+		Description: 配备粒子炮的重型半机械步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Heals on Tiberium\n• Damage scales with the max health of the target\n• Special Ability: EMP Blast
+		Strengths: • 对重甲单位、轻甲单位强势
+		Weaknesses: • 对步兵弱势\n• 无法攻击空中单位
+		Attributes: • 在泰伯利亚上恢复生命\n• 伤害随目标最大生命值提升\n• 特殊技能：EMP 爆发
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Enlightened
+		Name: 启迪者
 	-TakeCover:
 	-Crushable:
 	-KillsSelf@Immolate:
@@ -4436,9 +4436,9 @@ ENLI:
 		ShowSelectionBar: true
 		SelectionBarColor: b8afff
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要狂热誓约。
 
 ^MortarInfantryBase:
 	Inherits: ^Soldier
@@ -4447,8 +4447,8 @@ ENLI:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Buildings
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
+		Strengths: • 对步兵、建筑强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
 	Valued:
 		Cost: 350
 	UpdatesPlayerStatistics:
@@ -4475,7 +4475,7 @@ ENLI:
 		Types: Veterancy
 		Prerequisites: barracks.upgraded
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 
 MORT.Cryo:
 	Inherits: ^MortarInfantryBase
@@ -4485,17 +4485,17 @@ MORT.Cryo:
 	Buildable:
 		BuildPaletteOrder: 250
 		Prerequisites: ~stolentech.tent
-		Description: Infantry armed with a Cryo Mortar.
+		Description: 配备冷冻迫击炮的步兵。
 	TooltipExtras:
-		Attributes: • Slows enemy movement and increases damage taken
+		Attributes: • 降低敌方移动速度并提高其所受伤害
 	Tooltip:
-		Name: Cryo Mortar
+		Name: 冷冻迫击炮兵
 	Armament@PRIMARY:
 		Weapon: CryoMortar
 	Armament@BATF:
 		Weapon: CryoMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Allied Barracks.
+		AdditionalInfo: 从盟军兵营窃取。
 
 CDOG:
 	Inherits: DOG
@@ -4506,13 +4506,13 @@ CDOG:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 251
 		Prerequisites: ~stolentech.barr
-		Description: Melee anti-infantry scout unit.
+		Description: 近战反步兵侦察单位。
 	Valued:
 		Cost: 400
 	Mobile:
 		Speed: 100
 	Tooltip:
-		Name: Cyberdog
+		Name: 机械犬
 	Armor:
 		Type: Light
 	Health:
@@ -4530,9 +4530,9 @@ CDOG:
 		RequiresCondition: !parachute && !being-warped && damaged
 		TargetTypes: HealableCyborg
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Soviet Barracks.
+		AdditionalInfo: 从苏军兵营窃取。
 	-KeepsDistance:
 	-GuardsSelection:
 
@@ -4544,18 +4544,18 @@ MORT.Sonic:
 	Buildable:
 		BuildPaletteOrder: 252
 		Prerequisites: ~stolentech.pyle
-		Description: Infantry armed with a Sonic Mortar.
+		Description: 配备声波迫击炮的步兵。
 	Tooltip:
-		Name: Sonic Mortar
+		Name: 声波迫击炮兵
 	TooltipExtras:
-		Strengths: • Strong vs Defenses, Buildings
-		Attributes: • Slows enemy movement and rate of fire
+		Strengths: • 对防御建筑、建筑强势
+		Attributes: • 降低敌方移动速度与射速
 	Armament@PRIMARY:
 		Weapon: SonicMortar
 	Armament@BATF:
 		Weapon: SonicMortar
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from GDI Barracks.
+		AdditionalInfo: 从 GDI 兵营窃取。
 
 MORT.Chem:
 	Inherits: ^MortarInfantryBase
@@ -4565,16 +4565,16 @@ MORT.Chem:
 	Buildable:
 		BuildPaletteOrder: 253
 		Prerequisites: ~stolentech.hand
-		Description: Infantry armed with a Chemical Mortar, delivering a corrosive payload which is particularly effective against cyborgs.
+		Description: 配备化学迫击炮的步兵，可投送腐蚀性弹药，对半机械单位尤为有效。
 	Tooltip:
-		Name: Chemical Mortar
+		Name: 化学迫击炮兵
 	FireWarheadsOnDeath:
 		Weapon: UnitExplodeChemSmall
 		EmptyWeapon: UnitExplodeChemSmall
 		Chance: 33
 		RequiresCondition: !being-warped
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Hand of Nod.
+		AdditionalInfo: 从 Nod 之手窃取。
 
 CSCR:
 	Inherits: ^Cyborg
@@ -4587,15 +4587,15 @@ CSCR:
 		BuildPaletteOrder: 254
 		Prerequisites: ~stolentech.port
 		IconPalette: chromes
-		Description: Fast moving anti-personnel infantry.
+		Description: 高速反人员步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Heals rapidly on Tiberium
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位、建筑、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 在泰伯利亚上快速恢复生命
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Cyberscrin
+		Name: 赛博 Scrin
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4629,9 +4629,9 @@ CSCR:
 	Voiced:
 		VoiceSet: CyberscrinVoice
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Stolen from Scrin Portal.
+		AdditionalInfo: 从 Scrin 传送门窃取。
 	ChangesHealth@THEAL:
 		PercentageStep: 3
 
@@ -4644,15 +4644,15 @@ CMSR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 140
 		Prerequisites: stek, ~barr, ~techlevel.high
-		Description: Leads regular infantry into battle, motivating them to move faster and fight harder.
+		Description: 率领常规步兵作战，提升其移动速度与战斗效率。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Weak vs Light Armor, Heavy Armor, Defenses, Buildings\n• Cannot attack Aircraft
-		Attributes: • Increases speed and rate of fire of nearby basic infantry\n• Detects cloaked units and spies
+		Strengths: • 对步兵强势
+		Weaknesses: • 对轻甲单位、重甲单位、防御建筑、建筑弱势\n• 无法攻击空中单位
+		Attributes: • 提高附近基础步兵的移动速度与射速\n• 侦测隐形单位与间谍
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Commissar
+		Name: 政委
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4710,7 +4710,7 @@ CMSR:
 		DetectionTypes: Cloak, AirCloak
 		Range: 5c0
 	Encyclopedia:
-		Category: Soviets/Infantry
+		Category: 苏军/步兵
 
 ZTRP:
 	Inherits: ^Soldier
@@ -4721,16 +4721,16 @@ ZTRP:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 150
 		Prerequisites: ~pyle, gtek, ~bombard.strat, ~techlevel.high
-		Description: Elite infantry armed with a railgun and equipped with a jump-pack.
+		Description: 配备轨道炮并装备跳跃背包的精英步兵。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Defenses
-		Weaknesses: • Weak vs Infantry, Buildings\n• Cannot attack Aircraft
-		Attributes: • Special Ability: Jump-Pack
+		Strengths: • 对重甲单位、轻甲单位、防御建筑强势
+		Weaknesses: • 对步兵、建筑弱势\n• 无法攻击空中单位
+		Attributes: • 特殊技能：跳跃背包
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Zone Trooper
+		Name: 区域突击兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4812,22 +4812,22 @@ ZTRP:
 		Modifier: 50
 		RequiresCondition: jumping
 	Encyclopedia:
-		Category: GDI/Infantry
+		Category: GDI/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要轰炸战略。
 
 ZRAI:
 	Inherits: ZTRP
 	Buildable:
 		Prerequisites: ~pyle, gtek, ~seek.strat, ~techlevel.high
-		Description: Elite infantry armed with a sonic grenade launcher and equipped with a jump-pack.
+		Description: 配备声波榴弹发射器并装备跳跃背包的精英步兵。
 		BuildPaletteOrder: 151
 	Tooltip:
-		Name: Zone Raider
+		Name: 区域突袭兵
 	TooltipExtras:
-		Strengths: • Strong vs Light Armor, Buildings
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Shots reduce enemy movement and rate of fire\n• Special Ability: Jump-Pack
+		Strengths: • 对轻甲单位、建筑强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 攻击会降低敌方移动速度与射速\n• 特殊技能：跳跃背包
 	Armament@PRIMARY:
 		Weapon: ZoneRaiderGrenade
 		LocalOffset: 350,0,300
@@ -4844,18 +4844,18 @@ ZRAI:
 		MaxDistance: 10
 		Speed: 200
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索与歼灭战略。
 
 ZDEF:
 	Inherits: ZTRP
 	Buildable:
 		Prerequisites: ~pyle, gtek, ~hold.strat, ~techlevel.high
-		Description: Elite infantry armed with an ion rifle and an ability which shields nearby infantry.
+		Description: 配备离子步枪并可为附近步兵提供护盾的精英步兵。
 		BuildPaletteOrder: 152
 	Tooltip:
-		Name: Zone Defender
+		Name: 区域防卫兵
 	TooltipExtras:
-		Attributes: • Special Ability: Defense Matrix
+		Attributes: • 特殊技能：防御矩阵
 	Armament@PRIMARY:
 		Weapon: ZoneDefenderGun
 		LocalOffset: 350,0,300
@@ -4906,7 +4906,7 @@ ZDEF:
 		RequiresCondition: shield-active && !passenger
 		AffectsParent: true
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要坚守阵线战略。
 
 ENFO:
 	Inherits: ^Soldier
@@ -4917,15 +4917,15 @@ ENFO:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
 		Prerequisites: ~tent, alhq, ~techlevel.high
-		Description: Durable short-range front-line infantry.
+		Description: 耐打的短程前线步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • Deals damage in a cone\n• Damage falls off with distance
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 造成锥形范围伤害\n• 伤害随距离衰减
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Enforcer
+		Name: 执法者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4974,7 +4974,7 @@ ENFO:
 	GrantConditionOnHealingReceived@HEALINGCOOLDOWN:
 		RequiredHealing: 20000
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 
 HOPL:
 	Inherits: ^Soldier
@@ -4985,15 +4985,15 @@ HOPL:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~greece.coalition, ~techlevel.high
-		Description: Elite infantry armed with a prism rifle which periodically fires charged shots to blind enemies.
+		Description: 配备光棱步枪的精英步兵，可周期性发射蓄能弹致盲敌人。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor, Defenses\n• Cannot attack Aircraft
-		Attributes: • One in every four shots blinds the target
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 每四次射击中有一次会致盲目标
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Hoplite
+		Name: 重装步兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5062,9 +5062,9 @@ HOPL:
 		ArmamentNames: primary
 		RevokeDelay: 1
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: 需要希腊联盟。
 
 TIGR:
 	Inherits: ^Soldier
@@ -5075,15 +5075,15 @@ TIGR:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~korea.coalition, ~techlevel.high
-		Description: Elite infantry with a long range rocket launcher.
+		Description: 配备远程火箭发射器的精英步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Aircraft
-		Weaknesses: • Weak vs Infantry, Defenses, Buildings\n• Cannot acquire targets at close range
-		Attributes: • Missile reduces enemy weapon range and vision
+		Strengths: • 对重甲单位、轻甲单位、空中单位强势
+		Weaknesses: • 对步兵、防御建筑、建筑弱势\n• 无法锁定近距离目标
+		Attributes: • 导弹会降低敌方武器射程与视野
 	Valued:
 		Cost: 650
 	Tooltip:
-		Name: Tiger Guard
+		Name: 虎卫
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5135,9 +5135,9 @@ TIGR:
 		StandSequences: stand, stand2
 		DefaultAttackSequence: shoot
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: 需要韩国联盟。
 
 CRYT:
 	Inherits: ^Soldier
@@ -5148,15 +5148,15 @@ CRYT:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 132
 		Prerequisites: ~tent, alhq, ~sweden.coalition, ~techlevel.high
-		Description: Elite infantry armed with a cryo sprayer.
+		Description: 配备冷冻喷射器的精英步兵。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Buildings, Defenses\n• Cannot attack Aircraft
-		Attributes: • Slows enemy units and makes them take increased damage
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对建筑、防御建筑弱势\n• 无法攻击空中单位
+		Attributes: • 减速敌方单位并使其承受更多伤害
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Cryo Trooper
+		Name: 冷冻兵
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -5210,9 +5210,9 @@ CRYT:
 		Condition: attacking
 		RevokeDelay: 6
 	Encyclopedia:
-		Category: Allies/Infantry
+		Category: 盟军/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: 需要瑞典联盟。
 
 REAP:
 	Inherits: ^Cyborg
@@ -5228,17 +5228,17 @@ REAP:
 		BuildPaletteOrder: 231
 		IconPalette: chrometd
 		Prerequisites: ~infantry.nod, tmpp, covenant.level3, ~unity.covenant, ~techlevel.high
-		Description: Heavy cyborg with dual missile launchers and an infantry incapacitating grenade launcher.
+		Description: 配备双联导弹发射器和瘫痪步兵榴弹发射器的重型半机械单位。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor, Buildings
-		Weaknesses: • Weak vs Heavy Armor
-		Attributes: • Heals on Tiberium\n• Special Ability: Inhibitor Grenade
+		Strengths: • 对步兵、轻甲单位、建筑强势
+		Weaknesses: • 对重甲单位弱势
+		Attributes: • 在泰伯利亚上恢复生命\n• 特殊技能：抑制榴弹
 	Selectable:
 		DecorationBounds: 640, 896, -32, -256
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Cyborg Reaper
+		Name: 收割者半机械人
 	-TakeCover:
 	-Crushable:
 	-KillsSelf@Immolate:
@@ -5331,6 +5331,6 @@ REAP:
 		ShowSelectionBar: true
 		SelectionBarColor: 00cc00
 	Encyclopedia:
-		Category: Nod/Infantry
+		Category: Nod/步兵
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要统一誓约。

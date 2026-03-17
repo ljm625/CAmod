@@ -8,31 +8,31 @@ Container@LOBBY_OPTIONS_BIN:
 			Height: 25
 			Font: Bold
 			Align: Center
-			Text: Map Options
+			Text: 地图选项
 		Button@RESET_OPTIONS:
 			X: PARENT_WIDTH - WIDTH
 			Y: 0 - 26
 			Width: 50
 			Height: 26
-			TooltipText: Reset options to map defaults
+			TooltipText: 将选项重置为地图默认值
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Reset
+			Text: 重置
 		Button@LOAD_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Load saved options
+			TooltipText: 读取已保存选项
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Load
+			Text: 读取
 		Button@SAVE_OPTIONS:
 			X: PARENT_WIDTH - WIDTH - 50 - 44
 			Y: 0 - 26
 			Width: 44
 			Height: 26
-			TooltipText: Save options
+			TooltipText: 保存选项
 			TooltipContainer: TOOLTIP_CONTAINER
-			Text: Save
+			Text: 保存
 		ScrollPanel:
 			Logic: LobbyOptionsLogicCA, LobbyMissionInfoLogic
 			Width: PARENT_WIDTH
@@ -117,4 +117,4 @@ Container@LOBBY_OPTIONS_BIN:
 									Width: PARENT_WIDTH - 20
 									Height: 20
 									Font: Bold
-									Text: Advanced Options
+									Text: 高级选项

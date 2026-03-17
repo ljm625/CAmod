@@ -51,7 +51,7 @@ Container@MAINMENU:
 							Y: 22
 							Width: 200
 							Height: 30
-							Text: Combined Arms
+							Text: 联合武装
 							Align: Center
 							Font: MediumBold
 						Button@SINGLEPLAYER_BUTTON:
@@ -59,49 +59,49 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Singleplayer
+							Text: 单人游戏
 							Font: Bold
 						Button@MULTIPLAYER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Multiplayer
+							Text: 多人游戏
 							Font: Bold
 						Button@SETTINGS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Settings
+							Text: 设置
 							Font: Bold
 						Button@ENCYCLOPEDIA_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 180
 							Width: 140
 							Height: 30
-							Text: Encyclopedia
+							Text: 百科
 							Font: Bold
 						Button@EXTRAS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Extras
+							Text: 附加内容
 							Font: Bold
 						Button@CONTENT_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 260
 							Width: 140
 							Height: 30
-							Text: Manage Content
+							Text: 管理内容
 							Font: Bold
 						Button@QUIT_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Quit
+							Text: 退出
 							Font: Bold
 				Background@SINGLEPLAYER_MENU:
 					Width: PARENT_WIDTH
@@ -112,7 +112,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Singleplayer
+							Text: 单人游戏
 							Align: Center
 							Font: Bold
 						Button@SKIRMISH_BUTTON:
@@ -120,21 +120,21 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Skirmish
+							Text: 遭遇战
 							Font: Bold
 						Button@MISSIONS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Missions
+							Text: 任务
 							Font: Bold
 						Button@LOAD_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Load
+							Text: 读取
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -142,7 +142,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: 返回
 							Font: Bold
 				Background@EXTRAS_MENU:
 					Width: PARENT_WIDTH
@@ -153,7 +153,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Extras
+							Text: 附加内容
 							Align: Center
 							Font: Bold
 						Button@REPLAYS_BUTTON:
@@ -161,35 +161,35 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: Replays
+							Text: 回放
 							Font: Bold
 						Button@MUSIC_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Music
+							Text: 音乐
 							Font: Bold
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 140
 							Width: 140
 							Height: 30
-							Text: Map Editor
+							Text: 地图编辑器
 							Font: Bold
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 180
 							Width: 140
 							Height: 30
-							Text: Asset Browser
+							Text: 资源浏览器
 							Font: Bold
 						Button@CREDITS_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 220
 							Width: 140
 							Height: 30
-							Text: Credits
+							Text: 制作名单
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -197,7 +197,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: 返回
 							Font: Bold
 				Background@MAP_EDITOR_MENU:
 					Width: PARENT_WIDTH
@@ -208,7 +208,7 @@ Container@MAINMENU:
 							Y: 20
 							Width: 200
 							Height: 30
-							Text: Map Editor
+							Text: 地图编辑器
 							Align: Center
 							Font: Bold
 						Button@NEW_MAP_BUTTON:
@@ -216,14 +216,14 @@ Container@MAINMENU:
 							Y: 60
 							Width: 140
 							Height: 30
-							Text: New Map
+							Text: 新建地图
 							Font: Bold
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: 100
 							Width: 140
 							Height: 30
-							Text: Load Map
+							Text: 载入地图
 							Font: Bold
 						Button@BACK_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
@@ -231,7 +231,7 @@ Container@MAINMENU:
 							Y: 300
 							Width: 140
 							Height: 30
-							Text: Back
+							Text: 返回
 							Font: Bold
 		Container@PERFORMANCE_INFO:
 			Logic: PerfDebugLogic
@@ -274,7 +274,7 @@ Container@MAINMENU:
 							Font: Regular
 							Shadow: true
 							TextColor: ffff00
-							Text: Testing testing
+							Text: 发现新版本
 						ExternalLinkButton@NEW_VERSION_BUTTON:
 							X: PARENT_WIDTH / 2 - WIDTH / 2
 							Y: PARENT_HEIGHT - HEIGHT - 8
@@ -282,7 +282,7 @@ Container@MAINMENU:
 							Height: 28
 							Background: button
 							Align: Center
-							Text: Download
+							Text: 下载
 							Font: Regular
 							Url: null
 				Background@NOTIFICATIONS:
@@ -301,7 +301,7 @@ Container@MAINMENU:
 							Font: Bold
 							Shadow: true
 							TextColor: ffff00
-							Text: Notifications
+							Text: 通知
 						ScrollPanel@NOTIFICATIONS_PANEL:
 							X: 10
 							Y: 30
@@ -343,7 +343,7 @@ Container@MAINMENU:
 					Background: discord-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Discord Server
+					TooltipText: Discord 服务器
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://discord.gg/2fUxXEKQhP
 				ExternalLinkButton@YOUTUBE_LINK:
@@ -354,7 +354,7 @@ Container@MAINMENU:
 					Background: youtube-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: YouTube Channel
+					TooltipText: YouTube 频道
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://www.youtube.com/@openracombinedarms
 				ExternalLinkButton@FACEBOOK_LINK:
@@ -365,7 +365,7 @@ Container@MAINMENU:
 					Background: facebook-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Facebook Page
+					TooltipText: Facebook 页面
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://www.facebook.com/openracombinedarms
 				ExternalLinkButton@LADDER_LINK:
@@ -387,7 +387,7 @@ Container@MAINMENU:
 					Background: spreadsheet-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Unit Stats Spreadsheet
+					TooltipText: 单位数据表
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://docs.google.com/spreadsheets/d/1RDg36FKB2kTU-rlwn358B879DHYen2vcZTdE39-Fz6k
 				ExternalLinkButton@TECHTREE_LINK:
@@ -398,7 +398,7 @@ Container@MAINMENU:
 					Background: tree-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: Tech Tree
+					TooltipText: 科技树
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net/tech-tree
 				ExternalLinkButton@MODDB_LINK:
@@ -409,7 +409,7 @@ Container@MAINMENU:
 					Background: ladder-icon
 					Align: Left
 					LeftMargin: 0
-					TooltipText: 1v1 Ladder Website
+					TooltipText: 1v1 天梯网站
 					TooltipContainer: LINKS_TOOLTIP_CONTAINER
 					Url: https://ca.oraladder.net
 				TooltipContainer@LINKS_TOOLTIP_CONTAINER:
