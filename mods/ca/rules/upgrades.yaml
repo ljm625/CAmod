@@ -859,7 +859,7 @@ decoy.upgrade:
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
 			Description: 赋予越野车投射一对诱饵火焰坦克的能力。诱饵被摧毁后会在短时间内提供小范围视野。\n\n升级对象：越野车\n升级对象：袭击者越野车
 	TooltipExtras:
-			Strengths: + 诱饵投影能力
+		Strengths: + 诱饵投影能力
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -936,7 +936,7 @@ microwave.upgrade:
 		IconPalette: chrometd
 		Description: 升级对象：微波坦克
 	TooltipExtras:
-			Strengths: + 可击杀生命值低于 75% 的载具乘员\n+ 提高电磁脉冲对直接目标的持续时间\n+ 电磁脉冲会影响邻近载具/防御建筑
+		Strengths: + 可击杀生命值低于 75% 的载具乘员\n+ 提高电磁脉冲对直接目标的持续时间\n+ 电磁脉冲会影响邻近载具/防御建筑
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1032,7 +1032,7 @@ cust.upgrade:
 		Prerequisites: ~player.nod, covenant.level2, ~unity.covenant, ~techlevel.high
 		Description: 替换：隐形装甲运兵车
 	TooltipExtras:
-			Strengths: + 重甲单位\n+ 可治疗半机械人并修理载具
+		Strengths: + 重甲单位\n+ 可治疗半机械人并修理载具
 		Weaknesses: – 不具备隐形能力\n– 不具备进攻能力\n– 降低速度\n– 提高成本
 	Valued:
 		Cost: 750
@@ -1069,7 +1069,7 @@ cyborgarmor.upgrade:
 		IconPalette: chrometd
 			Description: 改进半机械人装甲。\n\n升级对象：半机械人\n升级对象：半机械人火箭兵\n升级对象：化学战士\n升级对象：侍僧/圣堂武士\n升级对象：半机械人机械师\n升级对象：启迪者\n升级对象：半机械收割者\n升级对象：半机械精英
 	TooltipExtras:
-			Strengths: + 所受伤害降低 20%\n+ 额外降低 10% 爆炸伤害
+		Strengths: + 所受伤害降低 20%\n+ 额外降低 10% 爆炸伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1124,7 +1124,7 @@ cyborgprod.upgrade:
 		IconPalette: chrometd
 			Description: 利用卡巴尔人工智能回收阵亡半机械人的部件，用于补充生产。
 	TooltipExtras:
-			Strengths: + 可回收阵亡半机械人价值的 15%，用于在主神殿生产新半机械人
+		Strengths: + 可回收阵亡半机械人价值的 15%，用于在主神殿生产新半机械人
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1232,7 +1232,7 @@ hazmatsoviet.upgrade:
 			Description: 步兵配备重型防化服，可提供对泰伯利亚与辐射的防护。\n\n升级对象：步兵
 	TooltipExtras:
 		Strengths: + 免疫泰伯利亚\n+ 对辐照地形高抗性
-			Weaknesses: – 在资源地形和崎岖地形上的移动速度降低 33%
+		Weaknesses: – 在资源地形和崎岖地形上的移动速度降低 33%
 	Valued:
 		Cost: 850
 	RenderSprites:
@@ -1249,8 +1249,8 @@ tdog.upgrade:
 		Prerequisites: ~player.soviet, anyradar, ~techlevel.medium
 			Description: 攻击犬绑载爆炸物。\n\n替换：攻击犬
 	TooltipExtras:
-			Strengths: + 可伤害载具和建筑
-			Weaknesses: – 攻击或死亡时爆炸\n– 提高成本
+		Strengths: + 可伤害载具和建筑
+		Weaknesses: – 攻击或死亡时爆炸\n– 提高成本
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1267,8 +1267,8 @@ lasher.upgrade:
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
 			Description: 为重型/犀牛坦克加装步兵碾压装置，以牺牲部分装甲与火力为代价。\n\n替换：重型坦克\n替换：犀牛坦克
 	TooltipExtras:
-			Strengths: + 移动速度提高 25%\n+ 改进碾压性能
-			Weaknesses: – 降低生命值\n– 降低火力
+		Strengths: + 移动速度提高 25%\n+ 改进碾压性能
+		Weaknesses: – 降低生命值\n– 降低火力
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1331,7 +1331,7 @@ deso.upgrade:
 		Prerequisites: ~player.soviet, ~player.iraq, stek, ~techlevel.high
 			Description: 辐射兵将被辐射工兵取代。\n\n替换：辐射兵
 	TooltipExtras:
-			Strengths: + 提高生命值\n+ 提高伤害\n+ 可辐照载具\n+ 荒芜地表能力
+		Strengths: + 提高生命值\n+ 提高伤害\n+ 可辐照载具\n+ 荒芜地表能力
 		Weaknesses: – 提高成本
 	Valued:
 		Cost: 500
@@ -1351,7 +1351,7 @@ tarc.upgrade:
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
 			Description: 升级特斯拉坦克与特斯拉履带车的武器。\n\n升级对象：特斯拉坦克\n升级对象：特斯拉履带车
 	TooltipExtras:
-			Strengths: + 攻击可连锁至最多 2 个额外目标
+		Strengths: + 攻击可连锁至最多 2 个额外目标
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1370,8 +1370,8 @@ seismic.upgrade:
 		Prerequisites: ~player.ukraine, stek, ~techlevel.high
 			Description: 为苏霍伊攻击机配备震波导弹。\n\n升级对象：苏霍伊攻击机
 	TooltipExtras:
-			Strengths: + 对建筑和载具造成高范围伤害\n+ 降低受影响目标的移动速度与射速
-			Weaknesses: – 弹体速度慢
+		Strengths: + 对建筑和载具造成高范围伤害\n+ 降低受影响目标的移动速度与射速
+		Weaknesses: – 弹体速度慢
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1408,7 +1408,7 @@ imppara.upgrade:
 		Prerequisites: playerxp.level2, ~player.soviet, ~!player.russia, ~!player.yuri, ~infantry.doctrine, ~techlevel.medium
 			Description: 升级伞兵支援技能。\n\n升级对象：伞兵
 	TooltipExtras:
-			Strengths: + 额外空投单位
+		Strengths: + 额外空投单位
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1427,7 +1427,7 @@ impstorm.upgrade:
 		Prerequisites: playerxp.level2, ~player.russia, ~infantry.doctrine, ~techlevel.medium
 			Description: 升级风暴突击兵支援技能。\n\n升级对象：风暴突击兵
 	TooltipExtras:
-			Strengths: + 额外空投单位
+		Strengths: + 额外空投单位
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1446,7 +1446,7 @@ impmuta.upgrade:
 		Prerequisites: playerxp.level2, ~player.yuri, ~infantry.doctrine, ~techlevel.medium
 			Description: 强化突变炸弹与狂兽人。\n\n升级对象：突变炸弹\n升级对象：狂兽人
 	TooltipExtras:
-			Strengths: + 提高范围效果（突变炸弹）\n+ 提高最大目标数量（突变炸弹）\n+ 提高移动速度（狂兽人）
+		Strengths: + 提高范围效果（突变炸弹）\n+ 提高最大目标数量（突变炸弹）\n+ 提高移动速度（狂兽人）
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1484,7 +1484,7 @@ rocketpods.upgrade:
 		Prerequisites: ~player.soviet, ~arty.doctrine, playerxp.level2, ~techlevel.high
 			Description: 升级冰雹火箭车与雌鹿的火箭吊舱。\n\n升级对象：冰雹火箭车\n升级对象：雌鹿
 	TooltipExtras:
-			Strengths: + 提高齐射规模（冰雹火箭车）\n+ 提高弹药量与射速（雌鹿）
+		Strengths: + 提高齐射规模（冰雹火箭车）\n+ 提高弹药量与射速（雌鹿）
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1521,8 +1521,8 @@ erad.upgrade:
 		Prerequisites: ~player.iraq, npwr, ~techlevel.high
 			Description: 将猛犸坦克升级为不稳定辐射炮。\n\n替换：猛犸坦克
 	TooltipExtras:
-			Strengths: + 对步兵和载具造成高范围伤害\n+ 可辐照命中载具\n+ 提高射程
-			Weaknesses: – 失去防空导弹\n– 降低单体反坦克伤害\n– 降低对建筑伤害
+		Strengths: + 对步兵和载具造成高范围伤害\n+ 可辐照命中载具\n+ 提高射程
+		Weaknesses: – 失去防空导弹\n– 降低单体反坦克伤害\n– 降低对建筑伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1556,7 +1556,7 @@ ovld.upgrade:
 		Prerequisites: playerxp.level3, ~player.soviet, ~infantry.doctrine, ~techlevel.high
 		Description: 允许生产的霸主坦克.\n\n替换：猛犸坦克
 	TooltipExtras:
-			Strengths: + 提高生命值\n+ 提高火力\n+ 提高射程\n+ 增强附近步兵
+		Strengths: + 提高生命值\n+ 提高火力\n+ 提高射程\n+ 增强附近步兵
 		Weaknesses: – 降低速度\n– 提高成本
 	Valued:
 		Cost: 1000
@@ -1593,7 +1593,7 @@ nukc.upgrade:
 		Description: 允许生产的核能远程火炮.
 	TooltipExtras:
 		Strengths: + 对建筑, 防御建筑, 步兵, 轻甲单位\n+ 超远射程
-			Weaknesses: – 必须部署后开火\n– 射速较慢\n– 弹体速度慢
+		Weaknesses: – 必须部署后开火\n– 射速较慢\n– 弹体速度慢
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1745,8 +1745,8 @@ aapc.upgrade:
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
 			Description: 允许建造弓手装甲运兵车。\n\n替换：装甲运兵车
 	TooltipExtras:
-			Strengths: + 新增目标标记雷达，可揭示敌军并提高其所受伤害
-			Weaknesses: – 提高成本\n– 无法造成伤害
+		Strengths: + 新增目标标记雷达，可揭示敌军并提高其所受伤害
+		Weaknesses: – 提高成本\n– 无法造成伤害
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1764,7 +1764,7 @@ optics.upgrade:
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
 			Description: 为游骑兵战车配备高级光学系统，可临时提升其视野与侦测范围。\n\n升级对象：游骑兵战车
 	TooltipExtras:
-			Strengths: + 游骑兵战车可临时提升视野与侦测范围
+		Strengths: + 游骑兵战车可临时提升视野与侦测范围
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1782,7 +1782,7 @@ entrench.upgrade:
 		Prerequisites: ~player.france, anyradar, ~techlevel.medium
 			Description: 使工程师可部署并辅助建造防御建筑。\n\n升级对象：工程师
 	TooltipExtras:
-			Strengths: + 允许工程师部署并启用防御建筑建造
+		Strengths: + 允许工程师部署并启用防御建筑建造
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1800,7 +1800,7 @@ cryw.upgrade:
 		Prerequisites: ~player.allies, atek, ~techlevel.high
 			Description: 为部分火箭武装单位配备冰冻弹头，可降低目标移动速度并提高其所受伤害。\n\n升级对象：火箭兵\n升级对象：长弓\n升级对象：守护者步兵（仅美国）\n升级对象：夜鹰（仅美国）
 	TooltipExtras:
-			Strengths: + 装备冰冻弹头，可减速并提高目标所受伤害
+		Strengths: + 装备冰冻弹头，可减速并提高目标所受伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1837,7 +1837,7 @@ apb.upgrade:
 		Prerequisites: ~player.england, atek, ~techlevel.high
 			Description: 升级狙击手，使其获得劳福斯穿甲弹，可击晕并伤害载具。\n\n升级对象：狙击手
 	TooltipExtras:
-			Strengths: + 可用穿甲弹伤害载具，并降低其移动速度与射速
+		Strengths: + 可用穿甲弹伤害载具，并降低其移动速度与射速
 		Weaknesses: – 降低射程
 	Valued:
 		Cost: 1000
@@ -1856,7 +1856,7 @@ airborne.upgrade:
 		Prerequisites: ~player.usa, atek, ~techlevel.high
 			Description: 改进空降部队的训练与后勤，提高作战效率并加快准备速度。\n\n升级对象：空投：守护者步兵\n升级对象：空投：灰熊坦克
 	TooltipExtras:
-			Strengths: + 空降单位自带老兵等级\n+ 空降单位准备时间减少 25%
+		Strengths: + 空降单位自带老兵等级\n+ 空降单位准备时间减少 25%
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1874,7 +1874,7 @@ tflx.upgrade:
 		Prerequisites: ~player.germany, pdox, ~techlevel.high
 			Description: 升级超时空牢笼，使其获得时空传送能力，并改进 Chrono坦克的时空跃迁。\n\n升级对象：超时空牢笼\n升级对象：Chrono坦克
 	TooltipExtras:
-			Strengths: + 超时空牢笼获得传送能力\n+ 超时空牢笼武器射程提高\n+ Chrono坦克可在充能前连续传送两次
+		Strengths: + 超时空牢笼获得传送能力\n+ 超时空牢笼武器射程提高\n+ Chrono坦克可在充能前连续传送两次
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1892,7 +1892,7 @@ charv.upgrade:
 		Prerequisites: ~player.allies, alhq, ~techlevel.high, !charv.upgrade
 			Description: 允许建造 Chrono采矿车，可传送回精炼厂。\n\n升级对象：矿车
 	TooltipExtras:
-			Strengths: + 可传送回精炼厂
+		Strengths: + 可传送回精炼厂
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2060,7 +2060,7 @@ stlk.upgrade:
 		Description: 替换：掠夺者
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 提高伤害\n+ 提高生命值\n+ 获得隐形能力并提升移动速度
+		Strengths: + 提高伤害\n+ 提高生命值\n+ 获得隐形能力并提升移动速度
 		Weaknesses: – 提高成本\n– 降低溅射伤害
 	Valued:
 		Cost: 750
@@ -2080,7 +2080,7 @@ shrw.upgrade:
 		IconPalette: chromes
 	TooltipExtras:
 		Strengths: + 提高耐久\n+ 提高伤害
-			Weaknesses: – 移动速度更慢\n– 弹体速度更慢
+		Weaknesses: – 移动速度更慢\n– 弹体速度更慢
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2152,7 +2152,7 @@ resconv.upgrade:
 			Description: 部分单位的武器可由泰伯利亚与其他资源充能。收割者三足机甲获得额外充能层数。\n\n升级对象：吞噬者\n升级对象：破灭者\n升级对象：收割者三足机甲\n升级对象：开膛者
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 充能时提高伤害\n+ 充能容量翻倍（仅收割者三足机甲）
+		Strengths: + 充能时提高伤害\n+ 充能容量翻倍（仅收割者三足机甲）
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2170,7 +2170,7 @@ ioncon.upgrade:
 			Description: 允许风暴之柱与风暴爬行者储存离子能量并释放到大气中，形成局部离子风暴。\n\n升级对象：风暴之柱\n升级对象：风暴爬行者
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 激活时伤害和射程随时间提升\n+ 激活时所受伤害随时间降低\n+ 离子风暴可伤害敌方单位与建筑
+		Strengths: + 激活时伤害和射程随时间提升\n+ 激活时所受伤害随时间降低\n+ 离子风暴可伤害敌方单位与建筑
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2188,7 +2188,7 @@ regen.upgrade:
 			Description: Scrin空中单位与风暴爬行者在脱离战斗后会随时间回复生命值。\n\n升级对象：风暴骑士\n升级对象：折磨者\n升级对象：衰弱者\n升级对象：毁灭战舰\n升级对象：行星突击母舰\n升级对象：母舰\n升级对象：风暴爬行者
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 脱离战斗后生命值回复
+		Strengths: + 脱离战斗后生命值回复
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2206,7 +2206,7 @@ stellar.upgrade:
 			Description: 为毁灭战舰升级恒星聚变炮。\n\n升级对象：毁灭战舰
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 提高伤害\n+ 提高范围效果\n+ 改进精度\n+ 更快弹体
+		Strengths: + 提高伤害\n+ 提高范围效果\n+ 改进精度\n+ 更快弹体
 		Weaknesses: – 开火前必须蓄能
 	Valued:
 		Cost: 1000
@@ -2225,8 +2225,8 @@ coalescence.upgrade:
 			Description: 死亡或部署时，吸食者会转化为一团生物质，治疗附近友军并最终聚合为新的吸食者。\n\n升级对象：吸食者
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 吸食者可复生\n+ 处于聚合形态时可治疗友军
-			Weaknesses: – 造成伤害时不再回复生命值
+		Strengths: + 吸食者可复生\n+ 处于聚合形态时可治疗友军
+		Weaknesses: – 造成伤害时不再回复生命值
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2244,7 +2244,7 @@ shields.upgrade:
 			Description: 为 Scrin空中单位与部分地面单位配备护盾。\n\n升级对象：闯入者\n升级对象：风暴爬行者\n升级对象：风暴骑士\n升级对象：折磨者\n升级对象：衰弱者\n升级对象：毁灭战舰\n升级对象：行星突击母舰\n升级对象：母舰
 		IconPalette: chromes
 	TooltipExtras:
-			Strengths: + 提供额外生命值池\n+ 空中单位获得电磁脉冲抗性
+		Strengths: + 提供额外生命值池\n+ 空中单位获得电磁脉冲抗性
 	Valued:
 		Cost: 1500
 	RenderSprites:
