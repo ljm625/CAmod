@@ -388,7 +388,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: PlaceBeacon
-							TooltipText: Place Beacon
+							TooltipText: 放置信标
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -403,7 +403,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Sell
-							TooltipText: Sell
+							TooltipText: 出售
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -418,7 +418,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: PowerDown
-							TooltipText: Power Down
+							TooltipText: 断电
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -433,7 +433,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Repair
-							TooltipText: Repair
+							TooltipText: 维修
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -448,7 +448,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: Upgrade
-							TooltipText: Upgrade
+							TooltipText: 升级
 							TooltipContainer: TOOLTIP_CONTAINER
 							VisualHeight: 0
 							Children:
@@ -463,7 +463,7 @@ Container@PLAYER_WIDGETS:
 							Height: 24
 							Background: sidebar-top-button
 							Key: escape
-							TooltipText: Options
+							TooltipText: 选项
 							TooltipContainer: TOOLTIP_CONTAINER
 							DisableWorldSounds: true
 							VisualHeight: 0
@@ -603,7 +603,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Buildings
+									TooltipText: 建筑
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Building
 									Key: ProductionTypeBuilding
@@ -619,7 +619,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Defense
+									TooltipText: 防御
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Defense
 									Key: ProductionTypeDefense
@@ -635,7 +635,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Infantry
+									TooltipText: 步兵
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Infantry
 									Key: ProductionTypeInfantry
@@ -651,7 +651,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Vehicles
+									TooltipText: 载具
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Vehicle
 									Key: ProductionTypeVehicle
@@ -667,7 +667,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Aircraft
+									TooltipText: 空中单位
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Aircraft
 									Key: ProductionTypeAircraft
@@ -683,7 +683,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Naval
+									TooltipText: 海军
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Ship
 									Key: ProductionTypeNaval
@@ -699,7 +699,7 @@ Container@PLAYER_WIDGETS:
 									Height: 26
 									VisualHeight: 0
 									Background: sidebar-production-type-button
-									TooltipText: Upgrades
+									TooltipText: 升级
 									TooltipContainer: TOOLTIP_CONTAINER
 									ProductionGroup: Upgrade
 									Key: ProductionTypeUpgrade
@@ -716,7 +716,7 @@ Container@PLAYER_WIDGETS:
 									Height: 18
 									VisualHeight: 0
 									Background: sidebar-scrollup-button
-									TooltipText: Scroll up
+									TooltipText: 向上滚动
 									TooltipContainer: TOOLTIP_CONTAINER
 								Button@SCROLL_DOWN_BUTTON:
 									Logic: AddFactionSuffixLogic
@@ -726,7 +726,7 @@ Container@PLAYER_WIDGETS:
 									Height: 18
 									VisualHeight: 0
 									Background: sidebar-scrolldown-button
-									TooltipText: Scroll down
+									TooltipText: 向下滚动
 									TooltipContainer: TOOLTIP_CONTAINER
 				ProductionTabsCA@PRODUCTION_TABS:
 					RightButton: sidebar-production-tab-right-button
