@@ -15,14 +15,14 @@
 hazmat.upgrade:
 	Inherits: ^Upgrade
 	Tooltip:
-		Name: Upgrade: Hazmat Suits
+		Name: 升级：防化服
 	Buildable:
 		BuildPaletteOrder: 19
 		Prerequisites: anyradar, infantry.any, ~!player.soviet, ~!player.zocom, ~!player.scrin, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Infantry are equipped with hazmat suits which provides protection against Tiberium and radiation.\n\nUpgrades: Infantry
+		Description: 步兵配备防化服，可提供对泰伯利亚与辐射的防护。\n\n升级对象：步兵
 	TooltipExtras:
-		Strengths: + Tiberium immunity\n+ 50% resistance to irradiated terrain
+		Strengths: + 免疫泰伯利亚\n+ 对辐照地形抗性 +50%
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -38,13 +38,13 @@ hazmat.upgrade:
 flakarmor.upgrade:
 	Inherits: ^Upgrade
 	Tooltip:
-		Name: Upgrade: Advanced Flak Armor
+		Name: 升级：高级防弹装甲
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: techcenter.any, infantry.any, ~!player.nod, ~!player.scrin, ~techlevel.high
-		Description: Infantry are equipped with advanced flak armor which provides protection against explosives.\n\nUpgrades: Infantry
+		Description: 步兵配备高级防弹装甲，可提供对爆炸伤害的防护。\n\n升级对象：步兵
 	TooltipExtras:
-		Strengths: + 40% reduced damage from explosives\n+ 20% reduced damage from incendiary explosives
+		Strengths: + 受到爆炸伤害 -40%\n+ 受到燃烧爆炸伤害 -20%
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -61,9 +61,9 @@ ANYSTRATEGY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Active Strategy
+		Name: 当前战略
 	Buildable:
-		Description: Active Strategy
+		Description: 当前战略
 	ProvidesPrerequisite:
 
 ^GDIUpgrade:
@@ -74,15 +74,15 @@ ANYSTRATEGY:
 bombard.strat:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy: Bombardment
+		Name: 战略：轰炸
 	Buildable:
 		BuildPaletteOrder: 7
 		Prerequisites: ~player.gdi, anyradar, ~!seek.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Firepower focused strategy, required for:\n• Zone Trooper\n• Tomahawk Launcher Research\n• Hailstorm Missiles Upgrade\n• Avenger Upgrade\n• Firestorm Missiles Power\n\n
+		Description: 火力型战略，适用于：\n• 区域突击兵\n• 战斧发射车研究\n• 冰雹导弹升级\n• Avenger升级\n• 火焰风暴导弹技能\n\n
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by 3%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: + 提升火力和射速的载具和空中单位按 3%
+		Attributes: \n(!) 只能选择一个战略。
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -99,13 +99,13 @@ bombard2.strat:
 	Inherits: bombard.strat
 	-AnnounceOnCreation:
 	Tooltip:
-		Name: Strategy: Bombardment II
+		Name: 战略：轰炸 2
 	Buildable:
 		BuildPaletteOrder: 7
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
-		Description: Increase Bombardment strategy bonuses.
+		Description: 提升“轰炸”战略加成。
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by a further 3%
+		Strengths: + 载具与空中单位火力和射速额外提升 3%
 		-Attributes:
 	RenderSprites:
 		Image: bombard2.strat
@@ -119,15 +119,15 @@ bombard3.strat:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Upgrade: Firestorm Missile System
+		Name: 升级：火焰风暴导弹系统
 	Buildable:
 		BuildPaletteOrder: 8
 		Prerequisites: ~player.gdi, upgc, !upgc.drop, bombard2.strat, ~bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
-		Description: Provides an napalm rocket barrage.
+		Description: 提供凝固汽油火箭弹幕。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases firepower and rate of fire of vehicles and aircraft by a further 3%\n+ Unlocks Firestorm Missile Barrage power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: + 载具与空中单位火力和射速额外提升 3%\n+ 解锁火焰风暴导弹齐射技能
+		Attributes: (!) 与以下项目互斥：补给空投区
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -138,15 +138,15 @@ bombard3.strat:
 seek.strat:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy: Seek & Destroy
+		Name: 战略：搜索与摧毁
 	Buildable:
 		BuildPaletteOrder: 9
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!hold.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Speed and weapon range focused strategy, required for:\n• Zone Raider\n• TOW Missile Upgrade\n• Hypersonic Missiles Upgrade\n• Sidewinders Upgrade\n• Advanced Radar Power\n\n
+		Description: 速度与武器射程型战略，适用于：\n• 区域袭击者\n• TOW导弹升级\n• 高超音速导弹升级\n• 响尾蛇导弹升级\n• 高级雷达技能\n\n
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by 5%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: + 载具与空中单位移动速度和武器射程提升 5%
+		Attributes: \n(!) 只能选择一个战略。
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -163,13 +163,13 @@ seek2.strat:
 	Inherits: seek.strat
 	-AnnounceOnCreation:
 	Tooltip:
-		Name: Strategy: Seek & Destroy II
+		Name: 战略：搜索与摧毁 2
 	Buildable:
 		BuildPaletteOrder: 9
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
-		Description: Increase Seek & Destroy strategy bonuses.
+		Description: 提升“搜索与摧毁”战略加成。
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by a further 5%
+		Strengths: + 载具与空中单位移动速度和武器射程额外提升 5%
 		-Attributes:
 	RenderSprites:
 		Image: seek2.strat
@@ -183,15 +183,15 @@ seek3.strat:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Upgrade: Advanced Radar System
+		Name: 升级：高级雷达系统
 	Buildable:
 		BuildPaletteOrder: 10
 		Prerequisites: ~player.gdi, upgc, !upgc.drop, seek2.strat, ~seek.strat, ~!bombard.strat, ~!hold.strat, ~techlevel.high
-		Description: Provides detailed information on enemy locations.
+		Description: 提供敌方位置的详细情报。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases speed and weapon range of vehicles and aircraft by a further 5%\n+ Unlocks Advanced Radar Scan power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: + 载具与空中单位移动速度和武器射程额外提升 5%\n+ 解锁高级雷达扫描技能
+		Attributes: (!) 与以下项目互斥：补给空投区
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -202,15 +202,15 @@ seek3.strat:
 hold.strat:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy: Hold the Line
+		Name: 战略：固守防线
 	Buildable:
 		BuildPaletteOrder: 11
 		Prerequisites: ~player.gdi, anyradar, ~!bombard.strat, ~!seek.strat, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Defensive strategy, required for:\n• Zone Defender\n• Point Defense Systems Upgrade\n• Hammerhead Missiles Upgrade\n• Ceramic Armor Upgrade\n• Nanite Shield Power\n\n
+		Description: 防御型战略，适用于：\n• 区域防御者\n• 点防御系统升级\n• 锤头导弹升级\n• 陶瓷装甲升级\n• 纳米护盾技能\n\n
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by 5%
-		Attributes: \n(!) Only ONE Strategy may be chosen.
+		Strengths: + 提升装甲的载具和空中单位按 5%
+		Attributes: \n(!) 只能选择一个战略。
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -227,13 +227,13 @@ hold2.strat:
 	Inherits: hold.strat
 	-AnnounceOnCreation:
 	Tooltip:
-		Name: Strategy: Hold the Line II
+		Name: 战略：固守防线 2
 	Buildable:
 		BuildPaletteOrder: 11
 		Prerequisites: ~player.gdi, gtek, ~hold.strat,  ~techlevel.high
-		Description: Increase Hold the Line strategy bonuses.
+		Description: 提升“固守防线”战略加成。
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by a further 5%
+		Strengths: + 载具与空中单位装甲额外提升 5%
 		-Attributes:
 	RenderSprites:
 		Image: hold2.strat
@@ -247,15 +247,15 @@ hold3.strat:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Upgrade: Nanoshield Generator
+		Name: 升级：纳米护盾发生器
 	Buildable:
 		BuildPaletteOrder: 12
 		Prerequisites: ~player.gdi, upgc, !upgc.drop, hold2.strat, ~hold.strat, ~!bombard.strat, ~!seek.strat, ~techlevel.high
-		Description: Provides the ability to shield units in an area
+		Description: 赋予范围内单位护盾能力。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increases armor of vehicles and aircraft by a further 5%\n+ Unlocks Nanite Shield power
-		Attributes: (!) Mutually exclusive with Supply Drop Zone
+		Strengths: + 载具与空中单位装甲额外提升 5%\n+ 解锁纳米护盾技能
+		Attributes: (!) 与以下项目互斥：补给空投区
 	RenderSprites:
 		PlayerPalette: playertd
 	WithProductionIconOverlay:
@@ -266,14 +266,14 @@ hold3.strat:
 vulcan.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Vulcan
+		Name: 研究：火神战车
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
-		Description: Replaces: APC
+		Description: 替换：装甲运兵车
 	TooltipExtras:
-		Strengths: + Adds anti-air capability\n+ Increased damage against ground targets\n+ Adds turret
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: + 新增防空能力\n+ 对地面目标伤害提高\n+ 新增炮塔
+		Weaknesses: – 提高成本\n– 降低速度
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -284,14 +284,14 @@ vulcan.upgrade:
 bjet.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Bombardier
+		Name: 研究：轰炸兵
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.gdi, anyradar, ~techlevel.medium
-		Description: Allows training of Bombardiers.
+		Description: 允许训练轰炸兵。
 	TooltipExtras:
-		Strengths: + Strong vs Buildings, Defenses, Light Armor
-		Weaknesses: – Weak vs Heavy Armor\n– Has difficulty hitting moving targets\n– Cannot attack Aircraft
+		Strengths: + 对建筑, 防御建筑, 轻甲单位
+		Weaknesses: – 对重甲单位\n– 难以命中移动目标\n– 无法攻击空中单位
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -302,14 +302,14 @@ bjet.upgrade:
 empgren.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: EMP Grenades
+		Name: 升级：电磁脉冲手雷
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrades Grenadier to use EMP Grenades.\n\nUpgrades: Grenadier
+		Description: 将掷弹兵升级为使用电磁脉冲手雷。\n\n升级对象：掷弹兵
 	TooltipExtras:
-		Strengths: + Grenades briefly disable vehicles and defenses\n+ Grenadiers no longer explode when killed
+		Strengths: + 手雷可短暂瘫痪载具和防御建筑\n+ 掷弹兵被击杀时不再爆炸
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -320,12 +320,12 @@ empgren.upgrade:
 strata10.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy Dependent Upgrade
+		Name: 战略依赖升级
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrade depends on chosen strategy.\n\n• Bombardment: Avenger upgrade\n• Seek & Destroy: Sidewinders upgrade\n• Hold the Line: Ceramic Armor upgrade
+		Description: 升级取决于所选战略。\n\n• 轰炸：Avenger升级\n• 搜索与摧毁：响尾蛇导弹升级\n• 固守防线：陶瓷装甲升级
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -337,15 +337,15 @@ strata10.upgrade:
 avenger.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Avenger
+		Name: 升级：Avenger
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
 		IconPalette: chrome
-		Description: Replaces Warthog's incendiary bombs with GAU-8 Avenger rotary cannon and Hydra rockets.\n\nUpgrades: Warthog
+			Description: 将疣猪战机的燃烧炸弹替换为 GAU-8复仇者旋转机炮和九头蛇火箭。\n\n升级对象：疣猪战机
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased range
-		Weaknesses: – Requires two passes
+		Strengths: + 提高伤害\n+ 提高射程
+		Weaknesses: – 需要两轮攻击
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -358,14 +358,14 @@ avenger.upgrade:
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Sidewinders
+		Name: 升级：响尾蛇导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Equips Warthogs with air-to-air missiles.\n\nUpgrades: Warthog
+		Description: 为疣猪战机配备空对空导弹。\n\n升级对象：疣猪战机
 	TooltipExtras:
-		Strengths: + Added air-to-air missiles
+		Strengths: + 新增空对空导弹
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -378,14 +378,14 @@ sidewinders.upgrade:
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Ceramic Armor
+		Name: 升级：陶瓷装甲
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrades Warthogs with ceramic armor.\n\nUpgrades: Warthog
+		Description: 为疣猪战机升级陶瓷装甲。\n\n升级对象：疣猪战机
 	TooltipExtras:
-		Strengths: + Increased durability
+		Strengths: + 提高耐久
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -398,12 +398,12 @@ ceramic.upgrade:
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy Dependent Upgrade
+		Name: 战略依赖升级
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrade depends on chosen strategy.\n\n• Bombardment: Tomahawk Launcher research\n• Seek & Destroy: TOW Missile upgrade\n• Hold the Line: Point Defense Systems upgrade
+		Description: 升级取决于所选战略。\n\n• 轰炸：战斧发射车研究\n• 搜索与摧毁：TOW导弹升级\n• 固守防线：点防御系统升级
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -415,15 +415,15 @@ strategic.upgrade:
 thwk.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Tomahawk Launcher
+		Name: 研究：战斧发射车
 	Buildable:
 		BuildPaletteOrder: 30
 		IconPalette: chrometd
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high
-		Description: Allows construction of Tomahawk Missile Launchers.
+		Description: 允许建造战斧导弹发射车。
 	TooltipExtras:
-		Strengths: + Strong vs Buildings\n+ Extremely long range
-		Weaknesses: – Projectiles can be shot down\n– Slow rate of fire
+		Strengths: + 对建筑\n+ 超远射程
+		Weaknesses: – 投射物可被击落\n– 较慢射速
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -436,14 +436,14 @@ thwk.upgrade:
 tow.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: TOW Missile
+		Name: 研究：TOW导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~seek.strat, ~techlevel.high
-		Description: Hum-Vees and Guardian Drones will be produced with TOW missile launchers.\n\nReplaces: Hum-Vee\nReplaces: Guardian Drone
+		Description: 悍马车和守护者无人机将改为配备 TOW导弹发射器。\n\n替换：悍马车\n替换：守护者无人机
 	TooltipExtras:
-		Strengths: + Added TOW missile launcher (strong vs Heavy Armor)
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: + 新增 TOW导弹发射器（对重甲单位强）
+		Weaknesses: – 提高成本\n– 降低速度
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -456,14 +456,14 @@ tow.upgrade:
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Point Defense Systems
+		Name: 升级：点防御系统
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Equips several units with point defense shields and/or point defense lasers which protect against enemy fire.\n\nUpgrades: Battle Tank (Shield and Laser)\nUpgrades: Battle Drone (Shield and Laser)\nUpgrades: Hum-Vee (Shield)\nUpgrades: Guardian Drone (Shield)\nUpgrades: Harvester (Shield)\nUpgrades: Frigate (Laser)
+		Description: 为多个单位配备点防御护盾和/或点防御激光，以抵御敌方火力。\n\n升级对象：战斗坦克（护盾和激光）\n升级对象：战斗无人机（护盾和激光）\n升级对象：悍马车（护盾）\n升级对象：守护者无人机（护盾）\n升级对象：采矿车（护盾）\n升级对象：护卫舰（激光）
 	TooltipExtras:
-		Strengths: + Added Point Defense Shield\n+ Added Point Defense Laser
+		Strengths: + 新增点防御护盾\n+ 新增点防御激光
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -476,12 +476,12 @@ pointdef.upgrade:
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Strategy Dependent Upgrade
+		Name: 战略依赖升级
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, anystrategy, ~!bombard.strat, ~!seek.strat, ~!hold.strat, ~techlevel.high
 		IconPalette: chrometd
-		Description: Equip the MLRS/HMLRS with improved missiles depending on chosen strategy.\n\n• Bombardment: Hailstorm Missiles\n• Seek & Destroy: Hypersonic Missiles\n• Hold the Line: Hammerhead Missiles
+		Description: 根据所选战略，为多管火箭系统/重型多管火箭系统配备改进导弹。\n\n• 轰炸：冰雹导弹\n• 搜索与摧毁：高超音速导弹\n• 固守防线：锤头导弹
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -493,15 +493,15 @@ stratmiss.upgrade:
 hailstorm.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Hailstorm Missiles
+		Name: 升级：冰雹导弹
 	Buildable:
 		Prerequisites: ~player.gdi, gtek, ~bombard.strat, ~techlevel.high, ~!hypersonic.upgrade, ~!hammerhead.upgrade
 		BuildPaletteOrder: 30
 		IconPalette: chrometd
-		Description: Equip the MLRS/HMLRS with Hailstorm Missiles.\n\nUpgrades: MLRS/HMLRS
+		Description: 为多管火箭系统/重型多管火箭系统配备冰雹导弹。\n\n升级对象：多管火箭系统/重型多管火箭系统
 	TooltipExtras:
-		Strengths: + Increased damage and area of effect\n+ Fires six missiles per salvo
-		Weaknesses: – Reduced accuracy
+		Strengths: + 提高伤害和范围效果\n+ 每轮齐射发射 6 枚导弹
+		Weaknesses: – 降低精度
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -514,15 +514,15 @@ hailstorm.upgrade:
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Hypersonic Missiles
+		Name: 升级：高超音速导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~seek.strat,~techlevel.high, ~!hailstorm.upgrade, ~!hammerhead.upgrade
 		IconPalette: chrometd
-		Description: Equip the MLRS/HMLRS with Hypersonic Missiles.\n\nUpgrades: MLRS/HMLRS
+		Description: 为多管火箭系统/重型多管火箭系统配备高超音速导弹。\n\n升级对象：多管火箭系统/重型多管火箭系统
 	TooltipExtras:
-		Strengths: + Increased projectile speed, precision and damage
-		Weaknesses: – Unguided
+		Strengths: + 提高弹体速度、精度和伤害
+		Weaknesses: – 无制导
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -535,15 +535,15 @@ hypersonic.upgrade:
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Hammerhead Missiles
+		Name: 升级：锤头导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.gdi, gtek, ~hold.strat, ~techlevel.high, ~!hypersonic.upgrade, ~!hailstorm.upgrade
 		IconPalette: chrometd
-		Description: Equip the MLRS/HMLRS with Hammerhead Missiles.\n\nUpgrades: MLRS/HMLRS
+		Description: 为多管火箭系统/重型多管火箭系统配备锤头导弹。\n\n升级对象：多管火箭系统/重型多管火箭系统
 	TooltipExtras:
-		Strengths: + Increased damage and area of effect\n+ Briefly slows movement and rate of fire of impacted targets
-		Weaknesses: – Reduced projectile speed
+		Strengths: + 提高伤害和范围效果\n+ 可短暂减缓受影响目标的移动速度和射速
+		Weaknesses: – 降低弹体速度
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -556,14 +556,14 @@ hammerhead.upgrade:
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Sonic Amplifiers
+		Name: 升级：声波增幅器
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.zocom, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Improve the weapons of Disruptors and Sonic Towers.\n\nUpgrades: Sonic Tower\nUpgrades: Disruptor
+		Description: 改进破坏者和声波塔的武器。\n\n升级对象：声波塔\n升级对象：破坏者
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased range\n+ Slows enemy movement and rate of fire
+		Strengths: + 提高伤害\n+ 提高射程\n+ 降低敌方移动速度和射速
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -576,14 +576,14 @@ sonic.upgrade:
 abur.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Afterburners
+		Name: 升级：加力燃烧器
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.eagle, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: Equips Orcas, Orca Bombers and Hover Mammoths with afterburners.\n\nUpgrades: Orca\nUpgrades: Orca Bomber\nUpgrades: Hover Mammoth
+		Description: 为奥卡、奥卡轰炸机和悬浮猛犸配备加力燃烧器。\n\n升级对象：奥卡\n升级对象：奥卡轰炸机\n升级对象：悬浮猛犸
 	TooltipExtras:
-		Strengths: + Added Afterburner for temporary speed boost
+		Strengths: + 新增加力燃烧能力，可临时提升速度
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -596,14 +596,14 @@ abur.upgrade:
 bdrone.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Battle Drone
+		Name: 研究：战斗无人机
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.arc, gtek, ~techlevel.high
-		Description: Allows construction of remotely piloted Battle Tanks.\n\nReplaces: Battle Tank
+		Description: 允许建造遥控战斗坦克。\n\n替换：战斗坦克
 	TooltipExtras:
-		Strengths: + Reduced cost\n+ Increased rate of fire\n+ Self-repair\n• XP of losses reclaimed by replacements\n+ Immunity to crew kill, chaos gas and mind control
-		Weaknesses: – Reduced HP\n– Reduced damage\n– Disabled if radar is down\n– Can be hacked
+		Strengths: + 降低成本\n+ 提高射速\n+ 自我修复\n• 损失单位的经验可由替补单位继承\n+ 免疫驾驶员击杀、混沌气体和心灵控制
+		Weaknesses: – 降低生命值\n– 降低伤害\n– 雷达失效时会瘫痪\n– 可被黑入
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -619,14 +619,14 @@ bdrone.upgrade:
 railgun.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Railgun Titan
+		Name: 研究：轨道炮泰坦
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Allows construction of the Railgun Titan.\n\nReplaces: Titan
+		Description: 允许建造轨道炮泰坦。\n\n替换：泰坦
 	TooltipExtras:
-		Strengths: + Increased range\n+ Damages targets in a line
+		Strengths: + 提高射程\n+ 可对一条直线上的目标造成伤害
 	Valued:
 		Cost: 750
 	AnnounceOnCreation:
@@ -642,14 +642,14 @@ railgun.upgrade:
 ionmam.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Ion Mammoth
+		Name: 研究：离子猛犸
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.zocom, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Allows construction of the Ion Mammoth Tank.\n\nReplaces: Mammoth Tank
+		Description: 允许建造离子猛犸坦克。\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased area of effect
+		Strengths: + 提高射程\n+ 提高范围效果
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -665,14 +665,14 @@ ionmam.upgrade:
 hovermam.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Hover Mammoth
+		Name: 研究：悬浮猛犸
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.eagle, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Allows construction of the Hover Mammoth Tank.\n\nReplaces: Mammoth Tank
+		Description: 允许建造悬浮猛犸坦克。\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + Faster movement speed\n+ Can traverse water
+		Strengths: + 更快移动速度\n+ 可在水面通行
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -688,14 +688,14 @@ hovermam.upgrade:
 mdrone.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Research: Mammoth Drone
+		Name: 研究：猛犸无人机
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.arc, upgc, ~techlevel.high
-		Description: Allows construction of remotely piloted Mammoth Tanks.\n\nReplaces: Mammoth Tank
+		Description: 允许建造遥控猛犸坦克.\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + Reduced cost\n+ Increased rate of fire\n+ Improved self-repair\n• XP of losses reclaimed by replacements\n+ Immunity to crew kill, chaos gas and mind control
-		Weaknesses: – Reduced HP\n– Reduced damage\n– Disabled if radar is down\n– Can be hacked
+		Strengths: + 降低成本\n+ 提高射速\n+ 改进自我修复\n• 损失单位的经验可由替补单位继承\n+ 免疫驾驶员击杀、混沌气体和心灵控制
+		Weaknesses: – 降低生命值\n– 降低伤害\n– 雷达失效时会瘫痪\n– 可被黑入
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -711,14 +711,14 @@ mdrone.upgrade:
 gyro.upgrade:
 	Inherits: ^GDIUpgrade
 	Tooltip:
-		Name: Upgrade: Gyro Stabilizers
+		Name: 升级：陀螺稳定器
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: Allows mech units to activate gyro stabilizers, increasing range but reducing rate of fire.\n\nUpgrades: Wolverine\nUpgrades: Titan\nUpgrades: Railgun Titan\nUpgrades: Juggernaut
+		Description: 允许机甲单位启用陀螺稳定器，提高射程但降低射速。\n\n升级对象：狼獾机甲\n升级对象：泰坦\n升级对象：轨道炮泰坦\n升级对象：主宰者
 	TooltipExtras:
-		Strengths: + Added Gyro Stabilizers ability (increased range, reduced rate of fire)\n+ Increases Juggernaut range by 50%.
+		Strengths: + 新增陀螺稳定器能力（提高射程、降低射速）\n+ 主宰者射程提升 50%
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -733,15 +733,15 @@ upgc.drop:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Upgrade: Supply Drop Zone
+		Name: 升级：补给空投区
 	Buildable:
 		BuildPaletteOrder: 90
 		Prerequisites: ~gdiorupgc, upgc, !bombard3.strat, !seek3.strat, !hold3.strat, ~techlevel.high
-		Description: Provides a dropzone for emergency supplies.
+		Description: 提供紧急补给空投区。
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + $1250 delivered every 60 seconds (normal speed)
-		Attributes: (!) Mutually exclusive with Firestorm Missile System, Advanced Radar System and Nanoshield Generator
+		Strengths: + 每 60 秒提供 $1250（正常游戏速度）
+		Attributes: (!) 与以下项目互斥：火焰风暴导弹系统、高级雷达系统和纳米护盾发生器
 	RenderSprites:
 		PlayerPalette: playertd
 	UpdatesCount:
@@ -756,9 +756,9 @@ ANYCOVENANT:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Active Covenant
+		Name: 当前盟约
 	Buildable:
-		Description: Active Covenant
+		Description: 当前盟约
 	ProvidesPrerequisite:
 
 ^NodUpgrade:
@@ -769,14 +769,14 @@ ANYCOVENANT:
 wrath.covenant:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Covenant of Wrath
+		Name: 盟约：狂怒
 	Buildable:
 		BuildPaletteOrder: 13
 		Prerequisites: ~player.nod, covenant.level1, !unity.covenant, !zeal.covenant, ~techlevel.medium
-		Description: Adopt the Covenant of Wrath.\n\n• Level 1: Assassin Squad & Compressed Plasma (+3 Banshee ammo)\n• Level 2: Cyborg Armor & Laser Tanks Upgrades\n• Level 3: Avatar, Cyborg Elite & Cyborg Firepower Upgrade
+		Description: 选择盟约：狂怒.\n\n• 等级 1: 刺客小队 & 压缩等离子体 (+3 女妖战机弹药)\n• 等级 2: 半机械人装甲 & 激光坦克升级\n• 等级 3: 圣灵机甲, 半机械精英 & 半机械火力升级
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: (!) 只能选择一个盟约。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -789,14 +789,14 @@ wrath.covenant:
 unity.covenant:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Covenant of Unity
+		Name: 盟约：统一
 	Buildable:
 		BuildPaletteOrder: 14
 		Prerequisites: ~player.nod, covenant.level1, !wrath.covenant, !zeal.covenant, ~techlevel.medium
-		Description: Adopt the Covenant of Unity.\n\n• Level 1: Hacker Squad, Internet Center & Siphoned Funds ($ from Hackers in Internet Center)\n• Level 2: Cyborg Armor & Custodian Upgrades\n• Level 3: Cyborg Reaper, Cyborg Elite & Reclaimed Fabrication Upgrade
+			Description: 选择盟约：统一。\n\n• 等级 1：黑客小队、互联网中心与资金虹吸（来自互联网中心中的黑客收入）\n• 等级 2：半机械人装甲与维护者升级\n• 等级 3：半机械收割者、半机械精英与回收制造升级
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: (!) 只能选择一个盟约。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -809,14 +809,14 @@ unity.covenant:
 zeal.covenant:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Covenant of Zeal
+		Name: 盟约：狂热
 	Buildable:
 		BuildPaletteOrder: 15
 		Prerequisites: ~player.nod, covenant.level1, !unity.covenant, !wrath.covenant, ~techlevel.medium
-		Description: Adopt the Covenant of Zeal.\n\n• Level 1: Confessor Cabal & Fast Harrassers (+15% Bike/Buggy/Howitzer speed)\n• Level 2: Cyborg Armor & Raider Buggy Upgrades\n• Level 3: Enlightened, Cyborg Elite & Cyborg Speed Upgrade
+			Description: 选择盟约：狂热。\n\n• 等级 1：忏悔者教团与快速袭扰（摩托/越野车/自行榴弹炮速度 +15%）\n• 等级 2：半机械人装甲与袭击者越野车升级\n• 等级 3：启迪者、半机械精英与半机械速度升级
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: (!) Only ONE Covenant may be chosen.
+		Attributes: (!) 只能选择一个盟约。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -829,14 +829,14 @@ zeal.covenant:
 howi.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Research: Howitzer
+		Name: 研究：自行榴弹炮
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
-		Description: Allows construction of Howitzers.\n\nReplaces: Artillery
+			Description: 允许建造自行榴弹炮。\n\n替换：火炮车
 	TooltipExtras:
-		Strengths: + Increased projectile speed\n+ Increased movement speed\n+ Increased accuracy\n+ Increased burst damage\n+ Increased vision\n+ Has turret
-		Weaknesses: – Reduced splash radius\n– Reduced range\n– Reduced rate of fire
+		Strengths: + 提高弹体速度\n+ 提高移动速度\n+ 提高精度\n+ 提高爆发伤害\n+ 提高视野\n+ 拥有炮塔
+		Weaknesses: – 降低溅射半径\n– 降低射程\n– 降低射速
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -853,13 +853,13 @@ howi.upgrade:
 decoy.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Decoy Projectors
+		Name: 升级：诱饵投影器
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.nod, anyradar, ~techlevel.medium
-		Description: Grant Buggies the ability to project a pair of decoy Flame Tanks. Decoys provide small area of vision for a short time after being killed.\n\nUpgrades: Buggy\nUpgrades: Raider Buggy
+			Description: 赋予越野车投射一对诱饵火焰坦克的能力。诱饵被摧毁后会在短时间内提供小范围视野。\n\n升级对象：越野车\n升级对象：袭击者越野车
 	TooltipExtras:
-		Strengths: + Decoy projection ability
+			Strengths: + 诱饵投影能力
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -870,14 +870,14 @@ decoy.upgrade:
 sharv.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Stealth Harvester
+		Name: 升级：隐形采矿车
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, tmpl, ~techlevel.high
-		Description: Allows construction of Stealth Harvesters which are cloaked while moving.\n\nUpgrades: Harvester
+			Description: 允许建造隐形采矿车，移动时可隐形。\n\n升级对象：采矿车
 	TooltipExtras:
-		Strengths: + Hidden while moving
-		Weaknesses: – Reduced health
+		Strengths: + 移动时隐形
+		Weaknesses: – 降低生命值
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -888,14 +888,14 @@ sharv.upgrade:
 tibcore.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Tiberium Core Missiles
+		Name: 升级：泰伯利亚核心导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, tmpl, ~techlevel.high
-		Description: Upgrade to Tiberium Core missiles.\n\nUpgrades: Recon Bike\nUpgrades: Stealth Tank\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Rocket Soldier
+			Description: 升级为泰伯利亚核心导弹。\n\n升级对象：侦察摩托\n升级对象：隐形坦克\n升级对象：半机械人火箭兵\n升级对象：火箭兵
 		IconPalette: chrometd
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage\n+ Increased projectile speed
+		Strengths: + 提高射程\n+ 提高伤害\n+ 提高弹体速度
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -909,14 +909,14 @@ tibcore.upgrade:
 blacknapalm.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Black Napalm
+		Name: 升级：黑色凝固汽油
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.blackh, tmpl, ~techlevel.high
-		Description: Superheated flame weapons that can melt armored targets.\n\nUpgrades: Heavy Flame Tank\nUpgrades: SSM Launcher\nUpgrades: Avatar
+			Description: 超高温火焰武器，可熔毁装甲目标。\n\n升级对象：重型火焰坦克\n升级对象：SSM发射器\n升级对象：圣灵机甲
 	TooltipExtras:
-		Strengths: + Increased damage against vehicles and defenses
-		Weaknesses: – Reduced rate of fire
+		Strengths: + 提高伤害对载具和防御建筑
+		Weaknesses: – 降低射速
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -929,14 +929,14 @@ blacknapalm.upgrade:
 microwave.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Intensified Microwaves
+		Name: 升级：强化微波
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.legion, tmpl, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrades: Microwave Tank
+		Description: 升级对象：微波坦克
 	TooltipExtras:
-		Strengths: + Kills crew of vehicles with less than 75% HP\n + Increased EMP duration for direct target\n+ EMP affects adjacent vehicles/defenses
+			Strengths: + 可击杀生命值低于 75% 的载具乘员\n+ 提高电磁脉冲对直接目标的持续时间\n+ 电磁脉冲会影响邻近载具/防御建筑
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -952,13 +952,13 @@ microwave.upgrade:
 quantum.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Quantum Capacitors
+		Name: 升级：量子电容器
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.marked, tmpl, ~techlevel.high
-		Description: Enhances heavy laser weapons.\n\nUpgrades: Obelisk of Light\nUpgrades: Avatar\nUpgrades: Laser Turret\nUpgrades: Venom\nUpgrades: Templar
+			Description: 强化重型激光武器。\n\n升级对象：轻型方尖碑\n升级对象：圣灵机甲\n升级对象：激光炮塔\n升级对象：毒液战机\n升级对象：圣堂武士
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage
+		Strengths: + 提高射程\n+ 提高伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -971,14 +971,14 @@ quantum.upgrade:
 hstk.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Research: Heavy Stealth Tank
+		Name: 研究：重型隐形坦克
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.shadow, tmpl, ~techlevel.high
-		Description: Upgrades: Stealth Tank
+		Description: 升级对象：隐形坦克
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased durability
-		Weaknesses: – Reduced mobility\n– Increased cost\n– Increased cloaking delay
+		Strengths: + 提高伤害\n+ 提高耐久
+		Weaknesses: – 降低机动性\n– 提高成本\n– 提高隐形延迟
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -991,12 +991,12 @@ hstk.upgrade:
 covenant.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Covenant Dependent Upgrade
+		Name: 盟约依赖升级
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, anycovenant, covenant.level2, ~!wrath.covenant, ~!unity.covenant, ~!zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrade depends on chosen covenant.\n\n• Wrath: Laser Tanks\n• Unity: Custodian\n• Zeal: Raider Buggy
+		Description: 升级取决于所选盟约.\n\n• 狂怒: 激光坦克\n• 统一: 维护者\n• 狂热: 袭击者越野车
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1008,14 +1008,14 @@ covenant.upgrade:
 lastnk.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Laser Tanks
+		Name: 升级：激光坦克
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, covenant.level2, ~wrath.covenant, ~techlevel.high
-		Description: Upgrades: Light Tank\nUpgrades: Battle Tank
+			Description: 升级对象：轻型坦克\n升级对象：战斗坦克
 	TooltipExtras:
-		Strengths: + Increased damage vs infantry & light armor\n+ Increased range
-		Weaknesses: – Reduced damage vs heavy armor
+		Strengths: + 提高伤害对步兵 & 轻甲单位\n+ 提高射程
+		Weaknesses: – 降低伤害对重甲单位
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1026,14 +1026,14 @@ lastnk.upgrade:
 cust.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Research: Custodian
+		Name: 研究：维护者
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, covenant.level2, ~unity.covenant, ~techlevel.high
-		Description: Replaces: Stealth APC
+		Description: 替换：隐形装甲运兵车
 	TooltipExtras:
-		Strengths: + Heavy armor\n+ Heals cyborgs & repairs vehicles
-		Weaknesses: – No stealth capability\n– No offensive capability\n– Reduced speed\n– Increased cost
+			Strengths: + 重甲单位\n+ 可治疗半机械人并修理载具
+		Weaknesses: – 不具备隐形能力\n– 不具备进攻能力\n– 降低速度\n– 提高成本
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1044,14 +1044,14 @@ cust.upgrade:
 rbug.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Research: Raider Buggy
+		Name: 研究：袭击者越野车
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.nod, covenant.level2, ~zeal.covenant, ~techlevel.high
-		Description: Replaces: Buggy
+		Description: 替换：越野车
 	TooltipExtras:
-		Strengths: + Heavy armor\n+ Increased damage\n+ Increased range
-		Weaknesses: – Increased cost\n– Reduced speed
+		Strengths: + 重甲单位\n+ 提高伤害\n+ 提高射程
+		Weaknesses: – 提高成本\n– 降低速度
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1062,14 +1062,14 @@ rbug.upgrade:
 cyborgarmor.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Cyborg Armor
+		Name: 升级：改进半机械人装甲
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level2, ~techlevel.high
 		IconPalette: chrometd
-		Description: Improves cyborg armor.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Enlightened\nUpgrades: Cyborg Reaper\nUpgrades: Cyborg Elite
+			Description: 改进半机械人装甲。\n\n升级对象：半机械人\n升级对象：半机械人火箭兵\n升级对象：化学战士\n升级对象：侍僧/圣堂武士\n升级对象：半机械人机械师\n升级对象：启迪者\n升级对象：半机械收割者\n升级对象：半机械精英
 	TooltipExtras:
-		Strengths: + 20% reduced damage taken\n+ Additional 10% reduced damage from explosives
+			Strengths: + 所受伤害降低 20%\n+ 额外降低 10% 爆炸伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1080,12 +1080,12 @@ cyborgarmor.upgrade:
 covenant.upgrade2:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Covenant Dependent Upgrade
+		Name: 盟约依赖升级
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, anycovenant, tmpp, covenant.level3, ~!wrath.covenant, ~!unity.covenant, ~!zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Upgrade depends on chosen covenant.\n\n• Wrath: Cyborg Firepower\n• Unity: Augmented Fabrication\n• Zeal: Cyborg Speed
+		Description: 升级取决于所选盟约.\n\n• 狂怒: 半机械火力\n• 统一: 强化制造\n• 狂热: 半机械速度
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1097,14 +1097,14 @@ covenant.upgrade2:
 cyborgdmg.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Cyborg Firepower
+		Name: 升级：改进半机械火力
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~wrath.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Increases cyborg firepower.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Cyborg Elite
+			Description: 提升半机械人火力。\n\n升级对象：半机械人\n升级对象：半机械人火箭兵\n升级对象：化学战士\n升级对象：侍僧/圣堂武士\n升级对象：半机械人机械师\n升级对象：半机械精英
 	TooltipExtras:
-		Strengths: + 10% increased firepower
+		Strengths: + 10%提高火力
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1117,14 +1117,14 @@ cyborgdmg.upgrade:
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Reclaimed Fabrication
+		Name: 升级：回收制造
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~unity.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Leverage CABAL AI to reclaim components from lost cyborgs to replacements.
+			Description: 利用卡巴尔人工智能回收阵亡半机械人的部件，用于补充生产。
 	TooltipExtras:
-		Strengths: + 15% of lost cyborgs value is reclaimed to create new Cyborgs from Temple Prime
+			Strengths: + 可回收阵亡半机械人价值的 15%，用于在主神殿生产新半机械人
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1137,14 +1137,14 @@ cyborgprod.upgrade:
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Cyborg Speed
+		Name: 升级：改进半机械速度
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.nod, covenant.level3, ~zeal.covenant, ~techlevel.high
 		IconPalette: chrometd
-		Description: Increases cyborg movement speed.\n\nUpgrades: Cyborg\nUpgrades: Cyborg Rocket Soldier\nUpgrades: Chemical Warrior\nUpgrades: Acolyte/Templar\nUpgrades: Cyborg Mechanic\nUpgrades: Enlightened\nUpgrades: Cyborg Elite
+			Description: 提升半机械人移动速度。\n\n升级对象：半机械人\n升级对象：半机械人火箭兵\n升级对象：化学战士\n升级对象：侍僧/圣堂武士\n升级对象：半机械人机械师\n升级对象：启迪者\n升级对象：半机械精英
 	TooltipExtras:
-		Strengths: + 20% faster movement
+		Strengths: + 20% 更快移动
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1161,9 +1161,9 @@ ANYDOCTRINE:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Active Doctrine
+		Name: 当前学说
 	Buildable:
-		Description: Active Doctrine
+		Description: 当前学说
 	ProvidesPrerequisite:
 
 ^SovietUpgrade:
@@ -1174,13 +1174,13 @@ ANYDOCTRINE:
 infantry.doctrine:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Doctrine: Infantry
+		Name: 学说：步兵
 	Buildable:
 		BuildPaletteOrder: 4
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Specialize in infantry:\n• Troop Crawler\n• Overlord Tank (replaces Mammoth Tank)\n• Improved Paratroopers Upgrade\n• Heroes of the Union\n• Cloning Vat\n\n
+			Description: 专精步兵：\n• 部队爬行车\n• 霸主坦克（替换猛犸坦克）\n• 改进伞兵升级\n• 联盟英雄\n• 克隆缸\n\n
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: (!) 只能选择一个学说。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1191,13 +1191,13 @@ infantry.doctrine:
 armor.doctrine:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Doctrine: Armor
+		Name: 学说：装甲
 	Buildable:
 		BuildPaletteOrder: 5
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Specialize in tanks:\n• Rhino Tank (replaces Heavy Tank)\n• Apocalypse Tank (replaces Mammoth Tank)\n• Reactive Armor Upgrade\n• Tank Drop\n• Industrial Plant\n\n
+			Description: 专精坦克：\n• 犀牛坦克（替换重型坦克）\n• 天启坦克（替换猛犸坦克）\n• 反应装甲升级\n• 坦克空投\n• 工业工厂\n\n
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: (!) 只能选择一个学说。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1208,13 +1208,13 @@ armor.doctrine:
 arty.doctrine:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Doctrine: Artillery
+		Name: 学说：火炮车
 	Buildable:
 		BuildPaletteOrder: 6
 		Prerequisites: ~player.soviet, !infantry.doctrine, !armor.doctrine, !arty.doctrine, playerxp.level1, ~techlevel.medium
-		Description: Specialize in artillery:\n• Grad (replaces Katyusha)\n• Nuke Cannon\n• Rocket Pods Upgrade\n• Kill Zone\n• Munitions Plant\n\n
+			Description: 专精火炮：\n• 冰雹火箭车（替换喀秋莎）\n• 核能火炮\n• 火箭吊舱升级\n• 杀伤区\n• 军需工厂\n\n
 	TooltipExtras:
-		Attributes: (!) Only ONE Doctrine may be chosen.
+		Attributes: (!) 只能选择一个学说。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1225,14 +1225,14 @@ arty.doctrine:
 hazmatsoviet.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Heavy Hazmat Suits
+		Name: 升级：重型防化服
 	Buildable:
 		BuildPaletteOrder: 19
 		Prerequisites: ~player.soviet, ~!player.iraq, anyradar, infantry.any, ~techlevel.medium
-		Description: Infantry are equipped with heavy hazmat suits which provides protection against Tiberium and radiation.\n\nUpgrades: Infantry
+			Description: 步兵配备重型防化服，可提供对泰伯利亚与辐射的防护。\n\n升级对象：步兵
 	TooltipExtras:
-		Strengths: + Tiberium immunity\n+ High resistance to irradiated terrain
-		Weaknesses: – 33% slower movement across resources and rough terrain
+		Strengths: + 免疫泰伯利亚\n+ 对辐照地形高抗性
+			Weaknesses: – 在资源地形和崎岖地形上的移动速度降低 33%
 	Valued:
 		Cost: 850
 	RenderSprites:
@@ -1243,14 +1243,14 @@ hazmatsoviet.upgrade:
 tdog.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Terror Dog
+		Name: 研究：恐怖犬
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.soviet, anyradar, ~techlevel.medium
-		Description: Attack Dogs are strapped with explosives.\n\nReplaces: Attack Dog
+			Description: 攻击犬绑载爆炸物。\n\n替换：攻击犬
 	TooltipExtras:
-		Strengths: + Able to damage vehicles and buildings
-		Weaknesses: – Explodes on attack or on death\n– Increased cost
+			Strengths: + 可伤害载具和建筑
+			Weaknesses: – 攻击或死亡时爆炸\n– 提高成本
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1261,14 +1261,14 @@ tdog.upgrade:
 lasher.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Lasher Tank
+		Name: 研究：鞭挞坦克
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
-		Description: Upgrades Heavy/Rhino tanks with infantry crushing attachment at the cost of some armor and firepower.\n\nReplaces: Heavy Tank\nReplaces: Rhino Tank
+			Description: 为重型/犀牛坦克加装步兵碾压装置，以牺牲部分装甲与火力为代价。\n\n替换：重型坦克\n替换：犀牛坦克
 	TooltipExtras:
-		Strengths: + 25% faster movement\n+ Improved crushing performance
-		Weaknesses: – Reduced hit points\n– Reduced firepower
+			Strengths: + 移动速度提高 25%\n+ 改进碾压性能
+			Weaknesses: – 降低生命值\n– 降低火力
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1281,14 +1281,14 @@ lasher.upgrade:
 gattling.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Gattling BTR
+		Name: 研究：加特林BTR
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.yuri, anyradar, ~techlevel.medium
-		Description: Upgrades BTRs with dual gattling cannons.\n\nReplaces: BTR
+			Description: 将 BTR 升级为双联加特林炮。\n\n替换：BTR
 	TooltipExtras:
-		Strengths: + Increased firepower
-		Weaknesses: – Increased production cost
+		Strengths: + 提高火力
+		Weaknesses: – 提高生产成本
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1301,14 +1301,14 @@ gattling.upgrade:
 ttrp.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Tesla Trooper
+		Name: 研究：特斯拉兵
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~!player.iraq, stek, ~techlevel.high
-		Description: Shock Troopers are phased out in favor of Tesla Troopers.\n\nReplaces: Shock Trooper
+			Description: 磁暴步兵将被特斯拉兵取代。\n\n替换：磁暴步兵
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased rate of fire\n+ Increased damage
-		Weaknesses: – Increased cost
+		Strengths: + 提高生命值\n+ 提高射速\n+ 提高伤害
+		Weaknesses: – 提高成本
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -1325,14 +1325,14 @@ ttrp.upgrade:
 deso.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Desolator
+		Name: 研究：辐射工兵
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~player.iraq, stek, ~techlevel.high
-		Description: Rad Troopers are phased out in favor of Desolators.\n\nReplaces: Rad Trooper
+			Description: 辐射兵将被辐射工兵取代。\n\n替换：辐射兵
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased damage\n+ Irradiates vehicles\n+ Desolate Ground ability
-		Weaknesses: – Increased cost
+			Strengths: + 提高生命值\n+ 提高伤害\n+ 可辐照载具\n+ 荒芜地表能力
+		Weaknesses: – 提高成本
 	Valued:
 		Cost: 500
 	RenderSprites:
@@ -1345,13 +1345,13 @@ deso.upgrade:
 tarc.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Tesla Arcing
+		Name: 升级：特斯拉电弧
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
-		Description: Upgrades the Tesla Tank and Tesla Track weapon.\n\nUpgrades: Tesla Tank\nUpgrades: Tesla Track
+			Description: 升级特斯拉坦克与特斯拉履带车的武器。\n\n升级对象：特斯拉坦克\n升级对象：特斯拉履带车
 	TooltipExtras:
-		Strengths: + Shots jump to up to 2 additional targets
+			Strengths: + 攻击可连锁至最多 2 个额外目标
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1364,14 +1364,14 @@ tarc.upgrade:
 seismic.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Seismic Missiles
+		Name: 升级：震波导弹
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.ukraine, stek, ~techlevel.high
-		Description: Arms the Sukhoi with Seismic Missiles.\n\nUpgrades: Sukhoi
+			Description: 为苏霍伊攻击机配备震波导弹。\n\n升级对象：苏霍伊攻击机
 	TooltipExtras:
-		Strengths: + High area damage vs structures and vehicles\n+ Slows movement and rate of fire of impacted targets
-		Weaknesses: – Slow moving projectiles
+			Strengths: + 对建筑和载具造成高范围伤害\n+ 降低受影响目标的移动速度与射速
+			Weaknesses: – 弹体速度慢
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1387,11 +1387,11 @@ seismic.upgrade:
 doctrine.upgrade1:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Doctrine Dependent Upgrade
+		Name: 学说依赖升级
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, anydoctrine, playerxp.level2, ~!infantry.doctrine, ~!armor.doctrine, ~!arty.doctrine, ~techlevel.medium
-		Description: Upgrade depends on chosen doctrine.\n\n• Infantry: Improved Paratroopers\n• Tanks: Reactive Armor\n• Artillery: Rocket Pods
+			Description: 升级取决于所选学说。\n\n• 步兵：改进伞兵\n• 坦克：反应装甲\n• 火炮：火箭吊舱
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1402,13 +1402,13 @@ doctrine.upgrade1:
 imppara.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Paratroopers
+		Name: 升级：改进伞兵
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.soviet, ~!player.russia, ~!player.yuri, ~infantry.doctrine, ~techlevel.medium
-		Description: Upgrades the Paratroopers support power.\n\nUpgrades: Paratroopers
+			Description: 升级伞兵支援技能。\n\n升级对象：伞兵
 	TooltipExtras:
-		Strengths: + Additional units dropped
+			Strengths: + 额外空投单位
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1421,13 +1421,13 @@ imppara.upgrade:
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Stormtroopers
+		Name: 升级：改进风暴突击兵
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.russia, ~infantry.doctrine, ~techlevel.medium
-		Description: Upgrades the Stormtroopers support power.\n\nUpgrades: Stormtroopers
+			Description: 升级风暴突击兵支援技能。\n\n升级对象：风暴突击兵
 	TooltipExtras:
-		Strengths: + Additional units dropped
+			Strengths: + 额外空投单位
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1440,13 +1440,13 @@ impstorm.upgrade:
 impmuta.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Improved Genetic Mutation
+		Name: 升级：改进基因突变
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: playerxp.level2, ~player.yuri, ~infantry.doctrine, ~techlevel.medium
-		Description: Enhances Genetic Mutation Bomb and Brutes.\n\nUpgrades: Genetic Mutation Bomb\nUpgrades: Brute
+			Description: 强化突变炸弹与狂兽人。\n\n升级对象：突变炸弹\n升级对象：狂兽人
 	TooltipExtras:
-		Strengths: + Increased area of effect (Mutation Bomb)\n+ Increased maximum number of targets (Mutation Bomb)\n+ Increased movement speed (Brute)
+			Strengths: + 提高范围效果（突变炸弹）\n+ 提高最大目标数量（突变炸弹）\n+ 提高移动速度（狂兽人）
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1459,13 +1459,13 @@ impmuta.upgrade:
 reactive.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Reactive Armor
+		Name: 升级：反应装甲
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~armor.doctrine, playerxp.level2, ~techlevel.high
-		Description: Upgrades Rhino Tanks and BTRs with reactive armor for additional protection.\n\nUpgrades: Rhino Tank\nUpgrades: Thrasher Tank\nUpgrades: BTR\nUpgrades: Gattling BTR
+			Description: 为犀牛坦克和 BTR 升级反应装甲，以获得额外防护。\n\n升级对象：犀牛坦克\n升级对象：鞭挞坦克\n升级对象：BTR\n升级对象：加特林BTR
 	TooltipExtras:
-		Strengths: + Increased armor
+		Strengths: + 提高装甲
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1478,13 +1478,13 @@ reactive.upgrade:
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Upgrade: Rocket Pods
+		Name: 升级：火箭吊舱
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~arty.doctrine, playerxp.level2, ~techlevel.high
-		Description: Upgrades Grad and Hind rocket pods.\n\nUpgrades: Grad\nUpgrades: Hind
+			Description: 升级冰雹火箭车与雌鹿的火箭吊舱。\n\n升级对象：冰雹火箭车\n升级对象：雌鹿
 	TooltipExtras:
-		Strengths: + Increased salvo size (Grad)\n+ Increased ammo & rate of fire (Hind)
+			Strengths: + 提高齐射规模（冰雹火箭车）\n+ 提高弹药量与射速（雌鹿）
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1497,14 +1497,14 @@ rocketpods.upgrade:
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Atomic Engines
+		Name: 研究：原子引擎
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: ~player.soviet, npwr, ~techlevel.high
-		Description: Upgrades tanks with volatile atomic engines.\n\nReplaces: Heavy/Lasher Tank\nReplaces: Rhino/Thrasher Tank\nReplaces: Eradicator\nReplaces: Mammoth Tank\nReplaces: Overlord Tank\nReplaces: Apocalypse Tank
+			Description: 为坦克升级不稳定原子引擎。\n\n替换：重型/鞭挞坦克\n替换：犀牛/鞭挞坦克\n替换：根除者\n替换：猛犸坦克\n替换：霸主坦克\n替换：天启坦克
 	TooltipExtras:
-		Strengths: + 25% faster movement
-		Weaknesses: – Explodes on death
+		Strengths: + 25% 更快移动
+		Weaknesses: – 死亡时爆炸
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1515,14 +1515,14 @@ atomicengines.upgrade:
 erad.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Eradicator
+		Name: 研究：根除者
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: ~player.iraq, npwr, ~techlevel.high
-		Description: Upgrades Mammoth tanks with volatile radiation cannon.\n\nReplaces: Mammoth Tank
+			Description: 将猛犸坦克升级为不稳定辐射炮。\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + High area damage vs infantry and vehicles\n+ Irradiates impacted vehicles\n+ Increased range
-		Weaknesses: – Loses AA missiles\n– Reduced single-target anti-tank damage\n– Reduced damage vs buildings
+			Strengths: + 对步兵和载具造成高范围伤害\n+ 可辐照命中载具\n+ 提高射程
+			Weaknesses: – 失去防空导弹\n– 降低单体反坦克伤害\n– 降低对建筑伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1535,11 +1535,11 @@ erad.upgrade:
 doctrine.upgrade2:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Doctrine Dependent Upgrade
+		Name: 学说依赖升级
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.soviet, anydoctrine, ~!infantry.doctrine, ~!armor.doctrine, ~!arty.doctrine, ~techlevel.high
-		Description: Upgrade depends on chosen doctrine.\n\n• Infantry: Overlord Tank\n• Tanks: Apocalypse Tank\n• Artillery: Nuke Cannon
+			Description: 升级取决于所选学说。\n\n• 步兵：霸主坦克\n• 坦克：天启坦克\n• 火炮：核能火炮
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1550,14 +1550,14 @@ doctrine.upgrade2:
 ovld.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Overlord Tank
+		Name: 研究：霸主坦克
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: playerxp.level3, ~player.soviet, ~infantry.doctrine, ~techlevel.high
-		Description: Allows production of Overlord Tanks.\n\nReplaces: Mammoth Tank
+		Description: 允许生产的霸主坦克.\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + Increased health\n+ Increased firepower\n+ Increased range\n+ Empowers nearby infantry
-		Weaknesses: – Reduced speed\n– Increased cost
+			Strengths: + 提高生命值\n+ 提高火力\n+ 提高射程\n+ 增强附近步兵
+		Weaknesses: – 降低速度\n– 提高成本
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1568,14 +1568,14 @@ ovld.upgrade:
 apoc.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Apocalypse Tank
+		Name: 研究：天启坦克
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: playerxp.level3, ~player.soviet, ~armor.doctrine, ~techlevel.high
-		Description: Allows production of Apocalypse Tanks.\n\nReplaces: Mammoth Tank
+		Description: 允许生产的天启坦克.\n\n替换：猛犸坦克
 	TooltipExtras:
-		Strengths: + Increased firepower\n+ Increased health\n+ Increased range\n+ Increased splash damage
-		Weaknesses: – Reduced speed\n– Increased cost
+		Strengths: + 提高火力\n+ 提高生命值\n+ 提高射程\n+ 提高溅射伤害
+		Weaknesses: – 降低速度\n– 提高成本
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1586,14 +1586,14 @@ apoc.upgrade:
 nukc.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: Research: Nuke Cannon
+		Name: 研究：核能火炮
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: playerxp.level3, ~player.soviet, ~arty.doctrine, ~techlevel.high
-		Description: Allows production of Nuclear long range artillery.
+		Description: 允许生产的核能远程火炮.
 	TooltipExtras:
-		Strengths: + Strong vs Buildings, Defenses, Infantry, Light Armor\n+ Extremely long range
-		Weaknesses: – Must deploy to fire\n– Slow rate of fire\n– Slow projectiles
+		Strengths: + 对建筑, 防御建筑, 步兵, 轻甲单位\n+ 超远射程
+			Weaknesses: – 必须部署后开火\n– 射速较慢\n– 弹体速度慢
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1608,9 +1608,9 @@ ANYCOALITION:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Active Coalition
+		Name: 当前联盟
 	Buildable:
-		Description: Active Coalition
+		Description: 当前联盟
 	ProvidesPrerequisite:
 
 ^AlliedUpgrade:
@@ -1621,13 +1621,13 @@ ANYCOALITION:
 economy.policy:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Policy: Economy
+		Name: 政策：经济
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue economic policy.\n\n• Level 1: -15% cost of Refineries, Harvesters & MCVs\n• Level 2: -25% cost of Refineries, Harvesters & MCVs, +20% MCV movement speed\n• Level 3: Free Chrono Miner upgrade, +15% Harvester durability, +50% Ore Purifier income
+			Description: 执行经济政策。\n\n• 等级 1：精炼厂、采矿车与机动建造车成本 -15%\n• 等级 2：精炼厂、采矿车与机动建造车成本 -25%，机动建造车移动速度 +20%\n• 等级 3：免费 Chrono采矿车升级，采矿车耐久 +15%，矿石净化器收入 +50%
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.
+		Attributes: (!) 只能选择一个政策。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1644,13 +1644,13 @@ economy.policy:
 defense.policy:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Policy: Defense
+		Name: 政策：防御
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue defense policy.\n\n• Level 1: +15% building HP, +25% Construction Yard build radius\n• Level 2: +30% building HP, +40% building repair rate & +20% defense repair rate\n• Level 3: +25% building/defense vision radius, +15% defense weapon damage
+			Description: 执行防御政策。\n\n• 等级 1：建筑生命值 +15%，建造场建造半径 +25%\n• 等级 2：建筑生命值 +30%，建筑维修速度 +40%，防御维修速度 +20%\n• 等级 3：建筑/防御视野半径 +25%，防御武器伤害 +15%
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.
+		Attributes: (!) 只能选择一个政策。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1661,13 +1661,13 @@ defense.policy:
 development.policy:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Policy: Development
+		Name: 政策：发展
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-		Description: Pursue development policy.\n\n• Level 1: +20% unit experience gain\n• Level 2: +40% unit experience gain, 10% discount on Tech Center & all upgrades\n• Level 3: +60% unit experience gain, rank 3 units gain additional health & damage
+			Description: 执行发展政策。\n\n• 等级 1：单位经验获取 +20%\n• 等级 2：单位经验获取 +40%，科技中心与所有升级成本 -10%\n• 等级 3：单位经验获取 +60%，3 级单位获得额外生命值与伤害
 	TooltipExtras:
-		Attributes: (!) Only ONE Policy may be chosen.
+		Attributes: (!) 只能选择一个政策。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1678,13 +1678,13 @@ development.policy:
 greece.coalition:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Coalition: Greece
+		Name: 联盟：希腊
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Form a coalition with Greece, required for:\n• Hoplite\n• Zeus Artillery\n• Helios Bomb
+			Description: 与希腊结盟，解锁：\n• 重装枪兵\n• 宙斯火炮车\n• 赫利俄斯炸弹
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: (!) 只能选择一个联盟。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1698,13 +1698,13 @@ greece.coalition:
 korea.coalition:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Coalition: South Korea
+		Name: 联盟：韩国
 	Buildable:
 		BuildPaletteOrder: 2
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Form a coalition with South Korea, required for:\n• Tiger Guard\n• Black Eagle\n• Black Sky Strike
+		Description: 与韩国结盟，解锁：\n• 虎卫\n• 黑鹰战机\n• 黑天打击
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: (!) 只能选择一个联盟。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1718,13 +1718,13 @@ korea.coalition:
 sweden.coalition:
 	Inherits: ^AlliedUpgrade
 	Tooltip:
-		Name: Coalition: Sweden
+		Name: 联盟：瑞典
 	Buildable:
 		BuildPaletteOrder: 3
 		Prerequisites: ~player.allies, alhq, !greece.coalition, !korea.coalition, !sweden.coalition, ~techlevel.medium
-		Description: Form a coalition with Sweden, required for:\n• Cryo Trooper\n• Cryo Launcher\n• Cryostorm
+		Description: 与瑞典结盟，解锁：\n• 冰冻突击兵\n• 冰冻发射车\n• 极寒风暴
 	TooltipExtras:
-		Attributes: (!) Only ONE Coalition may be chosen.
+		Attributes: (!) 只能选择一个联盟。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1739,14 +1739,14 @@ aapc.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Research: Archer APC
+		Name: 研究：弓手装甲运兵车
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: Allows construction of the Archer APC.\n\nReplaces: APC
+			Description: 允许建造弓手装甲运兵车。\n\n替换：装甲运兵车
 	TooltipExtras:
-		Strengths: + Adds a target painting radar that reveals enemies and makes them take increased damage
-		Weaknesses: – Increased cost\n– Cannot deal damage
+			Strengths: + 新增目标标记雷达，可揭示敌军并提高其所受伤害
+			Weaknesses: – 提高成本\n– 无法造成伤害
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1758,13 +1758,13 @@ optics.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Advanced Optics
+		Name: 升级：高级光学系统
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.allies, anyradar, ~techlevel.medium
-		Description: Equips rangers with advanced optics which temporarily extends their vision and detection range.\n\nUpgrades: Ranger
+			Description: 为游骑兵战车配备高级光学系统，可临时提升其视野与侦测范围。\n\n升级对象：游骑兵战车
 	TooltipExtras:
-		Strengths: + Rangers can temporarily increase their vision & detection range
+			Strengths: + 游骑兵战车可临时提升视野与侦测范围
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1776,13 +1776,13 @@ entrench.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Entrenchment
+		Name: 升级：壕沟构筑
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.france, anyradar, ~techlevel.medium
-		Description: Enables Engineers to facilitate the building of defenses.\n\nUpgrades: Engineer
+			Description: 使工程师可部署并辅助建造防御建筑。\n\n升级对象：工程师
 	TooltipExtras:
-		Strengths: + Allows Engineers to deploy, enabling defensive structures to be built
+			Strengths: + 允许工程师部署并启用防御建筑建造
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1794,13 +1794,13 @@ cryw.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Cryo Warheads
+		Name: 升级：冰冻弹头
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.allies, atek, ~techlevel.high
-		Description: Arms certain rocket equipped units with Cryo warheads which cause targets to move more slowly and take increased damage.\n\nUpgrades: Rocket Soldier\nUpgrades: Longbow\nUpgrades: Guardian GI (USA only)\nUpgrades: Nighthawk (USA only)
+			Description: 为部分火箭武装单位配备冰冻弹头，可降低目标移动速度并提高其所受伤害。\n\n升级对象：火箭兵\n升级对象：长弓\n升级对象：守护者步兵（仅美国）\n升级对象：夜鹰（仅美国）
 	TooltipExtras:
-		Strengths: + Equip with Cryo Warheads which slow movement and increase damage taken
+			Strengths: + 装备冰冻弹头，可减速并提高目标所受伤害
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1812,14 +1812,14 @@ pcan.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Research: Prism Cannon
+		Name: 研究：光棱炮
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.allies, atek, ~techlevel.high
-		Description: Allows construction of Prism Cannons.\n\nReplaces: Prism Tank
+			Description: 允许建造光棱炮。\n\n替换：光棱坦克
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased burst damage
-		Weaknesses: – Reduced rate of fire\n– Reduced mobility
+		Strengths: + 提高射程\n+ 提高爆发伤害
+		Weaknesses: – 降低射速\n– 降低机动性
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1831,14 +1831,14 @@ apb.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Raufoss Ammo
+		Name: 升级：劳福斯弹药
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.england, atek, ~techlevel.high
-		Description: Upgrades Snipers granting them Raufoss armor piercing rounds, which stun and damage vehicles.\n\nUpgrades: Sniper
+			Description: 升级狙击手，使其获得劳福斯穿甲弹，可击晕并伤害载具。\n\n升级对象：狙击手
 	TooltipExtras:
-		Strengths: + Can damage vehicles with AP rounds which slow movement and rate of fire
-		Weaknesses: – Reduced range
+			Strengths: + 可用穿甲弹伤害载具，并降低其移动速度与射速
+		Weaknesses: – 降低射程
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1850,13 +1850,13 @@ airborne.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Advanced Airborne Training
+		Name: 升级：高级空降训练
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.usa, atek, ~techlevel.high
-		Description: Improved training and logistics for airborne troops, resulting in greater effectiveness and faster preparation.\n\nUpgrades: Airdrop: Guardian GIs\nUpgrades: Airdrop: Grizzly Tanks
+			Description: 改进空降部队的训练与后勤，提高作战效率并加快准备速度。\n\n升级对象：空投：守护者步兵\n升级对象：空投：灰熊坦克
 	TooltipExtras:
-		Strengths: + Airborne units have veterancy\n+ Airborne units take 25% less time to prepare
+			Strengths: + 空降单位自带老兵等级\n+ 空降单位准备时间减少 25%
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1868,13 +1868,13 @@ tflx.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Temporal Flux
+		Name: 升级：时间通量
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.germany, pdox, ~techlevel.high
-		Description: Upgrades Chrono Prisons granting them the ability to teleport through time. Improves Chrono Tank chronoshifting.\n\nUpgrades: Chrono Prison\nUpgrades: Chrono Tank
+			Description: 升级超时空牢笼，使其获得时空传送能力，并改进 Chrono坦克的时空跃迁。\n\n升级对象：超时空牢笼\n升级对象：Chrono坦克
 	TooltipExtras:
-		Strengths: + Chrono Prison gains teleport ability\n+ Chrono Prison weapon range increased\n+ Chrono Tank can teleport twice before recharging
+			Strengths: + 超时空牢笼获得传送能力\n+ 超时空牢笼武器射程提高\n+ Chrono坦克可在充能前连续传送两次
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1886,13 +1886,13 @@ charv.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: Upgrade: Chrono Miner
+		Name: 升级：Chrono采矿车
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.allies, alhq, ~techlevel.high, !charv.upgrade
-		Description: Allows construction of Chrono Miners which\nteleport back to refineries.\n\nUpgrades: Ore Truck
+			Description: 允许建造 Chrono采矿车，可传送回精炼厂。\n\n升级对象：矿车
 	TooltipExtras:
-		Strengths: + Teleport back to refinery
+			Strengths: + 可传送回精炼厂
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -1907,9 +1907,9 @@ ANYALLEGIANCE:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Declared Allegiance
+		Name: 已声明派系
 	Buildable:
-		Description: Declared Allegiance
+		Description: 已声明派系
 	ProvidesPrerequisite:
 
 ^ScrinUpgrade:
@@ -1920,14 +1920,14 @@ ANYALLEGIANCE:
 loyalist.allegiance:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Allegiance: Loyalist
+		Name: 派系: 忠诚派
 	Buildable:
 		BuildPaletteOrder: 16
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !rebel.allegiance, !malefic.allegiance, ~techlevel.medium
-		Description: Declare your allegiance and side with the Scrin Overlord.\n\nRequired for:\n• Eviscerator\n• Ruiner\n• Overlord's Wrath\n• Ichor Spike\n\n
+			Description: 宣告你的派系并站队 Scrin霸主。\n\n需求：\n• 开膛者\n• 破灭者\n• 霸主之怒\n• 脓液尖塔\n\n
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: (!) 只能选择一个派系。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1940,14 +1940,14 @@ loyalist.allegiance:
 rebel.allegiance:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Allegiance: Rebel
+		Name: 派系: 反叛派
 	Buildable:
 		BuildPaletteOrder: 17
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !loyalist.allegiance, !malefic.allegiance, ~techlevel.medium
-		Description: Declare your allegiance and side with the Scrin Rebels.\n\nRequired for:\n• Impaler\n• Nullifier\n• Gateway\n• Colony Spike\n\n
+			Description: 宣告你的派系并站队 Scrin反叛派。\n\n需求：\n• 穿刺者\n• 湮灭者\n• 传送门\n• 殖民尖塔\n\n
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: (!) 只能选择一个派系。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1960,14 +1960,14 @@ rebel.allegiance:
 malefic.allegiance:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Allegiance: Malefic
+		Name: 派系: 恶煞派
 	Buildable:
 		BuildPaletteOrder: 18
 		Prerequisites: ~player.scrin, scrin.allegiances.available, !loyalist.allegiance, !rebel.allegiance, ~techlevel.medium
-		Description: Declare your allegiance and side with the Malefic Scrin.\n\nRequired for:\n• Stalker\n• Darkener\n• Anathema\n• Voidspike\n\n
+			Description: 宣告你的派系并站队恶煞派 Scrin。\n\n需求：\n• 潜行者\n• 暗蚀者\n• 渎神者\n• 虚空尖塔\n\n
 		IconPalette: chromes
 	TooltipExtras:
-		Attributes: (!) Only ONE allegiance may be chosen.
+		Attributes: (!) 只能选择一个派系。
 	Valued:
 		Cost: 300
 	RenderSprites:
@@ -1980,14 +1980,14 @@ malefic.allegiance:
 hyper.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Hypercharge
+		Name: 升级：过载
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~techlevel.medium
-		Description: Seekers and Lacerators gain Hypercharge ability, allow them to fire an uninterrupted barrage for a limited time. Increased damage taken while active. After use, weapon damage and speed is reduced for a short time.\n\nUpgrades: Seeker\nUpgrades: Lacerator
+			Description: 掠袭者与撕裂者获得过载能力，可在限定时间内持续射击。激活时所受伤害提高，结束后武器伤害与移动速度会短暂降低。\n\n升级对象：掠袭者\n升级对象：撕裂者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Hypercharge ability
+		Strengths: + 过载能力
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -1998,12 +1998,12 @@ hyper.upgrade:
 allegiance.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Allegiance Dependent Upgrade
+		Name: 派系依赖升级
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, anyallegiance, ~!loyalist.allegiance, ~!rebel.allegiance, ~!malefic.allegiance, ~techlevel.medium
 		IconPalette: chromes
-		Description: Upgrade depends on chosen allegiance.\n\n• Loyalist: Eviscerator research\n• Rebel: Impaler research\n• Malefic: Stalker research
+		Description: 升级取决于所选派系.\n\n• 忠诚派: 开膛者研究\n• 反叛派: 穿刺者研究\n• 恶煞派: 潜行者研究
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2015,15 +2015,15 @@ allegiance.upgrade:
 evis.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Research: Eviscerator
+		Name: 研究：开膛者
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~loyalist.allegiance, ~techlevel.medium
-		Description: Replaces: Ravager
+		Description: 替换：掠夺者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased health\n+ Increased rate of fire\n+ Benefits from Resource Conversion upgrade
-		Weaknesses: – Increased cost\n– Reduced range
+		Strengths: + 提高伤害\n+ 提高生命值\n+ 提高射速\n+ 受益来自资源转化升级
+		Weaknesses: – 提高成本\n– 降低射程
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2034,15 +2034,15 @@ evis.upgrade:
 impl.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Research: Impaler
+		Name: 研究：穿刺者
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~rebel.allegiance, ~techlevel.medium
-		Description: Replaces: Ravager
+		Description: 替换：掠夺者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased range\n+ Increased damage\n+ Increased health\n+ Slows targets
-		Weaknesses: – Increased cost\n– Reduced speed\n– Reduced rate of fire
+		Strengths: + 提高射程\n+ 提高伤害\n+ 提高生命值\n+ 减速目标
+		Weaknesses: – 提高成本\n– 降低速度\n– 降低射速
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2053,15 +2053,15 @@ impl.upgrade:
 stlk.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Research: Stalker
+		Name: 研究：潜行者
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.scrin, anyradar, ~malefic.allegiance, ~techlevel.medium
-		Description: Replaces: Ravager
+		Description: 替换：掠夺者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased health\n+ Cloaking ability with speed boost
-		Weaknesses: – Increased cost\n– Reduced splash damage
+			Strengths: + 提高伤害\n+ 提高生命值\n+ 获得隐形能力并提升移动速度
+		Weaknesses: – 提高成本\n– 降低溅射伤害
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2072,15 +2072,15 @@ stlk.upgrade:
 shrw.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Research: Shard Walker
+		Name: 研究：碎晶行者
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.reaper, anyradar, ~techlevel.medium
-		Description: Allows production of Shard Walkers, a heavier and more powerful variant of the Gun Walker.\n\nReplaces: Gun Walker
+			Description: 允许生产碎晶行者，作为枪行者更重装、更强力的变体。\n\n替换：枪行者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased durability\n+ Increased damage
-		Weaknesses: – Slower movement\n– Slower projectiles
+		Strengths: + 提高耐久\n+ 提高伤害
+			Weaknesses: – 移动速度更慢\n– 弹体速度更慢
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2091,14 +2091,14 @@ shrw.upgrade:
 advart.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Advanced Articulators
+		Name: 升级：高级关节驱动器
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~player.traveler, anyradar, ~techlevel.medium
-		Description: Enable Scrin infantry to move faster.\n\nUpgrades: Scrin Infantry
+			Description: 使 Scrin步兵移动更快。\n\n升级对象：Scrin步兵
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + 15% faster movement
+		Strengths: + 15% 更快移动
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2109,14 +2109,14 @@ advart.upgrade:
 carapace.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Hardened Carapace
+		Name: 升级：硬化甲壳
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, infantry.any, ~techlevel.high
-		Description: Infantry gain a hardened carapace which provides protection against explosives.\n\nUpgrades: Infantry
+			Description: 步兵获得硬化甲壳，可提供对爆炸伤害的防护。\n\n升级对象：步兵
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + 40% reduced damage from explosives\n+ 20% reduced damage from incendiary explosives
+		Strengths: + 受到爆炸伤害 -40%\n+ 受到燃烧爆炸伤害 -20%
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2127,14 +2127,14 @@ carapace.upgrade:
 blink.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Blink Packs
+		Name: 升级：闪烁背包
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Equips Intruders and Watchers with blink packs allowing them to teleport.\n\nUpgrades: Intruder\nUpgrades: Marauder\nUpgrades: Watcher
+			Description: 为入侵者与监视者配备闪烁背包，使其能够传送。\n\n升级对象：入侵者\n升级对象：劫掠者\n升级对象：监视者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Teleport ability
+		Strengths: + 传送能力
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -2145,14 +2145,14 @@ blink.upgrade:
 resconv.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Resource Conversion
+		Name: 升级：资源转化
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Weapons of certain units are empowered by Tiberium and other resources. Reaper Tripod gains additional charges.\n\nUpgrades: Devourer\nUpgrades: Ruiner\nUpgrades: Reaper Tripod\nUpgrades: Eviscerator
+			Description: 部分单位的武器可由泰伯利亚与其他资源充能。收割者三足机甲获得额外充能层数。\n\n升级对象：吞噬者\n升级对象：破灭者\n升级对象：收割者三足机甲\n升级对象：开膛者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage when charged\n+ Doubled charge capacity (Reaper Tripod only)
+			Strengths: + 充能时提高伤害\n+ 充能容量翻倍（仅收割者三足机甲）
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2163,14 +2163,14 @@ resconv.upgrade:
 ioncon.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Ion Conduits
+		Name: 升级：离子导管
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Allows Storm Columns and Stormcrawlers to store ion energy and release it into the atmosphere, creating a localized Ion Storm.\n\nUpgrades: Storm Column\nUpgrades: Stormcrawler
+			Description: 允许风暴之柱与风暴爬行者储存离子能量并释放到大气中，形成局部离子风暴。\n\n升级对象：风暴之柱\n升级对象：风暴爬行者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increases damage and range over time when active\n+ Reduces incoming damage over time when active\n+ Ion storm can damage enemy units and structures
+			Strengths: + 激活时伤害和射程随时间提升\n+ 激活时所受伤害随时间降低\n+ 离子风暴可伤害敌方单位与建筑
 	Valued:
 		Cost: 1250
 	RenderSprites:
@@ -2181,14 +2181,14 @@ ioncon.upgrade:
 regen.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Regenerative Hull
+		Name: 升级：再生外壳
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.scrin, scrt, ~techlevel.high
-		Description: Scrin aircraft and Stormcrawlers will regenerate health over time when not in combat.\n\nUpgrades: Stormrider\nUpgrades: Tormentor\nUpgrades: Enervator\nUpgrades: Devastator Warship\nUpgrades: Planetary Assault Carrier\nUpgrades: Mothership\nUpgrades: Stormcrawler
+			Description: Scrin空中单位与风暴爬行者在脱离战斗后会随时间回复生命值。\n\n升级对象：风暴骑士\n升级对象：折磨者\n升级对象：衰弱者\n升级对象：毁灭战舰\n升级对象：行星突击母舰\n升级对象：母舰\n升级对象：风暴爬行者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Out-of-combat health regeneration
+			Strengths: + 脱离战斗后生命值回复
 	Valued:
 		Cost: 1500
 	RenderSprites:
@@ -2199,15 +2199,15 @@ regen.upgrade:
 stellar.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Stellar Fusion Cannon
+		Name: 升级：恒星聚变炮
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.harbinger, scrt, ~techlevel.high
-		Description: Devastator Warships upgraded with stellar fusion cannon.\n\nUpgrades: Devastator Warship
+			Description: 为毁灭战舰升级恒星聚变炮。\n\n升级对象：毁灭战舰
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Increased damage\n+ Increased area of effect\n+ Improved accuracy\n+ Faster projectile
-		Weaknesses: – Must charge before firing
+			Strengths: + 提高伤害\n+ 提高范围效果\n+ 改进精度\n+ 更快弹体
+		Weaknesses: – 开火前必须蓄能
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2218,15 +2218,15 @@ stellar.upgrade:
 coalescence.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Coalescence
+		Name: 升级：聚合
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.collector, scrt, ~techlevel.high
-		Description: On death or when deployed, Leechers will transform into a ball of bio-matter which heals nearby allies and eventually coalesces into a new Leecher.\n\nUpgrades: Leecher
+			Description: 死亡或部署时，吸食者会转化为一团生物质，治疗附近友军并最终聚合为新的吸食者。\n\n升级对象：吸食者
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Leecher able to resurrect\n+ Heals allies while in coalescence form
-		Weaknesses: – No longer regenerates while dealing damage
+			Strengths: + 吸食者可复生\n+ 处于聚合形态时可治疗友军
+			Weaknesses: – 造成伤害时不再回复生命值
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -2237,14 +2237,14 @@ coalescence.upgrade:
 shields.upgrade:
 	Inherits: ^ScrinUpgrade
 	Tooltip:
-		Name: Upgrade: Shield Generation
+		Name: 升级：护盾生成
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.scrin, sign, ~techlevel.high
-		Description: Equip Scrin airborne units and certain ground units with shields.\n\nUpgrades: Interloper\nUpgrades: Stormcrawler\nUpgrades: Stormrider\nUpgrades: Tormentor\nUpgrades: Enervator\nUpgrades: Devastator Warship\nUpgrades: Planetary Assault Carrier\nUpgrades: Mothership
+			Description: 为 Scrin空中单位与部分地面单位配备护盾。\n\n升级对象：闯入者\n升级对象：风暴爬行者\n升级对象：风暴骑士\n升级对象：折磨者\n升级对象：衰弱者\n升级对象：毁灭战舰\n升级对象：行星突击母舰\n升级对象：母舰
 		IconPalette: chromes
 	TooltipExtras:
-		Strengths: + Grants an additonal health pool\n+ Resistance to EMP for aircraft
+			Strengths: + 提供额外生命值池\n+ 空中单位获得电磁脉冲抗性
 	Valued:
 		Cost: 1500
 	RenderSprites:

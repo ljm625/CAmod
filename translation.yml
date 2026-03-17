@@ -91,8 +91,167 @@ translation:
   # Support power / effect keywords
   Iron Curtain: 铁幕
   Chronosphere: 超时空传送仪
+  Chrono: Chrono
   EMP: 电磁脉冲
   Lightning Storm: 闪电风暴
   Ion Cannon: 离子炮
   Genetic Mutation: 基因突变
   Mind Control: 心灵控制
+
+  # Codes / callsigns / abbreviations
+  GPS: GPS
+  C4: C4
+  X-O: X-O
+  A10: A10
+  P51: P51
+  B2: B2
+  C17: C17
+  APC: 装甲运兵车
+  ARC: ARC
+  Traveler-59: Traveler-59
+  Collector-73: Collector-73
+
+  # Aircraft / naval proper nouns
+  Badger: 獾式轰炸机
+  Halo: 光环运输机
+  Chinook: 支奴干
+  Warthog: 疣猪战机
+  Submarine: 潜艇
+  Missile Submarine: 导弹潜艇
+  Attack Submarine: 攻击潜艇
+  Destroyer: 驱逐舰
+  Cruiser: 巡洋舰
+  Frigate: 护卫舰
+  Gunboat: 炮艇
+  Patrol Boat: 巡逻艇
+  Recon Boat: 侦察艇
+  Sea Scorpion: 海蝎
+  ICBM: 洲际导弹
+  ICBM Submarine: 洲际导弹潜艇
+  Drone Carrier: 无人机母舰
+
+  B2 Stealth Bomber: B2隐形轰炸机
+  MiG Attack Plane: 米格攻击机
+  Sukhoi Attack Plane: 苏霍伊攻击机
+  Yak Attack Plane: 雅克攻击机
+  P51 Attack Plane: P51攻击机
+  Supersonic Bomber: 超音速轰炸机
+  Nighthawk: 夜鹰
+  Longbow: 长弓
+  Hind: 雌鹿
+  Apache: 阿帕奇
+  Orca: 奥卡
+  Orca Bomber: 奥卡轰炸机
+  Orca Carryall: 奥卡运载机
+  Harrier: 鹞式战机
+  Banshee: 女妖战机
+  Black Eagle: 黑鹰战机
+  Phantom: 幻影战机
+  Kamov: 卡莫夫
+  Shade: 暗影战机
+  Vertigo: 维提戈
+  Manticore: 蝎尾兽
+
+  Attack Plane: 攻击机
+  Bomber: 轰炸机
+  Carryall: 运载机
+
+  # Additional doctrine/upgrade/unit terms
+  Bombardier: 轰炸兵
+  Sidewinders: 响尾蛇导弹
+  Ceramic Armor: 陶瓷装甲
+  Point Defense Systems: 点防御系统
+  Point Defense Shield: 点防御护盾
+  Point Defense Laser: 点防御激光
+  Zone Trooper: 区域突击兵
+  Zone Raider: 区域袭击者
+  Zone Defender: 区域防御者
+  Firestorm Missile Barrage: 火焰风暴导弹齐射
+  Firestorm Missiles Power: 火焰风暴导弹技能
+  Nanite Shield: 纳米护盾
+  Guardian Drone: 守护者无人机
+  Battle Drone: 战斗无人机
+  Battle Tank: 战斗坦克
+  MLRS: 多管火箭系统
+  HMLRS: 重型多管火箭系统
+  TOW Missile: TOW导弹
+  Hypercharge: 过载
+  Resource Conversion: 资源转化
+  Ion Conduits: 离子导管
+  Regenerative Hull: 再生外壳
+  Stellar Fusion Cannon: 恒星聚变炮
+  Shield Generation: 护盾生成
+  Coalescence: 聚合
+  Hardened Carapace: 硬化甲壳
+  Blink Packs: 闪烁背包
+  Temporal Flux: 时间通量
+  Chrono Prison: 超时空牢笼
+  Archer APC: 弓手装甲运兵车
+  Raufoss Ammo: 劳福斯弹药
+  Cryo Warheads: 冰冻弹头
+  Airborne Training: 空降训练
+  Entrenchment: 壕沟构筑
+  Advanced Optics: 高级光学系统
+  Reactive Armor: 反应装甲
+  Atomic Engines: 原子引擎
+  Seismic Missiles: 震波导弹
+  Paratroopers: 伞兵
+  Stormtroopers: 风暴突击兵
+  Mutation Bomb: 突变炸弹
+  Brute: 狂兽人
+  Loyalty: 忠诚
+  Loyalist: 忠诚派
+  Rebel: 反叛派
+  Malefic: 恶煞派
+  Eviscerator: 开膛者
+  Impaler: 穿刺者
+  Stalker: 潜行者
+  Shard Walker: 碎晶行者
+  Ravager: 掠夺者
+  Reaper Tripod: 收割者三足机甲
+  Devastator Warship: 毁灭战舰
+  Planetary Assault Carrier: 行星突击母舰
+  Mothership: 母舰
+  Stormcrawler: 风暴爬行者
+  Storm Column: 风暴之柱
+  Leecher: 吸食者
+  Devourer: 吞噬者
+  Interloper: 闯入者
+  Enervator: 衰弱者
+  Tormentor: 折磨者
+  Intruder: 入侵者
+  Marauder: 劫掠者
+  Watcher: 监视者
+  Overlord: 霸主
+  Apocalypse: 天启
+  Apocalyptic: 天启级
+  Atomic: 原子
+  Ion: 离子
+  Hover: 悬浮
+  Harvester: 采矿车
+  Tesla Track: 特斯拉履带车
+  Raider Buggy: 袭击者越野车
+  Stealth APC: 隐形装甲运兵车
+  Subterranean APC: 地下装甲运兵车
+  Disruptor: 破坏者
+  Cryo Launcher: 冰冻发射车
+  Wolverine: 狼獾机甲
+  Avatar: 圣灵机甲
+  Custodian: 维护者
+  X-O Powersuit: X-O动力装甲
+  V2: V2
+  V3: V3
+  SSM: SSM
+  MAD: MAD
+  TOW: TOW
+  Zeus Artillery: 宙斯火炮车
+  CABAL: 卡巴尔
+  Avenger: 复仇者
+  Hydra: 九头蛇
+  Raufoss: 劳福斯
+  GAU-8: GAU-8
+  Chrono Harvester: Chrono采矿车
+  Chrono Prison Tank: Chrono牢笼
+  BTR: BTR
+  Gattling BTR: 加特林BTR
+  MGT-1A: MGT-1A

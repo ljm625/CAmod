@@ -229,7 +229,7 @@ encyclopedia.power.paratroopers:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 派遣 Halo 运输机在地图任意位置空投一队步兵。
+		Description: 派遣光环运输机在地图任意位置空投一队步兵。
 
 encyclopedia.power.stormtroopers:
 	Inherits: ^SupportPowerPreview
@@ -242,7 +242,7 @@ encyclopedia.power.stormtroopers:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 派遣 Halo 运输机在地图任意位置空投一队震击兵。
+		Description: 派遣光环运输机在地图任意位置空投一队震击兵。
 		Subfaction: russia
 
 encyclopedia.power.parabombs:
@@ -256,7 +256,7 @@ encyclopedia.power.parabombs:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫 Badger 轰炸机在你的目标区域投下伞降炸弹。
+		Description: 呼叫獾式轰炸机在你的目标区域投下伞降炸弹。
 
 encyclopedia.power.carpetbomb:
 	Inherits: ^SupportPowerPreview
@@ -269,7 +269,7 @@ encyclopedia.power.carpetbomb:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫一组 Badger 轰炸机在你的目标区域投弹。
+		Description: 呼叫一组獾式轰炸机在你的目标区域投弹。
 		Subfaction: ukraine
 
 encyclopedia.power.atomicbombair:
@@ -283,7 +283,7 @@ encyclopedia.power.atomicbombair:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫 Badger 轰炸机在你的目标区域投下原子弹。
+		Description: 呼叫獾式轰炸机在你的目标区域投下原子弹。
 		Subfaction: iraq
 
 encyclopedia.power.mutabomb:
@@ -298,7 +298,7 @@ encyclopedia.power.mutabomb:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫 Badger 轰炸机在你的目标区域投下基因突变炸弹，将步兵转化为你控制的狂兽人。
+		Description: 呼叫獾式轰炸机在你的目标区域投下基因突变炸弹，将步兵转化为你控制的狂兽人。
 		Subfaction: yuri
 
 encyclopedia.power.chaosbombs:
@@ -312,7 +312,7 @@ encyclopedia.power.chaosbombs:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫 Badger 轰炸机在你的目标区域投下伞降混沌炸弹。
+		Description: 呼叫獾式轰炸机在你的目标区域投下伞降混沌炸弹。
 		Subfaction: yuri
 
 encyclopedia.power.atomicammo:
@@ -415,11 +415,11 @@ encyclopedia.power.xodrop:
 		Prerequisites: anyradar
 		BuildDuration: 9750
 	Tooltip:
-		Name: X-O 空投
+		Name: X-O空投
 	Encyclopedia:
 		Category: GDI/支援技能
 	EncyclopediaExtras:
-		Description: 一架奥卡运输机在目标位置空投一队 X-O 动力装甲兵。
+		Description: 一架奥卡运输机会在目标位置空投一队X-O动力装甲兵。
 		Subfaction: talon
 
 encyclopedia.power.droppods:
@@ -449,7 +449,7 @@ encyclopedia.power.reinforcements:
 	Encyclopedia:
 		Category: GDI/支援技能
 	EncyclopediaExtras:
-		Description: 一架奥卡运载机在目标位置投放一辆载有步兵小队的 APC。
+		Description: 一架奥卡运载机会在目标位置投放一辆载有步兵小队的装甲运兵车。
 		Subfaction: eagle
 
 encyclopedia.power.interceptors:
@@ -545,11 +545,11 @@ encyclopedia.power.empmissile:
 		Prerequisites: patr
 		BuildDuration: 4500
 	Tooltip:
-		Name: EMP 导弹
+		Name: 电磁脉冲导弹
 	Encyclopedia:
 		Category: GDI/支援技能
 	EncyclopediaExtras:
-		Description: 发射一枚 EMP 导弹，使目标区域内载具与建筑瘫痪。
+		Description: 发射一枚电磁脉冲导弹，使目标区域内载具与建筑瘫痪。
 
 encyclopedia.power.ioncannon:
 	Inherits: ^SupportPowerPreview
@@ -603,7 +603,7 @@ encyclopedia.power.substrike:
 	Encyclopedia:
 		Category: Nod/支援技能
 	EncyclopediaExtras:
-		Description: 通过地下 APC 部署一支步兵小队。
+		Description: 通过地下装甲运兵车部署一支步兵小队。
 		Subfaction: marked
 
 encyclopedia.power.infbomb:
@@ -618,7 +618,7 @@ encyclopedia.power.infbomb:
 	Encyclopedia:
 		Category: Nod/支援技能
 	EncyclopediaExtras:
-		Description: 一架 B2 隐形轰炸机在你的目标区域投下炼狱炸弹。
+		Description: 一架B2隐形轰炸机会在你的目标区域投下炼狱炸弹。
 		Subfaction: blackh
 
 encyclopedia.power.cashhack:
@@ -1098,7 +1098,7 @@ encyclopedia.ifv.spy:
 		Description: IFV 搭载间谍，可破坏敌方建筑并侦测隐形单位。
 	TooltipExtras:
 		Weaknesses: • 无法造成伤害
-		Attributes: • 破坏敌方建筑：\n    • 发电厂：断电\n    • 兵营/战车工厂：后续生产单位为老兵级\n    • 超级武器：重置计时器\n    • 雷达：重置战争迷雾\n    • 直升机场：一次性伞兵\n    • 机场/重力稳定器：一次性空袭\n• 乘员： 间谍
+		Attributes: • 破坏敌方建筑：\n • 发电厂：断电\n • 兵营/战车工厂：后续生产单位为老兵级\n • 超级武器：重置计时器\n • 雷达：重置战争迷雾\n • 直升机场：一次性伞兵\n • 机场/重力稳定器：一次性空袭\n• 乘员： 间谍
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1658,7 +1658,7 @@ encyclopedia.reck.missile:
 	WithSpriteTurret:
 		Sequence: turret-rocket
 	Tooltip:
-		Name: 导弹 清算者
+		Name: 导弹清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1673,7 +1673,7 @@ encyclopedia.reck.mg:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: 机枪 清算者
+		Name: 机枪清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1688,7 +1688,7 @@ encyclopedia.reck.engi:
 	WithSpriteTurret:
 		Sequence: turret-engi
 	Tooltip:
-		Name: 工程师 清算者
+		Name: 工程师清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1700,7 +1700,7 @@ encyclopedia.reck.engi:
 encyclopedia.reck.med:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 医疗 清算者
+		Name: 医疗清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1719,7 +1719,7 @@ encyclopedia.reck.mech:
 	WithSpriteTurret:
 		Sequence: turret-mech
 	Tooltip:
-		Name: 维修 清算者
+		Name: 维修清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1731,14 +1731,14 @@ encyclopedia.reck.mech:
 encyclopedia.reck.spy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 间谍 清算者
+		Name: 间谍清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
 		Description: 清算者搭载间谍，可破坏敌方建筑并侦测隐形单位。
 	TooltipExtras:
 		Weaknesses: • 无法造成伤害
-		Attributes: • 破坏敌方建筑：\n    • 发电厂：断电\n    • 兵营/战车工厂：后续生产单位为老兵级\n    • 超级武器：重置计时器\n    • 雷达：重置战争迷雾\n    • 直升机场：一次性伞兵\n    • 机场/重力稳定器：一次性空袭\n• 乘员： 间谍
+		Attributes: • 破坏敌方建筑：\n • 发电厂：断电\n • 兵营/战车工厂：后续生产单位为老兵级\n • 超级武器：重置计时器\n • 雷达：重置战争迷雾\n • 直升机场：一次性伞兵\n • 机场/重力稳定器：一次性空袭\n• 乘员： 间谍
 	-WithSpriteTurret:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1749,7 +1749,7 @@ encyclopedia.reck.snip:
 	WithSpriteTurret:
 		Sequence: turret-snip
 	Tooltip:
-		Name: 狙击 清算者
+		Name: 狙击清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1764,7 +1764,7 @@ encyclopedia.reck.enfo:
 	WithSpriteTurret:
 		Sequence: turret-enfo
 	Tooltip:
-		Name: 执法者 清算者
+		Name: 执法者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1779,7 +1779,7 @@ encyclopedia.reck.ggi:
 	WithSpriteTurret:
 		Sequence: turret-ggi
 	Tooltip:
-		Name: 守护者 清算者
+		Name: 守护者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1794,7 +1794,7 @@ encyclopedia.reck.seal:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: 海豹 清算者
+		Name: 海豹清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1809,7 +1809,7 @@ encyclopedia.reck.cryo:
 	WithSpriteTurret:
 		Sequence: turret-cryo
 	Tooltip:
-		Name: 冷冻 清算者
+		Name: 冷冻清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1824,7 +1824,7 @@ encyclopedia.reck.tigr:
 	WithSpriteTurret:
 		Sequence: turret-tigr
 	Tooltip:
-		Name: 虎卫 清算者
+		Name: 虎卫清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1839,7 +1839,7 @@ encyclopedia.reck.hopl:
 	WithSpriteTurret:
 		Sequence: turret-hopl
 	Tooltip:
-		Name: 重装 清算者
+		Name: 重装清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1854,7 +1854,7 @@ encyclopedia.reck.cmdo:
 	WithSpriteTurret:
 		Sequence: turret-cmdo
 	Tooltip:
-		Name: 突击队 清算者
+		Name: 突击队清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
@@ -1869,7 +1869,7 @@ encyclopedia.reck.grenade:
 	WithSpriteTurret:
 		Sequence: turret-frag
 	Tooltip:
-		Name: 榴弹 清算者
+		Name: 榴弹清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1884,7 +1884,7 @@ encyclopedia.reck.flame:
 	WithSpriteTurret:
 		Sequence: turret-flame
 	Tooltip:
-		Name: 喷火 清算者
+		Name: 喷火清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1899,7 +1899,7 @@ encyclopedia.reck.chem:
 	WithSpriteTurret:
 		Sequence: turret-chem
 	Tooltip:
-		Name: 化学 清算者
+		Name: 化学清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1914,7 +1914,7 @@ encyclopedia.reck.rad:
 	WithSpriteTurret:
 		Sequence: turret-rad
 	Tooltip:
-		Name: 辐射 清算者
+		Name: 辐射清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1927,7 +1927,7 @@ encyclopedia.reck.rad:
 encyclopedia.reck.ivan:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 爆破 清算者
+		Name: 爆破清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1944,7 +1944,7 @@ encyclopedia.reck.ivan:
 encyclopedia.reck.tes:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 特斯拉 清算者
+		Name: 特斯拉清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1960,7 +1960,7 @@ encyclopedia.reck.tes:
 encyclopedia.reck.psy:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 心灵 清算者
+		Name: 心灵清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1979,7 +1979,7 @@ encyclopedia.reck.cmsr:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: 政委 清算者
+		Name: 政委清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -1998,7 +1998,7 @@ encyclopedia.reck.laser:
 	WithSpriteTurret:
 		Sequence: turret-laser
 	Tooltip:
-		Name: 激光 清算者
+		Name: 激光清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2013,7 +2013,7 @@ encyclopedia.reck.enli:
 	WithSpriteTurret:
 		Sequence: turret-enli
 	Tooltip:
-		Name: 启迪者 清算者
+		Name: 启迪者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2028,7 +2028,7 @@ encyclopedia.reck.rmbc:
 	WithSpriteTurret:
 		Sequence: turret-rmbc
 	Tooltip:
-		Name: 精英半机械 清算者
+		Name: 精英半机械清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2042,7 +2042,7 @@ encyclopedia.reck.bh:
 	WithSpriteTurret:
 		Sequence: turret-bh
 	Tooltip:
-		Name: 黑手 清算者
+		Name: 黑手清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2057,7 +2057,7 @@ encyclopedia.reck.conf:
 	WithSpriteTurret:
 		Sequence: turret-conf
 	Tooltip:
-		Name: 忏悔者 清算者
+		Name: 忏悔者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2072,7 +2072,7 @@ encyclopedia.reck.reap:
 	WithSpriteTurret:
 		Sequence: turret-reap
 	Tooltip:
-		Name: 收割者 清算者
+		Name: 收割者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2087,7 +2087,7 @@ encyclopedia.reck.shad:
 	WithSpriteTurret:
 		Sequence: turret-mg
 	Tooltip:
-		Name: 暗影 清算者
+		Name: 暗影清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2100,7 +2100,7 @@ encyclopedia.reck.shad:
 encyclopedia.reck.hack:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 黑客 清算者
+		Name: 黑客清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2118,7 +2118,7 @@ encyclopedia.reck.ztrp:
 	WithSpriteTurret:
 		Sequence: turret-ztrp
 	Tooltip:
-		Name: 区域突击兵 清算者
+		Name: 区域突击兵清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2133,7 +2133,7 @@ encyclopedia.reck.zdef:
 	WithSpriteTurret:
 		Sequence: turret-zdef
 	Tooltip:
-		Name: 区域防卫兵 清算者
+		Name: 区域防卫兵清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2148,7 +2148,7 @@ encyclopedia.reck.zrai:
 	WithSpriteTurret:
 		Sequence: turret-zrai
 	Tooltip:
-		Name: 区域突袭兵 清算者
+		Name: 区域突袭兵清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2163,7 +2163,7 @@ encyclopedia.reck.disin:
 	WithSpriteTurret:
 		Sequence: turret-disin
 	Tooltip:
-		Name: 裂解者 清算者
+		Name: 裂解者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2178,7 +2178,7 @@ encyclopedia.reck.shard:
 	WithSpriteTurret:
 		Sequence: turret-shard
 	Tooltip:
-		Name: 碎晶 清算者
+		Name: 碎晶清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2193,7 +2193,7 @@ encyclopedia.reck.pdisc:
 	WithSpriteTurret:
 		Sequence: turret-pdisc
 	Tooltip:
-		Name: 等离子飞盘 清算者
+		Name: 等离子飞盘清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2208,7 +2208,7 @@ encyclopedia.reck.impl:
 	WithSpriteTurret:
 		Sequence: turret-impl
 	Tooltip:
-		Name: 穿刺者 清算者
+		Name: 穿刺者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2226,7 +2226,7 @@ encyclopedia.reck.stlk:
 		Sequence: turret-stlk
 		Palette: playerscrin
 	Tooltip:
-		Name: 潜行者 清算者
+		Name: 潜行者清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2241,7 +2241,7 @@ encyclopedia.reck.mortchem:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: 化学迫击炮 清算者
+		Name: 化学迫击炮清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2256,7 +2256,7 @@ encyclopedia.reck.mortcryo:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: 冷冻迫击炮 清算者
+		Name: 冷冻迫击炮清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2271,7 +2271,7 @@ encyclopedia.reck.mortsonic:
 	WithSpriteTurret:
 		Sequence: turret-mort
 	Tooltip:
-		Name: 声波迫击炮 清算者
+		Name: 声波迫击炮清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
@@ -2288,7 +2288,7 @@ encyclopedia.buffs.anathema:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: Malefic Scrin 支援技能施加的效果。30 秒内逐步提高伤害与速度，但效果结束后单位会被摧毁。火力增益与受影响单位价值成反比。
+		Description: 邪恶Scrin支援技能施加的效果。30 秒内逐步提高伤害与速度，但效果结束后单位会被摧毁。火力增益与受影响单位价值成反比。
 	TooltipExtras:
 		Strengths: • 在 30 秒内逐步提升火力、射速与速度
 		Weaknesses: • 效果结束后被摧毁
@@ -2404,7 +2404,7 @@ encyclopedia.buffs.hypercharge:
 encyclopedia.buffs.inspiration:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: 鼓舞 I
+		Name: 鼓舞一
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
@@ -2420,7 +2420,7 @@ encyclopedia.buffs.inspiration:
 encyclopedia.buffs.inspiration2:
 	Inherits: ^InfantryEffectPreview
 	Tooltip:
-		Name: 鼓舞 II
+		Name: 鼓舞二
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
@@ -2597,7 +2597,7 @@ encyclopedia.debuffs.concussion:
 encyclopedia.debuffs.emp:
 	Inherits: ^VehicleEffectPreview
 	Tooltip:
-		Name: EMP
+		Name: 电磁脉冲
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:

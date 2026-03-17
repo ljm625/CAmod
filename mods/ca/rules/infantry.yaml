@@ -4350,7 +4350,7 @@ ENLI:
 	TooltipExtras:
 		Strengths: • 对重甲单位、轻甲单位强势
 		Weaknesses: • 对步兵弱势\n• 无法攻击空中单位
-		Attributes: • 在泰伯利亚上恢复生命\n• 伤害随目标最大生命值提升\n• 特殊技能：EMP 爆发
+		Attributes: • 在泰伯利亚上恢复生命\n• 伤害随目标最大生命值提升\n• 特殊技能：电磁脉冲爆发
 	Valued:
 		Cost: 1000
 	Tooltip:

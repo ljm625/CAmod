@@ -15,7 +15,7 @@ SS:
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Submarine
+		Name: 潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -85,7 +85,7 @@ MSUB:
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Missile Submarine
+		Name: 导弹潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -137,7 +137,7 @@ DD:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Destroyer
+		Name: 驱逐舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -211,7 +211,7 @@ CA:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Cruiser
+		Name: 巡洋舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -283,7 +283,7 @@ LST:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Transport
+		Name: 运输舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -360,7 +360,7 @@ PT:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gunboat
+		Name: 炮艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -422,7 +422,7 @@ PT2:
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: Patrol Boat
+		Name: 巡逻艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -497,7 +497,7 @@ DD2:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Frigate
+		Name: 护卫舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -597,7 +597,7 @@ SS2:
 	Valued:
 		Cost: 950
 	Tooltip:
-		Name: Attack Submarine
+		Name: 攻击潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -667,7 +667,7 @@ ISUB:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: ICBM Submarine
+		Name: 洲际导弹潜艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -727,7 +727,7 @@ ICBM:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: ICBM
+		Name: 洲际导弹
 	Health:
 		HP: 7500
 	BallisticMissile:
@@ -771,7 +771,7 @@ CV:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Drone Carrier
+		Name: 无人机母舰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -847,7 +847,7 @@ SB:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Recon Boat
+		Name: 侦察艇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -905,7 +905,7 @@ SEAS:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Sea Scorpion
+		Name: 海蝎
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

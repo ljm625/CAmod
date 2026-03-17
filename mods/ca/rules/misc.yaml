@@ -420,7 +420,7 @@ gps.satellite:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS 卫星
+		Name: GPS卫星
 
 gps.satellite.firstscan:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -428,7 +428,7 @@ gps.satellite.firstscan:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS 卫星
+		Name: GPS卫星
 
 ToxicCloud:
 	Interactable:
@@ -681,7 +681,7 @@ powerproxy.parabombs:
 	AirstrikePowerCA:
 		Icon: parabombs
 		Name: 伞降炸弹（一次性）
-		Description: 一架 Badger 在你的目标区域投下伞降炸弹。
+		Description: 一架獾式轰炸机在你的目标区域投下伞降炸弹。
 		OneShot: true
 		AllowMultiple: true
 		UnitType: badr.bomber
@@ -723,7 +723,7 @@ powerproxy.paratroopers:
 		SquadSize: 1
 		UnitType: halo.paradrop
 		Name: 伞兵（一次性）
-		Description: 一架 Halo 运输机可在地图任意位置空投一队步兵。
+		Description: 一架光环运输机可在地图任意位置空投一队步兵。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: E1,E1,E1,E3,E3,E1,E1,E1,E2,E2
@@ -748,7 +748,7 @@ powerproxy.paratroopers.allies:
 		SquadSize: 1
 		UnitType: tran.paradrop
 		Name: 伞兵（一次性）
-		Description: 一架 Chinook 可在地图任意位置空投一队步兵。
+		Description: 一架支奴干可在地图任意位置空投一队步兵。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: E1,E1,E1,E1,E3,E3,E3,MEDI
@@ -850,7 +850,7 @@ powerproxy.airstrike:
 				TargetOffset: 0,0,0
 		Icon: airstrike
 		Name: 空袭（一次性）
-		Description: A10 攻击机在你的目标区域投下凝固汽油弹。
+		Description: A10攻击机会在你的目标区域投下凝固汽油弹。
 		OneShot: true
 		AllowMultiple: true
 		SelectTargetSpeechNotification: SelectTarget
@@ -1452,9 +1452,9 @@ scrin.allegiances.available:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 4x 精炼厂
+		Name: 4倍精炼厂
 	Buildable:
-		Description: 4x 精炼厂
+		Description: 4倍精炼厂
 
 # For MQ, ensures production tabs are updated properly
 QueueUpdaterDummy:

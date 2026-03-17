@@ -8,15 +8,15 @@ MSLO:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Missile Silo
+		Name: 导弹发射井
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 140
 		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the A-Bomb superweapon power.
+		Description: 提供原子弹超级武器能力。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: A-Bomb
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：原子弹
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -64,14 +64,14 @@ GAP:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Gap Generator
+		Name: 裂缝发生器
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 110
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
-		Description: Regenerates the shroud nearby, obscuring enemy vision. Can channel the effect to reduce enemy weapon range and vision.
+		Description: 在周围重新生成战争迷雾，遮蔽敌方视野。可引导该效果以降低敌方武器射程和视野。
 	TooltipExtras:
-		Attributes: • Requires power to operate
+		Attributes: • 需要电力才能运作
 	Selectable:
 		Bounds: 1024, 1024
 		DecorationBounds: 1024, 2048, 0, -512
@@ -134,12 +134,12 @@ SPEN:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Sub Pen
+		Name: 潜艇船坞
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 220
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nsubmarines and transports.
+		Description: 生产并维修\n潜艇与运输单位。
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -251,11 +251,11 @@ SYRD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 210
 		Prerequisites: anypower, ~structures.allies, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nships and transports.
+		Description: 生产并维修\n舰船与运输单位。
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: 海军船坞
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -340,13 +340,13 @@ IRON:
 		BuildPaletteOrder: 130
 		Prerequisites: stek, ~structures.soviet, ~techlevel.high
 		BuildLimit: 1
-		Description: Makes a group of units invulnerable for a short time.
+		Description: 使一组单位在短时间内无敌。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Iron Curtain
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：铁幕
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Iron Curtain
+		Name: 铁幕
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -400,13 +400,13 @@ PDOX:
 		BuildPaletteOrder: 130
 		Prerequisites: atek, ~structures.allies, ~techlevel.high
 		BuildLimit: 1
-		Description: Can be used to teleports units anywhere on the map.
+		Description: 可将单位传送到地图任意位置。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chronoshift
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：超时空传送
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Chronosphere
+		Name: 超时空传送仪
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -464,15 +464,15 @@ TSLA:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.soviet, ~techlevel.medium
-		Description: Advanced base defense.
+		Description: 高级基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units\n• Can be buffed or made work during low power by Shock Troopers
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位\n• 可由震击兵强化，或在低电力时临时维持运作
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Tesla Coil
+		Name: 磁暴线圈
 	Selectable:
 		DecorationBounds: 1024, 1706, 0, -341
 	Health:
@@ -548,15 +548,15 @@ AGUN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 90
 		Prerequisites: vehicles.any, ~structures.allies, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: 防空基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: • 对空中单位强势
+		Weaknesses: • 无法攻击地面单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形空中单位
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: AA Gun
+		Name: 防空炮
 	Selectable:
 		DecorationBounds: 1024, 1365, 0, -170
 	Health:
@@ -620,13 +620,13 @@ DOME:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.medium
-		Description: Provides an overview of the battlefield.
+		Description: 提供战场全局视野。
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: • 需要电力才能运作\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Radar Dome
+		Name: 雷达站
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -726,17 +726,17 @@ PBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
-		Name: Pillbox
+		Name: 机枪碉堡
 	Building:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 40
 		Prerequisites: infantry.any, ~structures.pbox, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位
+		Attributes: • 可侦测隐形单位
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -778,17 +778,17 @@ HBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
-		Name: Camo Pillbox
+		Name: 伪装机枪碉堡
 	Building:
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 50
 		Prerequisites: infantry.any, ~structures.england, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units\n• Camouflaged when idle
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位
+		Attributes: • 可侦测隐形单位\n• 静止时会伪装
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -842,17 +842,17 @@ GUN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 70
 		Prerequisites: infantry.any, ~structures.allies, ~techlevel.low
-		Description: Basic anti-tank base defense.
+		Description: 基础反坦克基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor
-		Weaknesses: • Weak vs Infantry\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: • 对重甲单位强势
+		Weaknesses: • 对步兵弱势\n• 无法攻击空中单位
+		Attributes: • 可侦测隐形单位
 	Valued:
 		Cost: 800
 	CustomSellValue:
 		Value: 300
 	Tooltip:
-		Name: Turret
+		Name: 机炮塔
 	Building:
 	Health:
 		HP: 46500
@@ -899,17 +899,17 @@ FTUR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.ftur, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Detects cloaked units
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
+		Attributes: • 可侦测隐形单位
 	Valued:
 		Cost: 600
 	CustomSellValue:
 		Value: 200
 	Tooltip:
-		Name: Flame Tower
+		Name: 火焰塔
 	Building:
 	Health:
 		HP: 40000
@@ -964,15 +964,15 @@ SAM:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~structures.soviet, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: 防空基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: • 对空中单位强势
+		Weaknesses: • 无法攻击地面单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形空中单位
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: SAM Site
+		Name: 防空导弹阵地
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -1032,13 +1032,13 @@ ATEK:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 140
 		Prerequisites: vehicles.any, anyradar, ~structures.allies, ~techlevel.high
-		Description: Provides Allied advanced technologies.
+		Description: 提供盟军高级科技。
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Special Ability: GPS Satellite
+		Attributes: • 需要电力才能运作\n• 特殊技能：间谍卫星
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Allied Tech Center
+		Name: 盟军科技中心
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1141,10 +1141,10 @@ ALHQ:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: vehicles.any, influence.level2, ~structures.allies, ~techlevel.high
-		Description: Provides access to coalitions and other advanced technologies.
+		Description: 提供联盟选择和其他高级科技。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -1153,7 +1153,7 @@ ALHQ:
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Allied HQ
+		Name: 盟军总部
 	Power:
 		Amount: -150
 	WithDeathAnimation:
@@ -1199,11 +1199,11 @@ WEAP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.ra, ~techlevel.low
-		Description: Produces vehicles.
+		Description: 生产载具。
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: War Factory
+		Name: 战车工厂
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -1320,7 +1320,7 @@ FACT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
-		Description: Produces structures.
+		Description: 生产建筑。
 	TracksCapturedFaction:
 	ValidFactions:
 		Factions: allies, england, france, germany, usa, soviet, russia, ukraine, iraq, yuri
@@ -1388,7 +1388,7 @@ FACT:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Construction Yard
+		Name: 建造场
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -1464,12 +1464,12 @@ PROC:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.ra
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: 将原始泰伯利亚、矿石和宝石加工为资金。
 		BuildDuration: 1400
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Ore Refinery
+		Name: 矿石精炼厂
 	Building:
 		Footprint: _X_ xxx X++ ===
 		Dimensions: 3,4
@@ -1581,11 +1581,11 @@ SILO:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 35
 		Prerequisites: anyrefinery, ~structures.ra
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: 储存已加工的泰伯利亚、矿石和宝石。
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Silo
+		Name: 储存仓
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -1632,11 +1632,11 @@ HPAD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 120
 		Prerequisites: radarorrepair, ~structures.allies, ~techlevel.medium
-		Description: Produces and reloads helicopters and VTOL aircraft.
+		Description: 生产并补给直升机和垂直起降飞行器。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Helipad
+		Name: 停机坪
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1733,11 +1733,11 @@ AFLD:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 130
 		Prerequisites: radarorrepair, ~structures.soviet, ~techlevel.medium
-		Description: Produces and reloads aircraft.
+		Description: 生产并补给飞行器。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Airfield
+		Name: 机场
 	Selectable:
 		Bounds: 3072, 2176, 0, -256
 	Building:
@@ -1818,11 +1818,11 @@ POWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.ra
-		Description: Provides power for other structures.
+		Description: 为其他建筑提供电力。
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Power Plant
+		Name: 发电厂
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1861,11 +1861,11 @@ APWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~structures.apwr, ~techlevel.medium
-		Description: Provides double the power of a standard Power Plant.
+		Description: 提供标准发电厂两倍的电力。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Power Plant
+		Name: 高级发电厂
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1912,13 +1912,13 @@ NPWR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 165
 		Prerequisites: stek, ~structures.soviet, ~techlevel.high
-		Description: Provides ten times the power of a standard Power Plant.
+		Description: 提供标准发电厂十倍的电力。
 	TooltipExtras:
-		Weaknesses: • Explodes when destroyed
+		Weaknesses: • 被摧毁时会爆炸
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Atomic Reactor
+		Name: 原子反应堆
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -1981,14 +1981,14 @@ TPWR:
 	Inherits: APWR
 	Buildable:
 		Prerequisites: anyradar, ~techlevel.medium, ~structures.russia
-		Description: Provides triple the power of a standard Power Plant.
+		Description: 提供标准发电厂三倍的电力。
 	TooltipExtras:
-		Strengths: • Power output unaffected by damage
-		Weaknesses: • Unstable when damaged
+		Strengths: • 发电量不受受损状态影响
+		Weaknesses: • 受损时不稳定
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Tesla Reactor
+		Name: 磁暴反应堆
 	WithIdleOverlay@POWER:
 		Offset: -20,-70,0
 		Sequence: power
@@ -2029,11 +2029,11 @@ STEK:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 150
 		Prerequisites: vehicles.any, anyradar, ~structures.soviet, ~techlevel.high
-		Description: Provides Soviet advanced technologies.
+		Description: 提供苏军高级科技。
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Soviet Tech Center
+		Name: 苏军科技中心
 	Building:
 		Footprint: XxX XxX ===
 		Dimensions: 3,3
@@ -2092,11 +2092,11 @@ BARR:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.soviet
-		Description: Trains infantry.
+		Description: 训练步兵。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Soviet Barracks
+		Name: 苏军兵营
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2195,11 +2195,11 @@ KENN:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 205
 		Prerequisites: anypower, ~structures.soviet
-		Description: Trains Attack Dogs.
+		Description: 训练攻击犬。
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Kennel
+		Name: 军犬舍
 	-GivesBuildableArea:
 	Health:
 		HP: 30000
@@ -2240,11 +2240,11 @@ TENT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.allies
-		Description: Trains infantry.
+		Description: 训练步兵。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Allied Barracks
+		Name: 盟军兵营
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2334,13 +2334,13 @@ FIX:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 100
 		Prerequisites: vehicles.any, ~structures.ra, ~techlevel.low
-		Description: Repairs vehicles and aircraft.
+		Description: 维修载具和飞行器。
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: • 附近停机坪/机场会维修已着陆的空中单位\n• 可为现有单位加装升级
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Service Depot
+		Name: 维修站
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -2410,13 +2410,13 @@ SBAG:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.sandbag
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: • 阻挡步兵和轻型载具\n• 可被坦克碾压
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Sandbag Wall
+		Name: 沙袋墙
 	Health:
 		HP: 15000
 	Armor:
@@ -2438,13 +2438,13 @@ FENC:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.soviet
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: • 阻挡步兵和轻型载具\n• 可被坦克碾压
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Wire Fence
+		Name: 铁丝网
 	Health:
 		HP: 15000
 	Armor:
@@ -2464,13 +2464,13 @@ CHAIN:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 20
 		Prerequisites: ~structures.nod
-		Description: • Stops infantry and light vehicles\n• Can be crushed by tanks
+		Description: • 阻挡步兵和轻型载具\n• 可被坦克碾压
 	Valued:
 		Cost: 30
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Chain-link Fence
+		Name: 链式围栏
 	Health:
 		HP: 15000
 	Armor:
@@ -2490,13 +2490,13 @@ BRIK:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.wall
-		Description: • Stops units\n• Blocks enemy fire
+		Description: • 阻挡单位\n• 阻挡敌方火力
 	Valued:
 		Cost: 200
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Concrete Wall
+		Name: 混凝土墙
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -2519,7 +2519,7 @@ BRIK:
 CYCL:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Chain-Link Barrier
+		Name: 链式路障
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2532,7 +2532,7 @@ CYCL:
 BARB:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Barbed-Wire Fence
+		Name: 带刺铁丝网
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2545,7 +2545,7 @@ BARB:
 WOOD:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Wooden Fence
+		Name: 木栅栏
 	Armor:
 		Type: Wood
 	LineBuild:
@@ -2559,177 +2559,177 @@ INFANTRY.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: 步兵生产
 	Buildable:
-		Description: Infantry Production
+		Description: 步兵生产
 
 INFANTRY.RA:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: 步兵生产
 	Buildable:
-		Description: Infantry Production
+		Description: 步兵生产
 
 INFANTRY.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: 步兵生产
 	Buildable:
-		Description: Infantry Production
+		Description: 步兵生产
 
 VEHICLES.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: 载具生产
 	Buildable:
-		Description: Vehicle Production
+		Description: 载具生产
 
 VEHICLES.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: 载具生产
 	Buildable:
-		Description: Vehicle Production
+		Description: 载具生产
 
 VEHICLES.NOD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: 载具生产
 	Buildable:
-		Description: Vehicle Production
+		Description: 载具生产
 
 AIRCRAFT.CHINOOK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Helipad
+		Name: 停机坪
 	Buildable:
-		Description: Helipad
+		Description: 停机坪
 
 TECHCENTER.ANY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tech Center
+		Name: 科技中心
 	Buildable:
-		Description: Tech Center
+		Description: 科技中心
 
 TECHCENTER.TD:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tech Center
+		Name: 科技中心
 	Buildable:
-		Description: Tech Center
+		Description: 科技中心
 
 ANYPOWER:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Power Plant
+		Name: 发电厂
 	Buildable:
-		Description: Power Plant
+		Description: 发电厂
 
 ANYREFINERY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Refinery
+		Name: 精炼厂
 	Buildable:
-		Description: Refinery
+		Description: 精炼厂
 
 ANYRADAR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar
+		Name: 雷达
 	Buildable:
-		Description: Radar
+		Description: 雷达
 
 REPAIR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Service Depot/Repair Facility
+		Name: 维修站/维修设施
 	Buildable:
-		Description: Service Depot/Repair Facility
+		Description: 维修站/维修设施
 
 RADARORREPAIR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar or Service Depot/Repair Facility
+		Name: 雷达或维修站/维修设施
 	Buildable:
-		Description: Radar or Service Depot/Repair Facility
+		Description: 雷达或维修站/维修设施
 
 RADARORAIRCRAFT:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Radar or Aircraft Production
+		Name: 雷达或空军生产
 	Buildable:
-		Description: Radar or Aircraft Production
+		Description: 雷达或空军生产
 
 TSLAORSTEK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Tesla Coil or Soviet Tech Center
+		Name: 磁暴线圈或苏军科技中心
 	Buildable:
-		Description: Tesla Coil or Soviet Tech Center
+		Description: 磁暴线圈或苏军科技中心
 
 OBLIORTMPL:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Obelisk or Temple of Nod
+		Name: 方尖碑或Nod神殿
 	Buildable:
-		Description: Obelisk or Temple of Nod
+		Description: 方尖碑或Nod神殿
 
 TTURORSTEK:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Chem Tower or Soviet Tech Center
+		Name: 化学塔或苏军科技中心
 	Buildable:
-		Description: Chem Tower or Soviet Tech Center
+		Description: 化学塔或苏军科技中心
 
 FTURORRADAR:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Flame Tower or Radar
+		Name: 火焰塔或雷达
 	Buildable:
-		Description: Flame Tower or Radar
+		Description: 火焰塔或雷达
 
 VEHICLES.MCV:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Service Depot/Repair Facility OR no MCV/Conyard
+		Name: 维修站/维修设施或无机动建造车/建造场
 	Buildable:
-		Description: Service Depot/Repair Facility OR no MCV/Conyard
+		Description: 维修站/维修设施或无机动建造车/建造场
 
 INFANTRY.MEDI:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Barracks
+		Name: 兵营
 	Buildable:
-		Description: Barracks
+		Description: 兵营
 
 INFANTRY.MECH:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Barracks
+		Name: 兵营
 	Buildable:
-		Description: Barracks
+		Description: 兵营
 
 PYLE:
 	Inherits: ^BuildingTD
@@ -2748,11 +2748,11 @@ PYLE:
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.gdi
 		IconPalette: chrometd
-		Description: Trains infantry.
+		Description: 训练步兵。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: GDI Barracks
+		Name: GDI兵营
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2845,11 +2845,11 @@ HAND:
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.nod
 		IconPalette: chrometd
-		Description: Trains infantry.
+		Description: 训练步兵。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Hand of Nod
+		Name: Nod之手
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -2949,11 +2949,11 @@ WEAP.TD:
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.weap.td, ~structures.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Produces vehicles.
+		Description: 生产载具。
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Weapons Factory
+		Name: 武器工厂
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -3075,11 +3075,11 @@ AIRS:
 		BuildPaletteOrder: 80
 		Prerequisites: anyrefinery, ~structures.airs, ~techlevel.low
 		IconPalette: chrometd
-		Description: Provides a dropzone for vehicle reinforcements
+		Description: 提供载具增援空投区
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Airstrip
+		Name: 机场跑道
 	Building:
 		Footprint: XXX+ xxx+ ++++
 		Dimensions: 4,3
@@ -3215,11 +3215,11 @@ NUKE:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.td
 		IconPalette: chrometd
-		Description: Provides power for other structures.
+		Description: 为其他建筑提供电力。
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Nuclear Power Plant
+		Name: 核能发电厂
 	Building:
 		Footprint: xX xx ==
 		Dimensions: 2,3
@@ -3266,11 +3266,11 @@ NUK2:
 		BuildPaletteOrder: 110
 		Prerequisites: anyradar, ~structures.td, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Provides double the power of a standard Nuclear Power Plant.
+		Description: 提供标准核能发电厂两倍的电力。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Nuclear Power Plant
+		Name: 高级核能发电厂
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -3316,7 +3316,7 @@ AFAC:
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 		IconPalette: chrometd
-		Description: Produces structures.
+		Description: 生产建筑。
 	Health:
 		HP: 150000
 	Armor:
@@ -3331,7 +3331,7 @@ AFAC:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Construction Yard
+		Name: 建造场
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -3456,15 +3456,15 @@ NSAM:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 100
 		Prerequisites: anyradar, ~structures.nod, ~techlevel.medium
-		Description: Anti-aircraft base defense.
+		Description: 防空基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Aircraft
-		Weaknesses: • Cannot attack ground units
-		Attributes: • Requires power to operate\n• Detects cloaked aircraft
+		Strengths: • 对空中单位强势
+		Weaknesses: • 无法攻击地面单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形空中单位
 	Valued:
 		Cost: 750
 	Tooltip:
-		Name: SAM Site
+		Name: 防空导弹阵地
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -3517,17 +3517,17 @@ GTWR:
 		BuildPaletteOrder: 50
 		Prerequisites: infantry.any, ~structures.gdi, ~techlevel.low
 		IconPalette: chrometd
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位
+		Attributes: • 可侦测隐形单位
 	Valued:
 		Cost: 600
 	CustomSellValue:
 		Value: 200
 	Tooltip:
-		Name: Guard Tower
+		Name: 哨戒炮
 	Building:
 	Health:
 		HP: 40000
@@ -3568,15 +3568,15 @@ ATWR:
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.atwr, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Advanced base defense.
+		Description: 高级基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Advanced Guard Tower
+		Name: 高级哨戒炮
 	Health:
 		HP: 52000
 	Armor:
@@ -3618,15 +3618,15 @@ STWR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: vehicles.any, ~structures.zocom, ~techlevel.medium
-		Description: Advanced base defense that emits devastating sonic shockwaves.
+		Description: 可释放毁灭性音波冲击的高级基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位
 	Valued:
 		Cost: 1450
 	Tooltip:
-		Name: Sonic Tower
+		Name: 音波塔
 	Building:
 	Health:
 		HP: 47500
@@ -3681,15 +3681,15 @@ OBLI:
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.nod, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Advanced experimental base defense.
+		Description: 高级实验型基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Obelisk of Light
+		Name: 光明方尖碑
 	Selectable:
 		DecorationBounds: 938, 1792, 0, -341
 	Health:
@@ -3776,9 +3776,9 @@ HQ:
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.td, ~techlevel.medium, ~!unity.covenant
 		IconPalette: chrometd
-		Description: Provides an overview of the battlefield.
+		Description: 提供战场全局视野。
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: • 需要电力才能运作\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑
 		RequiresCondition: !arc-built
 	TooltipExtras@ARC:
 		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war\n• Has limited emergency backup power
@@ -3787,7 +3787,7 @@ HQ:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Comm. Center
+		Name: 通讯中心
 		RequiresCondition: !arc-built
 	Tooltip@ARC:
 		Name: Drone Comm. Center
@@ -3936,11 +3936,11 @@ HQ.UPG:
 		BuildPaletteOrder: 90
 		Prerequisites: anyrefinery, ~structures.td, ~techlevel.medium, ~unity.covenant
 		IconPalette: chrometd
-		Description: Provides an overview of the battlefield.
+		Description: 提供战场全局视野。
 	Tooltip:
-		Name: Internet Center
+		Name: 网络中心
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war (increases per garrisoned Hacker)\n• $25 delivered every 60 seconds (normal speed)\n• Income increased by $75 per garrisoned Hacker\n• Cannot be hacked
+		Attributes: • 需要电力才能运作\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑（每驻扎 1 名黑客都会增强）\n• 每 60 秒提供 $25（正常速度）\n• 每驻扎 1 名黑客额外增加 $75 收入\n• 无法被黑入
 	RenderSprites:
 		PlayerPalette: playertd
 	-Targetable@HACKABLE:
@@ -4057,13 +4057,13 @@ EYE:
 		Prerequisites: gtek, ~structures.gdi, ~techlevel.unrestricted
 		IconPalette: chrometd
 		BuildLimit: 1
-		Description: Provides radar and orbital Ion Cannon superweapon power.
+		Description: 提供雷达和轨道离子炮超级武器能力。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Ion Cannon\n• Detects nearby enemy vehicles, aircraft and structures in fog of war
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：离子炮\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Advanced Communications Center
+		Name: 高级通讯中心
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -4140,13 +4140,13 @@ REP:
 		BuildPaletteOrder: 100
 		Prerequisites: vehicles.any, ~structures.td, ~techlevel.low
 		IconPalette: chrometd
-		Description: Repairs vehicles and aircraft.
+		Description: 维修载具和飞行器。
 	TooltipExtras:
-		Attributes: • Nearby helipads/airfields will repair landed aircraft\n• Can retrofit existing units with upgrades
+		Attributes: • 附近停机坪/机场会维修已着陆的空中单位\n• 可为现有单位加装升级
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Repair Facility
+		Name: 维修设施
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -4221,11 +4221,11 @@ HPAD.TD:
 		BuildPaletteOrder: 120
 		Prerequisites: radarorrepair, ~structures.nod, ~techlevel.medium
 		IconPalette: chrometd
-		Description: Produces and reloads helicopters and VTOL aircraft.
+		Description: 生产并补给直升机和垂直起降飞行器。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Helipad
+		Name: 停机坪
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -4328,13 +4328,13 @@ PROC.TD:
 	CustomSellValue:
 		Value: 400
 	Tooltip:
-		Name: Refinery
+		Name: 精炼厂
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.td
 		Queue: BuildingSQ, BuildingMQ
 		IconPalette: chrometd
-		Description: Processes raw Tiberium, Ore and Gems into credits.
+		Description: 将原始泰伯利亚、矿石和宝石加工为资金。
 		BuildDuration: 1400
 	Building:
 		Footprint: _x_ xxx +++ ===
@@ -4427,13 +4427,13 @@ SILO.TD:
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Silo
+		Name: 储存仓
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: anyrefinery, ~structures.td
 		Queue: DefenseSQ, DefenseMQ
 		IconPalette: chrometd
-		Description: Stores processed Tiberium, Ore and Gems.
+		Description: 储存已加工的泰伯利亚、矿石和宝石。
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -4489,11 +4489,11 @@ AFLD.GDI:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 130
 		Prerequisites: radarorrepair, ~structures.gdi, ~techlevel.medium
-		Description: Produces and reloads aircraft.
+		Description: 生产并补给飞行器。
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Airfield
+		Name: 机场
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -4571,11 +4571,11 @@ GTEK:
 		BuildPaletteOrder: 150
 		IconPalette: chrometd
 		Prerequisites: vehicles.any, anyradar, ~structures.gdi, ~techlevel.high
-		Description: Provides GDI advanced technologies.
+		Description: 提供GDI高级科技。
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: GDI Tech Center
+		Name: GDI科技中心
 	Building:
 		Footprint: xxx =xx ===
 		Dimensions: 3,3
@@ -4648,15 +4648,15 @@ TMPL:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Temple of Nod
+		Name: Nod神殿
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 140
 		Prerequisites: vehicles.any, anyradar, ~structures.nod, ~techlevel.high
 		IconPalette: chrometd
-		Description: Provides Nod advanced technologies.
+		Description: 提供Nod高级科技。
 	TooltipExtras:
-		Attributes: • Requires power to operate\n• Special Ability: Cluster Missile
+		Attributes: • 需要电力才能运作\n• 特殊技能：集束导弹
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -4728,15 +4728,15 @@ PRIS:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.pris, ~techlevel.medium
-		Description: Advanced experimental base defense.
+		Description: 高级实验型基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Requires power to operate\n• Detects cloaked units\n• Beam can chain with nearby Prism Towers
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位\n• 光束可与附近光棱塔连锁
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Prism Tower
+		Name: 光棱塔
 	Building:
 	Selectable:
 		DecorationBounds: 1024, 1962, 0, -560
@@ -4811,13 +4811,13 @@ SPEN.nod:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Sub Pen
+		Name: 潜艇船坞
 	Buildable:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 240
 		IconPalette: chrometd
 		Prerequisites: anypower, ~structures.nod, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs\nsubmarines and transports.
+		Description: 生产并维修\n潜艇与运输单位。
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -4903,11 +4903,11 @@ SYRD.gdi:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 230
 		Prerequisites: anypower, ~structures.gdi, ~techlevel.navy, ~techlevel.low
-		Description: Produces and repairs ships\nand transports.
+		Description: 生产并维修舰船\n与运输单位。
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Naval Yard
+		Name: 海军船坞
 	Targetable@INFILTRATION:
 		RequiresCondition: !being-warped
 		TargetTypes: GrantSupportPowerInfiltrate
@@ -4991,15 +4991,15 @@ HTUR:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 80
 		Prerequisites: anyradar, ~structures.france, ~techlevel.medium
-		Description: Artillery base defense.
+		Description: 火炮型基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Heavy Armor, Light Armor, Infantry
-		Weaknesses: • Cannot attack Aircraft\n• Cannot hit targets at point-blank range
-		Attributes: • Requires power to operate\n• Detects cloaked units
+		Strengths: • 对重甲单位、轻甲单位、步兵强势
+		Weaknesses: • 无法攻击空中单位\n• 无法攻击贴身目标
+		Attributes: • 需要电力才能运作\n• 可侦测隐形单位
 	Valued:
 		Cost: 1750
 	Tooltip:
-		Name: Grand Cannon
+		Name: 巨炮
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5081,15 +5081,15 @@ LTUR:
 	CustomSellValue:
 		Value: 300
 	Tooltip:
-		Name: Laser Turret
+		Name: 激光炮塔
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.nod, ~techlevel.low
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Weak vs Heavy Armor\n• Cannot attack Aircraft
-		Attributes: • Detects cloaked units
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位
+		Attributes: • 可侦测隐形单位
 	Turreted:
 		InitialFacing: 128
 	-WithTurretAttackAnimation:
@@ -5120,17 +5120,17 @@ TTUR:
 		BuildPaletteOrder: 60
 		Prerequisites: infantry.any, ~structures.iraq, ~techlevel.low
 		IconPalette: chrometd
-		Description: Anti-infantry base defense.
+		Description: 反步兵基地防御设施。
 	TooltipExtras:
-		Strengths: • Strong vs Infantry, Light Armor
-		Weaknesses: • Cannot attack Aircraft\n• Has difficulty hitting moving targets
-		Attributes: • Detects cloaked units
+		Strengths: • 对步兵、轻甲单位强势
+		Weaknesses: • 无法攻击空中单位\n• 难以命中移动目标
+		Attributes: • 可侦测隐形单位
 	Valued:
 		Cost: 650
 	CustomSellValue:
 		Value: 220
 	Tooltip:
-		Name: Chemical Tower
+		Name: 化学塔
 	Building:
 	Health:
 		HP: 44000
@@ -5184,13 +5184,13 @@ SGEN:
 		Prerequisites: tmpl, ~structures.nod, ~!player.shadow, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrometd
-		Description: Makes a group of units/structures invisible for a short time.
+		Description: 使一组单位/建筑在短时间内隐形。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cloaks nearby units and structures when not active\n• Requires power to operate\n• Special Ability: Tiberium Stealth
+		Attributes: • 最多只能建造 1 个\n• 非激活时可使附近单位和建筑隐形\n• 需要电力才能运作\n• 特殊技能：泰伯利亚隐形
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Stealth Generator
+		Name: 隐形发生器
 	Building:
 		Footprint: xxx xx+
 		Dimensions: 3,2
@@ -5253,7 +5253,7 @@ SGEN.Shadow:
 	Buildable:
 		Prerequisites: tmpl, ~structures.nod, ~player.shadow, ~techlevel.high
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cloaks nearby units and structures\n• Requires power to operate\n• Special Ability: Tiberium Stealth
+		Attributes: • 最多只能建造 1 个\n• 可使附近单位和建筑隐形\n• 需要电力才能运作\n• 特殊技能：泰伯利亚隐形
 	WithRangeCircle@SGEN:
 		Range: 11c512
 	ProximityExternalCondition@SGEN:
@@ -5330,7 +5330,7 @@ LASP:
 		BuildPaletteOrder: 30
 		Prerequisites: ~structures.nod, nuk2, ~techlevel.medium
 		IconPalette: chrometd
-		Description: • Stops infantry\n• Blocks enemy fire\n• Cannot be crushed by tanks
+		Description: • 阻挡步兵\n• 阻挡敌方火力\n• 不可被坦克碾压
 	Building:
 		RequiresBaseProvider: False
 	Valued:
@@ -5342,7 +5342,7 @@ LASP:
 		AreaTypes: building, defense
 		Adjacent: 7
 	Tooltip:
-		Name: Laser Fence
+		Name: 激光围栏
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -5388,7 +5388,7 @@ LASP:
 LASF:
 	Inherits: ^Wall
 	Tooltip:
-		Name: Laser Fence
+		Name: 激光围栏
 	LineBuild:
 		NodeTypes: laserfence
 	LineBuildNode:
@@ -5450,13 +5450,13 @@ PATR:
 		Prerequisites: gtek, ~structures.gdi, ~techlevel.high
 		BuildLimit: 1
 		IconPalette: chrometd
-		Description: Launches E.M. Pulse Missiles that disable vehicles & structures.
+		Description: 发射电磁脉冲导弹，使载具和建筑瘫痪。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: E.M. Pulse Missile
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：电磁脉冲导弹
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: EMP Missile Launcher
+		Name: 电磁脉冲导弹发射器
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5545,7 +5545,7 @@ CVAT:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
 	Tooltip:
-		Name: Cloning Vat
+		Name: 克隆缸
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -5554,10 +5554,10 @@ CVAT:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~infantry.doctrine, ~techlevel.high
-		Description: Clones infantry periodically at no cost.
+		Description: 周期性免费克隆步兵。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Clones any infantry unit put inside
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入\n• 可克隆放入其中的任意步兵单位
 	Valued:
 		Cost: 2000
 	Health:
@@ -5673,10 +5673,10 @@ INDP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~armor.doctrine, ~techlevel.high
-		Description: Vehicles & aircraft are produced 15% faster and cost 10% less.
+		Description: 载具和飞行器生产速度提高 15%，成本降低 10%。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5685,7 +5685,7 @@ INDP:
 	-CapturableProgressBlink:
 	-CaptureManager:
 	Tooltip:
-		Name: Industrial Plant
+		Name: 工业工厂
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -5745,10 +5745,10 @@ MUNP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.soviet, stek, playerxp.level3, ~arty.doctrine, ~techlevel.high
-		Description: Vehicles & aircraft are produced 15% faster. Vehicles have 15% reduced reload time.
+		Description: 载具和飞行器生产速度提高 15%。载具装填时间降低 15%。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入
 	Valued:
 		Cost: 2000
 	-Capturable:
@@ -5757,7 +5757,7 @@ MUNP:
 	-CapturableProgressBlink:
 	-CaptureManager:
 	Tooltip:
-		Name: Munitions Plant
+		Name: 军械工厂
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -5833,10 +5833,10 @@ OREP:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.allies, alhq, ~techlevel.high
-		Description: Refines ore, gems & Tiberium, increasing income by 10%.
+		Description: 精炼矿石、宝石和泰伯利亚，使收入提升 10%。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5845,7 +5845,7 @@ OREP:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Ore Purifier
+		Name: 矿石净化器
 	ResourcePurifierCA@Normal:
 		Modifier: 10
 		RequiresCondition: !disabled && !being-warped && !tech-locked && !economy-policy3
@@ -5928,11 +5928,11 @@ UPGC:
 		Queue: BuildingSQ, BuildingMQ
 		BuildPaletteOrder: 200
 		Prerequisites: ~structures.gdi, gtek, ~techlevel.high
-		Description: Allows the construction of advanced weaponry and upgrades.
+		Description: 允许建造高级武器和升级项目。
 		BuildLimit: 1
 		IconPalette: chrometd
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -5941,7 +5941,7 @@ UPGC:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Upgrade Center
+		Name: 升级中心
 	ValidFactions:
 		Factions: gdi, talon, zocom, eagle, arc
 	ProvidesPrerequisiteValidatedFaction@talonupgc:
@@ -6156,10 +6156,10 @@ TMPP:
 		BuildPaletteOrder: 200
 		IconPalette: chrometd
 		Prerequisites: ~structures.nod, tmpl, ~techlevel.high
-		Description: Provides access to cybernetic upgrades.
+		Description: 提供机械化升级。
 		BuildLimit: 1
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured or hacked\n• Can convert regular infantry to cyborgs
+		Attributes: • 最多只能建造 1 个\n• 无法被占领或黑入\n• 可将常规步兵改造为半机械人
 	-Capturable:
 	-CaptureNotification:
 	-CapturableProgressBar:
@@ -6168,7 +6168,7 @@ TMPP:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Temple Prime
+		Name: 至高神殿
 	Power:
 		Amount: -150
 	ProvidesPrerequisite@buildingname:
@@ -6240,16 +6240,16 @@ MSLO.Nod:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Missile Silo
+		Name: 导弹发射井
 	Buildable:
 		Queue: DefenseSQ, DefenseMQ
 		BuildPaletteOrder: 140
 		IconPalette: chrometd
 		Prerequisites: tmpl, ~techlevel.unrestricted, ~structures.nod
 		BuildLimit: 1
-		Description: Provides the Chemical Missile superweapon power.
+		Description: 提供化学导弹超级武器能力。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Chemical Missile
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：化学导弹
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -6299,13 +6299,13 @@ WEAT:
 		BuildPaletteOrder: 140
 		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
-		Description: Provides the Lightning Storm superweapon power.
+		Description: 提供闪电风暴超级武器能力。
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Requires power to operate\n• Special Ability: Lightning Storm
+		Attributes: • 最多只能建造 1 个\n• 需要电力才能运作\n• 特殊技能：闪电风暴
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Weather Control Device
+		Name: 天气控制装置
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -6362,11 +6362,11 @@ IOK:
 	Health:
 		HP: 15000
 	Tooltip:
-		Name: Idol of Kane
+		Name: 凯恩神像
 	TooltipExtras:
-		Strengths: • Increases damage and movement speed of friendly infantry\n• Reduces damage and movement speed of enemy infantry\n• Provides vision
-		Weaknesses: • Cannot attack
-		Attributes: • Special Ability: Rage Generator (enemy units within range go berserk)
+		Strengths: • 提高友军步兵伤害与移动速度\n• 降低敌方步兵伤害与移动速度\n• 提供视野
+		Weaknesses: • 无法攻击
+		Attributes: • 特殊技能：狂暴发生器（范围内敌方单位进入狂暴）
 	Armor:
 		Type: Concrete
 	Targetable:

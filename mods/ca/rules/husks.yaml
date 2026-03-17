@@ -1,7 +1,7 @@
 1TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Scout Tank)
+		Name: 残骸（侦察坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -10,7 +10,7 @@
 2TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Medium Tank)
+		Name: 残骸（中型坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -19,7 +19,7 @@
 GTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Grizzly Tank)
+		Name: 残骸（灰熊坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -28,7 +28,7 @@ GTNK.Husk:
 3TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Heavy Tank)
+		Name: 残骸（重型坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -37,7 +37,7 @@ GTNK.Husk:
 3TNK.YURI.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Lasher Tank)
+		Name: 残骸（鞭挞坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -46,7 +46,7 @@ GTNK.Husk:
 3TNK.RHIN.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Rhino Heavy Tank)
+		Name: 残骸（犀牛重型坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -55,7 +55,7 @@ GTNK.Husk:
 4TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mammoth Tank)
+		Name: 残骸（猛犸坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -64,7 +64,7 @@ GTNK.Husk:
 4TNK.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Eradicator)
+		Name: 残骸（根除者）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -73,7 +73,7 @@ GTNK.Husk:
 HARV.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: 残骸（矿车）
 	RenderSprites:
 		Image: hhusk2
 
@@ -81,7 +81,7 @@ HARV.Husk:
 HARV.FullHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: 残骸（矿车）
 	RenderSprites:
 		Image: hhusk
 
@@ -89,28 +89,28 @@ HARV.FullHusk:
 HARV.EmptyHusk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Ore Truck)
+		Name: 残骸（矿车）
 	RenderSprites:
 		Image: hhusk2
 
 HARV.Chrono.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Miner)
+		Name: 残骸（超时空采矿车）
 	RenderSprites:
 		Image: charv.destroyed
 
 MCV.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Construction Vehicle)
+		Name: 残骸（机动建造车）
 	RenderSprites:
 		Image: mcvhusk
 
 MGG.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Gap Generator)
+		Name: 残骸（机动裂缝发生器）
 	ThrowsParticle@spinner:
 		Anim: spinner-idle
 		Offset: -299,0,171
@@ -120,21 +120,21 @@ MGG.Husk:
 MSG.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mobile Stealth Generator)
+		Name: 残骸（机动隐形发生器）
 	RenderSprites:
 		Image: msg.destroyed
 
 MOLE.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Subterranean APC)
+		Name: 残骸（地下装甲运兵车）
 	RenderSprites:
 		Image: mole.destroyed
 
 TRAN.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Chinook
+		Name: 支奴干
 	Aircraft:
 		TurnSpeed: 1
 		Speed: 149
@@ -162,7 +162,7 @@ TRAN.Husk.EMP:
 TRAN.Husk1:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chinook)
+		Name: 残骸（支奴干）
 	RenderSprites:
 		Image: tran1husk
 	-Capturable:
@@ -175,7 +175,7 @@ TRAN.Husk1:
 TRAN.Husk2:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chinook)
+		Name: 残骸（支奴干）
 	RenderSprites:
 		Image: tran2husk
 	-Capturable:
@@ -188,7 +188,7 @@ TRAN.Husk2:
 HALO.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Heavy Transport
+		Name: 重型运输
 	Aircraft:
 		TurnSpeed: 1
 		Speed: 149
@@ -281,7 +281,7 @@ BADR.Husk.EMP:
 B2B.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: B2 Stealth Bomber
+		Name: B2隐形轰炸机
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 180
@@ -507,7 +507,7 @@ HIND.Husk.Empty.EMP:
 SMIG.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Husk (Supersonic Bomber)
+		Name: 残骸（超音速轰炸机）
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 373
@@ -712,14 +712,14 @@ TC05.Husk:
 AMCV.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mobile Construction Vehicle)
+		Name: 残骸（机动建造车）
 	RenderSprites:
 		Image: amcv.destroyed
 
 RTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Mirage Tank)
+		Name: 残骸（幻影坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -728,7 +728,7 @@ RTNK.Husk:
 TNKD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tank Destroyer)
+		Name: 残骸（坦克 Destroyer）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -737,28 +737,28 @@ TNKD.Husk:
 APC2.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (APC)
+		Name: 残骸（装甲运兵车）
 	RenderSprites:
 		Image: apc2.destroyed
 
 HMMV.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Hum-Vee)
+		Name: 残骸（悍马车）
 	RenderSprites:
 		Image: hmmv.destroyed
 
 BGGY.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Fast Attack Buggy)
+		Name: 残骸（快速攻击越野车）
 	RenderSprites:
 		Image: bggy.destroyed
 
 MTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Battle Tank)
+		Name: 残骸（战斗坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -767,7 +767,7 @@ MTNK.Husk:
 MTNK.DRONE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Battle Drone)
+		Name: 残骸（战斗无人机）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -776,7 +776,7 @@ MTNK.DRONE.Husk:
 HTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mammoth Tank)
+		Name: 残骸（猛犸坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -785,7 +785,7 @@ HTNK.Husk:
 HTNK.ION.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Ion Mammoth Tank)
+		Name: 残骸（离子猛犸坦克）
 	ThrowsParticle@turret:
 		Anim: turret-ion
 	RenderSprites:
@@ -794,7 +794,7 @@ HTNK.ION.Husk:
 HTNK.HOVER.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Hover Mammoth Tank)
+		Name: 残骸（悬浮猛犸坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	WithFacingSpriteBody:
@@ -805,7 +805,7 @@ HTNK.HOVER.Husk:
 HTNK.DRONE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Mammoth Drone)
+		Name: 残骸（猛犸无人机）
 	ThrowsParticle@turret:
 		Anim: turret-drone
 	RenderSprites:
@@ -814,7 +814,7 @@ HTNK.DRONE.Husk:
 TITN.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Titan)
+		Name: 残骸（泰坦）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -823,7 +823,7 @@ TITN.Husk:
 TITN.RAIL.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Railgun Titan)
+		Name: 残骸（轨道炮泰坦）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -832,7 +832,7 @@ TITN.RAIL.Husk:
 JUGG.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Juggernaut)
+		Name: 残骸（主宰者）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -841,21 +841,21 @@ JUGG.Husk:
 AVTR.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Avatar)
+		Name: 残骸（阿凡达）
 	RenderSprites:
 		Image: avtr.destroyed
 
 FTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Flame Tank)
+		Name: 残骸（火焰坦克）
 	RenderSprites:
 		Image: ftnk.destroyed
 
 HFTK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Heavy Flame Tank)
+		Name: 残骸（重型火焰坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -864,14 +864,14 @@ HFTK.Husk:
 BIKE.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Recon Bike)
+		Name: 残骸（侦察摩托战车）
 	RenderSprites:
 		Image: bike.destroyed
 
 MSAM.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (MLRS)
+		Name: 残骸（多管火箭）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -880,7 +880,7 @@ MSAM.Husk:
 STNK.NOD.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Stealth Tank)
+		Name: 残骸（隐形坦克）
 	RenderSprites:
 		Image: stnknod.destroyed
 
@@ -996,7 +996,7 @@ OCAR.Husk.EMP:
 UAV.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (UAV)
+		Name: 残骸（无人机）
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 123
@@ -1022,21 +1022,21 @@ UAV.Husk.EMP:
 HARV.TD.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Harvester (Destroyed)
+		Name: 采矿车（已摧毁）
 	RenderSprites:
 		Image: harv2.destroyed
 
 HARV.TD.UPG.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Stealth Harvester (Destroyed)
+		Name: 隐形采矿车（已摧毁）
 	RenderSprites:
 		Image: harv2.upg.destroyed
 
 A10.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Warthog)
+		Name: 残骸（Warthog）
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 180
@@ -1070,7 +1070,7 @@ A10.Husk.Empty.EMP:
 YF23.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Aurora)
+		Name: 残骸（极光战机）
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 240
@@ -1096,7 +1096,7 @@ YF23.Husk.EMP:
 AURO.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Husk (Aurora)
+		Name: 残骸（极光战机）
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 180
@@ -1130,7 +1130,7 @@ AURO.Husk.Empty.EMP:
 C17.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: C17
+		Name: C17运输机
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 236
@@ -1160,7 +1160,7 @@ C17.Husk.EMP:
 GALX.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Transport Aircraft
+		Name: 运输空中单位
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 266
@@ -1191,7 +1191,7 @@ GALX.Husk.EMP:
 ANTO.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Transport Aircraft
+		Name: 运输空中单位
 	Aircraft:
 		TurnSpeed: 5
 		Speed: 266
@@ -1221,14 +1221,14 @@ ANTO.Husk.EMP:
 BTR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (APC)
+		Name: 残骸（装甲运兵车）
 	RenderSprites:
 		Image: BTR.destroyed
 
 RAH.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Comanche
+		Name: 科曼奇
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -1266,7 +1266,7 @@ RAH.Husk.Empty.EMP:
 KIRO.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Kirov
+		Name: 基洛夫
 	Aircraft:
 		TurnSpeed: 2
 		Speed: 30
@@ -1312,7 +1312,7 @@ KIRO.Husk.Ground:
 	RenderSprites:
 		Image: kirov
 	Tooltip:
-		Name: Husk (Kirov)
+		Name: 残骸（基洛夫）
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -1333,21 +1333,21 @@ KIRO.Husk.Ground:
 APC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (APC)
+		Name: 残骸（装甲运兵车）
 	RenderSprites:
 		Image: apc.destroyed
 
 TTRA.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tesla Track)
+		Name: 残骸（磁暴履带车）
 	RenderSprites:
 		Image: ttra.destroyed
 
 TTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Tesla Tank)
+		Name: 残骸（磁暴坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1356,35 +1356,35 @@ TTNK.Husk:
 CYCP.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Cyclops)
+		Name: 残骸（独眼巨人）
 	RenderSprites:
 		Image: cycp.destroyed
 
 BASI.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Basilisk)
+		Name: 残骸（蛇怪）
 	RenderSprites:
 		Image: basi.destroyed
 
 ISU.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Siege Tank)
+		Name: 残骸（攻城坦克）
 	RenderSprites:
 		Image: isu.destroyed
 
 NUKC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Nuke Cannon)
+		Name: 残骸（核能火炮）
 	RenderSprites:
 		Image: nukc.destroyed
 
 DISR.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Disruptor)
+		Name: 残骸（干扰者）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1393,7 +1393,7 @@ DISR.Husk:
 WTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Microwave Tank)
+		Name: 残骸（微波坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1402,14 +1402,14 @@ WTNK.Husk:
 BATF.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Battle Fortress)
+		Name: 残骸（战斗要塞）
 	RenderSprites:
 		Image: batf.destroyed
 
 CHPR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Prison)
+		Name: 残骸（超时空牢笼）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1423,7 +1423,7 @@ MISS.Husk:
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
 	Tooltip:
-		Name: Ruin (Communications Center)
+		Name: 废墟（通讯中心）
 	TransformOnCapture:
 		IntoActor: miss
 	InfiltrateForTransform:
@@ -1437,7 +1437,7 @@ BIO.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Bio Lab)
+		Name: 废墟（生化实验室）
 	TransformOnCapture:
 		IntoActor: bio
 	InfiltrateForTransform:
@@ -1451,7 +1451,7 @@ HOSP.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Hospital)
+		Name: 废墟（医院）
 	TransformOnCapture:
 		IntoActor: hosp.rebuilt
 	InfiltrateForTransform:
@@ -1465,7 +1465,7 @@ MACS.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Machine Shop)
+		Name: 废墟（机械工坊）
 	TransformOnCapture:
 		IntoActor: macs.rebuilt
 	InfiltrateForTransform:
@@ -1476,7 +1476,7 @@ MACS.Husk:
 FCOM.Husk:
 	Inherits: ^TechHusk
 	Tooltip:
-		Name: Ruin (Forward Command)
+		Name: 废墟（前进指挥部）
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -1495,7 +1495,7 @@ OILB.Husk:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Ruin (Oil Derrick)
+		Name: 废墟（油井）
 	TransformOnCapture:
 		IntoActor: oilb
 	InfiltrateForTransform:
@@ -1514,7 +1514,7 @@ OILR.Husk:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	Tooltip:
-		Name: Ruin (Oil Refinery)
+		Name: 废墟（石油精炼厂）
 	TransformOnCapture:
 		IntoActor: oilr
 	InfiltrateForTransform:
@@ -1571,7 +1571,7 @@ HARR.Husk.Empty.EMP:
 HORN.Husk:
 	Inherits: ^PlaneHuskTD
 	Tooltip:
-		Name: Hornet
+		Name: 大黄蜂
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 195
@@ -1654,7 +1654,7 @@ SCRN.Husk.Empty.EMP:
 ORCB.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Orca Bomber
+		Name: Orca 轰炸机
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 155
@@ -1736,7 +1736,7 @@ SUK.Husk.Empty.EMP:
 PTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Prism Tank)
+		Name: 残骸（光棱坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1745,14 +1745,14 @@ PTNK.Husk:
 PCAN.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Prism Cannon)
+		Name: 残骸（光棱炮）
 	RenderSprites:
 		Image: pcan.destroyed
 
 WTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Microwave Tank)
+		Name: 残骸（微波坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1761,7 +1761,7 @@ WTNK.Husk:
 LTNK.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: Husk (Light Tank)
+		Name: 残骸（轻型坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1770,7 +1770,7 @@ LTNK.Husk:
 CHPR.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Chrono Prison)
+		Name: 残骸（超时空牢笼）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1779,7 +1779,7 @@ CHPR.Husk:
 VENM.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
-		Name: Venom
+		Name: 毒液
 	Aircraft:
 		TurnSpeed: 4
 		Speed: 186
@@ -1817,7 +1817,7 @@ VENM.Husk.Empty.EMP:
 APOC.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Apocalypse)
+		Name: 残骸（天启）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1826,7 +1826,7 @@ APOC.Husk:
 APOC.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Apocalyptic Eradicator)
+		Name: 残骸（末日根除者）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1835,7 +1835,7 @@ APOC.ERAD.Husk:
 OVLD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Overlord)
+		Name: 残骸（霸主）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1844,7 +1844,7 @@ OVLD.Husk:
 OVLD.ERAD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Eradicator Overlord)
+		Name: 残骸（根除者霸主）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -1853,7 +1853,7 @@ OVLD.ERAD.Husk:
 PMAK.Husk:
 	Inherits: ^PlaneHusk
 	Tooltip:
-		Name: Peacemaker
+		Name: 和平使者
 	Aircraft:
 		TurnSpeed: 7
 		Speed: 157
@@ -2126,7 +2126,7 @@ MCOR.Husk.EMP:
 DISC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Floating Disc
+		Name: 浮空飞碟
 	Aircraft:
 		TurnSpeed: 12
 		Speed: 112

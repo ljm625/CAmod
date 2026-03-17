@@ -18,7 +18,7 @@ INFANTRY.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Infantry Production
+		Name: 步兵生产
 	Buildable:
 		Description: 步兵生产
 
@@ -26,7 +26,7 @@ VEHICLES.SCRIN:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Vehicle Production
+		Name: 载具生产
 	Buildable:
 		Description: 载具生产
 
@@ -483,7 +483,7 @@ S1:
 	Valued:
 		Cost: 100
 	Tooltip:
-		Name: Warrior
+		Name: 战士
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -525,7 +525,7 @@ S2:
 	Valued:
 		Cost: 275
 	Tooltip:
-		Name: Ravager
+		Name: 掠夺者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -570,7 +570,7 @@ S3:
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Disintegrator
+		Name: 分解者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -631,7 +631,7 @@ S4:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Intruder
+		Name: 入侵者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -690,7 +690,7 @@ MRDR:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Marauder
+		Name: 劫掠者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -739,7 +739,7 @@ S6:
 		Prerequisites: ~infantry.scrin
 		IconPalette: chrome
 	Tooltip:
-		Name: Assimilator
+		Name: 同化者
 	Voiced:
 		VoiceSet: AssimilatorVoice
 
@@ -756,7 +756,7 @@ WCHR:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Watcher
+		Name: 守望者
 	TooltipExtras:
 		Weaknesses: • 无法造成伤害
 		Attributes: • 可附着寄生体到敌方载具与建筑\n• 静止时隐形\n• 侦测隐形地面单位与间谍\n• 特殊技能：传送（需升级）
@@ -832,7 +832,7 @@ BRST:
 	Valued:
 		Cost: 550
 	Tooltip:
-		Name: Burster
+		Name: 爆裂者
 	TooltipExtras:
 		Strengths: • 对步兵、建筑、轻甲单位强势
 		Weaknesses: • 无法攻击空中单位
@@ -886,7 +886,7 @@ EVIS:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Eviscerator
+		Name: 剖裂者
 	TooltipExtras:
 		Strengths: • 对轻甲单位、步兵强势
 		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
@@ -960,7 +960,7 @@ IMPL:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Impaler
+		Name: 穿刺者
 	TooltipExtras:
 		Strengths: • 对轻甲单位、步兵强势
 		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
@@ -1007,7 +1007,7 @@ STLK:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Stalker
+		Name: 潜行者
 	TooltipExtras:
 		Strengths: • 对轻甲单位、步兵强势
 		Weaknesses: • 对重甲单位、防御建筑弱势\n• 无法攻击空中单位
@@ -1102,7 +1102,7 @@ SMEDI:
 	Valued:
 		Cost: 200
 	Tooltip:
-		Name: Rejuvenator
+		Name: 再生者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1153,7 +1153,7 @@ ARTI:
 	Valued:
 		Cost: 400
 	Tooltip:
-		Name: Artificer
+		Name: 技工
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1235,7 +1235,7 @@ GSCR:
 		DeathSequencePalette: playerscrin
 	-Buildable:
 	Tooltip:
-		Name: Brutalizer
+		Name: 蛮兽
 	-GrantConditionOnTerrain@ONTIB:
 	-GrantStackingCondition@TIBEXPOSED:
 	-DamagedByTerrain@TIBDAMAGE:
@@ -1263,7 +1263,7 @@ GSCR.Mutating:
 	WithDeathAnimation:
 		DeathSequencePalette: playerscrin
 	Tooltip:
-		Name: Brutalizer
+		Name: 蛮兽
 
 MAST:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1290,7 +1290,7 @@ MAST:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Mastermind
+		Name: 主脑
 		RequiresCondition: !rank-elite
 	Tooltip@PRODIGY:
 		Name: Prodigy
@@ -1536,7 +1536,7 @@ GUNW:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Gun Walker
+		Name: 炮行者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1603,7 +1603,7 @@ SHRW:
 	Inherits: GUNW
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Shard Walker
+		Name: 碎晶行者
 	Buildable:
 		Prerequisites: ~vehicles.scrin, ~shrw.upgrade, ~techlevel.medium
 		IconPalette: chromes
@@ -1642,7 +1642,7 @@ SEEK:
 	Valued:
 		Cost: 700
 	Tooltip:
-		Name: Seeker
+		Name: 探索者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1725,7 +1725,7 @@ LACE:
 	Valued:
 		Cost: 600
 	Tooltip:
-		Name: Lacerator
+		Name: 裂伤者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -1818,7 +1818,7 @@ INTL:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Interloper
+		Name: 闯入者
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -1965,7 +1965,7 @@ CORR:
 	Valued:
 		Cost: 1100
 	Tooltip:
-		Name: Corrupter
+		Name: 腐化者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2028,7 +2028,7 @@ LCHR:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Leecher
+		Name: 吸食者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2118,9 +2118,9 @@ LCHR.Orb:
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	Tooltip:
-		Name: Leecher Orb
+		Name: 吸食者球体
 	TooltipExtras:
-		Description: 治疗附近友军；若未被摧毁会复生为 Leecher。
+		Description: 治疗附近友军；若未被摧毁会复生为吸食者。
 	RenderSprites:
 		Image: lchr.orb
 		Palette: caneon
@@ -2210,7 +2210,7 @@ STCR:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Stormcrawler
+		Name: 风暴爬行者
 	Selectable:
 		DecorationBounds: 1536, 1536, 0, -128
 	UpdatesPlayerStatistics:
@@ -2295,7 +2295,7 @@ DEVO:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Devourer Tank
+		Name: 吞噬者坦克
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2389,7 +2389,7 @@ DARK:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Darkener Tank
+		Name: 黯蚀坦克
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2457,7 +2457,7 @@ RUIN:
 	Valued:
 		Cost: 1250
 	Tooltip:
-		Name: Ruiner
+		Name: 毁灭者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2562,7 +2562,7 @@ ATMZ:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: Atomizer
+		Name: 裂解者
 	Selectable:
 		DecorationBounds: 1194, 1194
 	UpdatesPlayerStatistics:
@@ -2649,7 +2649,7 @@ TPOD:
 	Selectable:
 		Bounds: 1280, 2218, 0, -426
 	Tooltip:
-		Name: Annihilator Tripod
+		Name: 歼灭者三足机甲
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2737,7 +2737,7 @@ RTPD:
 	Valued:
 		Cost: 2200
 	Tooltip:
-		Name: Reaper Tripod
+		Name: 收割者三足机甲
 	Health:
 		HP: 102000
 	SpawnActorOnDeath:
@@ -2835,7 +2835,7 @@ OBLT:
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Obliterator
+		Name: 湮灭者
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -2955,7 +2955,7 @@ NULL:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Nullifier
+		Name: 归零者
 	Selectable:
 		DecorationBounds: 1877, 1621, 0, -170
 	UpdatesPlayerStatistics:
@@ -3032,7 +3032,7 @@ SMCV:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Ship
+		Name: 殖民舰
 	Selectable:
 		Priority: 4
 		Bounds: 1792, 1792
@@ -3098,7 +3098,7 @@ STMR:
 	Valued:
 		Cost: 1650
 	Tooltip:
-		Name: Stormrider
+		Name: 风暴骑士
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3237,7 +3237,7 @@ TORM:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Tormentor
+		Name: 折磨者
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3381,7 +3381,7 @@ ENRV:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Enervator
+		Name: 衰弱者
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3519,7 +3519,7 @@ DEVA:
 	Valued:
 		Cost: 2400
 	Tooltip:
-		Name: Devastator Warship
+		Name: 毁灭者战舰
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3650,18 +3650,18 @@ PAC:
 		Queue: AircraftSQ, AircraftMQ
 		BuildPaletteOrder: 112
 		Prerequisites: sign, scrt, ~aircraft.scrin, ~techlevel.high
-		Description: 可发射一支 Invader 突击飞行器中队的战舰。
+		Description: 可发射一支入侵者突击飞行器中队的战舰。
 		IconPalette: chrome
 	TooltipExtras:
 		Strengths: • 对重甲单位、轻甲单位、步兵强势
 		Weaknesses: • 对建筑、防御建筑弱势
-		Attributes: • Invader 仅可被静态防空防御建筑锁定
+		Attributes: • 入侵者飞行器仅可被静态防空防御建筑锁定
 	Voiced:
 		VoiceSet: PlanetaryAssaultCarrierVoice
 	Valued:
 		Cost: 2800
 	Tooltip:
-		Name: Planetary Assault Carrier
+		Name: 行星突击载具
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3798,7 +3798,7 @@ INVA:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Invader
+		Name: 入侵者飞行器
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3891,13 +3891,13 @@ MSHP:
 	TooltipExtras:
 		Strengths: • 对建筑、防御建筑、重甲单位、轻甲单位、步兵强势
 		Weaknesses: • 无法攻击空中单位\n• 反建筑武器开火前需长时间充能\n• 开火时无法移动
-		Attributes: • 最多只能建造 1 个\n• 可制造虫洞\n• 可为附近 Stormrider/Enervator 充能
+		Attributes: • 最多只能建造 1 个\n• 可制造虫洞\n• 可为附近风暴骑士/衰弱者充能
 	Voiced:
 		VoiceSet: MothershipVoice
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Mothership
+		Name: 母舰
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4087,14 +4087,14 @@ SMCV.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Colony Ship)
+		Name: 残骸（殖民舰）
 	RenderSprites:
 		Image: smcv.destroyed
 
 HARV.Scrin.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Harvester)
+		Name: 残骸（采矿车）
 	RenderSprites:
 		Image: harv.scrin.destroyed
 	WithShadow:
@@ -4105,7 +4105,7 @@ GUNW.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Gun Walker)
+		Name: 残骸（炮行者）
 	RenderSprites:
 		Image: gunw.destroyed
 
@@ -4113,7 +4113,7 @@ SEEK.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Seeker)
+		Name: 残骸（探索者）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4126,7 +4126,7 @@ INTL.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Interloper)
+		Name: 残骸（闯入者）
 	RenderSprites:
 		Image: intl.destroyed
 
@@ -4134,14 +4134,14 @@ CORR.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Corrupter)
+		Name: 残骸（腐化者）
 	RenderSprites:
 		Image: corr.destroyed
 
 DEVO.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Devourer)
+		Name: 残骸（吞噬者）
 	RenderSprites:
 		Image: devo.destroyed
 
@@ -4149,7 +4149,7 @@ STCR.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Stormcrawler)
+		Name: 残骸（风暴爬行者）
 	RenderSprites:
 		Image: stcr.destroyed
 
@@ -4157,14 +4157,14 @@ RUIN.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Ruiner)
+		Name: 残骸（毁灭者）
 	RenderSprites:
 		Image: ruin.destroyed
 
 TPOD.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: Husk (Annihilator Tripod)
+		Name: 残骸（歼灭者三足机甲）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4174,7 +4174,7 @@ RTPD.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Reaper Tripod)
+		Name: 残骸（收割者三足机甲）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
@@ -4184,7 +4184,7 @@ OBLT.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Obliterator)
+		Name: 残骸（湮灭者）
 	RenderSprites:
 		Image: oblt.destroyed
 
@@ -4192,7 +4192,7 @@ NULL.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Nullifier)
+		Name: 残骸（归零者）
 	RenderSprites:
 		Image: null.destroyed
 
@@ -4200,7 +4200,7 @@ STMR.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Stormrider
+		Name: 风暴骑士
 	Aircraft:
 		TurnSpeed: 16
 		Speed: 146
@@ -4241,7 +4241,7 @@ TORM.Husk:
 	Inherits: ^PlaneHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Tormentor
+		Name: 折磨者
 	Aircraft:
 		TurnSpeed: 28
 		Speed: 201
@@ -4280,7 +4280,7 @@ ENRV.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Enervator
+		Name: 衰弱者
 		GenericName: Destroyed Aircraft
 	Aircraft:
 		TurnSpeed: 14
@@ -4322,7 +4322,7 @@ ENRV.Husk.EMP:
 DEVA.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Devastator Warship
+		Name: 毁灭者战舰
 		GenericName: Destroyed Aircraft
 	Aircraft:
 		TurnSpeed: 8
@@ -4354,7 +4354,7 @@ DEVA.Husk.Ground:
 	RenderSprites:
 		Image: deva
 	Tooltip:
-		Name: Husk (Devastator Warship)
+		Name: 残骸（毁灭者战舰）
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4375,7 +4375,7 @@ DEVA.Husk.Ground:
 PAC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
-		Name: Planetary Assault Carrier
+		Name: 行星突击载具
 		GenericName: Destroyed Aircraft
 	Aircraft:
 		TurnSpeed: 8
@@ -4409,7 +4409,7 @@ PAC.Husk.Ground:
 	RenderSprites:
 		Image: pac
 	Tooltip:
-		Name: Husk (Planetary Assault Carrier)
+		Name: 残骸（行星突击载具）
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4431,7 +4431,7 @@ MSHP.Husk:
 	Inherits: ^HelicopterHusk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Mothership
+		Name: 母舰
 		GenericName: Destroyed Aircraft
 	Aircraft:
 		TurnSpeed: 8
@@ -4470,7 +4470,7 @@ MSHP.Husk.Ground:
 	RenderSprites:
 		Image: mshp
 	Tooltip:
-		Name: Husk (Mothership)
+		Name: 残骸（母舰）
 	KillsSelf:
 		Delay: 1
 		-RequiresCondition:
@@ -4513,7 +4513,7 @@ SWAL:
 	CustomSellValue:
 		Value: 0
 	Tooltip:
-		Name: Biometallic Wall
+		Name: 生化金属墙
 	SoundOnDamageTransition:
 		DamagedSounds: crmble2.aud
 		DestroyedSounds: kaboom30.aud
@@ -4570,7 +4570,7 @@ SFAC:
 	Valued:
 		Cost: 3000
 	Tooltip:
-		Name: Colony Platform
+		Name: 殖民平台
 	BaseBuilding:
 	Transforms:
 		RequiresCondition: factundeploy
@@ -4664,7 +4664,7 @@ REAC:
 	Valued:
 		Cost: 300
 	Tooltip:
-		Name: Reactor
+		Name: 反应堆
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4706,7 +4706,7 @@ REA2:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Advanced Reactor
+		Name: 高级反应堆
 	ProvidesPrerequisite@anypower:
 		Prerequisite: anypower
 	Building:
@@ -4748,7 +4748,7 @@ PROC.SCRIN:
 	CustomSellValue:
 		Value: 400
 	Tooltip:
-		Name: Refinery
+		Name: 精炼厂
 	Buildable:
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~structures.scrin
@@ -4833,7 +4833,7 @@ PORT:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Portal
+		Name: 传送门
 	Building:
 		Footprint: xx xx ++
 		Dimensions: 2,3
@@ -4929,7 +4929,7 @@ WSPH:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warp Sphere
+		Name: 扭曲球体
 	Building:
 		Footprint: xxx xxx +++
 		Dimensions: 3,3
@@ -5026,7 +5026,7 @@ NERV:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Nerve Center
+		Name: 神经中枢
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5129,7 +5129,7 @@ SCRT:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Scrin Tech Center
+		Name: Scrin 科技中心
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
@@ -5190,7 +5190,7 @@ GRAV:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Gravity Stabilizer
+		Name: 重力稳定器
 	Selectable:
 		Bounds: 3072, 2560, 0, -128
 	Building:
@@ -5323,7 +5323,7 @@ SIGN:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Signal Transmitter
+		Name: 信号发射器
 	Power:
 		Amount: -150
 	ProvidesPrerequisite@Name:
@@ -5359,7 +5359,7 @@ SREP:
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: Regeneration Bay
+		Name: 再生舱
 	Building:
 		Footprint: _+_ +++ _+_
 		Dimensions: 3,3
@@ -5420,7 +5420,7 @@ SILO.SCRIN:
 	Valued:
 		Cost: 150
 	Tooltip:
-		Name: Silo
+		Name: 储存仓
 	Buildable:
 		BuildPaletteOrder: 35
 		Prerequisites: proc.scrin, ~structures.scrin
@@ -5474,7 +5474,7 @@ MANI:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Field Manipulator
+		Name: 力场操控器
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5531,7 +5531,7 @@ RFGN:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Rift Generator
+		Name: 裂隙发生器
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
@@ -5598,7 +5598,7 @@ PTUR:
 	CustomSellValue:
 		Value: 250
 	Tooltip:
-		Name: Plasma Cannon
+		Name: 等离子炮
 	Selectable:
 		DecorationBounds: 1024, 1194, 0, -256
 	Building:
@@ -5662,7 +5662,7 @@ SHAR:
 	Valued:
 		Cost: 800
 	Tooltip:
-		Name: Shard Launcher
+		Name: 碎晶发射器
 	Selectable:
 		DecorationBounds: 1024, 1877, 0, -469
 	Health:
@@ -5728,7 +5728,7 @@ SCOL:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Storm Column
+		Name: 风暴柱
 	Selectable:
 		DecorationBounds: 1280, 2048, 0, -597
 	Health:
@@ -5773,7 +5773,7 @@ STRM:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Ion Storm
+		Name: 离子风暴
 	# required for death animation
 	Health:
 		HP: 1
@@ -5883,7 +5883,7 @@ STRM2:
 SSPK:
 	Inherits: SCOL
 	Tooltip:
-		Name: Storm Spike
+		Name: 风暴尖塔
 	Encyclopedia:
 		Category: Scrin/Support Powers
 	-Sellable:
@@ -5971,7 +5971,7 @@ VSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Voidspike
+		Name: 虚空尖塔
 	TooltipExtras:
 		Attributes: • 腐化资源\n• 持续伤害附近敌人\n• 直接伤害会反弹给攻击者
 		Description: 逐步将附近资源转化为黑色泰伯利亚，其大部分有用性质会消失。
@@ -6028,7 +6028,7 @@ ISPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Ichor Spike
+		Name: 伊寇尖塔
 	TooltipExtras:
 		Attributes: • 强化泰伯利亚树\n• 强化拥有资源转换升级的单位
 		Description: 强化附近泰伯利亚树，使其更快生长泰伯利亚。
@@ -6078,7 +6078,7 @@ CSPK:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Colony Spike
+		Name: 殖民尖塔
 	TooltipExtras:
 		Attributes: • 生产非防御建筑\n• 完全充能后可在附近建造非防御建筑
 		Description: 启用非防御建筑生产。
@@ -6154,7 +6154,7 @@ BUZZ:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Buzzer Swarm
+		Name: 蜂群虫潮
 	TooltipExtras:
 		Description: 生物金属碎片群。
 		Strengths: • 对步兵、轻甲单位强势
@@ -6230,7 +6230,7 @@ MSPK:
 	Inherits@selection: ^SelectableSupportUnit
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Tooltip:
-		Name: Mind Spark
+		Name: 心灵火花
 	RenderSprites:
 		Palette: caneon
 	WithSpriteBody:
@@ -6282,7 +6282,7 @@ GRCL:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Greater Coalescence
+		Name: 高阶聚合
 	TooltipExtras:
 		Description: 脉动生物质，可治疗友军并汲取敌人。
 		Attributes: • 治疗附近友军\n• 减速并抽取敌方生命值\n• 可瘫痪发电厂
@@ -6356,7 +6356,7 @@ GRCL:
 TBCL:
 	Inherits: GRCL
 	Tooltip:
-		Name: Tiberium Coalescence
+		Name: 泰伯利亚聚合
 	TooltipExtras:
 		Description: 脉动生物质，可伤害附近单位。
 		-Attributes:
@@ -6558,7 +6558,7 @@ IonSurgeFade:
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
 	Tooltip:
-		Name: Wormhole
+		Name: 虫洞
 	RenderSprites:
 		PlayerPalette: playerscrin
 	WithSpriteBody:
@@ -6610,7 +6610,7 @@ REBELGATEWAY:
 	Inherits@SelectableBuilding: ^SelectableBuilding
 	-Interactable:
 	Tooltip:
-		Name: Gateway
+		Name: 传送门
 	TooltipExtras:
 		Attributes: • 可断电停用，或出售移除\n• 建筑需手动连接后传送门才会生效
 		Description: 作为已连接地面单位生产建筑的远端出口

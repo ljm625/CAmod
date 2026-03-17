@@ -17,7 +17,7 @@ BADR:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: 獾式轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -70,7 +70,7 @@ BADR.Bomber:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Badger
+		Name: 獾式轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -164,7 +164,7 @@ B2B:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: B2 Stealth Bomber
+		Name: B2隐形轰炸机
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -226,7 +226,7 @@ MIG:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: MiG Attack Plane
+		Name: 米格攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -353,7 +353,7 @@ SUK:
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Tooltip:
-		Name: Sukhoi Attack Plane
+		Name: 苏霍伊攻击机
 	Health:
 		HP: 18000
 	RevealsShroud:
@@ -501,7 +501,7 @@ YAK:
 	Valued:
 		Cost: 1200
 	Tooltip:
-		Name: Yak Attack Plane
+		Name: 雅克攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -598,7 +598,7 @@ P51:
 	Inherits: ^NeutralPlane
 	Inherits@EMP: ^EmpDisable
 	Tooltip:
-		Name: P51 Attack Plane
+		Name: P51攻击机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -681,7 +681,7 @@ TRAN:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Chinook
+		Name: 支奴干
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -805,7 +805,7 @@ HALO:
 	RenderSprites:
 		Image: halo
 	Tooltip:
-		Name: Halo
+		Name: 光环运输机
 	Valued:
 		Cost: 1000
 	Cargo:
@@ -890,7 +890,7 @@ NHAW:
 	Valued:
 		Cost: 1150
 	Tooltip:
-		Name: Nighthawk
+		Name: 夜鹰
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1089,7 +1089,7 @@ HELI:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Longbow
+		Name: 长弓
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1211,7 +1211,7 @@ HIND:
 	Valued:
 		Cost: 1600
 	Tooltip:
-		Name: Hind
+		Name: 雌鹿
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1342,7 +1342,7 @@ U2:
 	Health:
 		HP: 200000
 	Tooltip:
-		Name: Spy Plane
+		Name: 间谍飞机
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 28
@@ -1415,7 +1415,7 @@ SMIG:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Supersonic Bomber
+		Name: 超音速轰炸机
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -1503,7 +1503,7 @@ A10:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Warthog
+		Name: 疣猪战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -1709,7 +1709,7 @@ A10.SW:
 		ValidTargets: Air, AirSmall
 		InvalidTargets: NoAutoTarget
 	EncyclopediaExtras:
-		Name: Sidewinder Warthog
+		Name: Sidewinder 疣猪战机
 		VariantOf: A10
 
 A10.GAU:
@@ -1788,7 +1788,7 @@ A10.GAU:
 		FullSequence: pip-red
 	WithMuzzleOverlay:
 	EncyclopediaExtras:
-		Name: Avenger Warthog
+		Name: Avenger 疣猪战机
 		VariantOf: A10
 
 A10.bomber:
@@ -1796,7 +1796,7 @@ A10.bomber:
 	Inherits@EMP: ^EmpDisable
 	Inherits@TDPAL: ^TDPalette
 	Tooltip:
-		Name: Warthog
+		Name: 疣猪战机
 	Health:
 		HP: 36000
 	Armament:
@@ -1879,7 +1879,7 @@ C17:
 	-Selectable:
 	-Voiced:
 	Tooltip:
-		Name: Supply Aircraft
+		Name: 补给运输机
 	Contrail@1:
 		Offset: -261,-650,0
 		TrailLength: 15
@@ -1978,7 +1978,7 @@ GALX:
 	RenderSprites:
 		Image: galx
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: 重型运输机
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2009,7 +2009,7 @@ ANTO:
 		Image: anto
 		PlayerPalette: player
 	Tooltip:
-		Name: Heavy Transport Aircraft
+		Name: 重型运输机
 	Health:
 		HP: 90000
 	Aircraft:
@@ -2065,7 +2065,7 @@ APCH:
 	Valued:
 		Cost: 1400
 	Tooltip:
-		Name: Apache
+		Name: 阿帕奇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2179,7 +2179,7 @@ ORCA:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Orca
+		Name: 奥卡
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -2333,7 +2333,7 @@ ORCB:
 		BuildPaletteOrder: 90
 		Prerequisites: afld.gdi, ~aircraft.gdi, gtek, ~techlevel.high
 		IconPalette: chrometd
-		Description: 配备 EMP 炸弹的重型垂直起降轰炸机。
+		Description: 配备电磁脉冲炸弹的重型垂直起降轰炸机。
 	TooltipExtras:
 		Strengths: • 对防御建筑、重甲单位、轻甲单位强势
 		Weaknesses: • 对步兵弱势\n• 无法攻击空中单位
@@ -2341,7 +2341,7 @@ ORCB:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Orca Bomber
+		Name: 奥卡轰炸机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -2496,7 +2496,7 @@ UAV:
 	Health:
 		HP: 40000
 	Tooltip:
-		Name: Recon Drone
+		Name: 侦察无人机
 	Armor:
 		Type: Aircraft
 	Aircraft:
@@ -2560,7 +2560,7 @@ RAH:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Comanche
+		Name: 科曼奇
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2711,7 +2711,7 @@ KIRO:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Kirov Airship
+		Name: 基洛夫空艇
 		GenericName: Airship
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -2905,7 +2905,7 @@ OCAR:
 	Valued:
 		Cost: 900
 	Tooltip:
-		Name: Orca Carryall
+		Name: 奥卡运载机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3137,7 +3137,7 @@ HARR:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Harrier
+		Name: 鹞式战机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3262,7 +3262,7 @@ SCRN:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Banshee
+		Name: 女妖战机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -3411,7 +3411,7 @@ HORN:
 	Valued:
 		Cost: 50
 	Tooltip:
-		Name: Hornet
+		Name: 大黄蜂
 	Health:
 		HP: 22000
 	RevealsShroud:
@@ -3487,7 +3487,7 @@ YF23.Bomber:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Widow
+		Name: 黑寡妇
 	Health:
 		HP: 36000
 	Armament:
@@ -3568,7 +3568,7 @@ POD:
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Drop Pod
+		Name: 空降舱
 	Health:
 		HP: 7200
 	Armor:
@@ -3622,7 +3622,7 @@ VENM:
 	Valued:
 		Cost: 1500
 	Tooltip:
-		Name: Venom
+		Name: 毒液战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -3767,7 +3767,7 @@ AURO:
 	Valued:
 		Cost: 2300
 	Tooltip:
-		Name: Aurora
+		Name: 极光战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3937,7 +3937,7 @@ PMAK:
 	Valued:
 		Cost: 2500
 	Tooltip:
-		Name: Peacemaker
+		Name: 和平使者
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4085,7 +4085,7 @@ BEAG:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Black Eagle
+		Name: 黑鹰战机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4212,7 +4212,7 @@ PHAN:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Phantom
+		Name: 幻影战机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4347,7 +4347,7 @@ KAMV:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Kamov
+		Name: 卡莫夫
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4464,14 +4464,14 @@ SHDE:
 		BuildPaletteOrder: 202
 		IconPalette: chrometd
 		Prerequisites: anyradar, ~aircraft.shde
-		Description: 快速垂直起降对地攻击机，配备 EMP 武器。
+		Description: 快速垂直起降对地攻击机，配备电磁脉冲武器。
 	TooltipExtras:
 		Strengths: • 对重甲单位、轻甲单位、防御建筑强势
 		Weaknesses: • 对步兵、建筑弱势\n• 无法攻击空中单位
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Shade
+		Name: 暗影战机
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4603,7 +4603,7 @@ VERT:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Vertigo
+		Name: 维提戈
 		GenericName: Aircraft
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -4745,7 +4745,7 @@ MCOR:
 	Valued:
 		Cost: 1800
 	Tooltip:
-		Name: Manticore
+		Name: 蝎尾兽
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4826,7 +4826,7 @@ DISC:
 	Valued:
 		Cost: 2000
 	Tooltip:
-		Name: Floating Disc
+		Name: 浮空飞碟
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -4983,7 +4983,7 @@ JACK:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Jackknife
+		Name: 折刀战机
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
