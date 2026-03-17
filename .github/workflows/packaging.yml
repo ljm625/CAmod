@@ -41,7 +41,13 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Prepare Environment
-        run: echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
+        run: |
+          RAW_TAG="${GITHUB_REF#refs/tags/}"
+          SAFE_TAG="${RAW_TAG//\//-}"
+          echo "GIT_TAG=${SAFE_TAG}" >> ${GITHUB_ENV}
+          if [ "${RAW_TAG}" != "${SAFE_TAG}" ]; then
+            echo "Using sanitized packaging tag: ${SAFE_TAG} (from ${RAW_TAG})"
+          fi
 
       - name: Package AppImage
         run: |
@@ -71,7 +77,13 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Prepare Environment
-        run: echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
+        run: |
+          RAW_TAG="${GITHUB_REF#refs/tags/}"
+          SAFE_TAG="${RAW_TAG//\//-}"
+          echo "GIT_TAG=${SAFE_TAG}" >> ${GITHUB_ENV}
+          if [ "${RAW_TAG}" != "${SAFE_TAG}" ]; then
+            echo "Using sanitized packaging tag: ${SAFE_TAG} (from ${RAW_TAG})"
+          fi
 
       - name: Package Disk Image
         env:
@@ -107,7 +119,12 @@ jobs:
 
       - name: Prepare Environment
         run: |
-          echo "GIT_TAG=${GITHUB_REF#refs/tags/}" >> ${GITHUB_ENV}
+          RAW_TAG="${GITHUB_REF#refs/tags/}"
+          SAFE_TAG="${RAW_TAG//\//-}"
+          echo "GIT_TAG=${SAFE_TAG}" >> ${GITHUB_ENV}
+          if [ "${RAW_TAG}" != "${SAFE_TAG}" ]; then
+            echo "Using sanitized packaging tag: ${SAFE_TAG} (from ${RAW_TAG})"
+          fi
           sudo apt-get update
           sudo apt-get install nsis wine64
 

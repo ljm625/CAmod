@@ -78,7 +78,11 @@ if [ -n "${MACOS_DEVELOPER_CERTIFICATE_BASE64}" ] && [ -n "${MACOS_DEVELOPER_CER
 	rm -fr build.p12
 fi
 
-TAG="$1"
+RAW_TAG="$1"
+TAG="${RAW_TAG//\//-}"
+if [ "${RAW_TAG}" != "${TAG}" ]; then
+	echo "Using sanitized packaging tag: ${TAG} (from ${RAW_TAG})"
+fi
 if [ $# -eq "1" ]; then
 	OUTPUTDIR=$(python3 -c "import os; print(os.path.realpath('.'))")
 else

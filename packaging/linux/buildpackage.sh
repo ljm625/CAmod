@@ -38,7 +38,11 @@ fi
 require_variables "MOD_ID" "ENGINE_DIRECTORY" "PACKAGING_DISPLAY_NAME" "PACKAGING_INSTALLER_NAME" "PACKAGING_COPY_CNC_DLL" "PACKAGING_COPY_D2K_DLL" \
 	"PACKAGING_FAQ_URL" "PACKAGING_OVERWRITE_MOD_VERSION"
 
-TAG="$1"
+RAW_TAG="$1"
+TAG="${RAW_TAG//\//-}"
+if [ "${RAW_TAG}" != "${TAG}" ]; then
+	echo "Using sanitized packaging tag: ${TAG} (from ${RAW_TAG})"
+fi
 if [ $# -eq "1" ]; then
 	OUTPUTDIR=$(python3 -c "import os; print(os.path.realpath('.'))")
 else
