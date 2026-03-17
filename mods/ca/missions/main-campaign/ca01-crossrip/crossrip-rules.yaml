@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, crossrip.lua
 	MissionData:
-		Briefing: Strange and inexplicable occurrences continue to leave our best scientists dumbfounded.\n\nWe have detected unusual energy readings emanating from a Soviet facility in the area, and there may be a connection.\n\nEstablish a base and investigate.\n\nIf the Soviets put up strong resistance then they must be hiding something of importance, in which case you are authorized to launch a full scale attack.\n\nUnfortunately we can't commit our most advanced equipment or aircraft until we've assessed if there is a significant threat.
+		Briefing: 持续出现的离奇现象仍让我们最优秀的科学家毫无头绪。\n\n我们在该地区一处苏联设施探测到异常能量读数，这两者可能有关联。\n\n建立基地并展开调查。\n\n如果苏军展开强力抵抗，那他们很可能在隐藏某些重要东西。在这种情况下，你获准发动全面进攻。\n\n遗憾的是，在确认威胁级别前，我们无法投入最先进的装备和航空力量。
 		WinVideo: crontest.vqa
 		LossVideo: battle.vqa
 	MapOptions:

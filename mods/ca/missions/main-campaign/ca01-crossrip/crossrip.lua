@@ -199,8 +199,8 @@ WorldLoaded = function()
 	InitUSSR()
 
 	Trigger.AfterDelay(1, function()
-		ObjectiveEstablishBase = Greece.AddObjective("Establish a base.")
-		UserInterface.SetMissionText("Establish a base.", HSLColor.Yellow)
+		ObjectiveEstablishBase = Greece.AddObjective("建立基地。")
+		UserInterface.SetMissionText("建立基地。", HSLColor.Yellow)
 	end)
 
 	Trigger.OnKilled(Church, function(self, killer)
@@ -217,10 +217,10 @@ WorldLoaded = function()
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		BaseFlare = Actor.Create("flare", true, { Owner = Greece, Location = DeploySuggestion.Location })
 		PlaySpeechNotificationToMissionPlayers("SignalFlare")
-		Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification("侦测到信号弹。按 [" .. UtilsCA.Hotkey("ToLastEvent") .. "] 查看位置。")
 		Beacon.New(Greece, DeploySuggestion.CenterPosition)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Tip("Press [" .. UtilsCA.Hotkey("OpenTeamChat") .. "] to open the chat panel to read previous notification messages.")
+			Tip("按 [" .. UtilsCA.Hotkey("OpenTeamChat") .. "] 打开聊天面板，可查看之前的通知消息。")
 		end)
 
 		Trigger.OnEnteredProximityTrigger(DeploySuggestion.CenterPosition, WDist.New(6 * 1024), function(a, id)
@@ -240,7 +240,7 @@ Tick = function()
 	if not IsBaseEstablished and MissionPlayersHaveConyard() then
 		IsBaseEstablished = true
 		if ObjectiveInvestigateArea == nil then
-			ObjectiveInvestigateArea = Greece.AddObjective("Investigate the area.")
+			ObjectiveInvestigateArea = Greece.AddObjective("调查该地区。")
 			UserInterface.SetMissionText("")
 		end
 		Greece.MarkCompletedObjective(ObjectiveEstablishBase)
@@ -249,15 +249,15 @@ Tick = function()
 			InitUSSRAttacks()
 
 			Trigger.AfterDelay(DateTime.Seconds(5), function()
-				Tip("Build a barracks for access to static defenses which should allow you to hold off any early attacks. Use Pillboxes against infantry and Turrets against vehicles.")
+				Tip("建造兵营以解锁静态防御，可帮助你抵挡前期进攻。机枪碉堡克制步兵，炮塔克制载具。")
 			end)
 
 			Trigger.AfterDelay(DateTime.Minutes(2), function()
-				Tip("Mechanics can repair your vehicles in the field. Putting a Mechanic inside an IFV turns it into a repair vehicle. Build a Supply Depot for access to Mechanics.")
+				Tip("机械师可在前线修理你的载具。将机械师装入多功能步兵战车即可将其改装为维修载具。建造补给站以解锁机械师。")
 			end)
 
 			Trigger.AfterDelay(DateTime.Minutes(3), function()
-				Tip("Prism Tanks are excellent long range support units that are effective against infantry, defenses and light vehicles. Build a Radar Dome for access to Prism Tanks.")
+				Tip("光棱坦克是优秀的远程支援单位，对步兵、防御建筑和轻甲单位效果显著。建造雷达穹顶以解锁光棱坦克。")
 			end)
 		end
 	end
@@ -274,10 +274,10 @@ OncePerSecondChecks = function()
 		if TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Evacuation begins in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionText("撤离将在 " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks) .. " 后开始", HSLColor.Yellow)
 			else
 				TimerTicks = 0
-				UserInterface.SetMissionText("Evacuation underway.", HSLColor.Yellow)
+				UserInterface.SetMissionText("撤离进行中。", HSLColor.Yellow)
 				Greece.MarkCompletedObjective(ObjectiveDefendUntilEvacuation)
 			end
 		end
@@ -416,14 +416,14 @@ ChronosphereDiscovered = function()
 	if not IsChronosphereDiscovered then
 		IsBaseEstablished = true
 		IsChronosphereDiscovered = true
-		Notification("Commander, the Soviets have been attempting to reverse engineer stolen Chronosphere technology! Use whatever means necessary to cease their experiments.")
+		Notification("指挥官，苏军一直在尝试逆向解析被窃取的超时空传送技术！不惜一切代价终止他们的实验。")
 		MediaCA.PlaySound(MissionDir .. "/r_chronodisc.aud", 2)
 
 		local autoCamera = Actor.Create("smallcamera", true, { Owner = Greece, Location = SovietChronosphereLocation })
 		Trigger.AfterDelay(DateTime.Seconds(5), autoCamera.Destroy)
 
-		ObjectiveCaptureOrDestroyChronosphere = Greece.AddObjective("Capture or destroy the Soviet Chronosphere.")
-		UserInterface.SetMissionText("Capture or destroy the Soviet Chronosphere.", HSLColor.Yellow)
+		ObjectiveCaptureOrDestroyChronosphere = Greece.AddObjective("夺取或摧毁苏联超时空传送仪。")
+		UserInterface.SetMissionText("夺取或摧毁苏联超时空传送仪。", HSLColor.Yellow)
 
 		if ObjectiveEstablishBase ~= nil and not Greece.IsObjectiveCompleted(ObjectiveEstablishBase) then
 			Greece.MarkCompletedObjective(ObjectiveEstablishBase)
@@ -462,7 +462,7 @@ InterdimensionalCrossrip = function()
 	Trigger.AfterDelay(1, SpawnWormhole)
 	Trigger.AfterDelay(2, SpawnTibTree)
 
-	ObjectiveDefendUntilEvacuation = Greece.AddObjective("Defend your base until evacuation is prepared.")
+	ObjectiveDefendUntilEvacuation = Greece.AddObjective("坚守基地，直至撤离准备完成。")
 
 	if ObjectiveCaptureOrDestroyChronosphere ~= nil then
 		Greece.MarkCompletedObjective(ObjectiveCaptureOrDestroyChronosphere)
@@ -476,7 +476,7 @@ InterdimensionalCrossrip = function()
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
 		ScrinInvasion()
-		Notification("Unidentified hostile forces detected. Fall back to your base, and prepare for evacuation.")
+		Notification("检测到不明敌对部队。立刻撤回基地，并准备撤离。")
 		MediaCA.PlaySound(MissionDir .. "/r_evac.aud", 2)
 		TimerTicks = EvacuationTime[Difficulty]
 		Trigger.AfterDelay(DateTime.Seconds(7), function()

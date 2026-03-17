@@ -54,7 +54,7 @@ PROXYMINESPAWN:
 	Armor:
 		Type: Light
 	Tooltip:
-		Name: Mine
+		Name: 地雷
 	Targetable:
 		TargetTypes: Ground, Water, Mine
 	HitShape:
@@ -276,7 +276,7 @@ CRATE:
 MONEYCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Money Crate
+		Name: 金钱箱
 	GiveCashCrateAction:
 		Amount: 500
 		SelectionShares: 1
@@ -287,7 +287,7 @@ MONEYCRATE:
 HEALCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Heal Crate
+		Name: 治疗箱
 	HealActorsCrateAction:
 		Sound: heal2.aud
 		SelectionShares: 1
@@ -298,19 +298,19 @@ HEALCRATE:
 WCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Wooden Crate
+		Name: 木箱
 	RenderSprites:
 		Image: wcrate
 
 SCRATE:
 	Inherits: ^Crate
 	Tooltip:
-		Name: Steel Crate
+		Name: 铁箱
 
 ^CameraBase:
 	Inherits@DUMMY: ^InvisibleDummy
 	EditorOnlyTooltip:
-		Name: (reveals area to owner)
+		Name: （为拥有者揭示区域）
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
@@ -364,7 +364,7 @@ camera.satscan:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: Satellite Scan
+		Name: 卫星扫描
 	RevealsMap:
 		RevealGeneratedShroud: false
 		RequiresCondition: uplinkavailable
@@ -420,7 +420,7 @@ gps.satellite:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS Satellite
+		Name: GPS 卫星
 
 gps.satellite.firstscan:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -428,13 +428,13 @@ gps.satellite.firstscan:
 	Buildable:
 		Queue: SpySatellite
 	Tooltip:
-		Name: GPS Satellite
+		Name: GPS 卫星
 
 ToxicCloud:
 	Interactable:
 	ScriptTriggers:
 	EditorOnlyTooltip:
-		Name: (support power)
+		Name: （支援技能）
 	HiddenUnderFog:
 		Type: CenterPosition
 	RenderSprites:
@@ -534,7 +534,7 @@ FLARE:
 	HiddenUnderFog:
 		Type: CenterPosition
 	Tooltip:
-		Name: Flare
+		Name: 信号弹
 		ShowOwnerRow: false
 	MapEditorData:
 		Categories: Decoration
@@ -544,7 +544,7 @@ FLARE.dropzone:
 	RevealsShroud:
 		Range: 4c0
 	Tooltip:
-		Name: Dropzone Flare
+		Name: 空投区信号弹
 	FreeActorWithDelivery@2:
 		Actor: vulc.reinforce
 		DeliveryOffset: 0,0
@@ -566,7 +566,7 @@ MINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Ore Mine
+		Name: 矿石矿井
 	RenderSprites:
 		Palette: terrain
 	WithSpriteBody:
@@ -595,7 +595,7 @@ GMINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Gem Mine
+		Name: 宝石矿井
 	RenderSprites:
 		Palette: player
 	WithSpriteBody:
@@ -624,7 +624,7 @@ RAILMINE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Abandoned Mine
+		Name: 废弃矿井
 	RenderSprites:
 		Palette: player
 	WithSpriteBody:
@@ -643,7 +643,7 @@ QUEE:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Queen Ant
+		Name: 蚁后
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -659,7 +659,7 @@ LAR1:
 	Interactable:
 	HiddenUnderShroud:
 	Tooltip:
-		Name: Ant Larva
+		Name: 蚁幼虫
 	Building:
 		Footprint: x
 		Dimensions: 1,1
@@ -674,14 +674,14 @@ LAR1:
 LAR2:
 	Inherits@1: LAR1
 	Tooltip:
-		Name: Ant Larvae
+		Name: 蚁群幼虫
 
 powerproxy.parabombs:
 	Inherits@DUMMY: ^InvisibleDummy
 	AirstrikePowerCA:
 		Icon: parabombs
-		Name: Parabombs (Single Use)
-		Description: A Badger drops a load of parachuted bombs on your target.
+		Name: 伞降炸弹（一次性）
+		Description: 一架 Badger 在你的目标区域投下伞降炸弹。
 		OneShot: true
 		AllowMultiple: true
 		UnitType: badr.bomber
@@ -703,8 +703,8 @@ powerproxy.sonarpulse:
 	Inherits@DUMMY: ^InvisibleDummy
 	SpawnActorPower:
 		Icon: sonar
-		Name: Sonar Pulse
-		Description: Reveals all submarines in the vicinity for a \nshort time.
+		Name: 声呐脉冲
+		Description: 在短时间内揭示附近所有潜艇。
 		ChargeInterval: 750
 		EndChargeSpeechNotification: SonarPulseReady
 		SelectTargetSpeechNotification: SelectTarget
@@ -722,8 +722,8 @@ powerproxy.paratroopers:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: halo.paradrop
-		Name: Paratroopers (Single Use)
-		Description: A Halo transport drops a squad of infantry\nanywhere on the map.
+		Name: 伞兵（一次性）
+		Description: 一架 Halo 运输机可在地图任意位置空投一队步兵。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: E1,E1,E1,E3,E3,E1,E1,E1,E2,E2
@@ -747,8 +747,8 @@ powerproxy.paratroopers.allies:
 		Icon: paratroopers
 		SquadSize: 1
 		UnitType: tran.paradrop
-		Name: Paratroopers (Single Use)
-		Description: A Chinook drops a squad of infantry\nanywhere on the map.
+		Name: 伞兵（一次性）
+		Description: 一架 Chinook 可在地图任意位置空投一队步兵。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: E1,E1,E1,E1,E3,E3,E3,MEDI
@@ -773,8 +773,8 @@ powerproxy.airborne:
 		Icon: airborne
 		SquadSize: 1
 		UnitType: galx
-		Name: Airdrop: Guardian GIs (Single Use)
-		Description: A Heavy Transport Plane drops a squad of Guardian GIs\nanywhere on the map.
+		Name: 空投：守护者大兵（一次性）
+		Description: 一架重型运输机可在地图任意位置空投一队守护者大兵。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: U3,U3,U3,U3,U3
@@ -798,7 +798,7 @@ powerproxy.airborne:
 	Buildable:
 		Queue: PowerProxy
 	Tooltip:
-		Name: Guardian GIs (Single Use)
+		Name: 守护者大兵（一次性）
 
 powerproxy.airborne.tank:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -807,8 +807,8 @@ powerproxy.airborne.tank:
 		Icon: airdropicon
 		SquadSize: 1
 		UnitType: galx
-		Name: Airdrop: Grizzly Tanks (Single Use)
-		Description: A Heavy Transport Plane drops a pair of Grizzly Tanks\nanywhere on the map.
+		Name: 空投：灰熊坦克（一次性）
+		Description: 一架重型运输机可在地图任意位置空投两辆灰熊坦克。
 		OneShot: true
 		AllowMultiple: true
 		DropItems: GTNK,GTNK
@@ -832,7 +832,7 @@ powerproxy.airborne.tank:
 	Buildable:
 		Queue: PowerProxy
 	Tooltip:
-		Name: Grizzly Tanks (Single Use)
+		Name: 灰熊坦克（一次性）
 
 powerproxy.airstrike:
 	Inherits@DUMMY: ^InvisibleDummy
@@ -849,8 +849,8 @@ powerproxy.airstrike:
 				SpawnOffset: 0,0,0
 				TargetOffset: 0,0,0
 		Icon: airstrike
-		Name: Air Strike (Single Use)
-		Description: A10 strike planes drop napalm\nbombs on your target.
+		Name: 空袭（一次性）
+		Description: A10 攻击机在你的目标区域投下凝固汽油弹。
 		OneShot: true
 		AllowMultiple: true
 		SelectTargetSpeechNotification: SelectTarget
@@ -888,52 +888,52 @@ aircraft.upgraded:
 playerxp.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 1
+		Name: 玩家军衔 1
 	Buildable:
-		Description: Player Rank 1
+		Description: 玩家军衔 1
 
 playerxp.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 2
+		Name: 玩家军衔 2
 	Buildable:
-		Description: Player Rank 2
+		Description: 玩家军衔 2
 
 playerxp.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Player Rank 3
+		Name: 玩家军衔 3
 	Buildable:
-		Description: Player Rank 3
+		Description: 玩家军衔 3
 
 influence.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 1
+		Name: 影响力等级 1
 	Buildable:
-		Description: Influence Level 1
+		Description: 影响力等级 1
 
 influence.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 2
+		Name: 影响力等级 2
 	Buildable:
-		Description: Influence Level 2
+		Description: 影响力等级 2
 
 influence.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 3
+		Name: 影响力等级 3
 	Buildable:
-		Description: Influence Level 3
+		Description: 影响力等级 3
 
 timeskip:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Time Skip
+		Name: 时间跳跃
 	Buildable:
 		Queue: TimeSkip
-		Description: Advances influence progress by 1:00.
+		Description: 影响力进度推进 1:00。
 	AdvancesTimeline:
 		Type: AlliedInfluence
 		Ticks: 1500
@@ -1030,7 +1030,7 @@ stolentech.hpad.td:
 mpspawn:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (multiplayer player starting point)
+		Name: （多人游戏玩家起始点）
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
@@ -1046,7 +1046,7 @@ mpspawn:
 waypoint:
 	Interactable:
 	EditorOnlyTooltip:
-		Name: (waypoint for scripted behavior)
+		Name: （脚本行为路径点）
 	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
@@ -1087,7 +1087,7 @@ sfac.colorpicker:
 CTFLAG:
 	Inherits: ^TechBuilding
 	Tooltip:
-		Name: Flag
+		Name: 旗帜
 	WithBuildingBib:
 		HasMinibib: true
 	-HitShape:
@@ -1123,7 +1123,7 @@ SPLITBLUE:
 	AppearsOnMapPreview:
 		Terrain: BlueTiberium
 	Tooltip:
-		Name: Blossom Tree (blue)
+		Name: 开花树（蓝色）
 	RadarColorFromTerrain:
 		Terrain: BlueTiberium
 	ProximityExternalCondition@ONTIB:
@@ -1132,7 +1132,7 @@ SPLITBLUE:
 ^Veil:
 	Inherits@DUMMY: ^InvisibleDummy
 	EditorOnlyTooltip:
-		Name: (Veil of War)
+		Name: （战争迷雾）
 	Immobile:
 		OccupiesSpace: false
 	BodyOrientation:
@@ -1414,7 +1414,7 @@ watcher.parasite:
 SHAB:
 	Inherits: ^Mine
 	Tooltip:
-		Name: Shadow Beacon
+		Name: 阴影信标
 	Mine:
 		CrushClasses: beacon, mine
 		DetonateClasses: beacon
@@ -1452,9 +1452,9 @@ scrin.allegiances.available:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: 4x Refineries
+		Name: 4x 精炼厂
 	Buildable:
-		Description: 4x Refineries
+		Description: 4x 精炼厂
 
 # For MQ, ensures production tabs are updated properly
 QueueUpdaterDummy:
@@ -1467,71 +1467,71 @@ QueueUpdaterDummy:
 playerxp.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 1
+		Name: 等级 1
 	Buildable:
-		Description: Player XP rank 1.
+		Description: 玩家经验等级 1。
 	RenderSprites:
 
 playerxp.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 2
+		Name: 等级 2
 	Buildable:
-		Description: Player XP rank 2.
+		Description: 玩家经验等级 2。
 	RenderSprites:
 
 playerxp.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Rank 3
+		Name: 等级 3
 	Buildable:
-		Description: Player XP rank 3.
+		Description: 玩家经验等级 3。
 	RenderSprites:
 
 influence.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 1
+		Name: 影响力等级 1
 	Buildable:
-		Description: Allied influence level 1.
+		Description: 盟军影响力等级 1。
 	RenderSprites:
 
 influence.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 2
+		Name: 影响力等级 2
 	Buildable:
-		Description: Allied influence level 2.
+		Description: 盟军影响力等级 2。
 	RenderSprites:
 
 influence.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Influence Level 3
+		Name: 影响力等级 3
 	Buildable:
-		Description: Allied influence level 3.
+		Description: 盟军影响力等级 3。
 	RenderSprites:
 
 covenant.level1:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 1 (1x enemy building destroyed/captured/infiltrated or harvester destroyed)
+		Name: 誓约等级 1（摧毁/占领/渗透 1 座敌方建筑，或摧毁 1 辆采矿车）
 	Buildable:
-		Description: Covenant level 1 (1x enemy building destroyed/captured/infiltrated or harvester destroyed)
+		Description: 誓约等级 1（摧毁/占领/渗透 1 座敌方建筑，或摧毁 1 辆采矿车）
 	RenderSprites:
 
 covenant.level2:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 2
+		Name: 誓约等级 2
 	Buildable:
-		Description: Covenant level 2.
+		Description: 誓约等级 2。
 	RenderSprites:
 
 covenant.level3:
 	Inherits@DUMMY: ^InvisibleDummy
 	Tooltip:
-		Name: Covenant level 3
+		Name: 誓约等级 3
 	Buildable:
-		Description: Covenant level 3.
+		Description: 誓约等级 3。
 	RenderSprites:

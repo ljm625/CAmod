@@ -2,5 +2,5 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca01-crossrip/crossrip.lua, crossrip-coop.lua
 	LobbyMissionInfo@InitialObjectives:
-		Prefix: Initial Objectives
-		Text: • Establish a base and investigate the area.
+		Prefix: 初始目标
+		Text: • 建立基地并调查该地区。
