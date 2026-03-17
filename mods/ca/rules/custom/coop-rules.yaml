@@ -1,6 +1,6 @@
 ^SendCashPower:
-	SendCashPower@SendCash:
-		Description: Sends up to $1000 to the owner of the target allied unit or structure.
+		SendCashPower@SendCash:
+			Description: 向目标友军单位或建筑的拥有者转账最多 $1000。
 		TaxPercentage: 0
 
 World:
@@ -16,7 +16,7 @@ World:
 	ScriptLobbyDropdown@basesharing:
 		ID: basesharing
 		Label: Base Sharing
-		Description: When base sharing is enabled you can produce from the production buildings of teammates\n   if you don't have your own (the most recently built will be used).\n\n- No effect in baseless missions.\n- Upgrades are never shared.\n- Power is not shared.\n- When enabled, the first player will own any initial MCV or Construction Yard.
+			Description: 启用基地共享后，如果你没有对应建筑，就可以使用队友的生产建筑进行生产（优先使用最近建造的建筑）。\n\n- 在无基地任务中无效。\n- 升级不会共享。\n- 电力不会共享。\n- 启用后，初始机动建造车或建造场将归第一位玩家所有。
 		Values:
 			0: Off
 			1: On
@@ -26,7 +26,7 @@ World:
 	ScriptLobbyDropdown@incomeshare:
 		ID: incomeshare
 		Label: Income Sharing
-		Description: Shares a percentage of all player refinery income with all other players.\n\nFor technical reasons this makes silos useless.\n\nChoosing options with bonus income may make the mission significantly easier.
+			Description: 将所有玩家精炼厂收入按比例共享给其他所有玩家。\n\n由于技术原因，这会使储存建筑失去作用。\n\n选择带额外收入的选项可能会显著降低任务难度。
 		Values:
 			0: Off
 			100: Equally Split
@@ -49,7 +49,7 @@ World:
 	ScriptLobbyDropdown@enattackstr:
 		ID: enattackstr
 		Label: Enemy Attack Modifier
-		Description: Increases AI attack wave frequency and size (applied after any difficulty modifiers).
+			Description: 提高电脑进攻波次的频率和规模（在难度修正后生效）。
 		Values:
 			0: +0%
 			20: +20%
@@ -70,7 +70,7 @@ World:
 	ScriptLobbyDropdown@enemyranks:
 		ID: enemyranks
 		Label: Enemy Veterancy
-		Description: Give every enemy combat unit this level of base veterancy to boost their stats.
+			Description: 为所有敌方战斗单位赋予该等级的基础老兵级别，以提升其属性。
 		Values:
 			0: 0
 			1: 1
@@ -82,7 +82,7 @@ World:
 	ScriptLobbyDropdown@oremines:
 		ID: oremines
 		Label: Resource Spawners
-		Description: Adjustements to resource spawners on the map.\n\n- No change: Resource spawners are unchanged\n- Additional: Adds a mine or blossom tree to every field that has none. Amount varies from map to map.\n- Upgrade: All ore mines become gem mines, all green blossom trees become blue blossom trees.\n- Add & Upgrade: Adds spawners and upgrades all of them\n- Delete All: Remove all spawners. Warning: All resources are finite now. This can make some missions\n     extremely difficult or impossible without near-perfect execution.
+			Description: 调整地图上的资源生成点。\n\n- 无变化：资源生成点保持不变\n- 额外添加：为每片没有生成点的矿区添加矿井或泰矿树，数量因地图而异。\n- 升级：所有矿石矿井变为宝石矿井，所有绿色泰矿树变为蓝色泰矿树。\n- 添加并升级：添加生成点并将其全部升级\n- 全部删除：移除所有生成点。警告：资源将变为总量有限，这可能让部分任务\n     在非近乎完美操作下变得极其困难甚至无法完成。
 		Values:
 			oreoff: No Change
 			oreon: Additional
@@ -95,7 +95,7 @@ World:
 	ScriptLobbyDropdown@enmp:
 		ID: enmp
 		Label: Duplicate Enemy Starting Units
-		Description: Multiplies starting ground combat units of the enemy.\n\nSome missions may become unbeatable if this value is raised.
+			Description: 按倍率增加敌方初始地面战斗单位。\n\n该数值过高时，部分任务可能无法通关。
 		Values:
 			999: x Player Count
 			0: 1x (Off)
@@ -118,7 +118,7 @@ World:
 	ScriptLobbyDropdown@prmp:
 		ID: prmp
 		Label: Duplicate Enemy Produced Units
-		Description: Copies any ground combat units the enemy AI produces.\n\nThis raises the difficulty significantly and should be used with care.
+			Description: 复制敌方电脑生产的所有地面战斗单位。\n\n这会显著提高难度，请谨慎使用。
 		Values:
 			999: x Player Count
 			0: 1x (Off)
@@ -141,7 +141,7 @@ World:
 	ScriptLobbyDropdown@pfollow:
 		ID: pfollow
 		Label: Produced Duplicates Follow
-		Description: Odds that a duplicated produced unit will follow the unit they are copied from and go hunting when it dies.\n\nLeads to bigger attack waves.\n\nFollowers will also switch to hunt mode after a while to prevent clogging up production areas.
+			Description: 复制出的生产单位跟随其“原单位”行动，并在原单位死亡后进入狩猎模式的概率。\n\n会形成更大的进攻波次。\n\n跟随单位在一段时间后也会自动切换为狩猎模式，以避免堵塞生产区域。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -155,7 +155,7 @@ World:
 	ScriptLobbyDropdown@phunt:
 		ID: phunt
 		Label: Produced Duplicates Hunt
-		Description: Odds that a duplicated produced unit will immediately attack the players.
+			Description: 复制出的生产单位立刻进攻玩家的概率。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -169,7 +169,7 @@ World:
 	ScriptLobbyDropdown@pwander:
 		ID: pwander
 		Label: Produced Duplicates Wander
-		Description: Odds that a duplicated produced unit will roam around the map randomly.\n\nResults in unpredictable attack directions and random enemies at unexpected locations.
+			Description: 复制出的生产单位在地图上随机游荡的概率。\n\n会导致进攻方向不可预测，并在意想不到的位置出现敌人。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -183,7 +183,7 @@ World:
 	ScriptLobbyDropdown@pidle:
 		ID: pidle
 		Label: Produced Duplicates Idle
-		Description: Odds that a duplicated produced unit will just stand around and will only move\n   and attack when enemies get near them or they are attacked.\n\nThis results in bases full of enemies.\n\nThis value will default to 1 if all other values are 0.
+			Description: 复制出的生产单位原地待命，仅在敌人靠近或自身被攻击时才移动并反击的概率。\n\n这会导致基地内堆满敌军。\n\n如果其余概率都为 0，此项将默认视为 1。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -197,7 +197,7 @@ World:
 	ScriptLobbyDropdown@sfollow:
 		ID: sfollow
 		Label: Starter Duplicates Follow
-		Description: Odds that a duplicated starting unit will follow the unit they are copied from, and go hunting when it dies.\n\nResults in bigger garrisons and patrols.
+			Description: 复制出的初始单位跟随其“原单位”行动，并在原单位死亡后进入狩猎模式的概率。\n\n会形成更大的驻军和巡逻队。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -211,7 +211,7 @@ World:
 	ScriptLobbyDropdown@shunt:
 		ID: shunt
 		Label: Starter Duplicates Hunt
-		Description: Odds that a duplicated starting unit will immediately go and attack the players.\n\nCan lead to being rushed in the early game.
+			Description: 复制出的初始单位立即进攻玩家的概率。\n\n可能导致前期被速攻。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -225,7 +225,7 @@ World:
 	ScriptLobbyDropdown@swander:
 		ID: swander
 		Label: Starter Duplicates Wander
-		Description: Odds that a duplicated starting unit will roam around the map randomly.\n\nResults in unpredictable attack directions and random enemies at unexpected locations.
+			Description: 复制出的初始单位在地图上随机游荡的概率。\n\n会导致进攻方向不可预测，并在意想不到的位置出现敌人。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -239,7 +239,7 @@ World:
 	ScriptLobbyDropdown@sidle:
 		ID: sidle
 		Label: Starter Duplicates Idle
-		Description: Odds that a duplicated starting unit will just stand around and will only move\n   and attack when enemies get near them or they are attacked.\n\nThis results in bases full of enemies.\n\nThis value will default to 1 if all other values are 0.
+			Description: 复制出的初始单位原地待命，仅在敌人靠近或自身被攻击时才移动并反击的概率。\n\n这会导致基地内堆满敌军。\n\n如果其余概率都为 0，此项将默认视为 1。
 		Values:
 			0: 0 (Will never happen)
 			1: 1
@@ -253,7 +253,7 @@ World:
 	ScriptLobbyDropdown@multiplyaircraft:
 		ID: multiplyaircraft
 		Label: Also Duplicate Aircraft
-		Description: EXPERIMENTAL\n\nInclude aircraft in the unit duplication.\n\nThe AI may have problems resupplying them all.
+			Description: 实验性功能\n\n将空中单位也纳入单位复制。\n\n电脑可能无法稳定为所有空中单位完成补给。
 		Values:
 			domulti: On (Multiply)
 			dontmulti: Off (Don't multiply)
@@ -288,9 +288,9 @@ REALREFINERY:
 	AlwaysVisible:
 	Interactable:
 	Tooltip:
-		Name: Refinery
+			Name: 精炼厂
 	Buildable:
-		Description: Refinery
+			Description: 精炼厂
 
 PROC:
 	ProvidesPrerequisite@HasRealRefinery:

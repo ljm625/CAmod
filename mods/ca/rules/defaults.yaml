@@ -73,7 +73,7 @@
 	Mobile:
 		Locomotor: foot
 	Tooltip:
-		Name: Preview
+		Name: 预览
 	Armament:
 		Weapon: DummyWeapon
 	AttackFrontal:
@@ -1435,7 +1435,7 @@
 		TargetTypes: NoCrew
 		RequiresCondition: driver-dead
 	TooltipDescription@DRIVER_DEAD:
-		Description: Crewless. Capturable by infantry.
+		Description: 无乘员。可由步兵占领。
 		RequiresCondition: driver-dead
 
 ^CanCaptureDriverlessVehicles:
@@ -1660,7 +1660,7 @@
 	Inherits@HeavyArmor: ^HeavyArmor
 	Inherits@NodCovenantTarget: ^NodCovenantTarget
 	TooltipExtras:
-		Weaknesses: • Unarmed\n• Resistant to mind control
+		Weaknesses: • 无武装\n• 抗心灵控制
 	Valued:
 		Cost: 1400
 	Tooltip:
@@ -2964,7 +2964,7 @@
 	Valued:
 		Cost: 10
 	Tooltip:
-		Name: Civilian
+		Name: 平民
 		ShowOwnerRow: false
 	RevealsShroud:
 		Range: 3c0
@@ -3406,7 +3406,7 @@
 		Weapon: BarrelExplode
 		Type: Footprint
 	Tooltip:
-		Name: Explosive Barrel
+		Name: 爆炸桶
 		ShowOwnerRow: False
 	Armor:
 		Type: None
@@ -3791,7 +3791,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: 民用建筑
 		GenericVisibility: None
 	MapEditorData:
 		Categories: Tech building
@@ -3846,7 +3846,7 @@
 	MapEditorData:
 		Categories: Fake
 	TooltipExtras:
-		Attributes: • Can be detonated remotely
+		Attributes: • 可远程引爆
 	FireWarheadsOnDeath@FAKE:
 		Weapon: FakeBuildingExplode
 		DamageThreshold: 70
@@ -3895,7 +3895,7 @@
 	FireWarheadsOnDeath:
 		Weapon: UnitExplode
 	Tooltip:
-		Name: Ammo Box
+		Name: 弹药箱
 		GenericVisibility: None
 	Targetable:
 		TargetTypes: Ground, Structure, NoAutoTarget
@@ -3914,7 +3914,7 @@
 	Armor:
 		Type: Wood
 	Tooltip:
-		Name: Civilian Building
+		Name: 民用建筑
 		GenericVisibility: None
 	RenderSprites:
 		Palette: player
@@ -3944,7 +3944,7 @@
 	-Selectable:
 	-SelectionDecorations:
 	Tooltip:
-		Name: Field
+		Name: 资源田
 	-Targetable:
 	Interactable:
 
@@ -3984,7 +3984,7 @@
 	Inherits@ResourceNode: ^ResourceNode
 	Interactable:
 	Tooltip:
-		Name: Blossom Tree
+		Name: 泰矿树
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: temptd
@@ -4011,7 +4011,7 @@
 	Inherits@shape: ^1x1Shape
 	Interactable:
 	Tooltip:
-		Name: Tree
+		Name: 树木
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: terrain
@@ -4071,7 +4071,7 @@
 		Dimensions: 1,1
 	WithSpriteBody:
 	Tooltip:
-		Name: Tree (Burnt)
+		Name: 树木（烧毁）
 		ShowOwnerRow: false
 	HiddenUnderShroud:
 	ScriptTriggers:
@@ -4085,7 +4085,7 @@
 	RenderSprites:
 		Palette: player
 	Tooltip:
-		Name: Boxes
+		Name: 箱堆
 	MapEditorData:
 		-ExcludeTilesets:
 		Categories: Decoration
@@ -4262,7 +4262,7 @@
 	Inherits@shape: ^1x1Shape
 	AlwaysVisible:
 	Tooltip:
-		Name: Bridge
+		Name: 桥梁
 		ShowOwnerRow: false
 	Targetable:
 		TargetTypes: Ground, Water, Bridge
@@ -4289,7 +4289,7 @@
 	Inherits@1: ^SpriteActor
 	Interactable:
 	Tooltip:
-		Name: Rock
+		Name: 岩石
 		ShowOwnerRow: false
 	RenderSprites:
 		Palette: desert
@@ -4322,7 +4322,7 @@
 		Bounds: 1024, 1024
 	HiddenUnderFog:
 	Tooltip:
-		Name: Crate
+		Name: 补给箱
 		GenericName: Crate
 		ShowOwnerRow: false
 	CrateCA:
@@ -4371,7 +4371,7 @@
 		DetectionTypes: Mine
 		InitialDelay: 0
 	Tooltip:
-		Name: Mine
+		Name: 地雷
 	Targetable:
 		TargetTypes: Ground, Mine
 	Targetable@ONWATER:
@@ -4569,10 +4569,10 @@
 	Buildable:
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
-		Description: Utility infantry used for capturing/repairing structures.
+		Description: 可用于占领和维修建筑的功能型步兵。
 	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Captures enemy buildings\n• Repairs friendly structures & bridges\n• Defuses mines and bombs
+		Weaknesses: • 无武装
+		Attributes: • 可占领敌方建筑\n• 可维修友军建筑与桥梁\n• 可拆除地雷和炸弹
 	Valued:
 		Cost: 400
 	Passenger:
@@ -4669,7 +4669,7 @@
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: Visceroid
+		Name: 黏怪
 	Armament:
 		Weapon: Chemspray
 		LocalOffset: 384,0,0
@@ -4708,7 +4708,7 @@
 	HiddenUnderFog:
 		Type: GroundPosition
 	Tooltip:
-		Name: Missile
+		Name: 导弹
 		GenericName: Missile
 		ShowOwnerRow: false
 	HitShape:

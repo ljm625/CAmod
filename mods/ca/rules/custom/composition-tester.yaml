@@ -80,7 +80,7 @@ Player:
 	LobbyPrerequisiteCheckbox@FREEUPGRADES:
 		ID: freeupgrades
 		Label: Free Upgrades
-		Description: Upgrades are free
+		Description: 升级免费
 		Enabled: True
 		DisplayOrder: 999
 		Prerequisites: global.freeupgrades

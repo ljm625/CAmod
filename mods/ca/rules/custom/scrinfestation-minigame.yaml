@@ -102,9 +102,9 @@ RMBO:
 		BuildDuration: 500
 		BuildDurationModifier: 100
 	TooltipExtras:
-		Strengths: • Strong vs Infantry
-		Weaknesses: • Cannot attack Aircraft
-		Attributes: • Maximum 1 can be trained\n• Detects cloaked units\n• Immune to mind control\n• Voiced by Frank Klepacki
+		Strengths: • 对步兵强势
+		Weaknesses: • 无法攻击空中单位
+		Attributes: • 最多只能训练 1 名\n• 可侦测隐形单位\n• 免疫心灵控制\n• 配音：弗兰克·克莱帕基
 	-Armament@sapper:
 	-GrantConditionOnPrerequisite@HAZMATZOCOM:
 	SpawnActorOnDeath@ONEDEATH:
@@ -160,7 +160,7 @@ RMBOSPAWN:
 	Inherits: CAMERA
 	Inherits@PROD: ^ProducesInfantry
 	Tooltip:
-		Name: Spawn Point
+		Name: 出生点
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	Exit:

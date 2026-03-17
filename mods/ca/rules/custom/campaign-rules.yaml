@@ -296,7 +296,7 @@ TRUK:
 
 MONEYCRATE:
 	Tooltip:
-		Name: Crate
+		Name: 补给箱
 	CrateCA:
 		Duration: 0
 	GiveCashCrateAction:
@@ -444,7 +444,7 @@ SHAD:
 		BuildPaletteOrder: 500
 		Prerequisites: ~disabled
 		BuildAtProductionType: Soldier
-		Description: Elite stealth infantry.
+		Description: 精英隐形步兵。
 
 # Disable the ability to transfer resources from AI players on capturing (lua script handles cash reward)
 
@@ -642,11 +642,11 @@ ETPD:
 	GrantCondition@SHIELDS:
 		Condition: shields-upgrade
 	Tooltip:
-		Name: Exterminator Tripod
+		Name: 灭绝者三足机甲
 	-Buildable:
 	TooltipExtras:
-		Description: Super heavy assault walker with beam weapons.
-		Strengths: Strong vs all ground units and structures.
+		Description: 配备束能武器的超重型突击步行机甲。
+		Strengths: 对所有地面单位和建筑强势。
 	Mobile:
 		Speed: 36
 		PauseOnCondition: empdisable || notmobile
@@ -739,7 +739,7 @@ ETPD:
 ETPD.Husk:
 	Inherits: TPOD.Husk
 	Tooltip:
-		Name: Husk (Exterminator Tripod)
+		Name: 残骸（灭绝者三足机甲）
 	RenderSprites:
 		Image: etpd.destroyed
 
@@ -756,13 +756,13 @@ VENG:
 	Inherits@A2GPROTECTION: ^AirToGroundProtection
 	Inherits@COMMANDOSKULL: ^CommandoSkull
 	TooltipExtras:
-		Description: Colossal Malefic Scrin war machine.
-		Strengths: • Unknown
-		Weaknesses: • Unknown
+		Description: 巨型邪恶Scrin战争机器。
+		Strengths: • 未知
+		Weaknesses: • 未知
 	Valued:
 		Cost: 15000
 	Tooltip:
-		Name: Void Engine
+		Name: 虚空引擎
 	Selectable:
 		Bounds: 2800, 3000, 0, -600
 	UpdatesPlayerStatistics:
@@ -877,7 +877,7 @@ VENG.Husk:
 	Inherits: ^Husk
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
-		Name: Husk (Void Engine)
+		Name: 残骸（虚空引擎）
 	RenderSprites:
 		Image: veng.destroyed
 
@@ -932,7 +932,7 @@ SCRINPURIFIER:
 		Types: building
 	CapturableProgressBar:
 	Tooltip:
-		Name: Scrin Tiberium Purifier
+		Name: Scrin泰伯利亚净化器
 	WithIdleOverlay@ACTIVE:
 		Sequence: purification
 		Offset: 800,50,-150
@@ -948,14 +948,14 @@ WORMHOLELG:
 WORMHOLEXL:
 	Inherits: ^WormholeBase
 	Tooltip:
-		Name: Gateway
+		Name: 传送门
 	MapEditorData:
 		Categories: System
 
 WORMHOLEXXL:
 	Inherits: ^WormholeBase
 	Tooltip:
-		Name: Gateway
+		Name: 传送门
 	MapEditorData:
 		Categories: System
 

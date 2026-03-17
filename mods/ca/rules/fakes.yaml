@@ -6,10 +6,10 @@ FPWR:
 		BuildPaletteOrder: 900
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: anypower, ~structures.england, ~techlevel.low
-		Description: Looks like a Power Plant. Packed with explosives.
+		Description: 伪装成发电厂，内部装有大量炸药。
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Power Plant
+		Name: 假发电厂
 		GenericName: Power Plant
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
@@ -44,10 +44,10 @@ FREF:
 		BuildPaletteOrder: 910
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: proc, ~structures.england, ~techlevel.low
-		Description: Looks like a Refinery. Packed with explosives.
+		Description: 伪装成精炼厂，内部装有大量炸药。
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Refinery
+		Name: 假精炼厂
 		GenericName: Refinery
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
@@ -104,10 +104,10 @@ WEAF:
 		BuildPaletteOrder: 920
 		Prerequisites: weap, ~structures.england, ~techlevel.low
 		Queue: DefenseSQ, DefenseMQ
-		Description: Looks like a War Factory. Packed with explosives.
+		Description: 伪装成战车工厂，内部装有大量炸药。
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake War Factory
+		Name: 假战车工厂
 		GenericName: War Factory
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
@@ -143,7 +143,7 @@ DOMF:
 	Inherits@SHAPE: ^2x2Shape
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownOrForceDisable
 	Tooltip:
-		Name: Fake Radar Dome
+		Name: 假雷达站
 		GenericName: Radar Dome
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
@@ -153,7 +153,7 @@ DOMF:
 		BuildPaletteOrder: 930
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: dome, ~structures.england, ~techlevel.medium
-		Description: Looks like a Radar Dome. Packed with explosives.
+		Description: 伪装成雷达站，内部装有大量炸药。
 		Icon: fake-icon
 	Building:
 		Footprint: xx xx ==
@@ -180,10 +180,10 @@ FACF:
 		BuildPaletteOrder: 1000
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: ~structures.england
-		Description: Looks like a Construction Yard. Packed with explosives.
+		Description: 伪装成建造场，内部装有大量炸药。
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Construction Yard
+		Name: 假建造场
 		GenericName: Construction Yard
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
@@ -225,10 +225,10 @@ SYRF:
 		BuildPaletteOrder: 1100
 		Queue: DefenseSQ, DefenseMQ
 		Prerequisites: syrd, ~structures.england, ~techlevel.navy, ~techlevel.low
-		Description: Looks like a Naval yard. Packed with explosives.
+		Description: 伪装成海军船坞，内部装有大量炸药。
 		Icon: fake-icon
 	Tooltip:
-		Name: Fake Naval Yard
+		Name: 假海军船坞
 		GenericName: Shipyard
 		GenericVisibility: Enemy
 		GenericStancePrefix: False

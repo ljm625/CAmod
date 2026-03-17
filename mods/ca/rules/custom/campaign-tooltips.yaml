@@ -111,7 +111,7 @@ FCOM:
 
 MISS:
 	Tooltip:
-		Name: Technology Center
+		Name: 科技中心
 	-TooltipExtras:
 	-TooltipDescription@ally:
 	-TooltipDescription@other:

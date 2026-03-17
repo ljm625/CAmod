@@ -1,0 +1,98 @@
+# CA mod translation glossary (EN -> zh-CN)
+# Keep terms consistent across Tooltip.Name, Description and TooltipExtras.
+translation:
+  # Factions
+  Allies: 盟军
+  Soviet: 苏军
+  GDI: GDI
+  Nod: Nod
+  Scrin: Scrin
+
+  # Core gameplay terms
+  Upgrade: 升级
+  Research: 研究
+  Strategy: 战略
+  Doctrine: 学说
+  Policy: 政策
+  Coalition: 联盟
+  Allegiance: 派系
+  Tech: 科技
+  Radar: 雷达
+  Shroud: 战争迷雾
+  Cloaked: 隐形
+  Infantry: 步兵
+  Vehicle: 载具
+  Aircraft: 空中单位
+  Light Armor: 轻甲单位
+  Heavy Armor: 重甲单位
+  Defenses: 防御建筑
+  Buildings: 建筑
+  Unarmed: 无武装
+  Capturable: 可被占领
+
+  # Common structures
+  Construction Yard: 建造场
+  Barracks: 兵营
+  War Factory: 战车工厂
+  Refinery: 精炼厂
+  Ore Refinery: 矿石精炼厂
+  Power Plant: 发电厂
+  Radar Dome: 雷达站
+  Tech Center: 科技中心
+  Service Depot: 维修站
+  Repair Facility: 维修设施
+  Airfield: 机场
+  Helipad: 停机坪
+  Naval Yard: 海军船坞
+  Missile Silo: 导弹发射井
+
+  # Civilian / map objects
+  Civilian: 平民
+  Civilian Building: 民用建筑
+  Church: 教堂
+  Hospital: 医院
+  Machine Shop: 机械工坊
+  Oil Pump: 油泵
+  Oil Derrick: 油井
+  Oil Refinery: 石油精炼厂
+  Communications Center: 通讯中心
+  Biological Lab: 生化实验室
+  Crate: 补给箱
+  Mine: 地雷
+  Bridge: 桥梁
+  Tree: 树木
+  Blossom Tree: 泰矿树
+  Rock: 岩石
+
+  # Unit / weapon names often left half-translated
+  Technician: 技师
+  Engineer: 工程师
+  Medic: 医疗兵
+  Mechanic: 机械师
+  Commando: 突击队员
+  Sniper: 狙击手
+  Spy: 间谍
+  Flamethrower: 喷火兵
+  Grenadier: 掷弹兵
+  Rocket Soldier: 火箭兵
+
+  IFV: IFV
+  Reckoner: 清算者
+  Overlord Tank: 霸主坦克
+  Apocalypse Tank: 天启坦克
+  Mammoth Tank: 猛犸坦克
+  Prism Tank: 光棱坦克
+  Mirage Tank: 幻影坦克
+  V3 Launcher: V3发射车
+  Tomahawk Launcher: 战斧发射车
+  Tomahawk Missile: 战斧导弹
+  Black Sky Missile: 黑天导弹
+
+  # Support power / effect keywords
+  Iron Curtain: 铁幕
+  Chronosphere: 超时空传送仪
+  EMP: 电磁脉冲
+  Lightning Storm: 闪电风暴
+  Ion Cannon: 离子炮
+  Genetic Mutation: 基因突变
+  Mind Control: 心灵控制

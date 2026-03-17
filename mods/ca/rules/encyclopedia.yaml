@@ -1531,7 +1531,7 @@ encyclopedia.ifv.disin:
 	TooltipExtras:
 		Strengths: • 对空中单位、重甲单位强势
 		Weaknesses: • 对步兵弱势
-		Attributes: • 乘员： 裂解者 （斯克林）
+		Attributes: • 乘员： 裂解者 （Scrin）
 
 encyclopedia.ifv.shard:
 	Inherits: ^IFVVariantPreview
@@ -2171,7 +2171,7 @@ encyclopedia.reck.disin:
 	TooltipExtras:
 		Strengths: • 对空中单位、重甲单位强势
 		Weaknesses: • 对步兵弱势
-		Attributes: • 乘员： 裂解者 （斯克林）
+		Attributes: • 乘员： 裂解者 （Scrin）
 
 encyclopedia.reck.shard:
 	Inherits: ^ReckonerVariantPreview
