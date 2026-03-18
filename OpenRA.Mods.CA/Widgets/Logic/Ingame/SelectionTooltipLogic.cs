@@ -20,7 +20,7 @@ using OpenRA.Widgets;
 
 namespace OpenRA.Mods.CA.Widgets.Logic
 {
-	public class SelectionTooltipLogic : ChromeLogic
+	public class SelectionTooltipLogicCA : ChromeLogic
 	{
 		readonly World world;
 		int selectionHash;
@@ -29,7 +29,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		int iconMargin;
 
 		[ObjectCreator.UseCtor]
-		public SelectionTooltipLogic(Widget widget, World world)
+		public SelectionTooltipLogicCA(Widget widget, World world)
 		{
 			this.world = world;
 			this.widget = widget;

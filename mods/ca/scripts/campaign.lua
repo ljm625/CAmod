@@ -224,14 +224,28 @@ AfterWorldLoaded = function() end
 AfterTick = function() end
 
 InitObjectives = function(player)
+	local notifications = {
+		newPrimary = "新的主要任务",
+		newSecondary = "新的次要任务",
+		completed = "任务完成",
+		failed = "任务失败"
+	}
+
 	Trigger.OnObjectiveAdded(player, function(p, id)
 		if p.IsLocalPlayer then
 			Trigger.AfterDelay(1, function()
 				local colour = HSLColor.Yellow
-				if p.GetObjectiveType(id) ~= "Primary" then
+				local objectiveType = p.GetObjectiveType(id)
+				local isPrimary = objectiveType == "Primary"
+				if not isPrimary then
 					colour = HSLColor.Gray
 				end
-				Media.DisplayMessage(p.GetObjectiveDescription(id), "New " .. string.lower(p.GetObjectiveType(id)) .. " objective", colour)
+
+				Media.DisplayMessage(
+					p.GetObjectiveDescription(id),
+					isPrimary and notifications.newPrimary or notifications.newSecondary,
+					colour
+				)
 			end)
 		end
 	end)
@@ -239,13 +253,13 @@ InitObjectives = function(player)
 	Trigger.OnObjectiveCompleted(player, function(p, id)
 		if p.IsLocalPlayer then
 			Media.PlaySoundNotification(player, "AlertBleep")
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective completed", HSLColor.LimeGreen)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), notifications.completed, HSLColor.LimeGreen)
 		end
 	end)
 
 	Trigger.OnObjectiveFailed(player, function(p, id)
 		if p.IsLocalPlayer then
-			Media.DisplayMessage(p.GetObjectiveDescription(id), "Objective failed", HSLColor.Red)
+			Media.DisplayMessage(p.GetObjectiveDescription(id), notifications.failed, HSLColor.Red)
 		end
 	end)
 
