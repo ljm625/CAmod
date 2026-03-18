@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, machinations.lua
 	MissionData:
-		Briefing: Intelligence gathered from the Nod naval base has put us hot on Nod's trail. The transports we captured were waiting to board a disguised cargo vessel which has now also been captured. Based on its navigational logs we have used our satellites and located what appears to be a research facility hidden in a disused quarry in North Africa.\n\nNod submarines will make a large scale landing difficult, but if we can establish a base on the coast we'll be able to launch an offensive from there.\n\nWith GDI's assistance we have been able to augment our harvesters and refineries to harvest the Tiberium crystals that are becoming widespread. Nod also has a harvesting operation in the area. Gather what resources you can without alerting Nod to our presence, build up your forces, then capture their research facility.
+		Briefing: 从Nod海军基地取得的情报\n让我们迅速锁定了他们的动向。\n我们截获的运输队原本正等待登上一艘伪装货船，\n而该船现也已被我方拿下。\n根据其航行日志与卫星侦察，\n我们发现北非一处废弃采石场内\n疑似隐藏着Nod研究设施。\n\nNod潜艇会让大规模登陆极其困难，\n但只要能在海岸建立基地，\n就能以此为跳板发起进攻。\n\n在GDI协助下，\n我们已强化采矿车与精炼厂，\n可开采正在扩散的泰伯利亚晶体。\nNod也在该区域开展采集作业。\n在不暴露我方存在的前提下尽量积累资源，\n扩充兵力，\n随后夺取他们的研究设施。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

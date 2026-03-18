@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, juncture.lua
 	MissionData:
-		Briefing: Critical components and supplies are being transported to a secret staging area. Few in the Brotherhood know the full details of this operation, but all will be revealed in time.\n\nGDI continue to threaten vital transportation routes, and you have been chosen to secure one such route in Egypt.\n\nGDI is blockading the Nile river with their fleet, and this is unacceptably delaying our progress.\n\nEstablish a foothold, then your objective is to destroy the GDI anti-aircraft systems that line the river bank. Once those are out of the way, Kane has a surprise in store for GDI's navy.
+		Briefing: 关键部件与补给正被运往一处秘密集结点。\n兄弟会中知晓全盘计划的人不多，\n但时机一到，真相自会揭晓。\n\nGDI仍在威胁我们的关键运输线，\n你被选中去确保其中一条埃及线路安全。\n\nGDI舰队正在封锁尼罗河，\n这已严重拖慢我们的进度。\n\n先建立前沿据点，\n随后摧毁沿河岸部署的GDI防空系统。\n清除这些障碍后，\n凯恩将为GDI海军准备一份“惊喜”。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

@@ -29,7 +29,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, mobilization.lua
 	MissionData:
-		Briefing: The assault on the Tiberium storage facility bought us valuable time, and preparations for our final assault are underway. The troops we freed from Scrin mind control have provided us with vital intel, and it seems that our suspicions were correct. The Scrin are cut off from their homeworld and they seek to open an interstellar gateway. They have been stockpiling Tiberium to provide the vast amount of energy this will require.\n\nThe main Scrin stronghold has been located and we are gathering whatever forces we can. Kane has apparently done one of his disappearing acts, and with Stalin dead the interim Nod and Soviet leaderships have agreed to a truce so that we can defeat the alien threat. Their commanders are attending a joint meeting at a command post near the front line.\n\n[ incoming transmission ]\n\nIt seems the Scrin have become aware of our plans.. Our command post has reported Scrin wormholes appearing throughout the area, and our reinforcements are being cut off.\n\nProtect the command post. Reinforcements will be arriving intermittently, but you'll need to take out these wormholes as quickly as possible or you'll be overwhelmed. Good luck.
+		Briefing: 对泰伯利亚储存设施的突袭\n为我们争取了宝贵时间，\n最终总攻准备已在展开。\n我们从Scrin心灵控制下解救的部队\n提供了关键情报，\n看来此前判断是正确的：\nScrin已与母星断联，\n正试图开启一座星际传送门。\n他们囤积泰伯利亚，\n正是为此提供巨量能量。\n\nScrin主据点已被定位，\n我们也在集结一切可用兵力。\n凯恩似乎又一次“消失”了；\n而随着斯大林死亡，\nNod与苏军临时领导层已同意停战，\n以共同应对外星威胁。\n双方指挥官正于前线附近一处指挥站会晤。\n\n[ 收到来讯 ]\n\nScrin似乎已察觉我方计划。\n指挥站报告称，\n该区域多处出现Scrin虫洞，\n我方增援通道正被切断。\n\n守住指挥站。\n增援会间歇到达，\n但你必须尽快摧毁这些虫洞，\n否则将被敌军淹没。\n祝你好运。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

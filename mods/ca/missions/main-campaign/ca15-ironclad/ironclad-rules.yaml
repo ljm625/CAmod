@@ -17,7 +17,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, ironclad.lua
 	MissionData:
-		Briefing: GDI and Allied forces have launched an offensive in an attempt to take control of one of our Iron Curtain devices. Our situation remains precarious, so it is vital that we do not lose any more of our advanced military assets.\n\nThe battle has raged for days and the base in which the Iron Curtain resides has been badly damaged. It is now besieged on all sides and our troops will soon be overrun - or worse - be forced to surrender.\n\nWe have dispatched a team of engineers to restore power. Take command, break the siege, and wipe out all GDI and Allied forces.
+		Briefing: GDI与盟军部队已发动攻势，\n企图夺取我方一台铁幕装置。\n当前局势依然危险，\n我们绝不能再损失更多先进军事资产。\n\n战斗已持续数日。\n部署铁幕的基地受损严重，\n如今四面受围，\n守军很快就会被彻底压垮，\n甚至被迫投降。\n\n我们已派出工程师小队恢复供电。\n立即接管指挥，\n解除围困，\n并歼灭全部GDI与盟军部队。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

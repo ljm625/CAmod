@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, duality.lua
 	MissionData:
-		Briefing: There is no time to lose! The Allied mercenary Tanya was sent to infiltrate a facility that is being used by the Scrin for stockpiling Tiberium.\n\nHer mission was to use explosives to destroy the Scrin stockpiles, however the facility was more heavily guarded than expected. She was injured and is now hiding from the Scrin, unable to reach an exit.\n\nUse one of our own commandos to find Tanya. Working together they should have no problems completing the original mission.\n\nPrior to radio silence, her position was known to be somewhere on the east side of the facility.
+		Briefing: 时间紧迫，刻不容缓！\n盟军雇佣兵谭雅已被派去渗透一处\n被Scrin用于囤积泰伯利亚的设施。\n\n她原计划使用爆破物摧毁库存，\n但该设施守备强度超出预期。\n她已负伤，\n目前正躲避Scrin追捕，\n无法自行抵达撤离出口。\n\n派出我方一名突击队员寻找谭雅。\n二人会合后，\n应能完成原定任务。\n\n在通信中断前，\n其位置被确认在设施东侧区域。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

@@ -24,7 +24,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, abasement.lua
 	MissionData:
-		Briefing: Comrade General, our forces were too late to stop the madman Kane from unleashing his new army of cyborgs. Our forces suffered a catastrophic defeat as a result.\n\nThe situation is grim on all fronts. The Allies and their GDI friends have resumed their assaults on our western territories, and the alien invaders continue to pour through their wormholes wherever Tiberium is found.\n\nKane's army unexpectedly halted their advance and we have been presented with an offer. If we assist the Brotherhood in retaking territory they have lost to the Scrin and capture one of their Signal Transmitters, Kane promises to cease hostilities against us.\n\nFor now, we have little choice.\n\nEstablish a base in former Nod territory now occupied by the Scrin. Nod will provide reinforcements if we can secure their abandoned bases. Build up your forces and capture the Signal Transmitter that we know has been built in the area.
+		Briefing: 将军同志，\n我们终究还是晚了一步，\n没能阻止疯子凯恩放出他的新型半机械人大军。\n我军因此遭受了灾难性失败。\n\n各条战线局势都十分严峻。\n盟军及其GDI盟友\n已恢复对我西部领土的进攻；\n而外星入侵者也在有泰伯利亚的地区\n持续通过虫洞涌入。\n\n凯恩军队却突然停止推进，\n并向我们提出交易：\n若我们协助兄弟会夺回\n被Scrin占据的领土，\n并夺取其一座信号发射器，\n凯恩将承诺停止对我方敌对行动。\n\n目前我们别无选择。\n\n在现被Scrin占据的前Nod领地建立基地。\n只要夺回他们废弃基地，\nNod就会提供增援。\n扩充兵力，\n夺取确认建在该区域内的信号发射器。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

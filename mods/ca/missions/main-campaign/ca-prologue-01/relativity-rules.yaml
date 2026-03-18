@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, relativity.lua
 	MissionData:
-		Briefing: The Soviets have captured one of our most important scientists, Professor Einstein.\n\nHe is currently being held inside a Soviet base not far from the border. It is crucial that he be rescued before he can be transported deeper into Soviet territory.\n\nUsing a small task force led by our special commando Tanya Adams, rescue Einstein and bring him to the extraction point.\n\nThe Soviet base is protected by Tesla Coils. Cutting their power supply will render them inoperative.
+		Briefing: 苏军绑架了我们最重要的科学家之一，\n爱因斯坦教授。\n\n他目前被关押在边境附近的一座苏军基地内。\n必须在他被转移到苏联腹地之前将其救出。\n\n率领一支小规模突击队，\n在特种突击队员谭雅·亚当斯的带领下，\n营救爱因斯坦并将其带到撤离点。\n\n苏军基地由特斯拉线圈防守。\n切断其电力供应，\n即可让这些防御设施失效。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

@@ -14,7 +14,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, spearhead.lua
 	MissionData:
-		Briefing: It seems we were not the Scrin fleet's target. Scouts sent in the direction they were heading have located a Nod outpost in a mountainous and relatively sparsely inhabited region. We have thus far been unable to locate the bulk of the Nod forces, but Kane can't be too far away, and the Scrin were clearly trying to get to him. The terrain means it will be some time before we are able to move heavy forces to intercept.\n\nWe need more intel on Kane's whereabouts and intentions to properly plan our movements, and we believe this Nod outpost will be vulnerable to a small rapidly deployed strike team. Resources in the area are limited and there are few suitable locations for a staging area, but the lack of significant Scrin presence and the difficult terrain should mean you'll only face limited resistance.\n\nYour mission is to capture the Nod Communications Center. Anything else is at your discretion.
+		Briefing: 看来Scrin舰队的目标并非我们。\n朝其前进方向派出的侦察队\n在一片山地、低密度居民区发现了Nod前哨。\n目前我们仍未定位Nod主力，\n但凯恩不可能离得太远，\nScrin显然正试图逼近他。\n受地形限制，\n我方重装部队需要一段时间\n才能机动拦截。\n\n我们需要更多关于凯恩位置与意图的情报，\n以便制定后续行动。\n我们判断这处Nod前哨\n可被一支快速部署的小型突击队攻破。\n当地资源有限、\n适合作为集结区的位置也不多，\n但Scrin活动稀少且地形复杂，\n你预计只会遭遇有限阻力。\n\n你的任务是夺取Nod通讯中心。\n其余行动由你自行裁量。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

@@ -34,7 +34,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, annexation.lua
 	MissionData:
-		Briefing: With the gateway under our control, Kane has been prevented from returning to Earth, and our forces are now prepared to journey to the Scrin homeworld where we will assist the Overlord to defeat the rebels and eliminate Kane.\n\nA Nod base exists on the other side. Kane may attempt to make a stand there, but it is more likely he has fled into the shadows as he has done before. Regardless, our first task will be to establish a base of operations and secure the immediate vicinity. The nearby Nerve Center will need to be captured to ensure the gateway remains open.\n\nWe will be venturing deep into rebel territory, so do not expect the Overlord to be able to assist you. Opening up a new front here should relieve some of the pressure his forces are experiencing elsewhere on the planet.\n\nWipe out any Nod or rebel forces you encounter. Show the Overlord what a powerful ally we can be.
+		Briefing: 传送门已在我方控制下，\n凯恩已被阻止返回地球。\n我军现已准备前往Scrin母星，\n协助主宰击败叛军并消灭凯恩。\n\n传送门另一侧存在一座Nod基地。\n凯恩可能会在此固守，\n但更可能像以往一样遁入暗处。\n无论如何，\n我方首要任务是建立作战基地并稳控周边区域。\n此外还必须夺取附近神经中枢，\n确保传送门持续开启。\n\n我们将深入叛军腹地作战，\n不要指望主宰能直接支援你。\n在此开辟新战线，\n应可分担其在星球其他区域所承受的压力。\n\n清剿你遭遇的一切Nod或叛军部队。\n向主宰证明：\n我们是多么强大的盟友。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

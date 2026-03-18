@@ -11,7 +11,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, proliferation.lua
 	MissionData:
-		Briefing: We have yet to re-establish communication with the homeworld so we must maximise preservation of our remaining forces here. To that end, the supervisor seeks to make changes to the operational command structure. You have been identified as having potential, and must now demonstrate your command effectiveness.\n\nAn area rich in blue ichor has been identified which is currently controlled by the indigenous faction led by the one known as Kane.\n\nUsing the outpost we have established, take control of all blue ichor fields and begin harvesting operations at each of them. Human harvesting operations must be removed.\n\nThe Supervisor is coordinating the allocation of all planetary forces. Reinforcements will be provided that are proportional to the value of your harvesting operation, and the surplus ichor you harvest will be diverted to the central repository.
+		Briefing: 我们尚未与母星重新建立通讯，\n因此必须最大限度保全\n我们在此地仅存的战力。\n为此，监督者准备调整作战指挥架构。\n你已被认定具备潜力，\n现在需要证明你的统御能力。\n\n已确认一片富含蓝色浆液的区域，\n目前由被称为凯恩者领导的本土势力控制。\n\n利用我们已建立的前哨，\n夺取全部蓝色浆液矿区并开始采集。\n人类采集行动必须被彻底清除。\n\n监督者正在统筹本星球全部兵力调配。\n后续增援将与采集产值成正比，\n而你采集的盈余浆液\n将被转入中央储备库。
 	MapOptions:
 		ShortGameCheckboxEnabled: True
 	MusicPlaylist:

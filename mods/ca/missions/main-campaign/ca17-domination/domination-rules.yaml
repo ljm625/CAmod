@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, domination.lua
 	MissionData:
-		Briefing: Now that the Allies and GDI are no longer on our doorstep and we have begun to replenish our forces, we can turn our attention to the Brotherhood of Nod.\n\nKane cannot be trusted. He thinks that his cyborg army gives him such an advantage, and that we have been so weakened, that we will do his bidding without question. His arrogant overconfidence will be his downfall.\n\nIt is time to make use of our own secret weapon, Yuri. With his psionic powers he can turn our enemies into loyal servants.\n\nThere is but one obstacle. Kane's cyborgs are impervious to Yuri's powers, as their minds are protected by their cybernetic implants.\n\nIn order for Yuri to be able to control the minds of these cyborgs, we must break through the encryption that protects them.\n\nMake use of one of our best thieves to infiltrate a Nod cybernetics lab to steal the encryption algorithms. Without this protection the cyborgs will be vulnerable to Yuri, and we will be able to use Kane's own cyborgs against him.
+		Briefing: 如今盟军与GDI不再兵临城下，\n而我军也开始恢复元气，\n是时候把注意力转向Nod兄弟会了。\n\n凯恩不可信。\n他以为半机械人大军足以让他稳操胜券，\n也以为我们已虚弱到\n会无条件听命于他。\n他的傲慢自负将成为他的败因。\n\n该动用我们的秘密武器了：尤里。\n凭借其强大的心灵能力，\n他能把敌人转化为忠诚仆从。\n\n但有一道障碍。\n凯恩的半机械人因脑部植入体保护，\n可免疫尤里的能力。\n\n要让尤里控制这些半机械人的思维，\n必须先破解其防护加密。\n\n派出我们最优秀的窃贼之一\n潜入Nod网络实验室，\n窃取加密算法。\n失去这层防护后，\n半机械人将受尤里支配，\n我们就能反过来用凯恩自己的军队对付他。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

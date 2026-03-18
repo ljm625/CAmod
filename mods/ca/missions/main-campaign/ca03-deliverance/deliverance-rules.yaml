@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, deliverance.lua
 	MissionData:
-		Briefing: We have been contacted by forces belonging to a group calling themselves the Global Defense Initiative. Though we have no knowledge of such an organization, we have reason to believe they can shed some light on everything that has been happening.\n\nA GDI base apparently materialized inside Soviet territory. Their commander was taken prisoner and they are soon to be overrun by Soviet forces.\n\nTake a detachment to find the base and—assuming this is not a Soviet ruse—defend it until reinforcements arrive.\n\nWith their commander captured and their chain of command in disarray due to the temporal and dimensional upheaval, the GDI forces have agreed to follow your orders. Once our position is secure, locate and rescue the GDI commander.\n\nWe don't know yet if we can trust these people, so remain vigilant. Hopefully we have found ourselves a new ally, and rescuing their commander is surely a good first step towards securing such an alliance.
+		Briefing: 我们已收到一支自称\n“全球防卫组织”（GDI）部队的联络。\n虽然我们对该组织一无所知，\n但有理由相信他们能解释近期异变。\n\n一座GDI基地似乎凭空出现在苏联境内。\n其指挥官已被俘，\n基地也即将被苏军碾压。\n\n率领分遣队前往该基地。\n若这不是苏联设下的陷阱，\n就坚持防守到增援抵达。\n\n由于指挥官被捕，\n再加上时空与维度动荡造成的指挥链混乱，\nGDI部队已同意接受你的指挥。\n待我方阵地稳固后，\n立即定位并营救GDI指挥官。\n\n我们尚不能完全信任这些人，\n务必保持警惕。\n若能成功救回其指挥官，\n将是稳固这段潜在同盟关系的第一步。
 		LossVideo: battle.vqa
 	MapOptions:
 		ShortGameCheckboxEnabled: False

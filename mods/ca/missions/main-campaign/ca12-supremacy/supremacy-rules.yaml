@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, supremacy.lua
 	MissionData:
-		Briefing: The Soviets have been dealt a devastating blow by our new cyborg army, but it is not yet enough. For my plan to succeed their power and obedience must be shown to be unequaled.\n\nWord of our great victory has already reached GDI and the Allies, and they have set their mistrust aside. While the Allies attempt to take advantage of the Soviet defeat to make advances on that front, GDI have begun an assault against us.\n\nTwo bases in particular are soon to fall. Sacrifice one base to lull GDI into a false sense of security, and reinforce the other. Once you establish cyborg manufacturing, GDI will not stand a chance. Show no mercy, let all bear witness to the glorious evolution that shall bring the brotherhood to ultimate victory.
+		Briefing: 我们的新型半机械人军团\n已给予苏军毁灭性打击，\n但这还不够。\n若要让我的计划成功，\n就必须让他们见识到\n何为无可匹敌的力量与服从。\n\n这场大胜的消息已传到GDI和盟军耳中，\n他们已暂时放下彼此猜忌。\n盟军正试图趁苏军失势扩大战果，\n而GDI则已开始向我们发动进攻。\n\n两座基地即将失守。\n放弃其中一座，\n诱使GDI产生错误的安全感；\n集中兵力死守另一座。\n只要你建立起半机械人生产线，\nGDI将不堪一击。\n无需怜悯，\n让所有人见证这场荣耀进化，\n它将把兄弟会带向最终胜利。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

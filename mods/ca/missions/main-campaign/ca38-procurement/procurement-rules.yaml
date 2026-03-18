@@ -12,7 +12,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, procurement.lua
 	MissionData:
-		Briefing: With our rivals defeated, we must now begin rebuilding our forces. Our production capacity was crippled by the Scrin so we must look elsewhere for equipment to meet our immediate needs.\n\nThe Chinese have long persisted in their selfish prioritization of their own economic interests, refusing to aid us militarily, however their quiet yet rapid military buildup has caught the eye of GDI who, under the guise of "safeguarding regional stability", have established a large military presence a short distance from the Chinese border.\n\nThis has predictably outraged the Chinese leadership, so we have made an arrangement with them in secret.\n\nYou must take a small force to a depot containing Chinese vehicles near the border. Take these vehicles across the border and destroy the nearest GDI outpost. We can then send in additional forces to establish our own base and eliminate the remaining GDI presence.\n\nThus, GDI will be removed without the Chinese having to involve themselves directly, and the Chinese will get a live test of their new weapons against a peer adversary. In return they have agreed to sell their weapons to us, which will allow us to return to full strength at a greatly accelerated rate.
+		Briefing: 击败主要对手后，\n我们必须立即重建军力。\nScrin重创了我们的产能，\n为满足当下需求，\n我们必须从外部获取装备。\n\n中国长期将自身经济利益置于首位，\n拒绝提供军事援助。\n但其低调而迅速的军备扩张\n已引起GDI注意。\nGDI以“维护地区稳定”为名，\n在中方边境附近部署了大规模兵力。\n\n这一举动理所当然激怒了中方高层，\n因此我们与其秘密达成了交易。\n\n你需率一支小队前往边境附近仓库，\n夺取其中中国制载具。\n随后越境摧毁最近的GDI前哨。\n我方便可继续投入增援，\n建立基地并清除其余GDI存在。\n\n如此一来，\nGDI可在中国不直接下场的情况下被拔除；\n而中方也能借此实战检验新式武器\n对等对手作战效能。\n作为交换，\n他们同意向我们出售武器，\n将大幅加快我方恢复至满编战力的速度。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

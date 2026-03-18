@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, apprehension.lua
 	MissionData:
-		Briefing: Just as the Chronosphere was neutralized, we detected transports moving away that quickly vanished. Information provided by GDI suggests these forces likely belong to a group known as the Brotherhood of Nod who make extensive use of this apparent stealth technology.\n\nWe do not know what they were doing there, but from what we can gather it would be extremely bad for Chronosphere technology to fall into their hands.\n\nWe have been tracking Nod troop movements heading south, and have identified a small base on the coast as being their most likely destination. We now have a window of opportunity to capture these transports and gain some insight into Nod operations.\n\nTake a strike force into the forests surrounding the Nod base and take out their SAM sites. We're banking on Nod sending their troops out to investigate in small numbers, allowing you to ambush them piecemeal rather than taking on all of their forces at once.\n\nOnce all the SAM sites are taken out, we'll send in air support to eliminate the base's defenses. Then you should be able to clear out whatever troops are left in the base and apprehend those transports.
+		Briefing: 就在超时空传送仪被摧毁后不久，\n我们探测到一批运输队撤离并迅速隐匿。\nGDI提供的情报表明，\n这些部队很可能隶属于Nod兄弟会，\n并广泛使用这种疑似隐形技术。\n\n我们尚不清楚他们当时在做什么，\n但可以确定的是：\n超时空技术绝不能落入他们手中。\n\n我们持续追踪Nod向南调动部队，\n并确认其最可能目的地\n是海岸附近的一处小型基地。\n现在正是截获这些运输队、\n深入了解Nod行动方式的窗口期。\n\n带突击队进入Nod基地周边森林，\n优先清除其SAM防空阵地。\n我们判断Nod会分批派兵外出侦察，\n便于你逐个伏击，\n而非一次硬拼全部兵力。\n\n清除全部SAM后，\n我们将呼叫空中支援摧毁基地防线。\n随后你就能扫清残敌，\n并抓捕那批运输队。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

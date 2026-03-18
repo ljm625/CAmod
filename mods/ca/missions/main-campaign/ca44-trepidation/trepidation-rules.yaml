@@ -12,7 +12,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, trepidation.lua
 	MissionData:
-		Briefing: With the Soviet breakthrough pushed back we have a window of opportunity to strike at the Soviet gateway. However, before we proceed we require intel from our espionage team which has been embedded within Soviet forces on the Scrin homeworld for some time.\n\nThe team was awaiting information regarding the state of GDI and Nod following the arrival of the third Scrin faction, however we have not received any transmissions for several days now, which either means they have been discovered or that they have lost the ability to transmit undetected.\n\nIn accordance with contingency procedures, we expect one of our operatives through the Soviet gateway at any moment. We must extract him safely, obtain whatever new information he has, and then Allied High Command can make an informed decision regarding our next steps.\n\nTake a small specialist team and move into position to extract our spy. Hopefully he will be able to safely make contact so that you can coordinate his escape. Once he is safe we will decide whether the situation warrants further action.
+		Briefing: 苏军突破已被击退，\n我们获得了打击苏军传送门的窗口期。\n但在行动前，\n我们必须先取得一支情报小组的回报。\n该小组已在Scrin母星苏军部队内\n潜伏一段时间。\n\n该组原本在等待\n第三Scrin派系出现后\n关于GDI与Nod态势的关键信息。\n但我们已数日未收到其电文，\n这意味着他们要么暴露，\n要么已失去隐蔽发报能力。\n\n按应急预案，\n我们预计一名特工\n将随时通过苏军传送门返回。\n我们必须安全接应他，\n获取其所携最新情报，\n随后盟军最高指挥部\n才能就下一步作出有依据决策。\n\n率一支小型特战队前往接应位置。\n希望他能顺利建立联络，\n由你协助其撤离。\n待其安全后，\n我们再判断局势是否需要进一步行动。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

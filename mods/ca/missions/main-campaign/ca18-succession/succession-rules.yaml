@@ -11,7 +11,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, succession.lua
 	MissionData:
-		Briefing: Revenge is ours Comrade General! Kane's overconfidence made him careless and Yuri now commands many of his cyborgs.\n\nWhile this is excellent news, Kane is still able to produce cyborgs too fast for Yuri to manage. Research into using Tiberium to enhance Yuri's powers has begun, but it will be some time before significant progress is made.\n\nYou must return to where the cyborgs were first unleashed, where your predecessor failed miserably to contain them. The primary cyborg production facilities are still there, and we must take control of them to prevent Kane from overwhelming us again. With the cyborg factories under our control, nothing will be able to stop us.
+		Briefing: 复仇已经到来，将军同志！\n凯恩的狂妄让他掉以轻心，\n尤里如今已掌控了他大量半机械人部队。\n\n这当然是好消息，\n但凯恩仍能以极快速度继续生产半机械人，\n快到尤里也难以全面接管。\n利用泰伯利亚强化尤里能力的研究\n已经启动，\n但要见到显著成果还需要时间。\n\n你必须回到半机械人最初被投放的战场，\n那里正是你前任惨败失守之地。\n主要半机械人生产设施仍在，\n我们必须将其夺下，\n才能防止凯恩再次以数量压垮我们。\n只要工厂落入我手，\n再无人能阻挡我们。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

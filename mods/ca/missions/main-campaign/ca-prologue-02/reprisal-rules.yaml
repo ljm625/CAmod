@@ -6,7 +6,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, reprisal.lua
 	MissionData:
-		Briefing: While we extracted all the information we needed from Einstein, Comrade Stalin was most displeased to learn of his escape.\n\nThe traitor who informed the Allies of the scientist's whereabouts has been identified, and Stalin demands retribution.\n\nGo to the village the traitor calls home. Wipe it out. Leave no survivors.\n\nThe Allies have set up a base nearby, to protect the village while they prepare to evacuate it. Once the village is destroyed, destroy the Allied base.
+		Briefing: 虽然我们已从爱因斯坦那里获取了所需情报，\n但斯大林同志得知其逃脱后极为震怒。\n\n向盟军泄露科学家下落的叛徒已被确认，\n斯大林要求立刻报复。\n\n前往叛徒的家乡村庄。\n将其彻底夷平，\n不留活口。\n\n盟军在附近建立了基地，\n正准备掩护村民撤离。\n在摧毁村庄后，\n继续摧毁盟军基地。
 	-ScriptLobbyDropdown@DIFFICULTY:
 	ScriptLobbyDropdown@PROLOGUEDIFFICULTY:
 		ID: prologuedifficulty

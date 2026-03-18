@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, subversion.lua
 	MissionData:
-		Briefing: The Allies are now gripped by fear and suspicion. We must seize this opportunity to further destabilize their uneasy alliance with GDI.\n\nVery recently GDI launched one of their orbital weapons platforms. Both groups are being cautious about what information they give each other. The Allies were only partially informed and are predictably concerned, given recent events.\n\nLet us turn their fear into anger. Take control of GDI's Ion Cannon control systems and use the weapon against the Allies.
+		Briefing: 盟军如今已被恐惧与猜疑笼罩。\n我们必须抓住时机，\n进一步瓦解他们与GDI之间脆弱的联盟。\n\n就在不久前，\nGDI发射了一座轨道武器平台。\n双方目前都在谨慎控制情报共享。\n鉴于近期局势，\n盟军只掌握了部分信息，\n理所当然地感到不安。\n\n让这份恐惧转化为愤怒。\n夺取GDI离子炮控制系统，\n并用这件武器打击盟军。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

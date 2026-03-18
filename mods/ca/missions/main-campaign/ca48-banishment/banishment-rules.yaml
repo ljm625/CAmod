@@ -28,7 +28,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, banishment.lua
 	MissionData:
-		Briefing: The Malefic Scrin interstellar gateway has been located. Four of our bases along the Dahme river were overrun and our forces were pushed out of the area.\n\nOur assumption is that if we can drive the Malefic forces back and close this gateway, then the Malefic will no longer have a presence on Earth. We must do this before more of their Void Engines can be sent through.\n\nAn unusually high number of Nerve Centers have been established in the area. All of them must be destroyed for the gateway to be closed.\n\nReclaim our fallen bases by clearing out any Malefic forces and bring them back into operation, then locate and destroy all Scrin Nerve Centers.
+		Briefing: 恶煞派Scrin的星际传送门已被定位。\n达默河沿岸我方四座基地遭全面攻破，\n部队被迫撤离该区域。\n\n我们的判断是：\n只要能把恶煞派力量击退并关闭该传送门，\n其在地球的存在就将被根除。\n必须在更多“虚空引擎”穿门而来前\n完成此事。\n\n该区域已建立了异常高密度的神经中枢。\n若要关闭传送门，\n这些神经中枢必须全部摧毁。\n\n清除盘踞其中的恶煞派部队，\n收复并重启我方失陷基地；\n随后定位并摧毁全部Scrin神经中枢。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

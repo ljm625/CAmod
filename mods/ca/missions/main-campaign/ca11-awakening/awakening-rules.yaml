@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, awakening.lua
 	MissionData:
-		Briefing: The first warriors of our new army are almost ready. Our efforts to drive a wedge between GDI and the Allies were successful enough to keep them from interfering, however Soviet forces now march towards the Temple Prime complex.\n\nOnce our new army is unleashed the Soviets will not stand a chance, however their preparation cannot be hastened. Protect the temple at all costs.
+		Briefing: 我们新军的首批战士即将完成。\n我们成功离间了GDI与盟军，\n使其暂时无法干预，\n但苏军如今正向圣殿主基地推进。\n\n一旦新军出动，\n苏军将毫无胜算。\n但准备过程无法再加速。\n不惜一切代价守住圣殿。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

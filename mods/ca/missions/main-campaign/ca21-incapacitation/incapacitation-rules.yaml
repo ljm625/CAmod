@@ -16,7 +16,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, incapacitation.lua
 	MissionData:
-		Briefing: A concentration of aircraft belonging to the same two human factions has been identified in this area and has been evaluated as the next significant threat to be dealt with.\n\nYou have been allocated a small task force with which you must eliminate these aircraft and their landing areas.\n\nYou must also neutralise all anti-aircraft defensive structures. This will ensure our fleet can be redeployed to the central repository with minimal airborne resistance.\n\nAn ion storm has been created to ensure that all hostile aircraft will be confined to the ground for the duration of this mission. The energy required to maintain the storm is substantial; waste no time.
+		Briefing: 已确认该区域集结了\n同属那两个人类阵营的大量空中单位，\n并被评估为我方下一阶段必须清除的重大威胁。\n\n你将获得一支小型特遣队，\n任务是歼灭这些航空器及其起降设施。\n\n你还必须摧毁全部防空建筑。\n如此可确保我方舰队回撤中央储备库时\n遭遇最小化的空中阻力。\n\n我们已制造离子风暴，\n以确保任务期间敌方航空器被压制在地面。\n维持风暴所需能量极高，\n不要浪费时间。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	ScriptLobbyDropdown@RESPAWN:

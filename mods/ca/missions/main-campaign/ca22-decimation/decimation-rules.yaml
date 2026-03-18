@@ -5,7 +5,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, decimation.lua
 	MissionData:
-		Briefing: Another of the human factions, the Soviets, have recently turned the tide in their favour.\n\nTheir numbers include one named Yuri who possesses substantial psionic power, which has enabled the Soviets to assert control over a large portion of Kane's cybernetically enhanced troops.\n\nThe Soviets are now in the process of rebuilding their armies which had suffered significant losses, and if left unchecked they could threaten us.\n\nUltimately we seek to usurp Yuri's domination of the cyborgs, but it is critical that the already sizeable Soviet armies are not bolstered further.\n\nYour mission is to launch a full scale attack against the Soviet industrial heartland. Numerous factories are located here which are rapidly producing new equipment. Many of their vehicles are without crews, pending final maintenance and preparations.\n\nThey must be destroyed along with the factories that produced them.
+		Briefing: 另一个人类阵营——苏军——\n近期已重新扭转战局。\n\n其阵中有一名叫尤里的个体，\n具备强大心灵能力，\n使苏军得以掌控\n凯恩大量机械强化部队。\n\n苏军正在重建此前受创严重的军队。\n若放任其扩张，\n将对我们构成威胁。\n\n我们的最终目标是夺取尤里\n对半机械人大军的支配权，\n但首要前提是\n不能让规模已不小的苏军继续壮大。\n\n你的任务是对苏军工业核心区\n发动全面进攻。\n该区域工厂众多，\n正快速制造新装备。\n其大量载具仍处于待维护、待整备状态，\n尚未配属乘员。\n\n这些载具必须连同生产它们的工厂\n一并摧毁。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:
