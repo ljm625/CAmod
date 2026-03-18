@@ -171,3 +171,4 @@ menu-ingame =
 
 ## Encyclopedia / Production tooltip
 label-requires = 需要：{ $prerequisites }
+label-subfaction-only = 仅限{ $factionName }

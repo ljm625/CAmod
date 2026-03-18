@@ -30,6 +30,9 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		[FluentReference("prerequisites")]
 		const string Requires = "label-requires";
 
+		[FluentReference("factionName")]
+		const string SubfactionOnly = "label-subfaction-only";
+
 		readonly World world;
 		readonly ModData modData;
 		readonly Dictionary<ActorInfo, EncyclopediaInfo> info = new();
@@ -774,9 +777,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (encyclopediaExtrasInfo != null && !string.IsNullOrEmpty(encyclopediaExtrasInfo.Subfaction) && subfactionLabel != null)
 			{
 				subfaction = factions[encyclopediaExtrasInfo.Subfaction];
-				subfactionText = $"{FluentProvider.GetMessage(subfaction.Name)} only.";
-
-				// var subfactionText = FluentProvider.GetMessage(SubfactionOnly, "factionName", FluentProvider.GetMessage(subfaction.Name));
+				subfactionText = FluentProvider.GetMessage(SubfactionOnly, "factionName", FluentProvider.GetMessage(subfaction.Name));
 				subfactionHeight = descriptionFont.Measure(subfactionText).Y;
 			}
 
