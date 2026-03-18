@@ -2,7 +2,7 @@ Container@OBSERVER_WIDGETS:
 	Logic: MenuButtonsChromeLogic, LoadIngameChatLogic
 	Children:
 		Background@SELECTION_TOOLTIP:
-			Logic: SelectionTooltipLogicCA
+			Logic: SelectionTooltipLogic
 			Background: dialog4
 			X: WINDOW_WIDTH
 			Y: WINDOW_HEIGHT

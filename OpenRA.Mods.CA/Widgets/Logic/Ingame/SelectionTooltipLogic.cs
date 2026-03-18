@@ -20,7 +20,7 @@ using OpenRA.Widgets;
 
 namespace OpenRA.Mods.CA.Widgets.Logic
 {
-	public class SelectionTooltipLogicCA : ChromeLogic
+	public class SelectionTooltipLogic : ChromeLogic
 	{
 		readonly World world;
 		int selectionHash;
@@ -29,7 +29,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		int iconMargin;
 
 		[ObjectCreator.UseCtor]
-		public SelectionTooltipLogicCA(Widget widget, World world)
+		public SelectionTooltipLogic(Widget widget, World world)
 		{
 			this.world = world;
 			this.widget = widget;
@@ -121,7 +121,6 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			// Name
 			var name = tooltipInfo != null ? tooltipInfo.Name : char.ToUpper(actorInfo.Name[0]) + actorInfo.Name[1..];
-			name = LocalizeGenericTooltipName(name);
 
 			if (numSelectedActors > 1)
 				name = numSelectedActors.ToString() + "x " + name;
@@ -210,41 +209,6 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			widget.Bounds.Height = Math.Max(leftHeight, rightHeight);
 			widget.Bounds.X = Game.Renderer.Resolution.Width - widget.Bounds.Width - 12;
 			widget.Bounds.Y = Game.Renderer.Resolution.Height - widget.Bounds.Height - 12;
-		}
-
-		static string LocalizeGenericTooltipName(string name)
-		{
-			if (string.IsNullOrWhiteSpace(name))
-				return name;
-
-			var normalized = name.Trim().ToLowerInvariant();
-
-			if (normalized.Contains("enemy") && normalized.Contains("structure"))
-				return "敌方建筑";
-			if (normalized.Contains("enemy") && normalized.Contains("harvester"))
-				return "敌方采矿车";
-			if (normalized.Contains("enemy") && normalized.Contains("unit"))
-				return "敌方单位";
-			if (normalized.Contains("ally") && normalized.Contains("structure"))
-				return "友方建筑";
-			if (normalized.Contains("ally") && normalized.Contains("harvester"))
-				return "友方采矿车";
-			if (normalized.Contains("ally") && normalized.Contains("unit"))
-				return "友方单位";
-			if (normalized.Contains("neutral") && normalized.Contains("structure"))
-				return "中立建筑";
-			if (normalized.Contains("neutral") && normalized.Contains("harvester"))
-				return "中立采矿车";
-			if (normalized.Contains("neutral") && normalized.Contains("unit"))
-				return "中立单位";
-			if (normalized == "structure")
-				return "建筑";
-			if (normalized == "harvester")
-				return "采矿车";
-			if (normalized == "unit")
-				return "单位";
-
-			return name;
 		}
 
 		public static LabelWidget GetArmorTypeLabel(LabelWidget armorTypeLabel, ActorInfo actor)
