@@ -1429,7 +1429,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (string.IsNullOrEmpty(categoryPath))
 				return null;
 
-			var topLevelCategory = categoryPath.Split('/')[0];
+			var topLevelCategory = NormalizeTopLevelCategory(categoryPath.Split('/')[0]);
 
 			if (topLevelCategory == "Nod")
 			{
@@ -1438,7 +1438,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				if (parts.Length > 1)
 				{
 					// Nod units use no preview owner so they appear white.
-					var secondLevel = parts[1];
+					var secondLevel = NormalizeSecondLevelCategory(parts[1]);
 					if (!redUnits.Contains(selectedActor.Name) && (secondLevel == "Vehicles" || secondLevel == "Aircraft" || secondLevel == "Infantry"))
 						return null;
 				}
@@ -1470,7 +1470,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			if (string.IsNullOrEmpty(categoryPath))
 				return Color.White;
 
-			var topLevelCategory = categoryPath.Split('/')[0];
+			var topLevelCategory = NormalizeTopLevelCategory(categoryPath.Split('/')[0]);
 
 			if (topLevelCategory == "Nod")
 			{
@@ -1479,7 +1479,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				if (parts.Length > 1)
 				{
 					// Most Nod units appear white/gray
-					var secondLevel = parts[1];
+					var secondLevel = NormalizeSecondLevelCategory(parts[1]);
 					if (!redUnits.Contains(selectedActor.Name) && (secondLevel == "Vehicles" || secondLevel == "Aircraft" || secondLevel == "Infantry"))
 						return Color.FromArgb(230, 230, 255); // E6E6FF
 				}
@@ -1577,7 +1577,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 		static string GetFactionFlag(string categoryName)
 		{
-			return categoryName switch
+			return NormalizeTopLevelCategory(categoryName) switch
 			{
 				"Allies" => "allies",
 				"Soviets" => "soviet",
@@ -1624,7 +1624,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		// Helper methods for category sorting
 		static int GetTopLevelCategorySortOrder(string categoryName)
 		{
-			return categoryName switch
+			return NormalizeTopLevelCategory(categoryName) switch
 			{
 				"Allies" => 0,
 				"Soviets" => 1,
@@ -1637,7 +1637,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 		static int GetSecondLevelCategorySortOrder(string categoryName)
 		{
-			return categoryName switch
+			return NormalizeSecondLevelCategory(categoryName) switch
 			{
 				"Infantry" => 0,
 				"Vehicles" => 1,
@@ -1653,7 +1653,43 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				"Debuffs" => 11,
 				"Tech Buildings" => 12,
 				"Tech Units" => 13,
-				_ => 1000
+					_ => 1000
+				};
+		}
+
+		static string NormalizeTopLevelCategory(string categoryName)
+		{
+			return categoryName switch
+			{
+				"盟军" => "Allies",
+				"苏军" => "Soviets",
+				"GDI" => "GDI",
+				"Nod" => "Nod",
+				"Scrin" => "Scrin",
+				"其他" => "Other",
+				_ => categoryName
+			};
+		}
+
+		static string NormalizeSecondLevelCategory(string categoryName)
+		{
+			return categoryName switch
+			{
+				"步兵" => "Infantry",
+				"载具" => "Vehicles",
+				"空中单位" => "Aircraft",
+				"建筑" => "Buildings",
+				"防御建筑" => "Defenses",
+				"海军" => "Naval",
+				"升级" => "Upgrades",
+				"支援技能" => "Support Powers",
+				"子阵营" => "Subfactions",
+				"提示" => "Tips",
+				"增益" => "Buffs",
+				"减益" => "Debuffs",
+				"科技建筑" => "Tech Buildings",
+				"科技单位" => "Tech Units",
+				_ => categoryName
 			};
 		}
 
