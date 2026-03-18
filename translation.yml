@@ -6,8 +6,8 @@ translation:
   Soviet: 苏军
   Soviets: 苏军
   GDI: GDI
-  Nod: Nod
-  Scrin: Scrin
+  Nod: NOD
+  Scrin: 思金人
 
   # Core gameplay terms
   Upgrade: 升级
@@ -32,7 +32,7 @@ translation:
   Capturable: 可被占领
 
   # Common structures
-  Construction Yard: 建造场
+  Construction Yard: 建造厂
   Barracks: 兵营
   War Factory: 战车工厂
   Refinery: 精炼厂
@@ -44,7 +44,7 @@ translation:
   Repair Facility: 维修设施
   Airfield: 机场
   Helipad: 停机坪
-  Naval Yard: 海军船坞
+  Naval Yard: 造船厂
   Missile Silo: 导弹发射井
 
   # Civilian / map objects
@@ -70,7 +70,7 @@ translation:
   Engineer: 工程师
   Medic: 医疗兵
   Mechanic: 机械师
-  Commando: 突击队员
+  Commando: 突击队
   Sniper: 狙击手
   Spy: 间谍
   Flamethrower: 喷火兵
@@ -165,7 +165,7 @@ translation:
   Attack Plane: 攻击机
   Bomber: 轰炸机
   Carryall: 运载机
-
+  Juggernaut: 神像
   # Additional doctrine/upgrade/unit terms
   Bombardier: 轰炸兵
   Sidewinders: 响尾蛇导弹
@@ -232,14 +232,14 @@ translation:
   Intruder: 入侵者
   Marauder: 劫掠者
   Watcher: 监视者
-  Overlord: 主宰
+  Overlord: 尊王
   Apocalypse: 天启
   Apocalyptic: 天启级
   Atomic: 原子
   Ion: 离子
   Hover: 悬浮
   Harvester: 采矿车
-  Tesla Track: 特斯拉履带车
+  Tesla Track: 磁能履带车
   Raider Buggy: 袭击者越野车
   Stealth APC: 隐形装甲运兵车
   Subterranean APC: 地下装甲运兵车
@@ -267,8 +267,8 @@ translation:
   MGT-1A: MGT-1A
 
   # Campaign proper nouns
-  Brotherhood of Nod: Nod兄弟会
-  Global Defense Initiative: 全球防卫组织
+  Brotherhood of Nod: NOD兄弟会
+  Global Defense Initiative: 全球防御组织
   Neris river: 涅里斯河
   Nile river: 尼罗河
   Temple Prime: 圣殿主基地
@@ -282,13 +282,13 @@ translation:
   Kane: 凯恩
   Yuri: 尤里
   Stalin: 斯大林
-  Scrin Overlord: Scrin主宰
+  Scrin Overlord: 思金尊王
   Allied Spy: 盟军间谍
   GDI Soldier: GDI士兵
   GDI Pilot: GDI飞行员
-  Nod Commander: Nod指挥官
-  Nod Soldier: Nod士兵
-  Tesla Tank: 特斯拉坦克车组
+  Nod Commander: NOD指挥官
+  Nod Soldier: NOD士兵
+  Tesla Tank: 磁能坦克
   Radio: 无线电
   Hacker: 黑客
 

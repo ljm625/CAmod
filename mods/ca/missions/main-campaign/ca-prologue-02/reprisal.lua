@@ -157,7 +157,7 @@ WarpInTeslaTanks = function(TankLocation1, TankLocation2, EffectLocation)
 	Actor.Create("ttnk", true, { Owner = USSR, Location = TankLocation1, Facing = Angle.South })
 	Actor.Create("ttnk", true, { Owner = USSR, Location = TankLocation2, Facing = Angle.South })
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
-		Media.DisplayMessage("同志们，向你们致意！苏维埃帝国果然无远弗届！", "特斯拉坦克车组", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("同志们，向你们致意！苏维埃帝国果然无远弗届！", "磁能坦克车组", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/greetings.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(6)), function()
