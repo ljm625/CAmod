@@ -8,6 +8,7 @@ FileSystem: DefaultFileSystem
 		^EngineDir
 		^EngineDir|mods/common-content: content
 		^EngineDir|mods/common: common
+		$ca: ca
 		$ca-content: cacontent
 
 Rules:
@@ -44,27 +45,27 @@ FluentMessages:
 
 Fonts:
 	Tiny:
-		Font: common|FreeSans.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 10
 		Ascender: 8
 	TinyBold:
-		Font: common|FreeSansBold.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 10
 		Ascender: 8
 	Regular:
-		Font: common|FreeSans.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 14
 		Ascender: 11
 	Bold:
-		Font: common|FreeSansBold.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 14
 		Ascender: 11
 	MediumBold:
-		Font: common|FreeSansBold.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 18
 		Ascender: 14
 	BigBold:
-		Font: common|FreeSansBold.ttf
+		Font: ca|wqy-zenhei.ttf
 		Size: 24
 		Ascender: 18
 
