@@ -8,7 +8,7 @@ WorldLoaded = function()
 	BlueScore = 0
 	RedScore = 0
 
-	Media.DisplayMessage("Loading...", "Notification", HSLColor.Lime)
+	Media.DisplayMessage("加载中...", "通知", HSLColor.Lime)
 
 	Players = Player.GetPlayers(function(p) return (p.Team == 1 or p.Team == 2) and not p.IsNonCombatant and p.InternalName ~= "Blue" and p.InternalName ~= "Red" end)
 	BluePlayers = Player.GetPlayers(function(p) return p.Team == 1 and not p.IsNonCombatant and p.InternalName ~= "Blue" and p.InternalName ~= "Red" end)
@@ -31,10 +31,10 @@ WorldLoaded = function()
 	Utils.Do(Objectives, function(o)
 		Trigger.OnCapture(o.Actor, function(self, captor, oldOwner, newOwner)
 			if newOwner.Team == 1 then
-				Media.DisplayMessage("The blue team have captured the " .. o.Name .. "!", "Notification", HSLColor.FromHex("0080FF"))
+				Media.DisplayMessage("蓝队已夺取" .. o.Name .. "！", "通知", HSLColor.FromHex("0080FF"))
 				self.Owner = Blue
 			elseif newOwner.Team == 2 then
-				Media.DisplayMessage("The red team have captured the " .. o.Name .. "!", "Notification", HSLColor.Red)
+				Media.DisplayMessage("红队已夺取" .. o.Name .. "！", "通知", HSLColor.Red)
 				self.Owner = Red
 			end
 		end)
@@ -63,7 +63,7 @@ WorldLoaded = function()
 
 		if BalanceUnits then
 			if #BluePlayers > #RedPlayers and #RedPlayers > 0 then
-				Media.DisplayMessage("Blue team has more players. Allocating extra credits.", "Notification", HSLColor.Yellow)
+				Media.DisplayMessage("蓝队人数更多，正在为红队分配额外资金。", "通知", HSLColor.Yellow)
 				local redExtra = (#BluePlayers - #RedPlayers) * UnitsPerPlayer
 				local redPlayerIdx = 1
 
@@ -81,7 +81,7 @@ WorldLoaded = function()
 				end
 
 			elseif #RedPlayers > #BluePlayers and #BluePlayers > 0 then
-				Media.DisplayMessage("Red team has more players. Allocating extra credits.", "Notification", HSLColor.Yellow)
+				Media.DisplayMessage("红队人数更多，正在为蓝队分配额外资金。", "通知", HSLColor.Yellow)
 				local blueExtra = (#RedPlayers - #BluePlayers) * UnitsPerPlayer
 				local bluePlayerIdx = 1
 

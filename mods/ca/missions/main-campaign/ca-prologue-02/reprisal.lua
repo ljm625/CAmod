@@ -161,7 +161,7 @@ WarpInTeslaTanks = function(TankLocation1, TankLocation2, EffectLocation)
 		MediaCA.PlaySound(MissionDir .. "/greetings.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(6)), function()
-			Media.DisplayMessage("我们理解斯大林同志对我们的协议仍有疑虑。希望这些礼物能让他安心。", "Unknown", HSLColor.FromHex("999999"))
+			Media.DisplayMessage("我们理解斯大林同志对我们的协议仍有疑虑。希望这些礼物能让他安心。", "未知", HSLColor.FromHex("999999"))
 			MediaCA.PlaySound(MissionDir .. "/doubts.aud", 2)
 		end)
 	end)

@@ -18,22 +18,22 @@ WorldLoaded = function()
     Trigger.OnAnyProduction(function(producer, produced, productionType)
 
         if produced.Type == "action.respawn" then
-            Media.DisplayMessage("Regenerating dummies.", "Notification", HSLColor.FromHex("00FFFF"))
+            Media.DisplayMessage("正在重生靶机。", "通知", HSLColor.FromHex("00FFFF"))
             RespawnDummies()
         end
 
         if produced.Type == "action.clear.upgrades" then
-            Media.DisplayMessage("Clearing upgrades.", "Notification", HSLColor.FromHex("FF8800"))
+            Media.DisplayMessage("正在清除升级。", "通知", HSLColor.FromHex("FF8800"))
             ClearUpgrades()
         end
 
         if produced.Type == "action.enable.hazmat" then
             Actor.Create("hazmat.upgrade", true, { Owner = Dummy })
-            Media.DisplayMessage("Hazmat applied to dummies.", "Notification", HSLColor.FromHex("00FF00"))
+            Media.DisplayMessage("已为靶机应用防化服。", "通知", HSLColor.FromHex("00FF00"))
         end
 
         if produced.Type == "action.disable.hazmat" then
-            Media.DisplayMessage("Hazmat removed from dummies.", "Notification", HSLColor.FromHex("FF0000"))
+            Media.DisplayMessage("已移除靶机防化服。", "通知", HSLColor.FromHex("FF0000"))
             Utils.Do(Dummy.GetActorsByType("hazmat.upgrade"), function(a)
                 a.Destroy()
             end)
@@ -41,11 +41,11 @@ WorldLoaded = function()
 
         if produced.Type == "action.enable.flakarmor" then
             Actor.Create("flakarmor.upgrade", true, { Owner = Dummy })
-            Media.DisplayMessage("Flak armor applied to dummies.", "Notification", HSLColor.FromHex("00FF00"))
+            Media.DisplayMessage("已为靶机应用防爆装甲。", "通知", HSLColor.FromHex("00FF00"))
         end
 
         if produced.Type == "action.disable.flakarmor" then
-            Media.DisplayMessage("Flak armor removed from dummies.", "Notification", HSLColor.FromHex("FF0000"))
+            Media.DisplayMessage("已移除靶机防爆装甲。", "通知", HSLColor.FromHex("FF0000"))
             Utils.Do(Dummy.GetActorsByType("flakarmor.upgrade"), function(a)
                 a.Destroy()
             end)
@@ -53,11 +53,11 @@ WorldLoaded = function()
 
         if produced.Type == "action.enable.cyborgarmor" then
             Actor.Create("cyborgarmor.upgrade", true, { Owner = Dummy })
-            Media.DisplayMessage("Cyborg armor applied to dummies.", "Notification", HSLColor.FromHex("00FF00"))
+            Media.DisplayMessage("已为靶机应用半机械装甲。", "通知", HSLColor.FromHex("00FF00"))
         end
 
         if produced.Type == "action.disable.cyborgarmor" then
-            Media.DisplayMessage("Cyborg armor removed from dummies.", "Notification", HSLColor.FromHex("FF0000"))
+            Media.DisplayMessage("已移除靶机半机械装甲。", "通知", HSLColor.FromHex("FF0000"))
             Utils.Do(Dummy.GetActorsByType("cyborgarmor.upgrade"), function(a)
                 a.Destroy()
             end)

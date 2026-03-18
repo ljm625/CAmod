@@ -214,18 +214,29 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 		static string LocalizeGenericTooltipName(string name)
 		{
-			return name switch
-			{
-				"Enemy Structure" => "敌方建筑",
-				"Enemy Unit" => "敌方单位",
-				"Ally Structure" => "友方建筑",
-				"Ally Unit" => "友方单位",
-				"Neutral Structure" => "中立建筑",
-				"Neutral Unit" => "中立单位",
-				"Structure" => "建筑",
-				"Unit" => "单位",
-				_ => name
-			};
+			if (string.IsNullOrWhiteSpace(name))
+				return name;
+
+			var normalized = name.Trim().ToLowerInvariant();
+
+			if (normalized.Contains("enemy") && normalized.Contains("structure"))
+				return "敌方建筑";
+			if (normalized.Contains("enemy") && normalized.Contains("unit"))
+				return "敌方单位";
+			if (normalized.Contains("ally") && normalized.Contains("structure"))
+				return "友方建筑";
+			if (normalized.Contains("ally") && normalized.Contains("unit"))
+				return "友方单位";
+			if (normalized.Contains("neutral") && normalized.Contains("structure"))
+				return "中立建筑";
+			if (normalized.Contains("neutral") && normalized.Contains("unit"))
+				return "中立单位";
+			if (normalized == "structure")
+				return "建筑";
+			if (normalized == "unit")
+				return "单位";
+
+			return name;
 		}
 
 		public static LabelWidget GetArmorTypeLabel(LabelWidget armorTypeLabel, ActorInfo actor)

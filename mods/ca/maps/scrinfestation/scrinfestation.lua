@@ -168,5 +168,5 @@ WorldLoaded = function()
 end
 
 AnnounceDeath = function(killed)
-	Media.DisplayMessage(killed.Owner.Name .. " died!", "Notification", HSLColor.FromHex("1E90FF"))
+	Media.DisplayMessage(killed.Owner.Name .. " 已阵亡！", "通知", HSLColor.FromHex("1E90FF"))
 end

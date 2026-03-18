@@ -174,7 +174,7 @@ WorldLoaded = function()
 			if actor.HasProperty("Kill") and not actor.IsDead then actor.Kill("BulletDeath") end
 		end)
 
-		Media.DisplayMessage("GDI are victorious!", "Notification", HSLColor.FromHex("E5D19C"))
+		Media.DisplayMessage("GDI 获胜！", "通知", HSLColor.FromHex("E5D19C"))
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
 			Utils.Do(NodPlayers, function(nodPlayer)
@@ -198,7 +198,7 @@ WorldLoaded = function()
 			if actor.HasProperty("Kill") and not actor.IsDead then actor.Kill("BulletDeath") end
 		end)
 
-		Media.DisplayMessage("Nod are victorious!", "Notification", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("Nod 获胜！", "通知", HSLColor.FromHex("FF0000"))
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
 			Utils.Do(GDIPlayers, function(gdiPlayer)
@@ -256,5 +256,5 @@ AnnounceDeath = function(killed)
 		return
 	end
 
-	Media.DisplayMessage(killed.Owner.Name .. " died!", "Notification", HSLColor.FromHex("1E90FF"))
+	Media.DisplayMessage(killed.Owner.Name .. " 已阵亡！", "通知", HSLColor.FromHex("1E90FF"))
 end

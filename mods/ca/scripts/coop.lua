@@ -438,7 +438,7 @@ PlayerDefeatedOrDisconnected = function(player)
 			local playerName = player.Name
 			if selectedMessage ~= nil then
 				local formattedMessage = string.gsub(selectedMessage, "PID", playerName)
-				Media.DisplayMessage(formattedMessage, "High Command", player.Color)
+				Media.DisplayMessage(formattedMessage, "最高指挥部", player.Color)
 			end
 		end
 	end)
@@ -743,7 +743,7 @@ local function SetExtraMines()
 			Utils.Do(AllSpawners,function(SID)
 				SID.Destroy()
 			end)
-			Media.DisplayMessage("All resource spawners are deleted now. Good luck!")
+			Media.DisplayMessage("所有资源生成点已移除。祝你好运！")
 		end)
 	end
 end

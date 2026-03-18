@@ -10,7 +10,7 @@ PlayerScores = { }
 PlayerSurrenderTimes = { }
 
 WorldLoaded = function()
-	Media.DisplayMessage("Loading...", "Notification", HSLColor.FromHex("1E90FF"))
+	Media.DisplayMessage("加载中...", "通知", HSLColor.FromHex("1E90FF"))
 
 	PossiblePlayers = {
 		Player.GetPlayer("Multi0"),
@@ -165,9 +165,9 @@ Tick = function()
 				end
 
 				if matchup.Winner.IsLocalPlayer then
-					Media.DisplayMessage("You are victorious! Please wait while remaining matchups are completed.", "Notification", HSLColor.FromHex("00FF00"))
+					Media.DisplayMessage("你已获胜！请等待其余对局结束。", "通知", HSLColor.FromHex("00FF00"))
 				elseif matchup.Loser.IsLocalPlayer then
-					Media.DisplayMessage("You have been defeated. Please wait while remaining matchups are completed.", "Notification", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("你已被击败。请等待其余对局结束。", "通知", HSLColor.FromHex("FF0000"))
 				end
 
 				EndMatchup(matchup)
@@ -183,9 +183,9 @@ Tick = function()
 							if PlayerSurrenderTimes[p[1].InternalName] == nil then
 								PlayerSurrenderTimes[p[1].InternalName] = DateTime.GameTime + DateTime.Seconds(15)
 								if p[1].IsLocalPlayer then
-									Media.DisplayMessage("If you have no units in 15 seconds you will lose this round.", "Notification", HSLColor.FromHex("FF0000"))
+									Media.DisplayMessage("若你在15秒内仍无单位，将输掉本回合。", "通知", HSLColor.FromHex("FF0000"))
 								elseif p[2].IsLocalPlayer then
-									Media.DisplayMessage("If your opponent has no units in 15 seconds you will win this round.", "Notification", HSLColor.FromHex("00FF00"))
+									Media.DisplayMessage("若对手在15秒内仍无单位，你将赢得本回合。", "通知", HSLColor.FromHex("00FF00"))
 								end
 							elseif DateTime.GameTime > PlayerSurrenderTimes[p[1].InternalName] and not hqFlipped then
 								hqFlipped = true
@@ -253,8 +253,8 @@ CalculateMatchups = function()
 end
 
 InitRound = function()
-	Media.DisplayMessage("Round " .. CurrentRound .. " starting...", "Notification", HSLColor.FromHex("1E90FF"))
-	UserInterface.SetMissionText("Round " .. CurrentRound .. " of " .. #Rounds, HSLColor.Yellow)
+	Media.DisplayMessage("第 " .. CurrentRound .. " 回合开始...", "通知", HSLColor.FromHex("1E90FF"))
+	UserInterface.SetMissionText("第 " .. CurrentRound .. " / " .. #Rounds .. " 回合", HSLColor.Yellow)
 	ResetAll()
 	CurrentRoundTime = 0
 
@@ -264,7 +264,7 @@ InitRound = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		local roundMatchups = Rounds[CurrentRound]
-		Media.DisplayMessage("Round started. Objectives capturable in 60 seconds.", "Notification", HSLColor.FromHex("1E90FF"))
+		Media.DisplayMessage("回合已开始。目标将在60秒后可占领。", "通知", HSLColor.FromHex("1E90FF"))
 
 		local objectives = Neutral.GetActorsByType("miss")
 		Utils.Do(objectives, function(o)
@@ -272,7 +272,7 @@ InitRound = function()
 		end)
 
 		Trigger.AfterDelay(1500, function()
-			Media.DisplayMessage("Objectives are now capturable.", "Notification", HSLColor.FromHex("1E90FF"))
+			Media.DisplayMessage("目标现已可占领。", "通知", HSLColor.FromHex("1E90FF"))
 		end)
 
 		for i=1, #roundMatchups do
@@ -280,12 +280,12 @@ InitRound = function()
 
 			if matchup.Player1.InternalName == "Empty" then
 				if matchup.Player2.IsLocalPlayer then
-					Media.DisplayMessage("You have no opponent this round, please wait for the next one.", "Notification", HSLColor.FromHex("1E90FF"))
+					Media.DisplayMessage("本回合你没有对手，请等待下一回合。", "通知", HSLColor.FromHex("1E90FF"))
 				end
 				table.insert(SpectatorCams, Actor.Create("spectatorcam", true, { Owner = matchup.Player2 }))
 			elseif matchup.Player2.InternalName == "Empty" then
 				if matchup.Player1.IsLocalPlayer then
-					Media.DisplayMessage("You have no opponent this round, please wait for the next one.", "Notification", HSLColor.FromHex("1E90FF"))
+					Media.DisplayMessage("本回合你没有对手，请等待下一回合。", "通知", HSLColor.FromHex("1E90FF"))
 				end
 				table.insert(SpectatorCams, Actor.Create("spectatorcam", true, { Owner = matchup.Player1 }))
 			else
@@ -365,7 +365,7 @@ EndGame = function()
 		end
 	end)
 
-	Media.DisplayMessage("Congratulations to the winner, " .. Winner.Name .. "!", "Notification", HSLColor.FromHex("00FF00"))
+	Media.DisplayMessage("恭喜获胜者：" .. Winner.Name .. "！", "通知", HSLColor.FromHex("00FF00"))
 	UserInterface.SetMissionText(rankingText, HSLColor.Yellow)
 end
 

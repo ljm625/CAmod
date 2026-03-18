@@ -478,11 +478,11 @@ RespawnTrigger = function(a, loc)
 		Trigger.OnKilled(a, function(self, killer)
 			local name
 			if a.Type == "spy" then
-				name = "Spy"
+				name = "间谍"
 			else
-				name = "SEAL"
+				name = "海豹部队"
 			end
-			Notification(name .. " respawns in 20 seconds.")
+			Notification(name .. "将在20秒后重生。")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnedActor = Actor.Create(a.Type, true, { Owner = a.Owner, Location = loc })
 				Beacon.New(a.Owner, PlayerStart.CenterPosition)

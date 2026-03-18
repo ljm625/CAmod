@@ -281,11 +281,11 @@ InitObjectives = function(player)
 end
 
 Notification = function(text)
-	Media.DisplayMessage(text, "Notification", HSLColor.FromHex("1E90FF"))
+	Media.DisplayMessage(text, "通知", HSLColor.FromHex("1E90FF"))
 end
 
 Tip = function(text)
-	Media.DisplayMessage(text, "Tip", HSLColor.FromHex("29F3CF"))
+	Media.DisplayMessage(text, "提示", HSLColor.FromHex("29F3CF"))
 end
 
 IsNormalOrAbove = function()
