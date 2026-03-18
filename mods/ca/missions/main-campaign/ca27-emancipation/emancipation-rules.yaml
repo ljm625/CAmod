@@ -7,7 +7,7 @@ World:
 	LuaScript:
 		Scripts: campaign.lua, emancipation.lua
 	MissionData:
-		Briefing: 指挥官，发生了灾难性事件。\n我们部署在前线附近、\n用于最终总攻的多个集结基地\n已被Scrin心灵控制夺走。\n\n我们以前遭遇过Scrin的Mastermind，\n但从未想到其能力竟能扩展到这种规模。\n\n高级机器人司令部已启动\n无人作战单位的大规模动员。\n任何可能被心灵控制的部队\n都不能再贸然投入。\n\n你的任务是率领这些无人单位，\n摧毁Scrin Mastermind。\n虽无法完全确定，\n但我们推测击杀Mastermind后，\n它所奴役的意识将被全部释放。\n\n务必避免误杀受Scrin控制的GDI部队。\n当你夺回我方全部基地后，\n彻底清除该地区Scrin势力。
+		Briefing: 指挥官，发生了灾难性事件。\n我们部署在前线附近、\n用于最终总攻的多个集结基地\n已被Scrin心灵控制夺走。\n\n我们以前遭遇过Scrin的摄魂师，\n但从未想到其能力竟能扩展到这种规模。\n\n高级机器人司令部已启动\n无人作战单位的大规模动员。\n任何可能被心灵控制的部队\n都不能再贸然投入。\n\n你的任务是率领这些无人单位，\n摧毁Scrin 摄魂师。\n虽无法完全确定，\n但我们推测击杀摄魂师后，\n它所奴役的意识将被全部释放。\n\n务必避免误杀受Scrin控制的GDI部队。\n当你夺回我方全部基地后，\n彻底清除该地区Scrin势力。
 	MapOptions:
 		ShortGameCheckboxEnabled: False
 	MusicPlaylist:

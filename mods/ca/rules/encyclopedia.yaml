@@ -1324,11 +1324,11 @@ encyclopedia.ifv.psy:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载尤里或主脑，可心灵控制敌方单位，\n乘员离开后会失去控制。
+		Description: IFV 搭载尤里或摄魂师，可心灵控制敌方单位，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对步兵、载具强势
 		Weaknesses: • 无法造成伤害\n• 无法攻击空中单位
-		Attributes: • 可心灵控制敌方单位\n• 乘员离开后失去控制\n• 乘员： 尤里、主脑
+		Attributes: • 可心灵控制敌方单位\n• 乘员离开后失去控制\n• 乘员： 尤里、摄魂师
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -1964,11 +1964,11 @@ encyclopedia.reck.psy:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载尤里或主脑，可心灵控制敌方单位，\n乘员离开后会失去控制。
+		Description: 清算者搭载尤里或摄魂师，可心灵控制敌方单位，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对步兵、载具强势
 		Weaknesses: • 无法造成伤害\n• 无法攻击空中单位
-		Attributes: • 可心灵控制敌方单位\n• 乘员离开后失去控制\n• 乘员： 尤里、主脑
+		Attributes: • 可心灵控制敌方单位\n• 乘员离开后失去控制\n• 乘员： 尤里、摄魂师
 	-WithSpriteTurret:
 	WithIdleOverlay@PSYCHIC:
 		Sequence: psy
@@ -2682,7 +2682,7 @@ encyclopedia.debuffs.suppression:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由 Scrin “压制”技能、主脑与衰弱者施加。\n降低移动速度与射速。
+		Description: 由 Scrin “压制”技能、摄魂师与衰弱者施加。\n降低移动速度与射速。
 	TooltipExtras:
 		Weaknesses: -60% 移动速度\n-20% 射速
 	WithPalettedOverlay@SUPPRESSION:

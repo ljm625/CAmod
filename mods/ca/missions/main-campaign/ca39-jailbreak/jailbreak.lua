@@ -132,7 +132,7 @@ WorldLoaded = function()
 					end)
 				else
 					ObjectiveEliminateAllies = USSR.AddObjective("消灭残余盟军势力。")
-					ObjectiveKeepYuriAndProdigyAlive = USSR.AddObjective("尤里与神童必须存活。")
+					ObjectiveKeepYuriAndProdigyAlive = USSR.AddObjective("尤里与夺魂师必须存活。")
 
 					Trigger.OnAnyKilled({ yuri, prodigy }, function(self, killer)
 						if not USSR.IsObjectiveCompleted(ObjectiveKeepYuriAndProdigyAlive) then

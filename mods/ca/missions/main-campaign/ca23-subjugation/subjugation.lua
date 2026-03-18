@@ -110,7 +110,7 @@ WorldLoaded = function()
 
 	ObjectiveCaptureTibFacilities = Scrin.AddObjective("夺取3座泰伯利亚浓缩设施。")
 	if not RespawnEnabled then
-		ObjectiveMastermindSurvives = Scrin.AddObjective("Mastermind必须存活。")
+		ObjectiveMastermindSurvives = Scrin.AddObjective("摄魂师必须存活。")
 	end
 
 	Mastermind.GrantCondition("difficulty-" .. Difficulty)
@@ -132,13 +132,13 @@ WorldLoaded = function()
 		Media.DisplayMessage("你的力量在我面前不值一提。趁还能走，赶紧钻进你的虫洞逃命吧。", "尤里", HSLColor.FromHex("FF00BB"))
 		MediaCA.PlaySound(MissionDir .. "/yuri_taunt.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("Mastermind最多可心控3个敌方单位。若心控第4个，最早被控制的单位会死亡。")
+			Tip("摄魂师最多可心控3个敌方单位。若心控第4个，最早被控制的单位会死亡。")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
-				Tip("Mastermind拥有定向技能，可在自身及其奴隶单位处引发心灵火花，对附近敌人造成伤害并减速（奴隶单位不受影响）。")
+				Tip("摄魂师拥有定向技能，可在自身及其奴隶单位处引发心灵火花，对附近敌人造成伤害并减速（奴隶单位不受影响）。")
 				Trigger.AfterDelay(DateTime.Seconds(7), function()
-					Tip("Mastermind可控制敌方建筑。生产建筑可生产永久奴役单位。")
+					Tip("摄魂师可控制敌方建筑。生产建筑可生产永久奴役单位。")
 					Trigger.AfterDelay(DateTime.Seconds(7), function()
-						Tip("在Mastermind足够强大、可保护部队免受尤里影响前，请远离尤里影响范围。")
+						Tip("在摄魂师足够强大、可保护部队免受尤里影响前，请远离尤里影响范围。")
 					end)
 				end)
 			end)
@@ -177,12 +177,12 @@ WorldLoaded = function()
 				end
 				Scrin.MarkCompletedObjective(ObjectiveCaptureTibFacilities)
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("已吸收浓缩灵液。你的Mastermind已进化为神童，可保护附近单位免受尤里影响。")
+					Notification("已吸收浓缩灵液。你的摄魂师已进化为夺魂师，可保护附近单位免受尤里影响。")
 					MediaCA.PlaySound(MissionDir .. "/s_prodigy.aud", 2)
 				end)
 			else
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("已吸收浓缩灵液。Mastermind心控容量+1。")
+					Notification("已吸收浓缩灵液。摄魂师心控容量+1。")
 					MediaCA.PlaySound(MissionDir .. "/s_ichorconsumed.aud", 2)
 				end)
 			end
@@ -357,10 +357,10 @@ InitUSSR = function()
 end
 
 RespawnMastermind = function()
-	local mastermindName = "Mastermind"
+	local mastermindName = "摄魂师"
 
 	if TibFacilitiesCaptured == 3 then
-		mastermindName = "Prodigy"
+		mastermindName = "夺魂师"
 	end
 
 	Notification("" .. mastermindName .. "动用了强大的心灵力量逃过一死。将在20秒后返回战场。")

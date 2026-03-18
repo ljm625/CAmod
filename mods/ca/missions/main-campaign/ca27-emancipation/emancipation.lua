@@ -85,7 +85,7 @@ WorldLoaded = function()
 	InitObjectives(GDI)
 	InitScrin()
 
-	ObjectiveLiberateBases = GDI.AddObjective("消灭Mastermind以解放GDI基地。")
+	ObjectiveLiberateBases = GDI.AddObjective("消灭摄魂师以解放GDI基地。")
 
 	if Difficulty == "easy" then
 		NormalHardOnlyTripod.Destroy()
@@ -105,7 +105,7 @@ WorldLoaded = function()
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
 		Tip("无人机（如守护者无人机、小型无人机、战斗无人机、猛犸无人机和机动EMP）免疫心灵控制。")
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("Mastermind也无法心控空中单位。")
+			Tip("摄魂师也无法心控空中单位。")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
 				Tip("大型无人机（战斗无人机、猛犸无人机和机动EMP）需要启用雷达后才能运作。")
 			end)
@@ -181,7 +181,7 @@ WorldLoaded = function()
 			MediaCA.PlaySound(MissionDir .. "/c_primarybasereleased.aud", 2)
 			if not Mastermind1.IsDead or not Mastermind2.IsDead or not Mastermind3.IsDead or not Mastermind5.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("在进攻Scrin基地前先消灭剩余Mastermind。")
+					Notification("在进攻Scrin基地前先消灭剩余摄魂师。")
 					MediaCA.PlaySound(MissionDir .. "/c_remainingmasterminds.aud", 2)
 				end)
 			end
@@ -214,7 +214,7 @@ WorldLoaded = function()
 					MastermindsLocated[tostring(m)] = true
 					Trigger.RemoveProximityTrigger(id)
 					local camera = Actor.Create("smallcamera", true, { Owner = GDI, Location = m.Location })
-					Notification("已定位一名Mastermind。")
+					Notification("已定位一名摄魂师。")
 					Beacon.New(GDI, m.CenterPosition)
 					Trigger.AfterDelay(DateTime.Seconds(4), function()
 						camera.Destroy()
@@ -328,7 +328,7 @@ end
 UpdateObjectiveText = function()
 	if not GDI.IsObjectiveCompleted(ObjectiveLiberateBases) then
 		local activeMasterminds = Scrin.GetActorsByType("mast")
-		local objectiveText = "      Masterminds remaining: " .. #activeMasterminds
+		local objectiveText = "      剩余摄魂师： " .. #activeMasterminds
 		local objectiveTextColor = HSLColor.Yellow
 
 		if IsNormalOrAbove() then
@@ -336,7 +336,7 @@ UpdateObjectiveText = function()
 				objectiveTextColor = HSLColor.Red
 			end
 
-			objectiveText = objectiveText .. "\nEnslaved GDI units killed: " .. EnslavedUnitsKilled .. " (max " .. MaxEnslavedUnitsKilled[Difficulty] .. ")"
+			objectiveText = objectiveText .. "\n已击杀受控GDI单位： " .. EnslavedUnitsKilled .. "（上限 " .. MaxEnslavedUnitsKilled[Difficulty] .. "）"
 		end
 
 		UserInterface.SetMissionText(objectiveText, objectiveTextColor)

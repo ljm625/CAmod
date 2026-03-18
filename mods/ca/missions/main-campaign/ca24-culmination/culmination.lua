@@ -426,7 +426,7 @@ WarpOutProdigy = function()
 	Prodigy.Owner = ScrinNoControl
 	Prodigy.Stop()
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Notification("神童将暂时离开战场进行恢复。")
+		Notification("夺魂师将暂时离开战场进行恢复。")
 		local prodigyExitWormhole = Actor.Create("wormhole.exit", true, { Owner = ScrinNoControl, Location = ProdigyExit.Location })
 		Prodigy.Move(prodigyExitWormhole.Location)
 		Trigger.OnEnteredFootprint({ ProdigyExit.Location }, function(a, id)
