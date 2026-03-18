@@ -148,7 +148,7 @@ WorldLoaded = function()
 				end
 				if IsNormalOrBelow() and p == EmpDroneReveal and not EmpDroneTipShown then
 					EmpDroneTipShown = true
-					Media.DisplayMessage("那台E.M.P无人机也许会派上用场。", "Hacker", HSLColor.FromHex("00FF00"))
+					Media.DisplayMessage("那台E.M.P无人机也许会派上用场。", "黑客", HSLColor.FromHex("00FF00"))
 				end
 				local camera = Actor.Create("smallcamera", true, { Owner = Nod, Location = p.Location })
 				Trigger.AfterDelay(DateTime.Seconds(4), function()

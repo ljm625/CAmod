@@ -209,7 +209,7 @@ UpdateMissionText = function(text)
 	local nerveCenterCount = #MaleficScrin.GetActorsByType("nerv")
 
 	if nerveCenterCount > 0 then
-		UserInterface.SetMissionText(nerveCenterCount .. " Nerve Centers remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余神经中枢：" .. nerveCenterCount, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end

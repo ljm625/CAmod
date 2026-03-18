@@ -228,7 +228,7 @@ end
 InitKaneReturn = function()
 	if not KaneReturnInitiated then
 		KaneReturnInitiated = true
-		Media.DisplayMessage("主宰救不了你。你的帝国已经完了。投降，或被毁灭。没人能阻止我归来。", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("主宰救不了你。你的帝国已经完了。投降，或被毁灭。没人能阻止我归来。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_return.aud", 2.5)
 		DeployCyborgs()
 	end

@@ -154,7 +154,7 @@ UpdateMissionText = function()
 	local siloCount = #Nod.GetActorsByType("silo.td")
 
 	if siloCount > 0 then
-		UserInterface.SetMissionText(siloCount .. " silos remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余储存井：" .. siloCount, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end

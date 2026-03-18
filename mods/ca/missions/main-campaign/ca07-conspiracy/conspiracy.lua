@@ -325,10 +325,10 @@ AwakenSleeperCell = function()
 		return
 	end
 	SleeperCellAwakened = true
-	Media.DisplayMessage("时机已到，Nod的战士们。", "Nod Soldier", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("时机已到，Nod的战士们。", "Nod士兵", HSLColor.FromHex("FF0000"))
 	MediaCA.PlaySound(MissionDir .. "/timehascome.aud", 2)
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-		Media.DisplayMessage("打倒GDI！", "Nod Soldier", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("打倒GDI！", "Nod士兵", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/downwithgdi.aud", 2)
 		Trigger.AfterDelay(15, function()
 			UserInterface.SetMissionText("")

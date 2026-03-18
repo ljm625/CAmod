@@ -64,7 +64,7 @@ WorldLoaded = function()
 
 				if g.Id == 2 then
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-						Media.DisplayMessage("感谢上天！你们找到我们了！", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+						Media.DisplayMessage("感谢上天！你们找到我们了！", "GDI士兵", HSLColor.FromHex("F2CF74"))
 						MediaCA.PlaySound(MissionDir .. "/thankgod.aud", 1.5)
 					end)
 				end
@@ -96,11 +96,11 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
-		Media.DisplayMessage("指挥官，发生了什么，我们到底在哪儿？！", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("指挥官，发生了什么，我们到底在哪儿？！", "GDI士兵", HSLColor.FromHex("F2CF74"))
 		Media.PlaySound(MissionDir .. "/wherearewe.aud")
 
 		Trigger.AfterDelay(DateTime.Seconds(20), function()
-			Media.DisplayMessage("呼叫所有GDI单位，敌军把我们压制住了。", "Radio", HSLColor.FromHex("F2CF74"))
+			Media.DisplayMessage("呼叫所有GDI单位，敌军把我们压制住了。", "无线电", HSLColor.FromHex("F2CF74"))
 			MediaCA.PlaySoundAtPos(MissionDir .. "/pinned.aud", 2, Camera.Position + WVec.New(2560, 0, 0))
 		end)
 	end)
@@ -149,7 +149,7 @@ OncePerSecondChecks = function()
 					Reinforcements.Reinforce(GDI, { "n1", "n2", "n1", "n2", "n1", "medi", "mtnk", "mtnk" }, { RescueSpawn.Location, RescueRally1.Location, RescueRally2.Location })
 
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-						Media.DisplayMessage("别开火，我们是GDI！该死，我们还以为整支连队都没了！附近不远有我们的基地，我们带你们过去。", "GDI Soldier", HSLColor.FromHex("F2CF74"))
+						Media.DisplayMessage("别开火，我们是GDI！该死，我们还以为整支连队都没了！附近不远有我们的基地，我们带你们过去。", "GDI士兵", HSLColor.FromHex("F2CF74"))
 						MediaCA.PlaySound(MissionDir .. "/holdfire.aud", 2)
 
 						Trigger.AfterDelay(DateTime.Seconds(12), function()

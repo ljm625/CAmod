@@ -130,7 +130,7 @@ SetupPlayers = function()
 	SovietSlaves = Player.GetPlayer("SovietSlaves")
 	NodSlaves = Player.GetPlayer("NodSlaves")
 	CyborgSlaves = Player.GetPlayer("CyborgSlaves")
-	Kane = Player.GetPlayer("Kane")
+	Kane = Player.GetPlayer("凯恩")
 	NeutralGDI = Player.GetPlayer("NeutralGDI")
 	NeutralScrin = Player.GetPlayer("NeutralScrin")
 	SignalTransmitterPlayer = Player.GetPlayer("SignalTransmitterPlayer") -- separate player to prevent AI from attacking it
@@ -201,14 +201,14 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
-		Media.DisplayMessage("攻击航程开始。让我们看看要面对什么。完毕。", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("攻击航程开始。让我们看看要面对什么。完毕。", "GDI飞行员", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/pilot_begin.aud", 1.5)
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(10), function()
 		DoInterceptors()
 		Trigger.AfterDelay(DateTime.Seconds(15), function()
-			Media.DisplayMessage("我们几乎没造成伤害！你们得先把护盾打掉，我们才能真正造成破坏。完毕。", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+			Media.DisplayMessage("我们几乎没造成伤害！你们得先把护盾打掉，我们才能真正造成破坏。完毕。", "GDI飞行员", HSLColor.FromHex("F2CF74"))
 			MediaCA.PlaySound(MissionDir .. "/pilot_barelyscratch.aud", 1.5)
 		end)
 	end)
@@ -243,7 +243,7 @@ WorldLoaded = function()
 		if ObjectiveHackSignalTransmitter ~= nil and not GDI.IsObjectiveCompleted(ObjectiveHackSignalTransmitter) then
 			GDI.MarkFailedObjective(ObjectiveHackSignalTransmitter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Media.DisplayMessage("信号发射器已被摧毁！你现在唯一的选择是用硬实力打掉那些护盾。我只希望你还能来得及。", "Nod Commander", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("信号发射器已被摧毁！你现在唯一的选择是用硬实力打掉那些护盾。我只希望你还能来得及。", "Nod指挥官", HSLColor.FromHex("FF0000"))
 			end)
 		end
 	end)
@@ -541,10 +541,10 @@ DropHackers = function()
 
 	if not FirstHackersArrived then
 		MediaCA.PlaySound(MissionDir .. "/seth_hackers.aud", 2)
-		Media.DisplayMessage("注意，GDI指挥官。我们会向你派出一批黑客。用他们入侵Scrin信号发射器，他们可以帮你关闭母舰护盾。", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("注意，GDI指挥官。我们会向你派出一批黑客。用他们入侵Scrin信号发射器，他们可以帮你关闭母舰护盾。", "Nod指挥官", HSLColor.FromHex("FF0000"))
 	else
 		MediaCA.PlaySound(MissionDir .. "/seth_morehackers.aud", 2)
-		Media.DisplayMessage("我们再给你派一队黑客。这次希望你能更小心地使用他们。", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("我们再给你派一队黑客。这次希望你能更小心地使用他们。", "Nod指挥官", HSLColor.FromHex("FF0000"))
 	end
 
 	local hackerFlare = Actor.Create("flare", true, { Owner = GDI, Location = HackerDropLanding.Location })
@@ -852,7 +852,7 @@ DoFinale = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
 		Beacon.New(GDI, kane.CenterPosition, 50)
-		Media.DisplayMessage("好了，指挥官，我们终于见面了！你的贡献不可估量，哪怕你并非自愿如此。", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("好了，指挥官，我们终于见面了！你的贡献不可估量，哪怕你并非自愿如此。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/outro.aud", 2.5)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(25)), function()
@@ -869,19 +869,19 @@ DoFinale = function()
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(6)), function()
-			Media.DisplayMessage("讽刺，不是吗？竟是GDI为兄弟会的最终胜利奠定了基础。", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("讽刺，不是吗？竟是GDI为兄弟会的最终胜利奠定了基础。", "凯恩", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
-			Media.DisplayMessage("当然，盟军和苏军也都各尽其用。", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("当然，盟军和苏军也都各尽其用。", "凯恩", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(16)), function()
-			Media.DisplayMessage("我苦心操纵时间与空间，终于结出成果。如今我们已站在门槛之前。", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("我苦心操纵时间与空间，终于结出成果。如今我们已站在门槛之前。", "凯恩", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(21)), function()
-			Media.DisplayMessage("还有很多事要做。我毫不怀疑，我们还会再见。", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("还有很多事要做。我毫不怀疑，我们还会再见。", "凯恩", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(27)), function()

@@ -243,7 +243,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("罗曼诺夫、马林斯科、库可夫。同志将军，你必须粉碎这些觊觎者。联盟必须胜利！", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("罗曼诺夫、马林斯科、库可夫。同志将军，你必须粉碎这些觊觎者。联盟必须胜利！", "契尔坚科总理", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/cdko_crushtraitors.aud", 2)
 	end)
 

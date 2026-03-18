@@ -122,7 +122,7 @@ WorldLoaded = function()
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 
 				if AlliedBuildingsEliminated() then
-					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣……", "Yuri", HSLColor.FromHex("FF00BB"))
+					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣……", "尤里", HSLColor.FromHex("FF00BB"))
 					MediaCA.PlaySound(MissionDir .. "/yuri_releasedwin.aud", 2)
 
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(10)), function()
@@ -144,7 +144,7 @@ WorldLoaded = function()
 						USSR.MarkCompletedObjective(ObjectiveCapturePrison)
 					end
 
-					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣。不过首先，我们得先收拾这些烦人的家伙。", "Yuri", HSLColor.FromHex("FF00BB"))
+					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣。不过首先，我们得先收拾这些烦人的家伙。", "尤里", HSLColor.FromHex("FF00BB"))
 					MediaCA.PlaySound(MissionDir .. "/yuri_released.aud", 2)
 
 					Trigger.AfterDelay(DateTime.Seconds(5), function()

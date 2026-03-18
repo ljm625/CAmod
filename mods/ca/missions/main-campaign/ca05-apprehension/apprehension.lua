@@ -226,7 +226,7 @@ end
 
 UpdateMissionText = function()
 	if SAMCount > 0 then
-		UserInterface.SetMissionText(SAMCount .. " SAM sites remaining.", HSLColor.Yellow)
+		UserInterface.SetMissionText("剩余 SAM 阵地：" .. SAMCount, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end

@@ -129,7 +129,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Media.DisplayMessage("你的力量在我面前不值一提。趁还能走，赶紧钻进你的虫洞逃命吧。", "Yuri", HSLColor.FromHex("FF00BB"))
+		Media.DisplayMessage("你的力量在我面前不值一提。趁还能走，赶紧钻进你的虫洞逃命吧。", "尤里", HSLColor.FromHex("FF00BB"))
 		MediaCA.PlaySound(MissionDir .. "/yuri_taunt.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
 			Tip("Mastermind最多可心控3个敌方单位。若心控第4个，最早被控制的单位会死亡。")

@@ -271,7 +271,7 @@ InitCommsCenterObjective = function()
 		return
 	end
 
-	Media.DisplayMessage("同志将军，我们有理由相信GDI通信网络中藏有关键情报。不惜一切代价夺取他们的一座通讯中心！", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+	Media.DisplayMessage("同志将军，我们有理由相信GDI通信网络中藏有关键情报。不惜一切代价夺取他们的一座通讯中心！", "契尔坚科总理", HSLColor.FromHex("FF0000"))
 
 	ObjectiveCaptureComms = USSR.AddObjective("夺取一座GDI通讯中心。")
 	Media.PlaySound("beacon.aud")

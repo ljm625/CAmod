@@ -121,7 +121,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("指挥官，我们必须尽快将装置提升至满功率。运输晶体太慢，液态泰伯利亚是唯一选择。我们已建立液态T生产设施。务必保护它，每当有一批货物可用，就装入油罐车并送到洞穴系统入口。", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("指挥官，我们必须尽快将装置提升至满功率。运输晶体太慢，液态泰伯利亚是唯一选择。我们已建立液态T生产设施。务必保护它，每当有一批货物可用，就装入油罐车并送到洞穴系统入口。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_liquidt.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(18)), function()
 			Tip("将油罐车开到处理厂旁装载备好的货物，然后运送到东北方向洞穴入口。")
@@ -310,7 +310,7 @@ PurificationWave = function()
 	ObjectivePurify = Nod.AddObjective("等待净化波到来。")
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("干得漂亮，指挥官！装置已达满功率，很快就会释放净化能量。问题在于：当这般骇人背叛被揭露后，Scrin会为自由对抗主宰，还是继续屈服为奴？", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("干得漂亮，指挥官！装置已达满功率，很快就会释放净化能量。问题在于：当这般骇人背叛被揭露后，Scrin会为自由对抗主宰，还是继续屈服为奴？", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_purification.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()

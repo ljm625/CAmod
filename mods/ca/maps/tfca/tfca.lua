@@ -138,7 +138,7 @@ UpdateScoresText = function()
 		color = HSLColor.Red
 	end
 
-	UserInterface.SetMissionText("Blue = " .. BlueScore .. " / " .. WinScore .. " -- vs -- Red = " .. RedScore .. " / " .. WinScore, color)
+	UserInterface.SetMissionText("蓝方 = " .. BlueScore .. " / " .. WinScore .. "  对战  红方 = " .. RedScore .. " / " .. WinScore, color)
 end
 
 BlueWins = function()

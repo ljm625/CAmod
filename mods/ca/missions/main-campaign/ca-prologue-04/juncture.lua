@@ -126,7 +126,7 @@ InitReinforcements = function()
 			Notification("增援已抵达。")
 
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(3)), function()
-				Media.DisplayMessage("你做得很好，指挥官！现在看看吧，这只是未来的一点预演。明智地使用它们。", "Kane", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("你做得很好，指挥官！现在看看吧，这只是未来的一点预演。明智地使用它们。", "凯恩", HSLColor.FromHex("FF0000"))
 				MediaCA.PlaySound(MissionDir .. "/thingstocome.aud", 2)
 			end)
 		end)

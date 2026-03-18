@@ -99,11 +99,11 @@ WorldLoaded = function()
 	ObjectiveEliminateRebels = USSR.AddObjective("消灭全部叛军部队。")
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("协助我们消灭凯恩与叛军，你将得到回报。", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		Media.DisplayMessage("协助我们消灭凯恩与叛军，你将得到回报。", "Scrin主宰", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_assist.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(11)), function()
-			Media.DisplayMessage("浩瀚宇宙不受资本主义腐化，理应由我们掌握！", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("浩瀚宇宙不受资本主义腐化，理应由我们掌握！", "契尔坚科总理", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/cdko_space.aud", 2)
 		end)
 	end)
@@ -275,7 +275,7 @@ end
 InitSignalTransmittersObjective = function()
 	if ObjectiveSignalTransmitters == nil then
 		ObjectiveSignalTransmitters = USSR.AddObjective("夺取3座信号发射器。")
-		Media.DisplayMessage("夺取叛军信号发射器，我将释放我的部队协助你。", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		Media.DisplayMessage("夺取叛军信号发射器，我将释放我的部队协助你。", "Scrin主宰", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_capture.aud", 2)
 
 		local transmitters = Utils.Where({ SignalTransmitter1, SignalTransmitter2, SignalTransmitter3 }, function(a)

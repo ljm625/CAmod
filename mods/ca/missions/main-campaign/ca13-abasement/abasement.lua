@@ -367,11 +367,11 @@ BaseFlipNotification = function()
 		if not IsFirstBaseFlipped then
 			IsFirstBaseFlipped = true
 			MediaCA.PlaySound(MissionDir .. "/seth_appreciate.aud", 2)
-			Media.DisplayMessage("兄弟会感谢你的努力。我们将开始部署部队支援你。", "Nod Commander", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("兄弟会感谢你的努力。我们将开始部署部队支援你。", "Nod指挥官", HSLColor.FromHex("FF0000"))
 		elseif not IsSecondBaseFlipped then
 			IsSecondBaseFlipped = true
 			MediaCA.PlaySound(MissionDir .. "/seth_kanepleased.aud", 2)
-			Media.DisplayMessage("凯恩会很满意。现在把精力集中在确保信号发射器上。", "Nod Commander", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("凯恩会很满意。现在把精力集中在确保信号发射器上。", "Nod指挥官", HSLColor.FromHex("FF0000"))
 		end
 	end)
 end
