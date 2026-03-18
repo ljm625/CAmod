@@ -168,3 +168,6 @@ menu-ingame =
     .save-map = 保存地图
     .exit-map = 退出地图编辑器
     .encyclopedia = 百科
+
+## Encyclopedia / Production tooltip
+label-requires = 需要：{ $prerequisites }

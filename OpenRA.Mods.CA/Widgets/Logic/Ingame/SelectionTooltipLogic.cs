@@ -220,34 +220,37 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			switch (armorTypeLabel.Text)
 			{
 				case "None":
-					armorTypeLabel.Text = "Infantry";
+					armorTypeLabel.Text = "步兵";
 					armorTypeLabel.TextColor = Color.ForestGreen;
 					break;
 
 				case "Light":
+					armorTypeLabel.Text = "轻甲";
 					armorTypeLabel.TextColor = Color.MediumPurple;
 					break;
 
 				case "Heavy":
+					armorTypeLabel.Text = "重甲";
 					armorTypeLabel.TextColor = Color.Firebrick;
 					break;
 
 				case "Concrete":
-					armorTypeLabel.Text = "Defense";
+					armorTypeLabel.Text = "防御建筑";
 					armorTypeLabel.TextColor = Color.RoyalBlue;
 					break;
 
 				case "Wood":
-					armorTypeLabel.Text = "Building";
+					armorTypeLabel.Text = "建筑";
 					armorTypeLabel.TextColor = Color.Peru;
 					break;
 
 				case "Brick":
-					armorTypeLabel.Text = "Wall";
+					armorTypeLabel.Text = "围墙";
 					armorTypeLabel.TextColor = Color.RosyBrown;
 					break;
 
 				case "Aircraft":
+					armorTypeLabel.Text = "空中单位";
 					armorTypeLabel.TextColor = Color.SkyBlue;
 					break;
 

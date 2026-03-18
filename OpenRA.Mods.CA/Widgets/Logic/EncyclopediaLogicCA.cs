@@ -872,7 +872,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			variantDropdown.IsDisabled = () => false;
 			variantDropdown.GetText = () => selectedVariant != null
 				? GetActorDisplayName(selectedVariant)
-				: "Select variant...";
+				: "选择变体...";
 
 			variantDropdown.OnMouseDown = _ =>
 			{
