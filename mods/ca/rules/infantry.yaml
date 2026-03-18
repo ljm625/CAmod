@@ -1476,11 +1476,11 @@ SHOK:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 90
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~!ttrp.upgrade, ~techlevel.medium
-		Description: 配备便携特斯拉武器的精英步兵。
+		Description: 配备便携磁能武器的精英步兵。
 	TooltipExtras:
 		Strengths: • 对步兵、轻甲单位强势
 		Weaknesses: • 无法攻击空中单位
-		Attributes: • 可为附近特斯拉线圈过载充能
+		Attributes: • 可为附近磁暴线圈过载充能
 	Valued:
 		Cost: 425
 	Tooltip:
@@ -1552,7 +1552,7 @@ TTRP:
 		BuildPaletteOrder: 91
 		Prerequisites: tslaorstek, anyradar, ~infantry.shok, ~ttrp.upgrade, ~techlevel.medium
 	Tooltip:
-		Name: 特斯拉兵
+		Name: 磁暴步兵
 	Valued:
 		Cost: 600
 	Health:

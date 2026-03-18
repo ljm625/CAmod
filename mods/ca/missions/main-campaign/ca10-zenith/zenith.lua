@@ -251,7 +251,7 @@ InitUSSR = function()
 		end)
 		Nod.MarkCompletedObjective(ObjectiveKillReactors)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Notification("干得漂亮！西北方向特斯拉反应堆已被瘫痪；所有苏军特斯拉线圈现已离线。")
+			Notification("干得漂亮！西北方向磁能反应堆已被瘫痪；所有苏军磁暴线圈现已离线。")
 		end)
 	end)
 

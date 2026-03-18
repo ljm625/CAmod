@@ -1304,15 +1304,15 @@ encyclopedia.ifv.ivan:
 encyclopedia.ifv.tes:
 	Inherits: ^IFVVariantPreview
 	Tooltip:
-		Name: 特斯拉 IFV
+		Name: 磁能 IFV
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载震击兵或特斯拉兵，发射强力特斯拉电弧。
+		Description: IFV 搭载震击兵或磁暴步兵，发射强力磁暴电弧。
 	TooltipExtras:
 		Strengths: • 对步兵、重甲单位、轻甲单位强势
 		Weaknesses: • 无法攻击空中单位
-		Attributes: • 乘员： 震击兵、特斯拉兵
+		Attributes: • 乘员： 震击兵、磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla
@@ -1944,15 +1944,15 @@ encyclopedia.reck.ivan:
 encyclopedia.reck.tes:
 	Inherits: ^ReckonerVariantPreview
 	Tooltip:
-		Name: 特斯拉清算者
+		Name: 磁能清算者
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载震击兵或特斯拉兵，发射强力特斯拉电弧。
+		Description: 清算者搭载震击兵或磁暴步兵，发射强力磁暴电弧。
 	TooltipExtras:
 		Strengths: • 对步兵、重甲单位、轻甲单位强势
 		Weaknesses: • 无法攻击空中单位
-		Attributes: • 乘员： 震击兵、特斯拉兵
+		Attributes: • 乘员： 震击兵、磁暴步兵
 	-WithSpriteTurret:
 	WithIdleOverlay@TESLA:
 		Sequence: tesla

@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca26-capitulation/capitulation.lua, capitulation-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • 切断补给线使原子反应堆断燃料。\n• [可选] 摧毁东南岛屿上的特斯拉反应堆。\n• 占领或摧毁斯大林地堡。
+		Text: • 切断补给线使原子反应堆断燃料。\n• [可选] 摧毁东南岛屿上的磁能反应堆。\n• 占领或摧毁斯大林地堡。

@@ -2827,7 +2827,7 @@ TTRA:
 	Valued:
 		Cost: 1350
 	Tooltip:
-		Name: 特斯拉履带车
+		Name: 磁能履带车
 		GenericName: 坦克
 		EnemyPrefix: 敌方
 		AllyPrefix: 友方
@@ -7642,7 +7642,7 @@ JUGG:
 	Inherits@GYRO: ^GyroStabilizers
 	Inherits@HeavyArmor: ^HeavyArmor
 	Tooltip:
-		Name: 主宰者
+		Name: 神像
 	Buildable:
 		BuildPaletteOrder: 261
 		Queue: VehicleSQ, VehicleMQ
@@ -9375,7 +9375,7 @@ CYCP:
 		Queue: VehicleSQ, VehicleMQ
 		BuildPaletteOrder: 501
 		Prerequisites: anyradar, ~vehicles.cycp
-		Description: 轻型坦克，配备源自特斯拉线圈的武器。
+		Description: 轻型坦克，配备源自磁暴线圈的武器。
 	TooltipExtras:
 		Strengths: • 对重甲单位, 轻甲单位, 步兵
 		Weaknesses: • 无法攻击空中单位

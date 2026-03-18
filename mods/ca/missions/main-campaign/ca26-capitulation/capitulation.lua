@@ -195,7 +195,7 @@ WorldLoaded = function()
 
 	ObjectiveCaptureOrDestroyBunker = GDI.AddObjective("夺取或摧毁斯大林地堡。")
 	ObjectiveStarveAtomicReactor = GDI.AddSecondaryObjective("切断补给线，使原子反应堆断油。")
-	ObjectiveDestroyTeslaReactors = GDI.AddSecondaryObjective("摧毁东南岛屿上的特斯拉反应堆。")
+	ObjectiveDestroyTeslaReactors = GDI.AddSecondaryObjective("摧毁东南岛屿上的磁能反应堆。")
 
 	Trigger.OnKilledOrCaptured(StalinHQ, function()
 		GDI.MarkCompletedObjective(ObjectiveCaptureOrDestroyBunker)

@@ -1301,11 +1301,11 @@ gattling.upgrade:
 ttrp.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: 研究：特斯拉兵
+		Name: 研究：磁暴步兵
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.soviet, ~!player.iraq, stek, ~techlevel.high
-			Description: 磁暴步兵将被特斯拉兵取代。\n\n替换：磁暴步兵
+			Description: 磁暴步兵将被磁暴步兵取代。\n\n替换：磁暴步兵
 	TooltipExtras:
 		Strengths: + 提高生命值\n+ 提高射速\n+ 提高伤害
 		Weaknesses: – 提高成本
@@ -1345,11 +1345,11 @@ deso.upgrade:
 tarc.upgrade:
 	Inherits: ^SovietUpgrade
 	Tooltip:
-		Name: 升级：特斯拉电弧
+		Name: 升级：磁暴电弧
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
-			Description: 升级磁能坦克与特斯拉履带车的武器。\n\n升级对象：磁能坦克\n升级对象：特斯拉履带车
+			Description: 升级磁能坦克与磁能履带车的武器。\n\n升级对象：磁能坦克\n升级对象：磁能履带车
 	TooltipExtras:
 		Strengths: + 攻击可连锁至最多 2 个额外目标
 	Valued:
