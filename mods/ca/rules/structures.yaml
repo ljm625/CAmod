@@ -3781,7 +3781,7 @@ HQ:
 		Attributes: • 需要电力才能运作\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑
 		RequiresCondition: !arc-built
 	TooltipExtras@ARC:
-		Attributes: • Requires power to operate\n• Detects nearby enemy vehicles, aircraft and structures in fog of war\n• Has limited emergency backup power
+		Attributes: • 需要电力才能运作\n• 可在战争迷雾中侦测附近敌方载具、空中单位和建筑\n• 具备有限的紧急备用电力
 		RequiresCondition: arc-built
 		IsStandard: false
 	Valued:

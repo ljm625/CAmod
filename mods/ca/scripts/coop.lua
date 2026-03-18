@@ -289,20 +289,28 @@ GoodSpread = function()
 end
 
 local function SyncObjectives()
-	local texts = {
+	local objectiveTypes = {
 		primary = "Primary",
-		secondary = "Secondary",
-		newPrimary = "New primary objective",
-		newSecondary = "New secondary objective"
+		secondary = "Secondary"
+	}
+
+	local texts = {
+		primary = "主要任务",
+		secondary = "次要任务",
+		newPrimary = "新的主要任务",
+		newSecondary = "新的次要任务",
+		objectiveCompleted = "任务完成",
+		objectiveFailed = "任务失败"
 	}
 
 	Trigger.OnObjectiveAdded(MainPlayer, function(_, obid)
 		local description = MainPlayer.GetObjectiveDescription(obid)
 		local type = MainPlayer.GetObjectiveType(obid)
-		local required = type == texts.primary
+		local required = type == objectiveTypes.primary
+		local displayType = required and texts.primary or texts.secondary
 
 		ForEachPlayer(function(player)
-			player.AddObjective(description, type, required)
+			player.AddObjective(description, displayType, required)
 			local OBJcolour = HSLColor.Yellow
 			if required then
 				Media.DisplayMessageToPlayer(player, description, texts.newPrimary, OBJcolour)
@@ -334,7 +342,7 @@ local function SyncObjectives()
 			player.MarkCompletedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective completed", HSLColor.LimeGreen)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), texts.objectiveCompleted, HSLColor.LimeGreen)
 			end
 		end)
 	end)
@@ -344,7 +352,7 @@ local function SyncObjectives()
 			player.MarkFailedObjective(obid)
 			if player.IsLocalPlayer then
 				Media.PlaySoundNotification(player, "AlertBleep")
-				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), "Objective failed", HSLColor.Red)
+				Media.DisplayMessage(MainPlayer.GetObjectiveDescription(obid), texts.objectiveFailed, HSLColor.Red)
 			end
 		end)
 	end)

@@ -4073,7 +4073,7 @@ LTNK:
 	TooltipExtras@LaserTank:
 		Strengths: • 对轻甲单位, 步兵
 		Weaknesses: • 对防御建筑\n• 无法攻击空中单位
-		Attributes: • Amphibious
+		Attributes: • 两栖
 		RequiresCondition: lastnk-upgrade
 	Valued:
 		Cost: 700
@@ -6301,27 +6301,27 @@ IFV:
 		RequiresCondition: fragturr
 	TooltipExtras@mechturr:
 		Weaknesses: • 无武装
-		Attributes: • Repairs friendly 载具
+		Attributes: • 修理友方载具
 		IsStandard: false
 		RequiresCondition: mechturr
 	TooltipExtras@engturr:
 		Weaknesses: • 无武装
-		Attributes: • Captures structures
+		Attributes: • 可占领建筑
 		IsStandard: false
 		RequiresCondition: engturr
 	TooltipExtras@commturr:
 		Strengths: • 对步兵
-		Weaknesses: • 无法攻击空中单位, Vehicles, 建筑
+		Weaknesses: • 无法攻击空中单位、载具、建筑
 		IsStandard: false
 		RequiresCondition: commturr || sealturr
 	TooltipExtras@medturr:
 		Weaknesses: • 无武装
-		Attributes: • Heals friendly 步兵
+		Attributes: • 治疗友方步兵
 		IsStandard: false
 		RequiresCondition: medturr
 	TooltipExtras@ivanturr:
-		Strengths: • 对 Everything
-		Weaknesses: • Self-destructs
+		Strengths: • 对所有目标
+		Weaknesses: • 自毁
 		IsStandard: false
 		RequiresCondition: ivanturr
 	TooltipExtras@flamturr:
@@ -6330,8 +6330,8 @@ IFV:
 		IsStandard: false
 		RequiresCondition: flamturr || chemturr || hoplturr
 	TooltipExtras@spyturr:
-		Weaknesses: • Cannot deal 伤害
-		Attributes: • Sabotages enemy structures:\n • Power Plants: Power outage\n • 兵营/Factory: 步兵/载具 produced as veteran\n • Superweapons: Reset timer\n • 雷达: Reset shroud\n • 停机坪: Single-use paratroopers\n • 机场/Gravity Stabilizer: Single-use airstrike
+		Weaknesses: • 无法造成伤害
+		Attributes: • 破坏敌方建筑：\n • 发电厂：断电\n • 兵营/战车工厂：步兵/载具以老兵级生产\n • 超级武器：重置计时器\n • 雷达：重置战争迷雾\n • 停机坪：一次性伞兵\n • 机场/重力稳定器：一次性空袭
 		IsStandard: false
 		RequiresCondition: spyturr
 	TooltipExtras@rmbcturr:
@@ -6370,20 +6370,20 @@ IFV:
 		IsStandard: false
 		RequiresCondition: zraiturr
 	TooltipExtras@psyturr:
-		Strengths: • 对步兵, Vehicles
-		Weaknesses: • Cannot deal 伤害\n• 无法攻击空中单位
-		Attributes: • Can mind control enemy units\n• Control lost if passenger exits
+		Strengths: • 对步兵、载具
+		Weaknesses: • 无法造成伤害\n• 无法攻击空中单位
+		Attributes: • 可心灵控制敌方单位\n• 乘员离开后失去控制
 		IsStandard: false
 		RequiresCondition: psyturr
 	TooltipExtras@hackturr:
 		Strengths: • 对防御建筑, 建筑
-		Weaknesses: • Cannot deal 伤害\n• Control lost if passenger exits
+		Weaknesses: • 无法造成伤害\n• 乘员离开后失去控制
 		IsStandard: false
 		RequiresCondition: hackturr
 	TooltipExtras@cryoturr:
 		Strengths: • 对步兵, 轻甲单位
 		Weaknesses: • 对建筑, 防御建筑\n• 无法攻击空中单位
-		Attributes: • Slows enemy units 和 makes them take提高伤害
+		Attributes: • 减速敌方单位并使其承受更多伤害
 		IsStandard: false
 		RequiresCondition: cryoturr
 	TooltipExtras@reapturr:
@@ -6394,7 +6394,7 @@ IFV:
 	TooltipExtras@confturr:
 		Strengths: • 对步兵, 轻甲单位
 		Weaknesses: • 对重甲单位, 防御建筑, 建筑\n• 无法攻击空中单位
-		Attributes: • Explosion causes units 到 attack indiscriminately
+		Attributes: • 爆炸会导致单位无差别攻击
 		IsStandard: false
 		RequiresCondition: confturr
 	Valued:
