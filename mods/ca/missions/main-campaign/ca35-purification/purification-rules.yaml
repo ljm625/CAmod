@@ -110,7 +110,7 @@ LQTF:
 		Footprint: xx xx
 		Dimensions: 2,2
 	Tooltip:
-		Name: Liquid Tiberium Processing Plant
+		Name: 液态泰伯利亚处理厂
 	Health:
 		HP: 150000
 	Armor:
@@ -149,7 +149,7 @@ TTRK:
 		Weaknesses: • 装甲极弱\n• 满载时极不稳定
 		-Attributes:
 	Tooltip:
-		Name: Liquid Tiberium Tanker
+		Name: 液态泰伯利亚运输车
 	-KillsSelf:
 	-AttackFrontal:
 	-Armament@PRIMARY:

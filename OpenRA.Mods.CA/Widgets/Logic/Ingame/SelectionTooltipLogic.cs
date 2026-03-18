@@ -20,7 +20,7 @@ using OpenRA.Widgets;
 
 namespace OpenRA.Mods.CA.Widgets.Logic
 {
-	public class SelectionTooltipLogic : ChromeLogic
+	public class SelectionTooltipLogicCA : ChromeLogic
 	{
 		readonly World world;
 		int selectionHash;
@@ -29,7 +29,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 		int iconMargin;
 
 		[ObjectCreator.UseCtor]
-		public SelectionTooltipLogic(Widget widget, World world)
+		public SelectionTooltipLogicCA(Widget widget, World world)
 		{
 			this.world = world;
 			this.widget = widget;
@@ -221,18 +221,26 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			if (normalized.Contains("enemy") && normalized.Contains("structure"))
 				return "敌方建筑";
+			if (normalized.Contains("enemy") && normalized.Contains("harvester"))
+				return "敌方采矿车";
 			if (normalized.Contains("enemy") && normalized.Contains("unit"))
 				return "敌方单位";
 			if (normalized.Contains("ally") && normalized.Contains("structure"))
 				return "友方建筑";
+			if (normalized.Contains("ally") && normalized.Contains("harvester"))
+				return "友方采矿车";
 			if (normalized.Contains("ally") && normalized.Contains("unit"))
 				return "友方单位";
 			if (normalized.Contains("neutral") && normalized.Contains("structure"))
 				return "中立建筑";
+			if (normalized.Contains("neutral") && normalized.Contains("harvester"))
+				return "中立采矿车";
 			if (normalized.Contains("neutral") && normalized.Contains("unit"))
 				return "中立单位";
 			if (normalized == "structure")
 				return "建筑";
+			if (normalized == "harvester")
+				return "采矿车";
 			if (normalized == "unit")
 				return "单位";
 

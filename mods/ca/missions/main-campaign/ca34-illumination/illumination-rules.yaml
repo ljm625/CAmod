@@ -14,7 +14,7 @@
 	ResourceRenderer:
 		ResourceTypes:
 			BlueTiberium:
-				Name: Purified Tiberium
+				Name: 净化泰伯利亚
 
 World:
 	LuaScript:

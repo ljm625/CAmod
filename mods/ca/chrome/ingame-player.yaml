@@ -37,7 +37,7 @@ Container@PLAYER_WIDGETS:
 							ImageCollection: player-ui-bits
 							ImageName: support-power-border-overlay
 		Background@SELECTION_TOOLTIP:
-			Logic: SelectionTooltipLogic
+			Logic: SelectionTooltipLogicCA
 			Background: dialog4
 			X: WINDOW_WIDTH
 			Y: WINDOW_HEIGHT

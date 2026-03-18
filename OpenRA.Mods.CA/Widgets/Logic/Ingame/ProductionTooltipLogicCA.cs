@@ -159,7 +159,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 					powerSize = font.Measure(powerText);
 				}
 
-				armorTypeLabel = SelectionTooltipLogic.GetArmorTypeLabel(armorTypeLabel, actor);
+				armorTypeLabel = SelectionTooltipLogicCA.GetArmorTypeLabel(armorTypeLabel, actor);
 				var armorTypeSize = armorTypeLabel.GetText() != "" ? font.Measure(armorTypeLabel.GetText()) : new int2(0, 0);
 				armorTypeIcon.Visible = armorTypeSize.Y > 0;
 

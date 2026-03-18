@@ -196,7 +196,7 @@ MISS:
 
 BIO:
 	Tooltip:
-		Name: Tiberium Enrichment Facility
+		Name: 泰伯利亚浓缩设施
 	Health:
 		HP: 120000
 	-ProvidesPrerequisite@mortar:

@@ -1098,7 +1098,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				var armor = actor.TraitInfos<ArmorInfo>().FirstOrDefault();
 				if (armor != null && !string.IsNullOrEmpty(armor.Type))
 				{
-					SelectionTooltipLogic.GetArmorTypeLabel(armorTypeLabel, actor);
+					SelectionTooltipLogicCA.GetArmorTypeLabel(armorTypeLabel, actor);
 					var hasArmorType = !string.IsNullOrEmpty(armorTypeLabel.Text);
 					if (hasArmorType)
 					{
