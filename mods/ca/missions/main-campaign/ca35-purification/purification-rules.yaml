@@ -142,7 +142,7 @@ TTRK:
 	Inherits@SELECTION: ^SelectableSupportUnit
 	Buildable:
 		Prerequisites: vehicles.nod
-		Description: Tanker for carrying liquid Tiberium
+		Description: 用于运输液态泰伯利亚的罐车
 	Valued:
 		Cost: 1000
 	TooltipExtras:

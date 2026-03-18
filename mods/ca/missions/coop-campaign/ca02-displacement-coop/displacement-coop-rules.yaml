@@ -8,4 +8,4 @@ World:
 		Locked: True
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Clear a path for incoming convoys and protect them as they pass through.
+		Text: • 为来援车队打通道路并护送其通过。

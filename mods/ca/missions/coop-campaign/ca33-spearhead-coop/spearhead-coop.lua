@@ -26,11 +26,11 @@ end
 
 InitMcv = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("增援已抵达。")
     local exitPath =  { CarryallSpawn.Location }
 	local MCVIterator = 0
 	if #MissionPlayers > 1 then
-		Tip("Building space on this island is limited. Let one player build a Naval Yard and transport your MCVs to the mainland.")
+		Tip("这座岛上的建造空间有限。建议由一名玩家建造海军船坞，再把你们的MCV运到大陆。")
 	end
 	Utils.Do(GetMcvPlayers(), function(p)
 		local entryPath = { CarryallSpawn.Location, CarryallDest.Location + CVec.New((MCVIterator-3),(MCVIterator-3)) }

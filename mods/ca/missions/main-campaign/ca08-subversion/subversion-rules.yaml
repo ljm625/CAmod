@@ -11,7 +11,7 @@ World:
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
 		Label: Respawns
-		Description: Enable/disable respawning on death
+		Description: 启用/禁用死亡后重生
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -177,7 +177,7 @@ sathack.dummy:
 		Icon: hacksat
 		ChargeInterval: 3000
 		Name: Hack Satellite Uplink
-		Description: \nReveals the targeted area for a short time.
+		Description: \n短时间揭示目标区域。
 		LaunchSound: hacksat.aud
 		SelectTargetSpeechNotification: SelectTarget
 		EffectImage: empty
@@ -212,7 +212,7 @@ HOSP:
 	-GrantConditionOnPrerequisite@SCRIN:
 	-RallyPoint:
 	TooltipExtras:
-		Description: When controlled, heals nearby infantry.
+		Description: 占领后可为附近步兵恢复生命。
 	-TooltipDescription@ally:
 	-TooltipDescription@other:
 

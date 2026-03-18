@@ -11,7 +11,7 @@ World:
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
 		Label: Respawns
-		Description: Enable/disable respawning on death
+		Description: 启用/禁用死亡后重生
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -44,7 +44,7 @@ YURI:
 	AutoTarget:
 		InitialStance: HoldFire
 	Buildable:
-		Description: Elite specialist infantry able to mind-control\n  enemy units (up to 3).
+		Description: 精英特战步兵，可心灵控制\n  敌方单位（最多3个）。
 	-Captures@DRIVER_KILL:
 	-GainsExperience:
 	-ProducibleWithLevel:
@@ -75,7 +75,7 @@ BRUT:
 
 THF:
 	Buildable:
-		Description: Normally steals enemy credits and hijacks enemy vehicles.\n\nCurrent mission to steal encryption codes.
+		Description: 通常用于窃取敌方资金并劫持敌方载具。\n\n当前任务：窃取加密代码。
 	-Captures:
 	-Captures@DRIVER_KILL:
 	Infiltrates:
@@ -152,7 +152,7 @@ MISS:
 	Tooltip:
 		Name: Cybernetics Lab
 	TooltipDescription:
-		Description: Nod cyborg research facility and data warehouse.
+		Description: Nod半机械人研究设施与数据仓库。
 		ValidRelationships: Ally, Enemy
 	InfiltrateToCreateProxyActor@DECRYPT:
 		Types: ThiefInfiltrate

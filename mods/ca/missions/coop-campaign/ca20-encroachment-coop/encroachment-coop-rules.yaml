@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca20-encroachment/encroachment.lua, encroachment-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy the Allied Weather Control Device and GDI Advanced Communications Center.
+		Text: • 摧毁盟军天气控制装置与GDI高级通讯中心。

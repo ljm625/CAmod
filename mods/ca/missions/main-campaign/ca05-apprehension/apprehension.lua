@@ -57,9 +57,9 @@ WorldLoaded = function()
 		Actor.Create("radar.dummy", true, { Owner = p })
 	end)
 
-    ObjectiveDestroySAMSites = Greece.AddObjective("Destroy Nod SAM Sites.")
-	ObjectiveClearBase = Greece.AddObjective("Clear the Nod naval base.")
-	ObjectiveApprehendTransports = Greece.AddObjective("Secure Nod transports.")
+    ObjectiveDestroySAMSites = Greece.AddObjective("摧毁Nod的SAM阵地。")
+	ObjectiveClearBase = Greece.AddObjective("清除Nod海军基地。")
+	ObjectiveApprehendTransports = Greece.AddObjective("控制Nod运输车队。")
 
 	UpdateMissionText()
 
@@ -153,11 +153,11 @@ WorldLoaded = function()
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
 		local rangersDesc
 		if IsHardOrAbove() then
-			rangersDesc = "Rangers are"
+			rangersDesc = "游骑兵"
 		else
-			rangersDesc = "Ranger is"
+			rangersDesc = "游骑兵"
 		end
-		Tip("Your " .. rangersDesc .. " equipped with the Advanced Optics upgrade. Press [" .. UtilsCA.Hotkey("Deploy") .. "] (deploy) to activate for increased vision for a limited time.")
+		Tip("你的游骑兵已装备高级光学升级。按[" .. UtilsCA.Hotkey("Deploy") .. "]（部署）可在短时间内提升视野。")
 	end)
 
 	AfterWorldLoaded()
@@ -253,7 +253,7 @@ end
 
 InitLongbows = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Air support inbound.")
+	Notification("空中支援正在赶来。")
 	local targets = { Obelisk3, Obelisk1, Obelisk2, Turret1, Turret2 }
 	local delay = DateTime.Seconds(2)
 

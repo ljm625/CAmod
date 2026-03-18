@@ -154,12 +154,12 @@ WorldLoaded = function()
 	RemoveActorsBasedOnDifficultyTags()
 	InitMaleficScrin()
 
-	ObjectiveDestroyScrinBases = Greece.AddObjective("Destroy all Scrin bases.")
-	ObjectiveStopVoidEngines = Greece.AddObjective("Prevent Void Engines from breaking through.")
+	ObjectiveDestroyScrinBases = Greece.AddObjective("摧毁全部Scrin基地。")
+	ObjectiveStopVoidEngines = Greece.AddObjective("阻止虚空引擎突破防线。")
 
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		DoMcvArrival()
 	end)
 
@@ -181,7 +181,7 @@ WorldLoaded = function()
 	Trigger.OnEnteredFootprint(voidEngineExit, function(a, id)
 		if a.Type == "veng" then
 			a.Destroy()
-			Notification("A Void Engine has broken through.")
+			Notification("一台虚空引擎已突破防线。")
 			Media.PlaySoundNotification(nil, "AlertBuzzer")
 			Greece.MarkFailedObjective(ObjectiveStopVoidEngines)
 		end
@@ -269,7 +269,7 @@ SendNextVoidEngine = function()
 		MediaCA.PlaySound("veng-spawn.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-			Notification("Alert. Void Engine detected.")
+			Notification("警报：侦测到虚空引擎。")
 			MediaCA.PlaySound(MissionDir .. "/r_vengdet.aud", 2)
 		end)
 

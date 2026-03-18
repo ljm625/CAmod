@@ -107,8 +107,8 @@ WorldLoaded = function()
 	SetupIonStorm()
 	UpdateObjective()
 
-	ObjectiveDestroyAirfields = Scrin.AddObjective("Destroy all airfields and helipads.")
-	ObjectiveDestroyAntiAir = Scrin.AddObjective("Destroy or disable all air defense structures.")
+	ObjectiveDestroyAirfields = Scrin.AddObjective("摧毁所有机场与停机坪。")
+	ObjectiveDestroyAntiAir = Scrin.AddObjective("摧毁或瘫痪所有防空设施。")
 
 	Utils.Do(MissionPlayers, function(p)
 		Actor.Create("radar.dummy", true, { Owner = p })
@@ -131,7 +131,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Tip("Intruders can teleport short distances using either the deploy command [" .. UtilsCA.Hotkey("Deploy") .. "] or force move (they can be teleported as a group).")
+		Tip("入侵者可通过部署指令[" .. UtilsCA.Hotkey("Deploy") .. "]或强制移动进行短距离传送（可群体传送）。")
 	end)
 
 	Utils.Do(GroundedAircraft, function(i)
@@ -162,11 +162,11 @@ WorldLoaded = function()
 		SpawnInitialLeechers()
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
-			Tip("Leechers can be deployed using [" .. UtilsCA.Hotkey("Deploy") .. "] to temporarily transform into balls of bio-matter which heal nearby allies.")
+			Tip("吸食者可通过[" .. UtilsCA.Hotkey("Deploy") .. "]部署，暂时变成生物质球并治疗附近友军。")
 		end)
 
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
-			Tip("Leechers also transform in this way to avoid death and attempt to regenerate. In either case they are vulnerable in this state.")
+			Tip("吸食者也会以此形态规避死亡并尝试再生；无论哪种情况，该形态下都较脆弱。")
 		end)
 	end)
 
@@ -329,7 +329,7 @@ InitGDI = function()
 			local camera = Actor.Create("smallcamera", true, { Owner = Scrin, Location = TitanPatroller.Location })
 			Beacon.New(Scrin, TitanPatroller.CenterPosition)
 			Media.PlaySound("beacon.aud")
-			Notification("Dangerous unit patrolling. Evasion recommended. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view.")
+			Notification("发现危险单位巡逻。建议规避。按[" .. UtilsCA.Hotkey("ToLastEvent") .. "]查看位置。")
 			Trigger.AfterDelay(DateTime.Seconds(4), function()
 				camera.Destroy()
 			end)
@@ -393,7 +393,7 @@ end
 UpdateObjective = function()
 	local activeAA = Utils.Where(AntiAir, function(a) return not a.IsDead and not DisabledAntiAir[tostring(a)] end)
 	local aircraftStructuresRemaining = Utils.Where(AircraftStructures, function(a) return not a.IsDead end)
-	UserInterface.SetMissionText(#activeAA .. " active anti-aircraft defenses remaining. " .. #aircraftStructuresRemaining .. " aircraft structures remaining.", HSLColor.Yellow)
+	UserInterface.SetMissionText(#activeAA .. "处防空设施仍在运作，" .. #aircraftStructuresRemaining .. "处机场设施剩余。", HSLColor.Yellow)
 end
 
 SpawnInitialLeechers = function()
@@ -456,7 +456,7 @@ LeecherRespawnCheck = function()
 end
 
 RespawnLeecher = function(status)
-	Notification("Leecher arriving in 20 seconds.")
+	Notification("吸食者将在20秒后抵达。")
 
 	local player = status.Owner
 	local spawnCell = CPos.New(LeecherSpawn.Location.X + Utils.RandomInteger(-1, 1), LeecherSpawn.Location.Y + Utils.RandomInteger(-1, 1))
@@ -483,7 +483,7 @@ IntruderDeathTrigger = function(a)
 	if RespawnEnabled then
 		Trigger.OnKilled(a, function(self, killer)
 			local spawnCell = CPos.New(IntruderSpawn.Location.X + Utils.RandomInteger(-2, 2), IntruderSpawn.Location.Y + Utils.RandomInteger(-2, 2))
-			Notification("Intruder arriving in 20 seconds.")
+			Notification("入侵者将在20秒后抵达。")
 
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local wormhole = Actor.Create("wormhole", true, { Owner = Scrin, Location = spawnCell })

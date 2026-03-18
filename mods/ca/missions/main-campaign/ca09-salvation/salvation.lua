@@ -94,9 +94,9 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitScrin()
 
-	ObjectivePurgeScrin = Nod.AddObjective("Eliminate the Scrin presence.")
-	ObjectiveSaveAllCivilians = Nod.AddSecondaryObjective("Allow no civilians to be killed.")
-	Notification("The Scrin are preparing reinforcements, we must eliminate their foothold here quickly.")
+	ObjectivePurgeScrin = Nod.AddObjective("消灭Scrin势力。")
+	ObjectiveSaveAllCivilians = Nod.AddSecondaryObjective("不允许任何平民被击杀。")
+	Notification("Scrin正在准备增援，我们必须尽快清除其在此地的立足点。")
 
 	NodCamera1.Destroy()
 	NodCamera2.Destroy()
@@ -230,7 +230,7 @@ SpawnWormhole = function()
 		randomDormantWormhole.SpawnCount = 0
 		local camera = Actor.Create("smallcamera", true, { Owner = Nod, Location = randomLocation })
 		Beacon.New(Nod, randomDormantWormhole.Actor.CenterPosition)
-		Notification("Scrin portal detected. Destroy it before Scrin reinforcements arrive.")
+		Notification("侦测到Scrin传送门。请在Scrin增援抵达前将其摧毁。")
 		MediaCA.PlaySound(MissionDir .. "/n_scrinportal.aud", 2)
 
 		UpdateScrinCounter()
@@ -322,6 +322,6 @@ UpdateScrinCounter = function()
 			return not a.IsDead and a.HasProperty("Kill") and not string.match(a.Type, "husk")
 		end)
 
-		UserInterface.SetMissionText("Scrin remaining: " .. #scrinRemaining, HSLColor.Yellow)
+		UserInterface.SetMissionText("Scrin剩余：" .. #scrinRemaining, HSLColor.Yellow)
 	end)
 end

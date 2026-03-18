@@ -3,10 +3,10 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca17-domination/domination.lua, domination-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Steal Nod encryption codes using Thief.\n• Destroy Temple of Nod.
+		Text: • 使用窃贼窃取Nod加密代码。\n• 摧毁Nod神殿。
 	LobbyMissionInfo@Notes:
 		Prefix: Note
-		Text: Respawns can be enabled for this mission.
+		Text: 本任务可启用重生。
 		PrefixColor: FF9900
 		TextColor: FF9900
 

@@ -52,9 +52,9 @@ end
 
 UpdateObjectiveMessage = function()
 	if FieldsClearedAndBeingHarvested == 6 then
-		UserInterface.SetMissionText("6 of 6 fields occupied.\n   Maintain for " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
+		UserInterface.SetMissionText("6/6 区域已占领。\n   维持时长：" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
 	else
-		local missionText = FieldsClearedAndBeingHarvested .. " of 6 fields occupied  -  Next reinforcement threshold: $" .. TotalFundsDisplay .. "/" .. NextReinforcementThreshold
+		local missionText = "已占领 " .. FieldsClearedAndBeingHarvested .. "/6 区域  -  下次增援阈值：$" .. TotalFundsDisplay .. "/" .. NextReinforcementThreshold
 		UserInterface.SetMissionText(missionText, HSLColor.Yellow)
 	end
 end
@@ -91,7 +91,7 @@ CheckColonyPlatform = function()
 				Trigger.AfterDelay(DateTime.Seconds(1), function()
 					if p.IsLocalPlayer then
 						Media.PlaySpeechNotification(p, "ReinforcementsArrived")
-						Notification("Reinforcements have arrived.")
+						Notification("增援已抵达。")
 						Beacon.New(p, McvReplace.CenterPosition)
 					end
 					Reinforcements.Reinforce(p, { "smcv" }, { McvReplace.Location })

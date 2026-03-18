@@ -41,7 +41,7 @@ WorldLoaded = function()
 	Tanya.GrantCondition("difficulty-" .. Difficulty)
 
 	SetupFindTanyaObjective()
-	ObjectiveDestroyTiberiumStores = GDI.AddObjective("Destroy all Scrin Tiberium stores.")
+	ObjectiveDestroyTiberiumStores = GDI.AddObjective("摧毁所有Scrin泰伯利亚储藏设施。")
 	SetupKeepAliveObjectives()
 
 	CommandoDeathTrigger(Commando)
@@ -88,13 +88,13 @@ end
 OncePerSecondChecks = function()
 	if DateTime.GameTime > 1 and DateTime.GameTime % 25 == 0 then
 		if NumSilosRemaining == 0 and not GDI.IsObjectiveCompleted(ObjectiveDestroyTiberiumStores) then
-			ObjectiveEscape = GDI.AddObjective("Exit the facility.")
+			ObjectiveEscape = GDI.AddObjective("撤离设施。")
 			SetEscapeText()
 			GDI.MarkCompletedObjective(ObjectiveDestroyTiberiumStores)
 			local exitFlare = Actor.Create("flare", true, { Owner = GDI, Location = Exit.Location })
 			Beacon.New(GDI, Exit.CenterPosition)
 			PlaySpeechNotificationToMissionPlayers("SignalFlare")
-			Notification("Signal flare detected.")
+			Notification("侦测到信号弹。")
 			Trigger.OnEnteredProximityTrigger(Exit.CenterPosition, WDist.New(3 * 1024), function(a, id)
 				if IsMissionPlayer(a.Owner) and a.Type ~= "flare" then
 					Trigger.AfterDelay(DateTime.Seconds(5), function()
@@ -151,12 +151,12 @@ end
 
 -- overridden in co-op version
 UpdateObjectiveText = function()
-	UserInterface.SetMissionText("Tiberium stores remaining: " .. NumSilosRemaining , HSLColor.Yellow)
+	UserInterface.SetMissionText("泰伯利亚储藏设施剩余：" .. NumSilosRemaining , HSLColor.Yellow)
 end
 
 ActivateProdigy = function()
 	if not Prodigy.IsDead then
-		Notification("We're tracking a powerful Scrin unit. Do not engage!")
+		Notification("我们正在追踪一名强大的Scrin单位。不要交战！")
 		MediaCA.PlaySound(MissionDir .. "/c_powerfulscrin.aud", 2)
 		Prodigy.GrantCondition("activated")
 		Beacon.New(GDI, Prodigy.CenterPosition)
@@ -205,7 +205,7 @@ CommandoDeathTrigger = function(commando)
 	Trigger.OnKilled(commando, function(self, killer)
 		GDI.MarkFailedObjective(ObjectiveCommandoSurvive)
 		if RespawnEnabled then
-			Notification("Commando respawns in 20 seconds.")
+			Notification("突击队员将在20秒后重生。")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnWaypoint = Exit
 				if NumSilosRemaining == 0 then
@@ -225,7 +225,7 @@ TanyaDeathTrigger = function(tanya)
 	Trigger.OnKilled(tanya, function(self, killer)
 		GDI.MarkFailedObjective(ObjectiveTanyaSurvive)
 		if RespawnEnabled then
-			Notification("Tanya respawns in 20 seconds.")
+			Notification("谭雅将在20秒后重生。")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnWaypoint = Exit
 				if NumSilosRemaining == 0 then
@@ -286,7 +286,7 @@ end
 
 -- overridden in co-op version
 SetupFindTanyaObjective = function()
-	ObjectiveFindTanya = GDI.AddObjective("Find Tanya.")
+	ObjectiveFindTanya = GDI.AddObjective("找到谭雅。")
 
 	Trigger.OnEnteredProximityTrigger(Tanya.CenterPosition, WDist.New(7 * 1024), function(a, id)
 		if IsMissionPlayer(a.Owner) then
@@ -301,11 +301,11 @@ end
 -- overridden in co-op version
 SetupKeepAliveObjectives = function()
 	if not RespawnEnabled then
-		ObjectiveCommandoSurvive = GDI.AddObjective("Commando must survive.")
-		ObjectiveTanyaSurvive = GDI.AddObjective("Tanya must survive.")
+		ObjectiveCommandoSurvive = GDI.AddObjective("突击队员必须存活。")
+		ObjectiveTanyaSurvive = GDI.AddObjective("谭雅必须存活。")
 	else
-		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("Keep Commando alive.")
-		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("Keep Tanya alive.")
+		ObjectiveCommandoSurvive = GDI.AddSecondaryObjective("保持突击队员存活。")
+		ObjectiveTanyaSurvive = GDI.AddSecondaryObjective("保持谭雅存活。")
 	end
 end
 
@@ -317,8 +317,8 @@ end
 
 SetEscapeText = function()
 	if GDI.IsObjectiveCompleted(ObjectiveFindTanya) then
-		UserInterface.SetMissionText("Exit the facility." , HSLColor.Lime)
+		UserInterface.SetMissionText("撤离设施。" , HSLColor.Lime)
 	else
-		UserInterface.SetMissionText("Find Tanya and exit the facility." , HSLColor.Lime)
+		UserInterface.SetMissionText("找到谭雅并撤离设施。" , HSLColor.Lime)
 	end
 end

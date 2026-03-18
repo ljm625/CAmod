@@ -4,7 +4,7 @@ World:
 	ScriptLobbyDropdown@SQUADCOMP:
 		ID: squadcomp
 		Label: Unit Assignment
-		Description: How the starting units are assigned among players.\nStandard: All units get spread evenly among players regardless of type\nClass Based: Units get assigned depending on player count in the following Order:\n- Player 1: All Units\n- Player 2: All Infantry and APC's\n- Player 3: Rangers, Medics and Mechanics\n- Player 4: Rangers\n- Player 5: Half of the Snipers\n- Player 6: Half the Mirage Tanks
+		Description: 玩家初始单位分配方式。\n标准：无视类型，所有单位均匀分配给玩家。\n按职业：按玩家数量依次分配如下：\n- 玩家1：全部单位\n- 玩家2：全部步兵与APC\n- 玩家3：游骑兵、医疗兵、机械师\n- 玩家4：游骑兵\n- 玩家5：半数狙击手\n- 玩家6：半数幻影坦克
 		Values:
 			normal: Standard
 			class: Class Based
@@ -12,4 +12,4 @@ World:
 		DisplayOrder: 1
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy all Nod SAM Sites.\n• Clear the Nod base and apprehend the cloaked transports.
+		Text: • 摧毁全部Nod SAM阵地。\n• 清剿Nod基地并截获隐形运输队。

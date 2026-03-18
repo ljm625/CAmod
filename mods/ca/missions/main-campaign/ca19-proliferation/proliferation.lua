@@ -168,13 +168,13 @@ WorldLoaded = function()
 	InitObjectives(Scrin)
 	InitNod()
 
-	ObjectiveEliminateNodHarvesting = Scrin.AddObjective("Eliminate all enemy harvesting operations.")
-	ObjectiveHarvestFields = Scrin.AddObjective("Establish and maintain harvesting operations\nat all six blue ichor fields.")
+	ObjectiveEliminateNodHarvesting = Scrin.AddObjective("消灭全部敌方采集行动。")
+	ObjectiveHarvestFields = Scrin.AddObjective("在6处蓝色灵液矿区建立并维持\n采集行动。")
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Tip("A tiberium field is considered occupied when it has been cleared of Nod forces and when you have both a refinery and an active harvester nearby.")
+		Tip("当某泰矿区已清除Nod部队，且你在附近同时拥有精炼厂与正在作业的采矿车时，该矿区才算被占领。")
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("The more lucrative your harvesting operation becomes, the more reinforcements will be provided to you.")
+			Tip("你的采集行动收益越高，可获得的增援就越多。")
 		end)
 	end)
 
@@ -202,7 +202,7 @@ WorldLoaded = function()
 		Trigger.OnAllKilled(r.SAMSites, function()
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				Beacon.New(Scrin, r.Spawn.CenterPosition)
 				Reinforcements.Reinforce(Scrin, { "stmr" }, { r.Spawn.Location, r.Dest.Location }, 25)
 			end)
@@ -306,7 +306,7 @@ CheckFields = function()
 
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
 					PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-					Notification("Reinforcements have arrived.")
+					Notification("增援已抵达。")
 					Beacon.New(Scrin, field.Waypoint.CenterPosition)
 
 					local reinforcements = Reinforcements.Reinforce(Scrin, field.Reinforcements, { field.Waypoint.Location }, 10, function(a)
@@ -326,7 +326,7 @@ CheckFields = function()
 	end)
 
 	if FieldsClearedAndBeingHarvested < PreviousFieldsClearedAndBeingHarvested then
-		Notification("You have lost control of an ichor field.")
+		Notification("你已失去一处灵液矿区的控制权。")
 		MediaCA.PlaySound(MissionDir .. "/s_ichorfieldlost.aud", 2)
 	end
 end
@@ -334,9 +334,9 @@ end
 -- overridden in co-op version
 UpdateObjectiveMessage = function()
 	if FieldsClearedAndBeingHarvested == 6 then
-		UserInterface.SetMissionText("6 of 6 fields occupied.\n   Maintain for " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
+		UserInterface.SetMissionText("6/6 矿区已占领。\n   维持时长：" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Lime)
 	else
-		local missionText = FieldsClearedAndBeingHarvested .. " of 6 fields occupied  -  Next reinforcement threshold: $" .. Scrin.Cash + Scrin.Resources .. "/" .. NextReinforcementThreshold
+		local missionText = FieldsClearedAndBeingHarvested .. "/6 矿区已占领  -  下次增援阈值：$" .. Scrin.Cash + Scrin.Resources .. "/" .. NextReinforcementThreshold
 		UserInterface.SetMissionText(missionText, HSLColor.Yellow)
 	end
 end
@@ -380,7 +380,7 @@ DoReinforcements = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		Beacon.New(Scrin, reinforcementsWaypoint.CenterPosition)
 
 		local reinforcements = Reinforcements.Reinforce(Scrin, { "s1", "s1", "s1", "s3", "s3", "gunw", "seek", "intl", "s1", "s1", "s4", "s1" }, { reinforcementsWaypoint.Location }, 10, function(a)
@@ -422,7 +422,7 @@ CheckColonyPlatform = function()
 
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived.")
+				Notification("增援已抵达。")
 				Beacon.New(Scrin, McvReplace.CenterPosition)
 				ColonyPlatformBeingReplaced = false
 				Reinforcements.Reinforce(Scrin, { "smcv" }, { McvReplace.Location })

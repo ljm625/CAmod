@@ -27,7 +27,7 @@ World:
 	ScriptLobbyDropdown@etpdfreq:
 		ID: etpdfreq
 		Label: Exterminator Frequency
-		Description: Increases the frequency of Exterminator Tripod spawns (Exterminators are unaffected by other options besides difficulty).
+		Description: 提高灭绝者三足机甲刷新频率（除难度外不受其他选项影响）。
 		Values:
 			0: +0%
 			25: +25%
@@ -46,7 +46,7 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy all Scrin forces loyal to the Overlord.
+		Text: • 消灭全部忠于主宰的Scrin部队。
 
 Player:
 	ProvidesPrerequisitesOnCount@ScrinAllegiances:

@@ -114,7 +114,7 @@ MISS:
 	Tooltip:
 		Name: Hawthorne's Command Center
 	TooltipDescription:
-		Description: Command center of GDI forces in the area.
+		Description: 该区域GDI部队指挥中心。
 		ValidRelationships: Ally
 	Health:
 		HP: 200000

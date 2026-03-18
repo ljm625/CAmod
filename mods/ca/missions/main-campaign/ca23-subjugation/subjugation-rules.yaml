@@ -25,7 +25,7 @@ World:
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
 		Label: Respawns
-		Description: Enable/disable respawning on death
+		Description: 启用/禁用死亡后重生
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -87,7 +87,7 @@ MAST:
 		TargetActors: bio, miss, truk
 		LifeTime: 125
 		ChargeInterval: 4500
-		Description: \nReveals high concentrations of Tiberium.
+		Description: \n揭示高浓度泰伯利亚区域。
 	ProximityExternalCondition@MCPROTECTION:
 		RequiresCondition: rank-elite
 		Condition: mc-protection

@@ -78,7 +78,7 @@ MISS:
 	Tooltip:
 		Name: Outpost
 	TooltipDescription:
-		Description: Provides vision of the surrounding area.
+		Description: 提供周边区域视野。
 		ValidRelationships: Ally, Enemy, Neutral
 	Health:
 		HP: 100000

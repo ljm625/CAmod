@@ -100,8 +100,8 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitScrin()
 
-	ObjectiveChargeDevice = Nod.AddObjective("Bring the device to full power.")
-	ObjectiveProtectLiquidTib = Nod.AddObjective("Protect liquid Tiberium processing plant.")
+	ObjectiveChargeDevice = Nod.AddObjective("将装置充能至满功率。")
+	ObjectiveProtectLiquidTib = Nod.AddObjective("保护液态泰伯利亚处理厂。")
 
 	UpdateMissionText()
 
@@ -121,10 +121,10 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("Commander, we must bring the device to full power as quickly as possible. Transporting crystals will take too long, so liquid Tiberium is our only option. We have set up a liquid T production facility. Do not let it be destroyed, and as each shipment becomes available load it into a tanker and bring it to the entrance of the cave system.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("指挥官，我们必须尽快将装置提升至满功率。运输晶体太慢，液态泰伯利亚是唯一选择。我们已建立液态T生产设施。务必保护它，每当有一批货物可用，就装入油罐车并送到洞穴系统入口。", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_liquidt.aud", 2)
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(18)), function()
-			Tip("Move a tanker next to the processing plant to pick up a prepared shipment, then take it to the cave entrance in the north-east.")
+			Tip("将油罐车开到处理厂旁装载备好的货物，然后运送到东北方向洞穴入口。")
 			Utils.Do({ InitAttacker1, InitAttacker2, InitAttacker3, InitAttacker4 }, function(a)
 				if not a.IsDead then
 					a.AttackMove(PlayerStart.Location)
@@ -143,7 +143,7 @@ WorldLoaded = function()
 	Trigger.OnEnteredFootprint({ LiquidTibPickup1.Location, LiquidTibPickup2.Location }, function(a)
 		if IsMissionPlayer(a.Owner) and not a.IsDead and a.Type == "ttrk" then
 			if not LiquidTibFacility.IsDead and LiquidTibFacility.AmmoCount("primary") == 0 then
-				Notification("No liquid Tiberium currently available for pickup.")
+				Notification("当前无可装载的液态泰伯利亚。")
 			end
 		end
 	end)
@@ -153,7 +153,7 @@ WorldLoaded = function()
 			if a.AmmoCount("primary") == 1 then
 				a.Reload("primary", -1)
 				ShipmentsComplete = ShipmentsComplete + 1
-				Notification("Liquid Tiberium shipment delivered.")
+				Notification("液态泰伯利亚运输已送达。")
 				MediaCA.PlaySound(MissionDir .. "/n_liquidtibdelivered.aud", 2)
 				UpdateMissionText()
 				if ShipmentsComplete == 5 then
@@ -162,7 +162,7 @@ WorldLoaded = function()
 					Nod.MarkCompletedObjective(ObjectiveProtectLiquidTib)
 				end
 			else
-				Notification("No liquid Tiberium to drop off.")
+				Notification("没有可交付的液态泰伯利亚。")
 			end
 		end
 	end)
@@ -201,7 +201,7 @@ OncePerSecondChecks = function()
 					TibLoaded = true
 					t.Reload("primary", 1)
 					LiquidTibFacility.Reload("primary", -1)
-					Notification("Liquid Tiberium transfer complete.")
+					Notification("液态泰伯利亚转运完成。")
 					Beacon.New(Nod, t.CenterPosition)
 				end
 			end)
@@ -297,7 +297,7 @@ LiquidTibProduced = function()
 	end
 
 	TimerTicks = LiquidTibCooldown
-	Notification("Liquid Tiberium shipment ready.")
+	Notification("液态泰伯利亚货物已就绪。")
 	MediaCA.PlaySound(MissionDir .. "/n_liquidtibready.aud", 2)
 
 	if not LiquidTibFacility.IsDead then
@@ -307,10 +307,10 @@ LiquidTibProduced = function()
 end
 
 PurificationWave = function()
-	ObjectivePurify = Nod.AddObjective("Await the purification wave.")
+	ObjectivePurify = Nod.AddObjective("等待净化波到来。")
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("Well done commander! The device is at full power, and will soon release its purifying energy. The question is, will the Scrin fight for their freedom against the Overlord, or cower in servitude even after such heinous treachery is revealed?", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("干得漂亮，指挥官！装置已达满功率，很快就会释放净化能量。问题在于：当这般骇人背叛被揭露后，Scrin会为自由对抗主宰，还是继续屈服为奴？", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_purification.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()
@@ -318,7 +318,7 @@ PurificationWave = function()
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(9)), function()
 				PurificationComplete = true
 				Lighting.Flash("Purification", AdjustTimeForGameSpeed(10))
-				ObjectiveDestroyRemainingLoyalists = Nod.AddObjective("Eliminate any hostile Scrin remaining.")
+				ObjectiveDestroyRemainingLoyalists = Nod.AddObjective("消灭残余敌对Scrin部队。")
 				Nod.MarkCompletedObjective(ObjectivePurify)
 				PurifyScrin()
 				InitScrinReinforcements()

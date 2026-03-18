@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca22-decimation/decimation.lua, decimation-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy all uncrewed Soviet vehicles.\n• Eliminate Soviet bases.\n• [Optional] Destroy the front line of Soviet SAM Sites.
+		Text: • 摧毁全部无乘员苏军载具。\n• 清除苏军基地。\n• [可选] 摧毁前线苏军SAM阵地。

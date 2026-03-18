@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca32-convergence/convergence.lua, convergence-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Prevent Scrin fleet ships from breaking through.
+		Text: • 阻止Scrin舰队单位突破防线。

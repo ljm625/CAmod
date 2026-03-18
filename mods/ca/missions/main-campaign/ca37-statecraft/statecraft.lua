@@ -234,16 +234,16 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitGenerals()
 
-	ObjectiveEliminateMarinesko = USSR.AddObjective("Defeat General Marinesko's forces.")
-	ObjectiveEliminateRomanov = USSR.AddObjective("Defeat Deputy Chairman Romanov's forces.")
-	ObjectiveEliminateKrukov = USSR.AddObjective("Defeat General Krukov's forces.")
+	ObjectiveEliminateMarinesko = USSR.AddObjective("击败马林斯科将军的部队。")
+	ObjectiveEliminateRomanov = USSR.AddObjective("击败副主席罗曼诺夫的部队。")
+	ObjectiveEliminateKrukov = USSR.AddObjective("击败库可夫将军的部队。")
 
 	Trigger.OnCapture(RomanovIndustrialPlant, function(self, captor, oldOwner, newOwner)
 		Actor.Create("captured.indp", true, { Owner = USSR })
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("Romanov. Marinesko. Krukov. Comrade General, you must crush these pretenders. The Union must prevail!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("罗曼诺夫、马林斯科、库可夫。同志将军，你必须粉碎这些觊觎者。联盟必须胜利！", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/cdko_crushtraitors.aud", 2)
 	end)
 

@@ -26,7 +26,7 @@ World:
 		Locked: True
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Establish and secure harvesting operations at all Tiberium fields.\n• Remove all Nod harvesting operations.
+		Text: • 在全部泰伯利亚矿区建立并稳固采集作业。\n• 清除全部Nod采集作业。
 
 ^SendCashPower:
 	SendCashPower@SendCash:

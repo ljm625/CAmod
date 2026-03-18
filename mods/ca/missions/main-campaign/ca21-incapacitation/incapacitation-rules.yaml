@@ -22,7 +22,7 @@ World:
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
 		Label: Respawns
-		Description: Enable/disable respawning on death
+		Description: 启用/禁用死亡后重生
 		Values:
 			enabled: Enabled
 			disabled: Disabled

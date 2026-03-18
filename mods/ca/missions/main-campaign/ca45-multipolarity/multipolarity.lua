@@ -174,10 +174,10 @@ WorldLoaded = function()
 
 	MissionPlayersDefenseValue = 0
 
-	ObjectiveSecureBase = Greece.AddObjective("Secure the decommissioned Allied base.")
+	ObjectiveSecureBase = Greece.AddObjective("确保已退役的盟军基地。")
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
-		Media.DisplayMessage("This area is under GDI jurisdiction. Remove your forces immediately commander. If you advance, we will open fire.", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("该区域归GDI管辖。立刻撤出你的部队，指挥官。若继续推进，我们将开火。", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_jurisdiction.aud", 2)
 	end)
 
@@ -201,7 +201,7 @@ WorldLoaded = function()
 				Greece.MarkCompletedObjective(ObjectiveSecureBase)
 
 				Trigger.AfterDelay(DateTime.Seconds(3), function()
-					Media.DisplayMessage("You will pay dearly for this transgression! Prepare to witness the full force of the GDI war machine!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+					Media.DisplayMessage("你将为此越界行为付出惨重代价！准备见识GDI战争机器的全部力量吧！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 					MediaCA.PlaySound(MissionDir .. "/hth_paydearly.aud", 2)
 				end)
 
@@ -245,7 +245,7 @@ WorldLoaded = function()
 			InitCaptureHQObjective()
 			if not FinalTaunt then
 				FinalTaunt = true
-				Media.DisplayMessage("You will not stop me from bringing Kane and his minions to justice!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+				Media.DisplayMessage("你阻止不了我将凯恩和他的爪牙绳之以法！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 				MediaCA.PlaySound(MissionDir .. "/hth_notstop.aud", 2)
 			end
 		end
@@ -411,7 +411,7 @@ FlipAlliedBase = function()
 	Trigger.AfterDelay(McvDelayTime[Difficulty], function()
 		Beacon.New(Greece, McvDest.CenterPosition)
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		DoMcvArrival()
 
 		Utils.Do(MissionPlayers, function(p)
@@ -503,10 +503,10 @@ HawthorneClaimSovietBase = function()
 	HawthorneClaimedSovietBase = true
 
 	if NodBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Soviet equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("这种把戏你会，我也会，指挥官。我看那些苏军装备正好可以为我所用！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequip.aud", 2)
 	else
-		Media.DisplayMessage("I think it's high time I got some use out of that old Soviet base!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("是时候把那座旧苏军基地也利用起来了！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_sovequipauto.aud", 2)
 	end
 
@@ -558,10 +558,10 @@ HawthorneClaimNodBase = function()
 	HawthorneClaimedNodBase = true
 
 	if SovietBaseFlipped then
-		Media.DisplayMessage("Two can play that game commander. I think we can put that Nod equipment to good use!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("这种把戏你会，我也会，指挥官。我看那些Nod装备正好可以为我所用！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequip.aud", 2)
 	else
-		Media.DisplayMessage("That Nod base has been sitting idle for too long. It's time I got some use out of it!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("那座Nod基地闲置太久了。该轮到我发挥它的价值了！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/hth_nodequipauto.aud", 2)
 	end
 
@@ -711,12 +711,12 @@ end
 
 InitCaptureHQObjective = function()
 	if not ObjectiveCaptureHQ then
-		ObjectiveCaptureHQ = Greece.AddObjective("Capture Gen. Hawthorne's Command Center.")
+		ObjectiveCaptureHQ = Greece.AddObjective("夺取霍桑将军的指挥中心。")
 	end
 end
 
 DoFinale = function()
-	Media.DisplayMessage("This is far from over! You will regret making an enemy of me!", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
+	Media.DisplayMessage("这远未结束！与我为敌，你会后悔的！", "Gen. Hawthorne", HSLColor.FromHex("F2CF74"))
 	MediaCA.PlaySound(MissionDir .. "/hth_farfromover.aud", 2)
 
 	Hawthorne = Actor.Create("xo.hawthorne", true, { Owner = GDI, Location = HawthorneSpawn.Location })

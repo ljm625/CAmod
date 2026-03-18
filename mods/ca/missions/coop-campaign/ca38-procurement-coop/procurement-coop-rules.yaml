@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca38-procurement/procurement.lua, procurement-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Take control of Chinese equipment.\n• Eliminate all GDI forces.
+		Text: • 夺取中国装备控制权。\n• 消灭全部GDI部队。

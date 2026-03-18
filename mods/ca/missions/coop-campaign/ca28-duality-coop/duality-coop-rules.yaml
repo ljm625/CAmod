@@ -4,7 +4,7 @@ World:
 	ScriptLobbyDropdown@CAMLOCK:
 		ID: camlock
 		Label: Camera Lock
-		Description: Enable/disable locking the camera on your last unit.
+		Description: 启用/禁用镜头锁定在最后一个单位上。
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -13,7 +13,7 @@ World:
 	ScriptLobbyDropdown@MISSIONTIMER:
 		ID: missiontimer
 		Label: Mission Timer
-		Description: Enable/disable time limit\nOr activate Rush Mode, where you have 1 Minute and gain time for each destroyed silo.
+		Description: 启用/禁用时间限制\n或启用Rush模式：初始1分钟，每摧毁一个筒仓增加时间。
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -22,9 +22,9 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy all Scrin silos.\n• Escape the facility.
+		Text: • 摧毁全部Scrin筒仓。\n• 撤离该设施。
 	LobbyMissionInfo@Notes:
 		Prefix: Note
-		Text: Respawns can be enabled for this mission.
+		Text: 本任务可启用重生。
 		PrefixColor: FF9900
 		TextColor: FF9900

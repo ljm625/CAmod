@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca46-intervention/intervention.lua, intervention-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy or capture all Nod Tiberium Silos.
+		Text: • 摧毁或夺取全部Nod泰伯利亚筒仓。

@@ -45,8 +45,8 @@ WorldLoaded = function()
 	InitNod()
 	UpdateMissionText()
 
-	ObjectiveDestroyShardLaunchers = GDI.AddObjective("Destroy Scrin Shard Launchers.")
-    ObjectiveCaptureComms = GDI.AddObjective("Locate and capture Nod Communications Center.")
+	ObjectiveDestroyShardLaunchers = GDI.AddObjective("摧毁Scrin碎晶发射器。")
+    ObjectiveCaptureComms = GDI.AddObjective("定位并夺取Nod通讯中心。")
 
 	if IsHardOrBelow() then
 		HardOnlyTripod.Destroy()
@@ -124,7 +124,7 @@ UpdateMissionText = function()
 	ShardLaunchersRemaining = #Utils.Where(ShardLaunchers, function(s) return not s.IsDead end)
 
 	if ShardLaunchersRemaining > 0 then
-		UserInterface.SetMissionText("Shard Launchers remaining: " .. ShardLaunchersRemaining, HSLColor.Yellow)
+		UserInterface.SetMissionText("碎晶发射器剩余：" .. ShardLaunchersRemaining, HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -148,7 +148,7 @@ end
 
 InitMcv = function()
 	PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-	Notification("Reinforcements have arrived.")
+	Notification("增援已抵达。")
     local entryPath = { CarryallSpawn.Location, CarryallDest.Location }
     local exitPath =  { CarryallSpawn.Location }
     ReinforcementsCA.ReinforceWithTransport(GDI, "ocar.amcv", nil, entryPath, exitPath)

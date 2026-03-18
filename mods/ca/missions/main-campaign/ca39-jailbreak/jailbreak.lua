@@ -87,8 +87,8 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitGreece()
 
-	ObjectiveClearPath = USSR.AddObjective("Clear one of the two paths for reinforcements.")
-	ObjectiveCapturePrison = USSR.AddObjective("Capture Allied prison to free Yuri.")
+	ObjectiveClearPath = USSR.AddObjective("清理两条增援路线中的任意一条。")
+	ObjectiveCapturePrison = USSR.AddObjective("夺取盟军监狱并释放尤里。")
 
 	Trigger.AfterDelay(1, function()
 		local topPathUnits = Map.ActorsInBox(TopPathTopLeft.CenterPosition, TopPathBottomRight.CenterPosition, function(a)
@@ -122,7 +122,7 @@ WorldLoaded = function()
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
 
 				if AlliedBuildingsEliminated() then
-					Media.DisplayMessage("Ah, Comrade General, thank you for releasing us. I have a proposal that you may find interesting...", "Yuri", HSLColor.FromHex("FF00BB"))
+					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣……", "Yuri", HSLColor.FromHex("FF00BB"))
 					MediaCA.PlaySound(MissionDir .. "/yuri_releasedwin.aud", 2)
 
 					Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(10)), function()
@@ -131,8 +131,8 @@ WorldLoaded = function()
 						end
 					end)
 				else
-					ObjectiveEliminateAllies = USSR.AddObjective("Eliminate remaining Allied presence.")
-					ObjectiveKeepYuriAndProdigyAlive = USSR.AddObjective("Yuri and the Prodigy must survive.")
+					ObjectiveEliminateAllies = USSR.AddObjective("消灭残余盟军势力。")
+					ObjectiveKeepYuriAndProdigyAlive = USSR.AddObjective("尤里与神童必须存活。")
 
 					Trigger.OnAnyKilled({ yuri, prodigy }, function(self, killer)
 						if not USSR.IsObjectiveCompleted(ObjectiveKeepYuriAndProdigyAlive) then
@@ -144,7 +144,7 @@ WorldLoaded = function()
 						USSR.MarkCompletedObjective(ObjectiveCapturePrison)
 					end
 
-					Media.DisplayMessage("Ah, Comrade General, thank you for releasing us. I have a proposal that you may find interesting. But first, we must deal with these pests.", "Yuri", HSLColor.FromHex("FF00BB"))
+					Media.DisplayMessage("啊，同志将军，感谢你释放我们。我有个提议，你也许会感兴趣。不过首先，我们得先收拾这些烦人的家伙。", "Yuri", HSLColor.FromHex("FF00BB"))
 					MediaCA.PlaySound(MissionDir .. "/yuri_released.aud", 2)
 
 					Trigger.AfterDelay(DateTime.Seconds(5), function()
@@ -294,7 +294,7 @@ PathCleared = function()
 
 		Trigger.AfterDelay(DateTime.Seconds(5), function()
 			PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-			Notification("Reinforcements have arrived.")
+			Notification("增援已抵达。")
 			Beacon.New(USSR, McvRally.CenterPosition)
 			DoMcvArrival()
 			McvArrived = true
@@ -309,7 +309,7 @@ end
 SendLandingCraft = function()
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-		Notification("Reinforcements have arrived.")
+		Notification("增援已抵达。")
 		Beacon.New(USSR, LandingCraftSpawn.CenterPosition)
 		Reinforcements.Reinforce(USSR, { "ss" }, { SubSpawn1.Location, SubRally1.Location })
 		Reinforcements.Reinforce(USSR, { "ss" }, { SubSpawn2.Location, SubRally2.Location })

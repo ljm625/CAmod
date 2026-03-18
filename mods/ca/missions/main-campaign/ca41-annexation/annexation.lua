@@ -95,15 +95,15 @@ WorldLoaded = function()
 		Actor.Create("hazmatsoviet.upgrade", true, { Owner = p })
 	end)
 
-	ObjectiveCaptureNerveCenter = USSR.AddObjective("Capture rebel Nerve Center.")
-	ObjectiveEliminateRebels = USSR.AddObjective("Eliminate all rebel forces.")
+	ObjectiveCaptureNerveCenter = USSR.AddObjective("夺取叛军神经中枢。")
+	ObjectiveEliminateRebels = USSR.AddObjective("消灭全部叛军部队。")
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("Assist us to annihilate Kane and the rebels, and you will be rewarded.", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		Media.DisplayMessage("协助我们消灭凯恩与叛军，你将得到回报。", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_assist.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(11)), function()
-			Media.DisplayMessage("The vastness of space, uncorrupted by capitalism, is ours for the taking!", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("浩瀚宇宙不受资本主义腐化，理应由我们掌握！", "Premier Cherdenko", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/cdko_space.aud", 2)
 		end)
 	end)
@@ -124,7 +124,7 @@ WorldLoaded = function()
 	Trigger.OnCapture(GatewayNerveCenter, function(self, captor, oldOwner, newOwner)
 		if IsMissionPlayer(newOwner) and not USSR.IsObjectiveCompleted(ObjectiveCaptureNerveCenter) then
 			USSR.MarkCompletedObjective(ObjectiveCaptureNerveCenter)
-			ObjectiveHoldNerveCenter = USSR.AddObjective("Protect the captured Nerve Center.")
+			ObjectiveHoldNerveCenter = USSR.AddObjective("保护已夺取的神经中枢。")
 			TimerTicks = 0
 			UpdateMissionText()
 
@@ -210,7 +210,7 @@ end
 
 UpdateMissionText = function()
 	if TimerTicks > 0 then
-		UserInterface.SetMissionText("Capture Nerve Center. Gateway collapses in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+		UserInterface.SetMissionText("夺取神经中枢。传送门将在" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 	else
 		UserInterface.SetMissionText("")
 	end
@@ -274,8 +274,8 @@ end
 
 InitSignalTransmittersObjective = function()
 	if ObjectiveSignalTransmitters == nil then
-		ObjectiveSignalTransmitters = USSR.AddObjective("Capture the three signal transmitters.")
-		Media.DisplayMessage("Capture the rebel Signal Transmiters, and I will unleash my forces to assist you.", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+		ObjectiveSignalTransmitters = USSR.AddObjective("夺取3座信号发射器。")
+		Media.DisplayMessage("夺取叛军信号发射器，我将释放我的部队协助你。", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 		MediaCA.PlaySound(MissionDir .. "/ovld_capture.aud", 2)
 
 		local transmitters = Utils.Where({ SignalTransmitter1, SignalTransmitter2, SignalTransmitter3 }, function(a)
@@ -311,7 +311,7 @@ InitSignalTransmittersObjective = function()
 					local wormhole = SpawnWormhole(wormholeLoc)
 					Trigger.AfterDelay(DateTime.Seconds(3), function()
 						PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-						Notification("Reinforcements have arrived.")
+						Notification("增援已抵达。")
 						InitScrinReinforcements(wormhole)
 						FleetRecall(transmitterLocation)
 					end)

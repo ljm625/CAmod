@@ -75,11 +75,11 @@ WorldLoaded = function()
 
 	Sunrise()
 
-	ObjectiveKillReactors = Greece.AddObjective("Destroy the three Atomic Reactors.")
-	ObjectiveKillSAMSites = Greece.AddObjective("Destroy Soviet SAM sites along shoreline.")
-	ObjectiveKillSilos = Greece.AddObjective("Destroy Atom Bomb silos before they launch.")
-	ObjectiveNeutralizeChronosphere = Greece.AddObjective("Neutralize the Chronosphere.")
-	ObjectiveKeepAlive = Greece.AddSecondaryObjective("Keep all team members alive.")
+	ObjectiveKillReactors = Greece.AddObjective("摧毁3座原子反应堆。")
+	ObjectiveKillSAMSites = Greece.AddObjective("摧毁沿岸苏军SAM阵地。")
+	ObjectiveKillSilos = Greece.AddObjective("在发射前摧毁原子弹发射井。")
+	ObjectiveNeutralizeChronosphere = Greece.AddObjective("中和超时空传送仪。")
+	ObjectiveKeepAlive = Greece.AddSecondaryObjective("确保所有队员存活。")
 
 	LandingCraft.Move(LandingCraftExit.Location)
 	LandingCraft.Destroy()
@@ -196,7 +196,7 @@ WorldLoaded = function()
 
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
 			Tip('Disguise your spy by "attacking" enemy infantry. Dogs can see through the disguise.')
-			Tip("Navy SEALs can swim.")
+			Tip("海豹突击队员可以游泳。")
 		end)
 
 		if Difficulty == "easy" then
@@ -245,7 +245,7 @@ WorldLoaded = function()
 			NukeDummy.Destroy()
 			Media.PlaySound("nukelaunch.aud")
 			PlaySpeechNotificationToMissionPlayers("AbombLaunchDetected")
-			Notification("A-Bomb launch detected.")
+			Notification("侦测到原子弹发射。")
 
 			Trigger.AfterDelay(DateTime.Seconds(15), function()
 				WhiteOut = true
@@ -337,7 +337,7 @@ end
 DoShoreSAMFlare = function()
 	Trigger.AfterDelay(DateTime.Seconds(4), function()
 		ShoreSAMFlare = Actor.Create("flare", true, { Owner = Greece, Location = ShoreSAMFlareLocation })
-		Notification("Signal flare detected. A shore SAM Site has been located. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification("侦测到信号弹。已定位沿岸SAM阵地。按[" .. UtilsCA.Hotkey("ToLastEvent") .. "]查看位置。")
 		MediaCA.PlaySound(MissionDir .. "/r_samlocated.aud", 2)
 		Beacon.New(Greece, ShoreSAMBeaconPosition)
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -443,7 +443,7 @@ DropChronoPrison = function()
 	PlaySpeechNotificationToMissionPlayers("SignalFlare")
 
 	Trigger.AfterDelay(DateTime.Seconds(1), function()
-		Notification("Signal flare detected. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+		Notification("侦测到信号弹。按[" .. UtilsCA.Hotkey("ToLastEvent") .. "]查看位置。")
 		Beacon.New(Greece, CarryallDropPoint.CenterPosition)
 	end)
 
@@ -451,7 +451,7 @@ DropChronoPrison = function()
 		local entryPath = { CarryallEntryPoint.Location, CarryallDropPoint.Location }
 		local exitPath =  { CarryallEntryPoint.Location }
 		ReinforcementsCA.ReinforceWithTransport(Greece, "ocar.chpr", nil, entryPath, exitPath)
-		Notification("Rendezvous with the Chrono Prison and proceed to the Chronosphere.")
+		Notification("与Chrono牢笼会合并前往超时空传送仪。")
 		MediaCA.PlaySound(MissionDir .. "/r_cprendezvous.aud", 2)
 
 		Trigger.OnEnteredProximityTrigger(CarryallDropPoint.CenterPosition, WDist.New(2048), function(a, id)

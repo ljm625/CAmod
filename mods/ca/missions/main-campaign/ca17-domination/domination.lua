@@ -72,7 +72,7 @@ WorldLoaded = function()
 	InitObjectives(USSR)
 	InitNod()
 
-	ObjectiveStealCodes = USSR.AddObjective("Steal Nod cyborg encryption codes.")
+	ObjectiveStealCodes = USSR.AddObjective("窃取Nod半机械人加密代码。")
 
 	if Difficulty == "easy" then
 		StartLightTank.Destroy()
@@ -107,11 +107,11 @@ WorldLoaded = function()
 	end
 
 	if RespawnEnabled then
-		ObjectiveKeepYuriAlive = USSR.AddSecondaryObjective("Keep Yuri alive.")
+		ObjectiveKeepYuriAlive = USSR.AddSecondaryObjective("保持尤里存活。")
 		RespawnTrigger(Yuri)
 		RespawnTrigger(Thief)
 	else
-		ObjectiveKeepYuriAlive = USSR.AddObjective("Yuri must survive.")
+		ObjectiveKeepYuriAlive = USSR.AddObjective("尤里必须存活。")
 		Trigger.OnKilled(Thief, function(self, killer)
 			if not USSR.IsObjectiveCompleted(ObjectiveStealCodes) then
 				USSR.MarkFailedObjective(ObjectiveStealCodes)
@@ -127,9 +127,9 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Tip("Yuri can mind control up to three enemy units. Mind controlling a fourth will kill the earliest controlled.")
+		Tip("尤里最多可心控3个敌方单位。若心控第4个，最早被控制的单位会死亡。")
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("Deploying Yuri releases a mind blast around Yuri and his slaves (the slaves will be unharmed).")
+			Tip("部署尤里可在他与其奴隶单位周围释放心灵爆破（奴隶单位不受影响）。")
 		end)
 	end)
 
@@ -145,7 +145,7 @@ WorldLoaded = function()
 		Media.PlaySound("powrdn1.aud")
 		Actor.Create("powerproxy.mutabomb", true, { Owner = MissionPlayers[1] })
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("The Genetic Mutation Bomb support power can turn enemy infantry into Brutes under your command. Avoid enemy SAM sites by holding the mouse button when selecting the target, allowing you to control the approach angle.")
+			Tip("基因突变炸弹支援技能可将敌方步兵变为你可控制的狂兽人。选择目标时按住鼠标可控制接近角度，以规避敌方SAM阵地。")
 		end)
 	end)
 
@@ -167,7 +167,7 @@ WorldLoaded = function()
 
 	Trigger.OnInfiltrated(CyberneticsLab, function(self, infiltrator)
 		Actor.Create("cyborgsdecrypted", true, { Owner = Nod })
-		ObjectiveDestroyTemple = USSR.AddObjective("Locate and destroy the Temple of Nod.")
+		ObjectiveDestroyTemple = USSR.AddObjective("定位并摧毁Nod圣殿。")
 		USSR.MarkCompletedObjective(ObjectiveStealCodes)
 
 		if TempleOfNod.IsDead then
@@ -177,7 +177,7 @@ WorldLoaded = function()
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
 			MediaCA.PlaySound(MissionDir .. "/r2_codesacquired.aud", 2)
-			Notification("Cyborg encryption codes acquired.")
+			Notification("已获取半机械人加密代码。")
 
 			if EvacStarted then
 				SendEvac()
@@ -199,7 +199,7 @@ WorldLoaded = function()
 			Trigger.RemoveProximityTrigger(id)
 
 			if ObjectiveStealCodes == nil or not USSR.IsObjectiveCompleted(ObjectiveStealCodes) then
-				Notification("Encryption codes are required for mission completion.")
+				Notification("完成任务需要加密代码。")
 				MediaCA.PlaySound(MissionDir .. "/r2_codesrequired.aud", 2)
 				return
 			end
@@ -328,7 +328,7 @@ DisableDefenses = function(actors)
 end
 
 TempleDestroyed = function()
-	ObjectiveEscape = USSR.AddObjective("Bring Yuri to the extraction point.")
+	ObjectiveEscape = USSR.AddObjective("将尤里带到撤离点。")
 
 	if ObjectiveDestroyTemple ~= nil then
 		USSR.MarkCompletedObjective(ObjectiveDestroyTemple)
@@ -343,7 +343,7 @@ TempleDiscovered = function()
 	if not IsTempleDiscovered then
 		IsTempleDiscovered = true
 		Beacon.New(USSR, TempleOfNod.CenterPosition)
-		Notification("Temple of Nod located.")
+		Notification("已定位Nod圣殿。")
 		MediaCA.PlaySound(MissionDir .. "/r2_templelocated.aud", 2)
 		local autoCamera = Actor.Create("smallcamera", true, { Owner = USSR, Location = TempleOfNodLocation })
 		Trigger.AfterDelay(DateTime.Seconds(5), autoCamera.Destroy)
@@ -363,7 +363,7 @@ SendEvac = function()
 		EvacFlare.Destroy()
 	end
 
-	Notification("Extraction transport inbound.")
+	Notification("撤离运输机正在赶来。")
 	MediaCA.PlaySound(MissionDir .. "/r2_extraction.aud", 2)
 
 	Reinforcements.ReinforceWithTransport(USSR, "halo.paradrop", nil, { EvacSpawn.Location, EvacLanding.Location }, nil, function(transport, cargo)

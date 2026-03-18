@@ -4,7 +4,7 @@ World:
 	ScriptLobbyDropdown@airint:
 		ID: airint
 		Label: Enemy Airstrike Multiplier
-		Description: Reduces the time between enemy airstrikes.
+		Description: 缩短敌方空袭间隔时间。
 		Values:
 			999: x1 - (0.1 * player count)
 			998: x1 - (0.15 * player count)
@@ -24,4 +24,4 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Defend Temple Prime.
+		Text: • 保卫圣殿主基地。

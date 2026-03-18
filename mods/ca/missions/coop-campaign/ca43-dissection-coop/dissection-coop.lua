@@ -96,7 +96,7 @@ AssumeControl = function(player, side)
 	SideAssumedControl[side] = true
 
 	if player.IsLocalPlayer then
-		Notification("Command transfer complete.")
+		Notification("指挥权移交完成。")
 		MediaCA.PlaySound(MissionDir .. "/r_transfer.aud", 2)
 	end
 

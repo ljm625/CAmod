@@ -66,7 +66,7 @@ UAV:
 
 HQ:
 	AirstrikePowerCA@uav:
-		Description: \nA drone flies across the map, revealing the area as it passes.
+		Description: \n无人机掠过地图，并沿途揭示区域。
 
 EYE:
 	Inherits@CAMPAIGNDISABLED: ^Disabled

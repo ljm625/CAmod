@@ -4,7 +4,7 @@ World:
 	ScriptLobbyDropdown@voidfreq:
 		ID: voidfreq
 		Label: Void Engine Frequency
-		Description: Increases the frequency of Void Engine spawns (Void Engines are unaffected by other options besides difficulty).
+		Description: 提高虚空引擎刷新频率（除难度外不受其他选项影响）。
 		Values:
 			0: +0%
 			25: +25%
@@ -23,4 +23,4 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Eliminate all Malefic Scrin forces.\n• Do not allow any Void Engines to break through.
+		Text: • 消灭全部恶煞派Scrin部队。\n• 不允许任何虚空引擎突破防线。

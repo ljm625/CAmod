@@ -90,12 +90,12 @@ WorldLoaded = function()
 		end
 
 		Trigger.AfterDelay(DateTime.Seconds(3), function()
-			Tip("Hackers can remotely take control of enemy structures, defenses and drone vehicles.")
-			Tip("Stealth units can be detected by enemy defenses, as well as infantry at close range.")
+			Tip("黑客可远程接管敌方建筑、防御设施与无人载具。")
+			Tip("敌方防御设施可探测隐形单位，步兵在近距离下也可发现。")
 		end)
 	end
 
-	ObjectiveHackIonControl = Nod.AddObjective("Hack into GDI Advanced Comms Center.")
+	ObjectiveHackIonControl = Nod.AddObjective("入侵GDI高级通讯中心。")
 
 	CommandoDeathTrigger(Commando)
 	HackerDeathTrigger(Hacker1)
@@ -131,7 +131,7 @@ WorldLoaded = function()
 				DroneTipShown = true
 				Trigger.RemoveFootprintTrigger(id)
 				if not MammothDrone.IsDead and not IsMissionPlayer(MammothDrone.Owner) then
-					Tip("Mammoth Drone detected. Hackers can take control of this vehicle.")
+					Tip("侦测到猛犸无人机。黑客可接管该载具。")
 				end
 			end
 		end)
@@ -144,11 +144,11 @@ WorldLoaded = function()
 				Trigger.RemoveProximityTrigger(id)
 				if p == BridgeDefendersReveal1 and not BridgeTipShown then
 					BridgeTipShown = true
-					Tip("Too many guards up ahead. Find a way to neutralise them.")
+					Tip("前方守卫过多。想办法将其瘫痪。")
 				end
 				if IsNormalOrBelow() and p == EmpDroneReveal and not EmpDroneTipShown then
 					EmpDroneTipShown = true
-					Media.DisplayMessage("That E.M.P Drone could come in handy.", "Hacker", HSLColor.FromHex("00FF00"))
+					Media.DisplayMessage("那台E.M.P无人机也许会派上用场。", "Hacker", HSLColor.FromHex("00FF00"))
 				end
 				local camera = Actor.Create("smallcamera", true, { Owner = Nod, Location = p.Location })
 				Trigger.AfterDelay(DateTime.Seconds(4), function()
@@ -203,9 +203,9 @@ OncePerSecondChecks = function()
 		if not IonControlHacked and IsMissionPlayer(IonControl.Owner) then
 			IonControlHacked = true
 			InitBridgesObjective()
-			ObjectiveDestroyAlliedBase = Nod.AddObjective("Use the Ion Cannon to destroy the Allied base.")
+			ObjectiveDestroyAlliedBase = Nod.AddObjective("使用离子炮摧毁盟军基地。")
 			Nod.MarkCompletedObjective(ObjectiveHackIonControl)
-			UserInterface.SetMissionText("Destroy bridges then use the Ion Cannon to destroy the Allied base.", HSLColor.Yellow)
+			UserInterface.SetMissionText("先摧毁桥梁，再使用离子炮摧毁盟军基地。", HSLColor.Yellow)
 			MediaCA.PlaySound(MissionDir .. "/n_useioncannon.aud", 2)
 			BaseCamera1 = Actor.Create("camera", true, { Owner = Nod, Location = AlliedBase1.Location })
 			BaseCamera2 = Actor.Create("camera", true, { Owner = Nod, Location = AlliedBase2.Location })
@@ -292,7 +292,7 @@ end
 CommandoDeathTrigger = function(commando)
 	Trigger.OnKilled(commando, function(self, killer)
 		if RespawnEnabled then
-			Notification("Commando arriving in 20 seconds.")
+			Notification("突击队员将在20秒后抵达。")
 			Trigger.AfterDelay(DateTime.Seconds(20), function()
 				local respawnedCommando = Reinforcements.Reinforce(self.Owner, { "rmbo" }, { Respawn.Location, RespawnRally.Location })[1]
 				Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -310,7 +310,7 @@ HackerDeathTrigger = function(hacker)
 	Trigger.OnKilled(hacker, function(self, killer)
 		if #self.Owner.GetActorsByType("hack") == 0 and not Nod.IsObjectiveCompleted(ObjectiveHackIonControl) then
 			if RespawnEnabled then
-				Notification("Hacker arriving in 20 seconds.")
+				Notification("黑客将在20秒后抵达。")
 				Trigger.AfterDelay(DateTime.Seconds(20), function()
 					local respawnedHacker = Reinforcements.Reinforce(self.Owner, { "hack" }, { Respawn.Location, RespawnRally.Location })[1]
 					Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -331,7 +331,7 @@ StealthTankDeathTrigger = function(stealthTank)
 	Trigger.OnKilled(stealthTank, function(self, killer)
 		if #self.Owner.GetActorsByType("stnk.nod") == 0 then
 			if RespawnEnabled then
-				Notification("Stealth Tank arriving in 20 seconds.")
+				Notification("隐形坦克将在20秒后抵达。")
 				Trigger.AfterDelay(DateTime.Seconds(20), function()
 					local respawnedStealthTank = Reinforcements.Reinforce(self.Owner, { "stnk.nod" }, { Respawn.Location, RespawnRally.Location })[1]
 					Beacon.New(self.Owner, RespawnRally.CenterPosition)
@@ -348,6 +348,6 @@ end
 
 InitBridgesObjective = function()
 	if ObjectiveDestroyBridges == nil then
-		ObjectiveDestroyBridges = Nod.AddObjective("Destroy bridges leading to Allied base.")
+		ObjectiveDestroyBridges = Nod.AddObjective("摧毁通往盟军基地的桥梁。")
 	end
 end

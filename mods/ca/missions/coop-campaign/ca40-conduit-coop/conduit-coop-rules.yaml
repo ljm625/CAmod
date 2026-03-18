@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca40-conduit/conduit.lua, conduit-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Eliminate Nod forces protecting the interstellar gateway.
+		Text: • 消灭守卫星际传送门的Nod部队。

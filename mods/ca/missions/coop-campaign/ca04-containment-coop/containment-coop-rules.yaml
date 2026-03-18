@@ -4,7 +4,7 @@ World:
 	ScriptLobbyDropdown@CAMLOCK:
 		ID: camlock
 		Label: Camera Lock
-		Description: Enable/disable locking the camera on your last unit.
+		Description: 启用/禁用镜头锁定在最后一个单位上。
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -12,10 +12,10 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy the 3 Soviet Atomic Reactors.\n• Eliminate SAM sites.\n• Destroy Missile Silos before they launch.\n• Neutralize the Chronosphere.
+		Text: • 摧毁3座苏军原子反应堆。\n• 清除SAM防空阵地。\n• 在导弹井发射前将其摧毁。\n• 中和超时空传送仪。
 	LobbyMissionInfo@Notes:
 		Prefix: Note
-		Text: Respawns can be enabled for this mission.
+		Text: 本任务可启用重生。
 		PrefixColor: FF9900
 		TextColor: FF9900
 

@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca18-succession/succession.lua, succession-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Capture Temple Prime and all four Nod cyborg manufacturing facilities.
+		Text: • 夺取圣殿主基地及4座Nod半机械人生产设施。

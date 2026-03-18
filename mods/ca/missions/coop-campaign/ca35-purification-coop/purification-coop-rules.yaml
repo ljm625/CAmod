@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca35-purification/purification.lua, purification-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Deliver enough Liquid Tiberium to the cave entrance for the device to reach full power.
+		Text: • 向洞穴入口输送足量液态泰伯利亚，使装置达到满功率。

@@ -87,8 +87,8 @@ WorldLoaded = function()
 	HaloDropper = Actor.Create("powerproxy.halodrop", false, { Owner = USSR })
 	ShockDropper = Actor.Create("powerproxy.shockdrop", false, { Owner = USSR })
 
-	ObjectiveKillTraitor = USSR.AddObjective("Find and kill the traitor General Yegorov.")
-	ObjectiveFindSovietBase = USSR.AddSecondaryObjective("Take control of abandoned Soviet base.")
+	ObjectiveKillTraitor = USSR.AddObjective("找到并击杀叛徒叶戈罗夫将军。")
+	ObjectiveFindSovietBase = USSR.AddSecondaryObjective("控制废弃苏军基地。")
 
 	AbandonedHalo.ReturnToBase(AbandonedHelipad)
 	SetupRefAndSilosCaptureCredits(Traitor)
@@ -150,7 +150,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Boris, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("Boris has been killed.")
+			Notification("鲍里斯已被击杀。")
 			MediaCA.PlaySound(MissionDir .. "/r2_boriskilled.aud", 2)
 		end)
 	end)
@@ -190,11 +190,11 @@ WorldLoaded = function()
 	Trigger.OnCapture(TraitorTechCenter, function(self, captor, oldOwner, newOwner)
 		if IsMissionPlayer(newOwner) then
 			if ObjectiveCaptureTraitorTechCenter == nil then
-				ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Capture Traitor's Tech Center.")
+				ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("夺取叛徒科技中心。")
 			end
 			USSR.MarkCompletedObjective(ObjectiveCaptureTraitorTechCenter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Notification("The traitor's tech center is ours! Let us rain down V3 rockets on the traitor, or perhaps crush him under the tracks of a Mammoth Tank!")
+				Notification("叛徒的科技中心已归我们所有！让V3火箭倾泻到他头上，或者用猛犸坦克履带把他碾碎！")
 			end)
 		end
 	end)
@@ -298,7 +298,7 @@ TraitorTechCenterDiscovered = function()
 	PlaySpeechNotificationToMissionPlayers("SignalFlare")
 
 	if ObjectiveCaptureTraitorTechCenter == nil then
-		ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("Capture Traitor's Tech Center.")
+		ObjectiveCaptureTraitorTechCenter = USSR.AddSecondaryObjective("夺取叛徒科技中心。")
 		if TraitorTechCenter.IsDead then
 			USSR.MarkFailedObjective(ObjectiveCaptureTraitorTechCenter)
 		end

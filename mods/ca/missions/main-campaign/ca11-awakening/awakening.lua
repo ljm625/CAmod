@@ -187,7 +187,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitUSSR()
 
-	ObjectiveProtectTemple = Nod.AddObjective("Protect Temple Prime.")
+	ObjectiveProtectTemple = Nod.AddObjective("保护圣殿主基地。")
 
 	if IsHardOrAbove() then
 		Utils.Do(GetMissionPlayersActorsByType("mlrs"), function(a)
@@ -225,11 +225,11 @@ OncePerSecondChecks = function()
 				TimerTicks = 0
 			end
 
-			UserInterface.SetMissionText("Protect Temple Prime - Time Remaining: " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+			UserInterface.SetMissionText("保护圣殿主基地 - 剩余时间：" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 
 		elseif not Nod.IsObjectiveCompleted(ObjectiveProtectTemple) then
-			UserInterface.SetMissionText("Destroy all Soviet forces.", HSLColor.Yellow)
-			ObjectiveDestroySovietForces = Nod.AddObjective("Destroy all Soviet forces.")
+			UserInterface.SetMissionText("消灭全部苏军部队。", HSLColor.Yellow)
+			ObjectiveDestroySovietForces = Nod.AddObjective("消灭全部苏军部队。")
 			Nod.MarkCompletedObjective(ObjectiveProtectTemple)
 
 			Utils.Do(MissionPlayers, function(p)
@@ -319,11 +319,11 @@ InitUSSR = function()
 		attemptCount = attemptCount + 1
 		Trigger.AfterDelay(BaseAttemptTimes[attemptCount], function()
 			if ObjectiveDestroyBases == nil then
-				Notification("The Soviets are attempting to set up a base in the area.")
+				Notification("苏军正尝试在该地区建立基地。")
 				MediaCA.PlaySound(MissionDir .. "/n_sovietbase.aud", 2)
-				ObjectiveDestroyBases = Nod.AddSecondaryObjective("Crush any Soviet attempts to establish a base\nbefore the timer runs out.")
+				ObjectiveDestroyBases = Nod.AddSecondaryObjective("在倒计时结束前粉碎苏军建立基地的任何尝试。")
 			else
-				Notification("The Soviets are attempting to set up another base.")
+				Notification("苏军正尝试建立另一座基地。")
 				MediaCA.PlaySound(MissionDir .. "/n_anothersovietbase.aud", 2)
 			end
 			Reinforcements.Reinforce(USSR, { "mcv" }, { attempt.SpawnLocation, attempt.DeployLocation }, 0, function(a)

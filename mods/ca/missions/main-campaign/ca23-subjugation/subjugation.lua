@@ -32,7 +32,7 @@ TibTrucks = {
 			brutal = DateTime.Minutes(4),
 		},
 		Path = { ETibTruckPath1.Location, ETibTruckPath2.Location, ETibTruckPath3.Location, ETibTruckPath4.Location },
-		ObjectiveText = "Prevent first enriched Tiberium delivery\nfrom reaching Yuri.",
+		ObjectiveText = "阻止第一批浓缩泰伯利亚运输\n抵达尤里。",
 		Objective = nil,
 	},
 	Second = {
@@ -45,7 +45,7 @@ TibTrucks = {
 			brutal = DateTime.Minutes(10),
 		},
 		Path = { NTibTruckPath1.Location, NTibTruckPath2.Location, NTibTruckPath3.Location, NTibTruckPath4.Location, NTibTruckPath5.Location, NTibTruckPath6.Location, NTibTruckPath7.Location, NTibTruckPath8.Location, NTibTruckPath9.Location, NTibTruckPath10.Location },
-		ObjectiveText = "Prevent second enriched Tiberium delivery\nfrom reaching Yuri.",
+		ObjectiveText = "阻止第二批浓缩泰伯利亚运输\n抵达尤里。",
 		Objective = nil,
 	},
 	Third = {
@@ -58,7 +58,7 @@ TibTrucks = {
 			brutal = DateTime.Minutes(16),
 		},
 		Path = { STibTruckPath1.Location, STibTruckPath2.Location, STibTruckPath3.Location, STibTruckPath4.Location, STibTruckPath5.Location, STibTruckPath6.Location },
-		ObjectiveText = "Prevent third enriched Tiberium delivery\nfrom reaching Yuri.",
+		ObjectiveText = "阻止第三批浓缩泰伯利亚运输\n抵达尤里。",
 		Objective = nil,
 	},
 }
@@ -108,9 +108,9 @@ WorldLoaded = function()
 	InitObjectives(Scrin)
 	InitUSSR()
 
-	ObjectiveCaptureTibFacilities = Scrin.AddObjective("Capture three Tiberium enrichment facilities.")
+	ObjectiveCaptureTibFacilities = Scrin.AddObjective("夺取3座泰伯利亚浓缩设施。")
 	if not RespawnEnabled then
-		ObjectiveMastermindSurvives = Scrin.AddObjective("Mastermind must survive.")
+		ObjectiveMastermindSurvives = Scrin.AddObjective("Mastermind必须存活。")
 	end
 
 	Mastermind.GrantCondition("difficulty-" .. Difficulty)
@@ -129,16 +129,16 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Media.DisplayMessage("Your powers are no match for me. Flee through your wormholes, while you can.", "Yuri", HSLColor.FromHex("FF00BB"))
+		Media.DisplayMessage("你的力量在我面前不值一提。趁还能走，赶紧钻进你的虫洞逃命吧。", "Yuri", HSLColor.FromHex("FF00BB"))
 		MediaCA.PlaySound(MissionDir .. "/yuri_taunt.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("The Mastermind can mind control up to three enemy units. Mind controlling a fourth will kill the earliest controlled.")
+			Tip("Mastermind最多可心控3个敌方单位。若心控第4个，最早被控制的单位会死亡。")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
-				Tip("The Mastermind has a targeted ability that creates mind sparks from himself and his slaves which damage and slow nearby enemies (the slaves will be unharmed).")
+				Tip("Mastermind拥有定向技能，可在自身及其奴隶单位处引发心灵火花，对附近敌人造成伤害并减速（奴隶单位不受影响）。")
 				Trigger.AfterDelay(DateTime.Seconds(7), function()
-					Tip("The Mastermind can take control of enemy buildings. Production structures will be able to produce permanently enslaved units.")
+					Tip("Mastermind可控制敌方建筑。生产建筑可生产永久奴役单位。")
 					Trigger.AfterDelay(DateTime.Seconds(7), function()
-						Tip("Stay out of Yuri's area of influence until your Mastermind becomes powerful enough to protect your units.")
+						Tip("在Mastermind足够强大、可保护部队免受尤里影响前，请远离尤里影响范围。")
 					end)
 				end)
 			end)
@@ -173,16 +173,16 @@ WorldLoaded = function()
 
 			if TibFacilitiesCaptured == 3 then
 				if ObjectiveCaptureYuriHQ == nil then
-					ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+					ObjectiveCaptureYuriHQ = Scrin.AddObjective("夺取尤里的指挥中心。")
 				end
 				Scrin.MarkCompletedObjective(ObjectiveCaptureTibFacilities)
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("Enriched ichor consumed. Your Mastermind has become a Prodigy and is able to protect nearby units from Yuri's influence.")
+					Notification("已吸收浓缩灵液。你的Mastermind已进化为神童，可保护附近单位免受尤里影响。")
 					MediaCA.PlaySound(MissionDir .. "/s_prodigy.aud", 2)
 				end)
 			else
 				Trigger.AfterDelay(DateTime.Seconds(2), function()
-					Notification("Enriched ichor consumed. Mastermind mind control capacity increased by 1.")
+					Notification("已吸收浓缩灵液。Mastermind心控容量+1。")
 					MediaCA.PlaySound(MissionDir .. "/s_ichorconsumed.aud", 2)
 				end)
 			end
@@ -191,7 +191,7 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(YuriHQ, function(self, killer)
 		if ObjectiveCaptureYuriHQ == nil then
-			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+			ObjectiveCaptureYuriHQ = Scrin.AddObjective("夺取尤里的指挥中心。")
 		end
 
 		if not IsMissionPlayer(self.Owner) then
@@ -201,7 +201,7 @@ WorldLoaded = function()
 
 	Trigger.OnCapture(YuriHQ, function(self, captor, oldOwner, newOwner)
 		if ObjectiveCaptureYuriHQ == nil then
-			ObjectiveCaptureYuriHQ = Scrin.AddObjective("Capture Yuri's command center.")
+			ObjectiveCaptureYuriHQ = Scrin.AddObjective("夺取尤里的指挥中心。")
 		end
 
 		Scrin.MarkCompletedObjective(ObjectiveCaptureYuriHQ)
@@ -216,10 +216,10 @@ WorldLoaded = function()
 
 				if not FirstShipmentAnnounced then
 					FirstShipmentAnnounced = true
-					Notification("Enriched ichor shipment detected. Dispatch is imminent. Prevent it from reaching Yuri's command center.")
+					Notification("检测到浓缩灵液运输队。即将出发。阻止其抵达尤里指挥中心。")
 					MediaCA.PlaySound(MissionDir .. "/s_firstichorshipment.aud", 2)
 				else
-					Notification("Enriched ichor shipment detected.")
+					Notification("检测到浓缩灵液运输队。")
 					MediaCA.PlaySound(MissionDir .. "/s_ichorshipment.aud", 2)
 				end
 
@@ -239,7 +239,7 @@ WorldLoaded = function()
 								Trigger.RemoveFootprintTrigger(id)
 								YuriHQ.GrantCondition("enriched")
 								a.Destroy()
-								Notification("A shipment of enriched ichor has reached Yuri's command center and he has grown more powerful.")
+								Notification("一批浓缩灵液已抵达尤里指挥中心，尤里变得更强了。")
 								MediaCA.PlaySound(MissionDir .. "/s_yuripower.aud", 2)
 								if t.Objective ~= nil and not Scrin.IsObjectiveCompleted(t.Objective) then
 									Scrin.MarkFailedObjective(t.Objective)
@@ -267,7 +267,7 @@ WorldLoaded = function()
 			Trigger.RemoveProximityTrigger(id)
 			if not YuriDefenderTipShown then
 				YuriDefenderTipShown = true
-				Tip("Yuri's command center is heavily guarded. Brute force is unlikely to be the best approach.")
+				Tip("尤里指挥中心戒备森严。正面强攻并非最佳方案。")
 			end
 		end
 	end)
@@ -363,7 +363,7 @@ RespawnMastermind = function()
 		mastermindName = "Prodigy"
 	end
 
-	Notification("The " .. mastermindName .. " used its considerable psionic powers to cheat death. It will return in 20 seconds.")
+	Notification("" .. mastermindName .. "动用了强大的心灵力量逃过一死。将在20秒后返回战场。")
 
 	Trigger.AfterDelay(DateTime.Seconds(20), function()
 		local wormhole = Actor.Create("wormhole", true, { Owner = Scrin, Location = PlayerStart.Location })

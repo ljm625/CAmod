@@ -43,7 +43,7 @@ KANE:
 	Tooltip:
 		Name: Kane
 	TooltipExtras:
-		Description: Leader of the Brotherhood of Nod.
+		Description: Nod兄弟会领袖。
 		Weaknesses: • Unarmed
 		Attributes: • Can create point-to-point wormholes\n• Detects artifact fragments
 	Health:

@@ -109,9 +109,9 @@ WorldLoaded = function()
 	InitNod()
 	SetupLightning()
 
-	ObjectiveCaptureSignalTransmitter = USSR.AddObjective("Locate and capture Scrin Signal Transmitter.")
-	ObjectiveSecureNorthNodBase = USSR.AddSecondaryObjective("Secure northern Nod base.")
-	ObjectiveSecureSouthNodBase = USSR.AddSecondaryObjective("Secure southern Nod base.")
+	ObjectiveCaptureSignalTransmitter = USSR.AddObjective("定位并夺取Scrin信号发射器。")
+	ObjectiveSecureNorthNodBase = USSR.AddSecondaryObjective("确保北部Nod基地。")
+	ObjectiveSecureSouthNodBase = USSR.AddSecondaryObjective("确保南部Nod基地。")
 
 	Trigger.OnCapture(SignalTransmitter, function(self, captor, oldOwner, newOwner)
 		if IsMissionPlayer(newOwner) then
@@ -355,7 +355,7 @@ SignalTransmitterDiscovered = function()
 	if not IsSignalTransmitterDiscovered then
 		IsSignalTransmitterDiscovered = true
 		Beacon.New(USSR, SignalTransmitter.CenterPosition)
-		Notification("Signal Transmitter located.")
+		Notification("已定位信号发射器。")
 		MediaCA.PlaySound(MissionDir .. "/r2_signaltransmitterlocated.aud", 2)
 		local autoCamera = Actor.Create("smallcamera", true, { Owner = USSR, Location = SignalTransmitterLocation })
 		Trigger.AfterDelay(DateTime.Seconds(5), autoCamera.Destroy)
@@ -367,11 +367,11 @@ BaseFlipNotification = function()
 		if not IsFirstBaseFlipped then
 			IsFirstBaseFlipped = true
 			MediaCA.PlaySound(MissionDir .. "/seth_appreciate.aud", 2)
-			Media.DisplayMessage("The Brotherhood appreciates your efforts. We will begin deploying our troops to assist you.", "Nod Commander", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("兄弟会感谢你的努力。我们将开始部署部队支援你。", "Nod Commander", HSLColor.FromHex("FF0000"))
 		elseif not IsSecondBaseFlipped then
 			IsSecondBaseFlipped = true
 			MediaCA.PlaySound(MissionDir .. "/seth_kanepleased.aud", 2)
-			Media.DisplayMessage("Kane will be pleased. Now focus your efforts on securing the Signal Transmitter.", "Nod Commander", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("凯恩会很满意。现在把精力集中在确保信号发射器上。", "Nod Commander", HSLColor.FromHex("FF0000"))
 		end
 	end)
 end

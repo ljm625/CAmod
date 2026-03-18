@@ -103,7 +103,7 @@ PDGY:
 		ValidRelationships: Enemy
 		Duration: 25
 		AllowMultiple: false
-		Description: \nPermanently mind controls units and structures in target area.
+		Description: \n永久心灵控制目标区域内单位和建筑。
 		OnFireSound: mastermind-fire.aud
 		SelectTargetSpeechNotification: SelectTarget
 		SelectTargetTextNotification: Select target.

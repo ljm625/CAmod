@@ -105,8 +105,8 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitScrin()
 
-	ObjectiveFindFragments = Nod.AddObjective("Find the six hidden artifact fragments.")
-	ObjectiveKaneSurvives = Nod.AddObjective("Kane must survive.")
+	ObjectiveFindFragments = Nod.AddObjective("找到6个隐藏的神器碎片。")
+	ObjectiveKaneSurvives = Nod.AddObjective("凯恩必须存活。")
 
 	local fragments = TibLifeforms.GetActorsByType("fragment")
 
@@ -127,10 +127,10 @@ WorldLoaded = function()
 	end
 
 	Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-		Media.DisplayMessage("There are six fragments of an artifact hidden within these caverns. Only I have the ability to detect them. Once we have them all, the assembled artifact will lead us to our goal.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("这些洞穴中藏有六块神器碎片。只有我能探测到它们。等我们集齐后，拼合完成的神器将引领我们抵达目标。", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_findfragments.aud", 2)
 		Trigger.AfterDelay(DateTime.Seconds(4), function()
-			Tip("Kane is able to create wormholes which can be used to travel between neighboring chambers. Only Kane can detect the hidden artifact fragments.")
+			Tip("凯恩可以创造虫洞，用于在相邻洞室间移动。只有凯恩能探测隐藏的神器碎片。")
 		end)
 	end)
 
@@ -144,11 +144,11 @@ WorldLoaded = function()
 				if not FirstFragmentFound then
 					FirstFragmentFound = true
 					Beacon.New(Nod, pos)
-					Media.DisplayMessage("There! We have already found the first fragment.", "Kane", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("在那里！我们已经找到了第一块碎片。", "Kane", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_firstfragment.aud", 2)
 				elseif FragmentsDetected[fragmentId] == nil then
 					Beacon.New(Nod, pos)
-					Notification("Artifact fragment detected.")
+					Notification("已探测到神器碎片。")
 					Media.PlaySound("beacon.aud")
 				end
 
@@ -163,7 +163,7 @@ WorldLoaded = function()
 				FragmentsAcquired[tostring(fragment)] = true
 				FragmentsAcquiredCount = FragmentsAcquiredCount + 1
 				Media.PlaySound("fragment.aud")
-				Notification("Artifact fragment acquired.")
+				Notification("已获取神器碎片。")
 				UpdateMissionText()
 
 				if FragmentsAcquiredCount == 6 then
@@ -178,8 +178,8 @@ WorldLoaded = function()
 						CaveShroud6.Destroy()
 						CaveShroud7.Destroy()
 						Beacon.New(Nod, HiddenChamberEntrance.CenterPosition)
-						Notification("A hidden chamber has been revealed.")
-						ObjectiveExploreHiddenChamber = Nod.AddObjective("Explore the hidden chamber.")
+						Notification("已发现一处隐藏洞室。")
+						ObjectiveExploreHiddenChamber = Nod.AddObjective("探索隐藏洞室。")
 
 						local chamberCamera = Actor.Create("camera", true, { Owner = Nod, Location = HiddenChamberEntrance.Location })
 						Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -187,7 +187,7 @@ WorldLoaded = function()
 						end)
 
 						Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(1)), function()
-							Media.DisplayMessage("With the fragments combined the path to our goal is revealed. Now we must get to the chamber before the Scrin.", "Kane", HSLColor.FromHex("FF0000"))
+							Media.DisplayMessage("碎片合一后，通往目标的路径已经显现。现在我们必须抢在Scrin之前抵达那处洞室。", "Kane", HSLColor.FromHex("FF0000"))
 							MediaCA.PlaySound(MissionDir .. "/kane_fragmentscombined.aud", 2)
 						end)
 					end)
@@ -210,11 +210,11 @@ WorldLoaded = function()
 		Media.PlaySound("purification.aud")
 		Nod.MarkCompletedObjective(ObjectiveActivatePurifier)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Media.DisplayMessage("The Scrin have no doubt located us by now. Protect the device!", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("Scrin现在肯定已经锁定了我们。保护装置！", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_protect.aud", 2)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				ObjectiveDefendPurifier = Nod.AddObjective("Protect the ancient device.")
-				ObjectiveDestroyWormholes = Nod.AddObjective("Destroy Scrin wormholes.")
+				ObjectiveDefendPurifier = Nod.AddObjective("保护古代装置。")
+				ObjectiveDestroyWormholes = Nod.AddObjective("摧毁Scrin虫洞。")
 				InitFinalBattle()
 			end)
 		end)
@@ -229,9 +229,9 @@ WorldLoaded = function()
 			PurifierFound = true
 			Trigger.RemoveProximityTrigger(id)
 			Beacon.New(Nod, Purifier.CenterPosition)
-			ObjectiveActivatePurifier = Nod.AddObjective("Activate the ancient device.")
+			ObjectiveActivatePurifier = Nod.AddObjective("激活古代装置。")
 			Nod.MarkCompletedObjective(ObjectiveExploreHiddenChamber)
-			Media.DisplayMessage("We found it! The Scrin rulers believed it to be destroyed long ago, but its creators hid it well. Quickly, let us activate it, we must make sure it still functions.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("我们找到了！Scrin统治者以为它早已被毁，但它的创造者把它藏得很好。快，立刻激活它，我们必须确认它仍能运作。", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_foundit.aud", 2)
 		end
 	end)
@@ -257,7 +257,7 @@ OncePerFiveSecondChecks = function()
 			local finalScrinUnits = Map.ActorsInCircle(HiddenChamberCenter.CenterPosition, WDist.New(12 * 1024), function(a) return a.Owner == Scrin and (a.HasProperty("Move") or a.Type == "scrinwormhole") end)
 			if #finalScrinUnits == 0 then
 				DoFinalBattleChecks = false
-				Media.DisplayMessage("Our forces on the surface have triumphed. The device is ours, and soon it will be ready to do what had been intended for it millennia ago. Excellent work commander, our ultimate victory draws ever closer.", "Kane", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("我们地表部队已获胜。装置归我们所有，很快就能完成它千年前注定的使命。干得漂亮，指挥官，我们距离最终胜利越来越近了。", "Kane", HSLColor.FromHex("FF0000"))
 				MediaCA.PlaySound(MissionDir .. "/kane_victory.aud", 2)
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
 					Nod.MarkCompletedObjective(ObjectiveDefendPurifier)
@@ -273,7 +273,7 @@ UpdateMissionText = function()
 	if FragmentsAcquiredCount == 6 then
 		UserInterface.SetMissionText("")
 	else
-		UserInterface.SetMissionText("Artifact fragments collected: " .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
+		UserInterface.SetMissionText("已收集神器碎片：" .. FragmentsAcquiredCount .. "/6", HSLColor.Yellow)
 	end
 end
 

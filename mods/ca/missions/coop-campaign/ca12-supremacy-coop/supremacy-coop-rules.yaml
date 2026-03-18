@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca12-supremacy/supremacy.lua, supremacy-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Secure one of the two Nod bases.\n• Destroy GDI presence in the area.
+		Text: • 确保两座Nod基地中的一座。\n• 清除该区域GDI势力。

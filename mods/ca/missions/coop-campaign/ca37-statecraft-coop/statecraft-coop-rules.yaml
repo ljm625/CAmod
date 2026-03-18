@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca37-statecraft/statecraft.lua, statecraft-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Eliminate all rival Soviet forces.
+		Text: • 消灭全部敌对苏军势力。

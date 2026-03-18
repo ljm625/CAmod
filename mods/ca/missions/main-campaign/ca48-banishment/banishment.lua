@@ -121,8 +121,8 @@ WorldLoaded = function()
 	SetupLightning()
 	SetupChurchMoneyCrates()
 
-	ObjectiveSecureAllBases = Greece.AddObjective("Secure the four abandoned Allied bases.")
-	ObjectiveDestroyScrinBases = Greece.AddObjective("Destroy all Scrin Nerve Centers.")
+	ObjectiveSecureAllBases = Greece.AddObjective("确保4座废弃盟军基地。")
+	ObjectiveDestroyScrinBases = Greece.AddObjective("摧毁全部Scrin神经中枢。")
 
 	Utils.Do(MissionPlayers, function(p)
 		Actor.Create("radar.dummy", true, { Owner = p })
@@ -309,7 +309,7 @@ SecureBase = function(base)
 				InitMcvObjective(true)
 			else
 				PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-				Notification("Reinforcements have arrived. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view location.")
+				Notification("增援已抵达。按[" .. UtilsCA.Hotkey("ToLastEvent") .. "]查看位置。")
 				DoMcvArrival()
 				Beacon.New(Greece, McvDest.CenterPosition)
 				Utils.Do(MissionPlayers, function(p)
@@ -435,12 +435,12 @@ end
 
 InitMcvObjective = function(notify)
 	if ObjectiveRecoverMcv == nil then
-		ObjectiveRecoverMcv = Greece.AddSecondaryObjective("Recover Allied MCV.")
+		ObjectiveRecoverMcv = Greece.AddSecondaryObjective("回收盟军MCV。")
 
 		if notify then
 			McvFlare = Actor.Create("flare", true, { Owner = Greece, Location = McvReveal.Location })
 			Beacon.New(Greece, McvReveal.CenterPosition)
-			Notification("Abandoned MCV located. Press [" .. UtilsCA.Hotkey("ToLastEvent") .. "] to view.")
+			Notification("已定位废弃MCV。按[" .. UtilsCA.Hotkey("ToLastEvent") .. "]查看。")
 		end
 	end
 end
@@ -471,7 +471,7 @@ SecureMcv = function()
 			Utils.Do(MissionPlayers, function(p)
 				Actor.Create("mcv.allowed", true, { Owner = p })
 			end)
-			Notification("MCV production now available.")
+			Notification("现已可生产MCV。")
 		end)
 		if McvFlare ~= nil and not McvFlare.IsDead then
 			McvFlare.Destroy()

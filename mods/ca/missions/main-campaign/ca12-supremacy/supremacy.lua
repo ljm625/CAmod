@@ -76,7 +76,7 @@ WorldLoaded = function()
 		table.insert(NodRadarProviders, Actor.Create("radar.dummy", true, { Owner = p }))
 	end)
 
-	ObjectiveReinforce = Nod.AddObjective("Reinforce one of the two Nod bases.")
+	ObjectiveReinforce = Nod.AddObjective("增援两座Nod基地中的一座。")
 
 	local eastAttackTriggerCells = {}
 	for x = 9, 18 do
@@ -347,7 +347,7 @@ FlipEastBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("消灭GDI部队。")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferEastNod()
 
@@ -379,7 +379,7 @@ FlipWestBase = function()
 			p.Destroy()
 		end)
 
-		ObjectiveDestroyGDI = Nod.AddObjective("Destroy GDI forces.")
+		ObjectiveDestroyGDI = Nod.AddObjective("消灭GDI部队。")
         Nod.MarkCompletedObjective(ObjectiveReinforce)
 		TransferWestNod()
 

@@ -8,11 +8,11 @@ World:
 		Locked: True
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • [Optional] Take control of the abandoned Soviet base.\n• Locate and kill General Yegerov.
+		Text: • [可选] 夺取废弃苏军基地。\n• 定位并击杀叶格罗夫将军。
 
 BORI:
 	TooltipExtras:
-		Description: Elite commando infantry armed with a high-powered assault rifle.
+		Description: 配备高威力突击步枪的精英突击步兵。
 
 BORI.Clone:
 	Inherits: BORI

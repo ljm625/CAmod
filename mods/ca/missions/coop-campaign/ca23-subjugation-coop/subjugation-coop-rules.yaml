@@ -8,10 +8,10 @@ World:
 		Locked: True
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Capture three Tiberium enrichment facilities.\n• Capture Yuri's command center.
+		Text: • 夺取3座泰伯利亚浓缩设施。\n• 夺取尤里指挥中心。
 	LobbyMissionInfo@Notes:
 		Prefix: Note
-		Text: Respawns can be enabled for this mission.
+		Text: 本任务可启用重生。
 		PrefixColor: FF9900
 		TextColor: FF9900
 

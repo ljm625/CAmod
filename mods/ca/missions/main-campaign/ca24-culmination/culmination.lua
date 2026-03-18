@@ -94,7 +94,7 @@ WorldLoaded = function()
 	InitObjectives(Scrin)
 	AdjustPlayerStartingCashForDifficulty()
 
-	ObjectiveInitialSubjugation = Scrin.AddObjective("Subjugate one of the three human bases.")
+	ObjectiveInitialSubjugation = Scrin.AddObjective("征服三个人类基地中的任意一座。")
 
 	local greeceAdvancedBuildings = Greece.GetActorsByTypes({ "atek", "alhq", "weat", "pdox", "dome", "hpad" })
 	local ussrAdvancedBuildings = USSR.GetActorsByTypes({ "stek", "npwr", "mslo", "iron", "dome", "afld" })
@@ -136,7 +136,7 @@ WorldLoaded = function()
 			Trigger.RemoveProximityTrigger(id)
 
 			if not Scrin.IsObjectiveCompleted(ObjectiveInitialSubjugation) then
-				ObjectiveSubjugateRemaining = Scrin.AddObjective("Capture Nod and Soviet Construction Yards.")
+				ObjectiveSubjugateRemaining = Scrin.AddObjective("夺取Nod与苏军建造场。")
 				Scrin.MarkCompletedObjective(ObjectiveInitialSubjugation)
 				DestroyCameras()
 				WarpOutProdigy()
@@ -163,7 +163,7 @@ WorldLoaded = function()
 		if IsMissionPlayer(a.Owner) and a.Type == "subjugation.dummy" then
 			Trigger.RemoveProximityTrigger(id)
 			if not Scrin.IsObjectiveCompleted(ObjectiveInitialSubjugation) then
-				ObjectiveSubjugateRemaining = Scrin.AddObjective("Capture Allied and Nod Construction Yards.")
+				ObjectiveSubjugateRemaining = Scrin.AddObjective("夺取盟军与Nod建造场。")
 				Scrin.MarkCompletedObjective(ObjectiveInitialSubjugation)
 				DestroyCameras()
 				WarpOutProdigy()
@@ -190,7 +190,7 @@ WorldLoaded = function()
 		if IsMissionPlayer(a.Owner) and a.Type == "subjugation.dummy" then
 			Trigger.RemoveProximityTrigger(id)
 			if not Scrin.IsObjectiveCompleted(ObjectiveInitialSubjugation) then
-				ObjectiveSubjugateRemaining = Scrin.AddObjective("Capture Allied and Soviet Construction Yards.")
+				ObjectiveSubjugateRemaining = Scrin.AddObjective("夺取盟军与苏军建造场。")
 				Scrin.MarkCompletedObjective(ObjectiveInitialSubjugation)
 				DestroyCameras()
 				WarpOutProdigy()
@@ -232,7 +232,7 @@ OncePerSecondChecks = function()
 		if TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Wormhole closes in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionText("虫洞将在" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 			else
 				TimerTicks = 0
 				UserInterface.SetMissionText("")
@@ -401,7 +401,7 @@ CreateWormholes = function(dest)
 end
 
 SetupMainObjectives = function(conyards)
-	ObjectiveDefeatRemaining = Scrin.AddObjective("Defeat the remaining human forces.")
+	ObjectiveDefeatRemaining = Scrin.AddObjective("击败剩余人类部队。")
 	ConyardsCaptured = 0
 
 	Utils.Do(conyards, function(c)
@@ -426,7 +426,7 @@ WarpOutProdigy = function()
 	Prodigy.Owner = ScrinNoControl
 	Prodigy.Stop()
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Notification("The Prodigy will now leave the battlefield to recuperate.")
+		Notification("神童将暂时离开战场进行恢复。")
 		local prodigyExitWormhole = Actor.Create("wormhole.exit", true, { Owner = ScrinNoControl, Location = ProdigyExit.Location })
 		Prodigy.Move(prodigyExitWormhole.Location)
 		Trigger.OnEnteredFootprint({ ProdigyExit.Location }, function(a, id)

@@ -175,18 +175,18 @@ WorldLoaded = function()
 	InitScrin()
 	InitScrinRebels()
 
-	ObjectiveDestroyOverlordForces = Nod.AddObjective("Destroy Scrin forces loyal to the Overlord.")
+	ObjectiveDestroyOverlordForces = Nod.AddObjective("消灭忠于主宰的Scrin部队。")
 
 	if not IsCoop then
-		ObjectiveDefendRebels = Nod.AddObjective("Protect Scrin rebel forces.")
+		ObjectiveDefendRebels = Nod.AddObjective("保护Scrin反抗军部队。")
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("The Overlord's tyranny will die today commander, and a new era will begin. Elsewhere, battles are still raging, but the decisive blow must be dealt here where his most elite forces are gathered. Show no mercy commander. Peace through power.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("主宰的暴政将在今天终结，指挥官，一个新时代将由此开启。其他战场仍在激战，但决定性一击必须在此地打出，他最精锐的部队都聚集于此。不要留情，指挥官。以力量换取和平。", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_nomercy.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()
-			Media.DisplayMessage("Foolish humans! Your armies will be crushed, the rebellion will fall, and you will die here!", "Scrin Overlord", HSLColor.FromHex("7700FF"))
+			Media.DisplayMessage("愚蠢的人类！你们的军队将被碾碎，叛乱将被镇压，而你们都会死在这里！", "Scrin Overlord", HSLColor.FromHex("7700FF"))
 			MediaCA.PlaySound(MissionDir .. "/overlordwarning.aud", 2)
 
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(60)), function()
@@ -237,7 +237,7 @@ OncePerFiveSecondChecks = function()
 
 		if not PlayerHasBuildings(Scrin) and #Scrin.GetActorsByType("etpd") == 0 and not Victory then
 			Victory = true
-			Media.DisplayMessage("The Overlord's fate is sealed, and the Scrin are liberated. Now we must return to Earth and forge a new beginning for mankind. With purified Tiberium the possibilites are truly limitless, and those who embrace its light will share in its blessings. Those who do not, will be left in the darkness.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("主宰的命运已定，Scrin已获解放。现在我们必须返回地球，为人类开创新的起点。净化后的泰伯利亚潜力无穷，拥抱其光辉者将共享其赐福；拒绝者，只会被留在黑暗中。", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_newbeginning.aud", 2)
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(19)), function()
 				Nod.MarkCompletedObjective(ObjectiveDestroyOverlordForces)
@@ -361,7 +361,7 @@ InitGDI = function()
 		Media.PlaySound("beacon.aud")
 
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Media.DisplayMessage("Our forces were successful in luring GDI here and they have established a base. The situation has been explained to them and they have agreed to a cease fire, but remain vigilant commander, our old enemy cannot be trusted.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("我方已成功诱导GDI来到此地，他们已建立基地。局势已经向其说明，他们同意停火，但仍要保持警惕，指挥官，我们的老对手不可信任。", "Kane", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_gdibase.aud", 2)
 		end)
 
@@ -399,11 +399,11 @@ SendNextExterminator = function()
 
 			if NextExterminatorIndex == 1 then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-					Media.DisplayMessage("Commander, the Overlord's most powerful weapons are being deployed. Use everything at your disposal to destroy them.", "Kane", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("指挥官，主宰最强大的武器正在部署。动用你手中一切力量摧毁它们。", "Kane", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_exterminators.aud", 2)
 				end)
 			else
-				Notification("Exterminator Tripod detected.")
+				Notification("侦测到灭绝者三足机甲。")
 			end
 
 			local exterminator = Reinforcements.Reinforce(Scrin, { "etpd" }, { exterminatorLocations.SpawnLocation }, 10, function(a)

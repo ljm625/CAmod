@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca-prologue-02/reprisal.lua, reprisal-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy the village and all its inhabitants.\n• Destroy the Allied base.
+		Text: • 摧毁村庄及全部居民。\n• 摧毁盟军基地。

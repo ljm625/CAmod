@@ -134,7 +134,7 @@ UTRK:
 		EmptyWeapon: CrateNuke
 	Buildable:
 		Prerequisites: ~disabled
-		Description: Truck carrying reactor fuel.
+		Description: 运送反应堆燃料的卡车。
 	Tooltip:
 		Name: Reactor Fuel Truck
 

@@ -183,7 +183,7 @@ MISS:
 	Tooltip:
 		Name: Prison
 	TooltipDescription:
-		Description: Prisoners of war are kept here.
+		Description: 此处关押战俘。
 		ValidRelationships: Ally, Enemy, Neutral
 	Health:
 		HP: 200000

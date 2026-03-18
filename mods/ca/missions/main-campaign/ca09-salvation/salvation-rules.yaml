@@ -61,7 +61,7 @@ HOSP:
 	-GrantConditionOnPrerequisite@SCRIN:
 	-RallyPoint:
 	TooltipExtras:
-		Description: When controlled, heals nearby infantry.
+		Description: 占领后可为附近步兵恢复生命。
 	-TooltipDescription@ally:
 	-TooltipDescription@other:
 

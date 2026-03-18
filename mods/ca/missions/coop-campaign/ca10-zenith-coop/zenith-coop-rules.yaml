@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca10-zenith/zenith.lua, zenith-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Destroy Soviet Missile Silos before they launch.
+		Text: • 在苏军导弹井发射前将其摧毁。

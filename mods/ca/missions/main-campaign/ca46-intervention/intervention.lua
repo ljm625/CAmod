@@ -86,7 +86,7 @@ WorldLoaded = function()
 	InitNod()
 	SetupLightning()
 
-	ObjectiveDestroySilos = Greece.AddObjective("Capture or destroy all Nod Tiberium Silos.")
+	ObjectiveDestroySilos = Greece.AddObjective("夺取或摧毁所有Nod泰伯利亚储藏筒仓。")
 
 	if IsHardOrAbove() then
 		InitialTree.Destroy()

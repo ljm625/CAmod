@@ -3,4 +3,4 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca-prologue-03/detachment.lua, detachment-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Make contact with GDI forces in the area and find a route to safety.
+		Text: • 与区域内GDI部队会合并找到撤离路线。

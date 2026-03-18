@@ -8,7 +8,7 @@ World:
 		Locked: True
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Liberate the five enslaved GDI bases by killing Masterminds.\n• Eliminate all Scrin forces.\n• Avoid killing enslaved GDI units.
+		Text: • Liberate the five enslaved GDI bases by killing Masterminds.\n• 消灭全部Scrin部队。\n• Avoid killing enslaved GDI units.
 
 MDRN:
 	Attachable:

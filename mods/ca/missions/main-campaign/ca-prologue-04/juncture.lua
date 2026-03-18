@@ -40,12 +40,12 @@ WorldLoaded = function()
 	InitObjectives(Nod)
 	InitGDI()
 
-	ObjectiveDestroyAA = Nod.AddObjective("Destroy GDI anti-aircraft defenses.")
+	ObjectiveDestroyAA = Nod.AddObjective("摧毁GDI防空设施。")
 
 	local aaGuns = GDI.GetActorsByType("cram")
 	Trigger.OnAllKilled(aaGuns, function()
 		local frigates = GDI.GetActorsByType("dd2")
-		ObjectiveDestroyFrigates = Nod.AddObjective("Destroy GDI naval blockade.")
+		ObjectiveDestroyFrigates = Nod.AddObjective("摧毁GDI海上封锁力量。")
 
 		Trigger.AfterDelay(DateTime.Seconds(6), function()
 			InitReinforcements()
@@ -123,10 +123,10 @@ InitReinforcements = function()
 
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
 			PlaySpeechNotificationToMissionPlayers("ReinforcementsArrived")
-			Notification("Reinforcements have arrived.")
+			Notification("增援已抵达。")
 
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(3)), function()
-				Media.DisplayMessage("You have done well commander! Now behold; a taste of things to come. Use them wisely.", "Kane", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("你做得很好，指挥官！现在看看吧，这只是未来的一点预演。明智地使用它们。", "Kane", HSLColor.FromHex("FF0000"))
 				MediaCA.PlaySound(MissionDir .. "/thingstocome.aud", 2)
 			end)
 		end)

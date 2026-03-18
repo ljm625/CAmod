@@ -115,9 +115,9 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitUSSR()
 
-	ObjectiveKillSilos = Nod.AddObjective("Destroy Soviet missile silos before launch.")
-	ObjectiveKillReactors = Nod.AddSecondaryObjective("Destroy reactors on north-west of island.")
-	ObjectiveKillAirbase = Nod.AddSecondaryObjective("Destroy airbase on north-east of island.")
+	ObjectiveKillSilos = Nod.AddObjective("在发射前摧毁苏军导弹发射井。")
+	ObjectiveKillReactors = Nod.AddSecondaryObjective("摧毁岛屿西北侧反应堆。")
+	ObjectiveKillAirbase = Nod.AddSecondaryObjective("摧毁岛屿东北侧空军基地。")
 
 	if Difficulty == "brutal" then
 		NukeDummy = Actor.Create("NukeDummyBrutal", true, { Owner = USSR, Location = NukeSilo1.Location })
@@ -155,7 +155,7 @@ WorldLoaded = function()
 			NukeDummy.Destroy()
 			Media.PlaySound("nukelaunch.aud")
 			PlaySpeechNotificationToMissionPlayers("AbombLaunchDetected")
-			Notification("A-Bomb launch detected.")
+			Notification("侦测到原子弹发射。")
 
 			Trigger.AfterDelay(DateTime.Seconds(3), function()
 				if not Nod.IsObjectiveCompleted(ObjectiveKillSilos) then
@@ -251,14 +251,14 @@ InitUSSR = function()
 		end)
 		Nod.MarkCompletedObjective(ObjectiveKillReactors)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Notification("Excellent! The north-west Tesla Reactors have been neutralised; all Soviet Tesla Coils are now offline.")
+			Notification("干得漂亮！西北方向特斯拉反应堆已被瘫痪；所有苏军特斯拉线圈现已离线。")
 		end)
 	end)
 
 	Trigger.OnAllKilledOrCaptured(AirbaseStructures, function()
 		Nod.MarkCompletedObjective(ObjectiveKillAirbase)
 		Trigger.AfterDelay(DateTime.Seconds(2), function()
-			Notification("Good work commander! Their airbase has been neutralised, so you no longer have to worry about being attacked from the air.")
+			Notification("干得好，指挥官！敌方空军基地已被瘫痪，你不必再担心来自空中的袭击。")
 		end)
 	end)
 

@@ -85,12 +85,12 @@ WorldLoaded = function()
 	InitObjectives(GDI)
 	InitScrin()
 
-	ObjectiveLiberateBases = GDI.AddObjective("Kill Masterminds to liberate GDI bases.")
+	ObjectiveLiberateBases = GDI.AddObjective("消灭Mastermind以解放GDI基地。")
 
 	if Difficulty == "easy" then
 		NormalHardOnlyTripod.Destroy()
 	else
-		ObjectiveMinimiseCasualties = GDI.AddObjective("Avoid killing mind controlled GDI units.")
+		ObjectiveMinimiseCasualties = GDI.AddObjective("尽量避免击杀被心控的GDI单位。")
 	end
 
 	if Difficulty == "brutal" then
@@ -103,18 +103,18 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(7), function()
-		Tip("Drones (e.g. Guardian Drones, Mini Drones, Battle Drones, Mammoth Drones and Mobile EMP) are immune to mind control.")
+		Tip("无人机（如守护者无人机、小型无人机、战斗无人机、猛犸无人机和机动EMP）免疫心灵控制。")
 		Trigger.AfterDelay(DateTime.Seconds(7), function()
-			Tip("Masterminds are also unable to mind control aircraft.")
+			Tip("Mastermind也无法心控空中单位。")
 			Trigger.AfterDelay(DateTime.Seconds(7), function()
-				Tip("Larger drones (Battle Drones, Mammoth Drones and Mobile EMP) require an active radar to function.")
+				Tip("大型无人机（战斗无人机、猛犸无人机和机动EMP）需要启用雷达后才能运作。")
 			end)
 		end)
 	end)
 
 	Trigger.OnAllKilled(Masterminds, function()
 		if ObjectiveEliminateScrin == nil then
-			ObjectiveEliminateScrin = GDI.AddObjective("Destroy the remaining Scrin presence in the area.")
+			ObjectiveEliminateScrin = GDI.AddObjective("消灭该地区残余Scrin势力。")
 		end
 		GDI.MarkCompletedObjective(ObjectiveLiberateBases)
 		if ObjectiveMinimiseCasualties ~= nil and EnslavedUnitsKilled <= MaxEnslavedUnitsKilled[Difficulty] then
@@ -126,11 +126,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind1, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The first GDI base has been released from Scrin control.")
+			Notification("第一座GDI基地已脱离Scrin控制。")
 			MediaCA.PlaySound(MissionDir .. "/c_firstbasereleased.aud", 2)
 			if not Mastermind2.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("The next GDI base is located to the north-east.")
+					Notification("下一座GDI基地位于东北方向。")
 					MediaCA.PlaySound(MissionDir .. "/c_secondbaselocated.aud", 2)
 				end)
 			end
@@ -139,11 +139,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind2, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The second GDI base has been released from Scrin control.")
+			Notification("第二座GDI基地已脱离Scrin控制。")
 			MediaCA.PlaySound(MissionDir .. "/c_secondbasereleased.aud", 2)
 			if not Mastermind3.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("GDI airbase located to the south-east.")
+					Notification("GDI空军基地位于东南方向。")
 					MediaCA.PlaySound(MissionDir .. "/c_airbaselocated.aud", 2)
 				end)
 			end
@@ -152,23 +152,23 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind3, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("GDI airbase secured.")
+			Notification("GDI空军基地已确保安全。")
 			MediaCA.PlaySound(MissionDir .. "/c_airbasereleased.aud", 2)
 
 			if not Mastermind4.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("The primary GDI base is located to the south.")
+					Notification("主GDI基地位于南方。")
 					MediaCA.PlaySound(MissionDir .. "/c_primarybaselocated.aud", 2)
 					if not Mastermind5.IsDead then
 						Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-							Notification("We have also lost contact with our outpost on the island to the north.")
+							Notification("我们也失去了与北方岛屿前哨站的联系。")
 							MediaCA.PlaySound(MissionDir .. "/c_island.aud", 2)
 						end)
 					end
 				end)
 			elseif not Mastermind5.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("We have also lost contact with our outpost on the island to the north.")
+					Notification("我们也失去了与北方岛屿前哨站的联系。")
 					MediaCA.PlaySound(MissionDir .. "/c_island.aud", 2)
 				end)
 			end
@@ -177,11 +177,11 @@ WorldLoaded = function()
 
 	Trigger.OnKilled(Mastermind4, function(self, killer)
 		Trigger.AfterDelay(DateTime.Seconds(1), function()
-			Notification("The primary GDI base has been released from Scrin control.")
+			Notification("主GDI基地已脱离Scrin控制。")
 			MediaCA.PlaySound(MissionDir .. "/c_primarybasereleased.aud", 2)
 			if not Mastermind1.IsDead or not Mastermind2.IsDead or not Mastermind3.IsDead or not Mastermind5.IsDead then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(4)), function()
-					Notification("Eliminate the remaining Masterminds before assaulting the Scrin base.")
+					Notification("在进攻Scrin基地前先消灭剩余Mastermind。")
 					MediaCA.PlaySound(MissionDir .. "/c_remainingmasterminds.aud", 2)
 				end)
 			end
@@ -189,7 +189,7 @@ WorldLoaded = function()
 	end)
 
 	Trigger.OnKilled(Mastermind5, function(self, killer)
-		Notification("Good job getting our EMP Missile launcher back. This should come in very handy.")
+		Notification("干得好，你夺回了EMP导弹发射器。这会非常有用。")
 	end)
 
 	Trigger.AfterDelay(1, function()
@@ -214,7 +214,7 @@ WorldLoaded = function()
 					MastermindsLocated[tostring(m)] = true
 					Trigger.RemoveProximityTrigger(id)
 					local camera = Actor.Create("smallcamera", true, { Owner = GDI, Location = m.Location })
-					Notification("A Mastermind has been located.")
+					Notification("已定位一名Mastermind。")
 					Beacon.New(GDI, m.CenterPosition)
 					Trigger.AfterDelay(DateTime.Seconds(4), function()
 						camera.Destroy()
@@ -273,7 +273,7 @@ OncePerSecondChecks = function()
 
 		if not PlayerHasBuildings(Scrin) then
 			if ObjectiveEliminateScrin == nil then
-				ObjectiveEliminateScrin = GDI.AddObjective("Eliminate the Scrin presence.")
+				ObjectiveEliminateScrin = GDI.AddObjective("消灭Scrin势力。")
 			end
 			GDI.MarkCompletedObjective(ObjectiveEliminateScrin)
 		end
@@ -341,7 +341,7 @@ UpdateObjectiveText = function()
 
 		UserInterface.SetMissionText(objectiveText, objectiveTextColor)
 	else
-		UserInterface.SetMissionText("Eliminate the Scrin presence.", HSLColor.Yellow)
+		UserInterface.SetMissionText("消灭Scrin势力。", HSLColor.Yellow)
 	end
 end
 

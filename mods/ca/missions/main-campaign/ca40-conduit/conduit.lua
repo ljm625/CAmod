@@ -111,7 +111,7 @@ WorldLoaded = function()
 	AdjustPlayerStartingCashForDifficulty()
 	InitNod()
 
-	ObjectiveSecureGateway = USSR.AddObjective("Eliminate Nod forces near gateway.")
+	ObjectiveSecureGateway = USSR.AddObjective("消灭传送门附近的Nod部队。")
 
 	Trigger.OnAllKilledOrCaptured({ NodEastAirstrip, NodEastHand }, function()
 		InitNodSouth()
@@ -143,7 +143,7 @@ OncePerSecondChecks = function()
 		if Difficulty ~= "easy" and TimerTicks > 0 then
 			if TimerTicks > 25 then
 				TimerTicks = TimerTicks - 25
-				UserInterface.SetMissionText("Kane's forces will begin returning in " .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
+				UserInterface.SetMissionText("凯恩部队将在" .. UtilsCA.FormatTimeForGameSpeed(TimerTicks), HSLColor.Yellow)
 			else
 				TimerTicks = 0
 				UserInterface.SetMissionText("")
@@ -228,7 +228,7 @@ end
 InitKaneReturn = function()
 	if not KaneReturnInitiated then
 		KaneReturnInitiated = true
-		Media.DisplayMessage("The Overlord will not be your salvation. Your empire is dead. Surrender, or be destroyed. My return will not be stopped.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("主宰救不了你。你的帝国已经完了。投降，或被毁灭。没人能阻止我归来。", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_return.aud", 2.5)
 		DeployCyborgs()
 	end

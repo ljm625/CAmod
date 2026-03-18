@@ -24,7 +24,7 @@ World:
 	ScriptLobbyDropdown@RESPAWN:
 		ID: respawn
 		Label: Respawns
-		Description: Enable/disable respawning on death
+		Description: 启用/禁用死亡后重生
 		Values:
 			enabled: Enabled
 			disabled: Disabled
@@ -98,7 +98,7 @@ PDOX.CROSSRIP:
 		Type: Concrete
 	-TooltipExtras:
 	Buildable:
-		Description: Causes temporal and interdimensional crossrips.
+		Description: 造成时间与跨维度裂隙。
 	-Valued:
 	-WithBuildingBib:
 	-WithColoredOverlay@IDISABLE:

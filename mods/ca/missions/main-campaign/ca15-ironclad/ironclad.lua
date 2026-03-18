@@ -87,8 +87,8 @@ WorldLoaded = function()
 		EMPMissile.Destroy()
 	end
 
-	ObjectiveDestroyBases = USSR.AddObjective("Break the siege and destroy the enemy bases.")
-	ObjectiveProtectIronCurtain = USSR.AddObjective("Do not lose the Iron Curtain.")
+	ObjectiveDestroyBases = USSR.AddObjective("打破围困并摧毁敌方基地。")
+	ObjectiveProtectIronCurtain = USSR.AddObjective("铁幕装置不得丢失。")
 	EngineerDrop()
 
 	Trigger.AfterDelay(5, function()
@@ -220,7 +220,7 @@ EngineerDrop = function()
 	local haloDropUnits = { "e6", "e6", "e6", "e6", "e6", "e6", "e6", "e6" }
 
 	Trigger.AfterDelay(DateTime.Seconds(2), function()
-		Notification("Engineering team inbound.")
+		Notification("工程小队正在赶来。")
 		MediaCA.PlaySound(MissionDir .. "/r2_engineeringteam.aud", 2)
 	end)
 

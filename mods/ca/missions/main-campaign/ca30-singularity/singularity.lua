@@ -158,11 +158,11 @@ WorldLoaded = function()
 		HardNormalAA3.Destroy()
 	end
 
-	ObjectiveDestroyMothership = GDI.AddObjective("Destroy the Scrin Mothership.")
+	ObjectiveDestroyMothership = GDI.AddObjective("摧毁Scrin母舰。")
 
 	Trigger.OnAllKilledOrCaptured(NWReactors, function()
 		ScrinDefenseBuff1.Destroy()
-		Notification("The north-western reactors have been destroyed. Scrin defenses have been weakened.")
+		Notification("西北反应堆已被摧毁。Scrin防御已被削弱。")
 		MediaCA.PlaySound(MissionDir .. "/c_nwreactorsdown.aud", 2)
 
 		if ScrinDefenseBuff2.IsDead then
@@ -179,7 +179,7 @@ WorldLoaded = function()
 
 	Trigger.OnAllKilledOrCaptured(NEReactors, function()
 		ScrinDefenseBuff2.Destroy()
-		Notification("The north-eastern reactors have been destroyed. Scrin defenses have been weakened.")
+		Notification("东北反应堆已被摧毁。Scrin防御已被削弱。")
 		MediaCA.PlaySound(MissionDir .. "/c_nereactorsdown.aud", 2)
 
 		if ScrinDefenseBuff1.IsDead then
@@ -201,14 +201,14 @@ WorldLoaded = function()
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(5), function()
-		Media.DisplayMessage("Beginning our attack run. Let's see what we're up against. Over.", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+		Media.DisplayMessage("攻击航程开始。让我们看看要面对什么。完毕。", "GDI Pilot", HSLColor.FromHex("F2CF74"))
 		MediaCA.PlaySound(MissionDir .. "/pilot_begin.aud", 1.5)
 	end)
 
 	Trigger.AfterDelay(DateTime.Seconds(10), function()
 		DoInterceptors()
 		Trigger.AfterDelay(DateTime.Seconds(15), function()
-			Media.DisplayMessage("We barely made a scratch! We'll need you to bring those shields down before we can do any damage. Over and out.", "GDI Pilot", HSLColor.FromHex("F2CF74"))
+			Media.DisplayMessage("我们几乎没造成伤害！你们得先把护盾打掉，我们才能真正造成破坏。完毕。", "GDI Pilot", HSLColor.FromHex("F2CF74"))
 			MediaCA.PlaySound(MissionDir .. "/pilot_barelyscratch.aud", 1.5)
 		end)
 	end)
@@ -243,7 +243,7 @@ WorldLoaded = function()
 		if ObjectiveHackSignalTransmitter ~= nil and not GDI.IsObjectiveCompleted(ObjectiveHackSignalTransmitter) then
 			GDI.MarkFailedObjective(ObjectiveHackSignalTransmitter)
 			Trigger.AfterDelay(DateTime.Seconds(2), function()
-				Media.DisplayMessage("The Signal Transmitter has been destroyed! Your only option now is to use brute force to bring those shields down. I only hope you can do it in time.", "Nod Commander", HSLColor.FromHex("FF0000"))
+				Media.DisplayMessage("信号发射器已被摧毁！你现在唯一的选择是用硬实力打掉那些护盾。我只希望你还能来得及。", "Nod Commander", HSLColor.FromHex("FF0000"))
 			end)
 		end
 	end)
@@ -255,7 +255,7 @@ WorldLoaded = function()
 		Trigger.OnDamaged(c, function(self, attacker, damage)
 			if not SleepingCyborgsMessageShown and not Mothership.IsDead and not self.IsDead and self.Health < self.MaxHealth * 0.8 then
 				SleepingCyborgsMessageShown = true
-				Notification("Nod cyborgs appear to be in a hibernation state. The enriched Tiberium is providing powerful regeneration. Recommendation is to not engage.")
+				Notification("Nod半机械人似乎处于休眠状态。浓缩泰伯利亚提供了强效再生能力。建议不要交战。")
 				MediaCA.PlaySound(MissionDir .. "/c_hibernation.aud", 2)
 				Utils.Do(cyborgs, function(c)
 					if not c.IsDead then
@@ -355,7 +355,7 @@ OncePerFiveSecondChecks = function()
 				GDI.MarkCompletedObjective(ObjectiveHackSignalTransmitter)
 			end
 
-			Notification("The Mothership's shields are down. Air attacks resuming.")
+			Notification("母舰护盾已失效。空袭恢复执行。")
 			MediaCA.PlaySound(MissionDir .. "/c_resuming.aud", 2)
 
 			Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -364,7 +364,7 @@ OncePerFiveSecondChecks = function()
 
 				Trigger.AfterDelay(DateTime.Seconds(15), function()
 					if not Mothership.IsDead then
-						Notification("Attack run successful. The Mothership's hull has sustained significant damage. Next attack run ETA 2 minutes.")
+						Notification("攻击波次成功。母舰舰体已遭受重创。下一轮攻击预计2分钟后。")
 						MediaCA.PlaySound(MissionDir .. "/c_attackrunsuccess.aud", 2)
 
 						Trigger.AfterDelay(DateTime.Minutes(2), function()
@@ -373,7 +373,7 @@ OncePerFiveSecondChecks = function()
 
 							Trigger.AfterDelay(DateTime.Seconds(15), function()
 								if not Mothership.IsDead then
-									Notification("Estimate one more pass to destroy the Mothership, ETA 2 minutes.")
+									Notification("预计再进行一轮攻击即可摧毁母舰，预计2分钟后。")
 									MediaCA.PlaySound(MissionDir .. "/c_onemorepass.aud", 2)
 
 									Trigger.AfterDelay(DateTime.Minutes(2), function()
@@ -541,10 +541,10 @@ DropHackers = function()
 
 	if not FirstHackersArrived then
 		MediaCA.PlaySound(MissionDir .. "/seth_hackers.aud", 2)
-		Media.DisplayMessage("Attention GDI commander. We are sending you some of our hackers. Use them to hack into the Scrin Signal Transmitter. They will be able to bring the Mothership's shields down for you.", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("注意，GDI指挥官。我们会向你派出一批黑客。用他们入侵Scrin信号发射器，他们可以帮你关闭母舰护盾。", "Nod Commander", HSLColor.FromHex("FF0000"))
 	else
 		MediaCA.PlaySound(MissionDir .. "/seth_morehackers.aud", 2)
-		Media.DisplayMessage("We are sending you another squad of hackers. Perhaps you'll be more careful with them this time.", "Nod Commander", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("我们再给你派一队黑客。这次希望你能更小心地使用他们。", "Nod Commander", HSLColor.FromHex("FF0000"))
 	end
 
 	local hackerFlare = Actor.Create("flare", true, { Owner = GDI, Location = HackerDropLanding.Location })
@@ -567,7 +567,7 @@ DropHackers = function()
 
 			if not FirstHackersArrived then
 				if not SignalTransmitter.IsDead then
-					ObjectiveHackSignalTransmitter = GDI.AddSecondaryObjective("Hack Signal Transmitter to bring shields down.")
+					ObjectiveHackSignalTransmitter = GDI.AddSecondaryObjective("入侵信号发射器以解除护盾。")
 				end
 				FirstHackersArrived = true
 			end
@@ -582,7 +582,7 @@ InitChronoTanks = function()
 			return
 		end
 
-		Notification("The Allies have provided a squadron of Chrono Tanks. Use them to destroy Scrin Reactors in the north-east.")
+		Notification("盟军已提供一支Chrono坦克中队。用它们摧毁东北方向的Scrin反应堆。")
 		MediaCA.PlaySound(MissionDir .. "/c_chronotanks.aud", 2)
 		local northEastPowerFlare = Actor.Create("flare", true, { Owner = GDI, Location = NorthEastPowerBeacon.Location })
 		Trigger.AfterDelay(DateTime.Seconds(10), function()
@@ -608,7 +608,7 @@ InitMADTankAttack = function()
 		if ScrinDefenseBuff1.IsDead then
 			return
 		end
-		Notification("Signal flare detected. The Soviets are sending a MAD Tank to destroy Scrin Reactors in the north-west. They have requested a rendezvous to provide escort.")
+		Notification("侦测到信号弹。苏军正派出一辆MAD坦克摧毁西北方向的Scrin反应堆。他们请求会合护送。")
 		MediaCA.PlaySound(MissionDir .. "/c_madtank.aud", 2)
 
 		local northWestPowerFlare = Actor.Create("flare", true, { Owner = GDI, Location = MADTankPath9.Location })
@@ -629,7 +629,7 @@ InitMADTankAttack = function()
 
 		MADTank = Actor.Create("qtnk", true, { Owner = USSR, Location = MADTankSpawn.Location, Facing = Angle.East })
 		MADTank.Move(MADTankPath1.Location)
-		Notification("MAD Tank has arrived. Rendezvous to provide escort.")
+		Notification("MAD坦克已到达。请会合并提供护送。")
 		MediaCA.PlaySound(MissionDir .. "/c_madtankarrived.aud", 2)
 
 		Trigger.OnDamaged(MADTank, function(self, attacker, damage)
@@ -663,7 +663,7 @@ end
 SendMADTank = function()
 	if not MADTankEnRoute and not MADTank.IsDead then
 		MADTankEnRoute = true
-		Notification("MAD Tank en route to target.")
+		Notification("MAD坦克正前往目标。")
 		MediaCA.PlaySound(MissionDir .. "/c_madtankenroute.aud", 2)
 		MADTank.Move(MADTankPath2.Location)
 		MADTank.Move(MADTankPath3.Location)
@@ -751,7 +751,7 @@ FlipSlaveFaction = function(player, killer)
 		if ScrinDefenseBuff1.IsDead and ScrinDefenseBuff2.IsDead then
 			InitHackers(HackersDelay[Difficulty])
 		end
-		Notification("Nod forces have been released from Scrin control.")
+		Notification("Nod部队已脱离Scrin控制。")
 		MediaCA.PlaySound(MissionDir .. "/c_nodreleased.aud", 2)
 	elseif player == SovietSlaves then
 		targetPlayer = USSR
@@ -761,7 +761,7 @@ FlipSlaveFaction = function(player, killer)
 		InitUSSR()
 		InitAttackSquad(Squads.ScrinWest, Scrin)
 		InitMADTankAttack()
-		Notification("Soviet forces have been released from Scrin control.")
+		Notification("苏军部队已脱离Scrin控制。")
 		MediaCA.PlaySound(MissionDir .. "/c_sovietsreleased.aud", 2)
 	elseif player == AlliedSlaves then
 		targetPlayer = Greece
@@ -771,7 +771,7 @@ FlipSlaveFaction = function(player, killer)
 		InitGreece()
 		InitAttackSquad(Squads.ScrinCenter, Scrin)
 		InitChronoTanks()
-		Notification("Allied forces have been released from Scrin control.")
+		Notification("盟军部队已脱离Scrin控制。")
 		MediaCA.PlaySound(MissionDir .. "/c_alliesreleased.aud", 2)
 	end
 
@@ -816,7 +816,7 @@ DoFinale = function()
 		end
 	end)
 
-	Notification("Scrin mothership destroyed.")
+	Notification("Scrin母舰已被摧毁。")
 	MediaCA.PlaySound(MissionDir .. "/c_mothershipdestroyed.aud", 2)
 
 	Lighting.Flash("Chronoshift", 10)
@@ -852,7 +852,7 @@ DoFinale = function()
 
 	Trigger.AfterDelay(DateTime.Seconds(6), function()
 		Beacon.New(GDI, kane.CenterPosition, 50)
-		Media.DisplayMessage("Well commander, we meet at last! Your contribution has been invaluable, unwitting as it may be.", "Kane", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("好了，指挥官，我们终于见面了！你的贡献不可估量，哪怕你并非自愿如此。", "Kane", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/outro.aud", 2.5)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(25)), function()
@@ -869,19 +869,19 @@ DoFinale = function()
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(6)), function()
-			Media.DisplayMessage("Ironic isn't it? That GDI should lay the foundation for the Brotherhood's ultimate victory.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("讽刺，不是吗？竟是GDI为兄弟会的最终胜利奠定了基础。", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(12)), function()
-			Media.DisplayMessage("Of course the Allies and Soviets played their part as well.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("当然，盟军和苏军也都各尽其用。", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(16)), function()
-			Media.DisplayMessage("My painstaking manipulation of time and space finally bears fruit, and now we stand at the threshold.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("我苦心操纵时间与空间，终于结出成果。如今我们已站在门槛之前。", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(21)), function()
-			Media.DisplayMessage("There is much yet to be done. I have no doubt our paths will cross again.", "Kane", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("还有很多事要做。我毫不怀疑，我们还会再见。", "Kane", HSLColor.FromHex("FF0000"))
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(27)), function()
@@ -889,7 +889,7 @@ DoFinale = function()
 				kane.Stop()
 				kane.Move(WormholeWP.Location)
 			end
-			UserInterface.SetMissionText("To be continued...", HSLColor.Red)
+			UserInterface.SetMissionText("未完待续……", HSLColor.Red)
 		end)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(37)), function()

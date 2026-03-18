@@ -3,7 +3,7 @@ World:
 		Scripts: campaign.lua, coop.lua, ca|missions/main-campaign/ca03-deliverance/deliverance.lua, deliverance-coop.lua
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • Find and take control of the GDI base, then defend it until reinforcements arrive.\n• Locate and capture the prison in which the GDI commander is being held.
+		Text: • 找到并接管GDI基地，随后坚守至增援抵达。\n• 定位并占领关押GDI指挥官的监狱。
 
 PYLE:
 	CreateProxyActorForAllies:
