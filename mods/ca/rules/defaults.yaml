@@ -1393,9 +1393,9 @@
 		HpPerStep: 1000
 		Interval: 7
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: aircraft-repair && !forceshield && !invulnerability && !being-warped
 	WithDecoration@AIRCRAFTREPAIR:
 		Image: select
@@ -1717,7 +1717,7 @@
 	NotificationOnDamage:
 		Type: Harvester
 		Notification: HarvesterAttack
-		TextNotification: Harvester under attack.
+		TextNotification: 采矿车遭到攻击。
 		MinimumDamage: 500
 	GrantConditionOnTerrain@Tiberium:
 		Condition: ontib
@@ -2431,7 +2431,7 @@
 	AttackMove:
 	HiddenUnderFog:
 	ActorLostNotification:
-		TextNotification: Unit lost.
+		TextNotification: 单位已损失。
 	WithDamageOverlay:
 	Guard:
 	Guardable:
@@ -2445,9 +2445,9 @@
 		RequiresCondition: !being-warped
 	CaptureNotification:
 		Notification: EnemyUnitStolen
-		TextNotification: Enemy unit stolen.
+		TextNotification: 敌方单位已窃取。
 		LoseNotification: UnitStolen
-		LoseTextNotification: Unit stolen.
+		LoseTextNotification: 单位已被窃取。
 	MustBeDestroyed:
 	Voiced:
 		VoiceSet: VehicleVoice
@@ -2523,7 +2523,7 @@
 		RequiresCondition: unit-sellable && !c4 && !being-captured && !being-warped
 		SellSounds: cashturntd.aud
 		Notification: UnitSold
-		TextNotification: Unit sold.
+		TextNotification: 单位已出售。
 		Cursor: sell2
 	Encyclopedia:
 		Scale: 2
@@ -2709,7 +2709,7 @@
 	PassengerBlocked:
 	HiddenUnderFog:
 	ActorLostNotification:
-		TextNotification: Unit lost.
+		TextNotification: 单位已损失。
 	Crushable:
 		WarnProbability: 100
 		CrushSound: squishy2.aud
@@ -3075,7 +3075,7 @@
 	AttackMove:
 	ActorLostNotification:
 		Notification: NavalUnitLost
-		TextNotification: Naval unit lost.
+		TextNotification: 海军单位已损失。
 	RepairableNear:
 		RepairActors: syrd, spen, syrd.gdi, spen.nod
 	WithDamageOverlay:
@@ -3228,7 +3228,7 @@
 	Guardable:
 	ActorLostNotification:
 		Notification: AirUnitLost
-		TextNotification: Airborne unit lost.
+		TextNotification: 空中单位已损失。
 	Tooltip:
 		GenericName: Plane
 	WithShadow:
@@ -3353,7 +3353,7 @@
 		RequiresCondition: unit-sellable && !c4 && !being-warped
 		SellSounds: cashturntd.aud
 		Notification: UnitSold
-		TextNotification: Unit sold.
+		TextNotification: 单位已出售。
 		Cursor: sell2
 	Encyclopedia:
 		Scale: 2
@@ -3455,9 +3455,9 @@
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
 	CaptureNotification:
-		TextNotification: Structure captured.
+		TextNotification: 建筑已占领。
 		LoseNotification: OurBuildingCaptured
-		LoseTextNotification: Structure lost (captured).
+		LoseTextNotification: 建筑已失守（被占领）。
 	ShakeOnDeath:
 	Guardable:
 		Range: 3c0
@@ -3537,7 +3537,7 @@
 		RequiresCondition: !build-incomplete && !c4 && !being-captured && !being-warped && !hacked
 		SellSounds: cashturn.aud
 		Notification: StructureSold
-		TextNotification: Structure sold.
+		TextNotification: 建筑已出售。
 	WithBuildingRepairDecoration:
 		Image: allyrepair
 		Sequence: repair
@@ -4798,11 +4798,11 @@
 		Group: Building
 		LowPowerModifier: 250
 		ReadyAudio: ConstructionComplete
-		ReadyTextNotification: Construction complete.
+		ReadyTextNotification: 建造完成。
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -4812,11 +4812,11 @@
 		Group: Defense
 		LowPowerModifier: 250
 		ReadyAudio: ConstructionComplete
-		ReadyTextNotification: Construction complete.
+		ReadyTextNotification: 建造完成。
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -4856,9 +4856,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Training
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -4927,9 +4927,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -4968,9 +4968,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
@@ -5015,9 +5015,9 @@
 		LowPowerModifier: 250
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		LimitedAudio: BuildingInProgress
-		LimitedTextNotification: Unable to comply. Building in progress.
+		LimitedTextNotification: 无法执行。正在建造中。
 		QueuedAudio: Building
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled

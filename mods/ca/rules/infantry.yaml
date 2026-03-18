@@ -775,7 +775,7 @@ SPY:
 	Infiltrates:
 		Types: ResetSupportPowerInfiltrate, PowerOutageInfiltrate, VetInfiltrate, ResetShroudInfiltrate, GrantSupportPowerInfiltrate
 		Notification: BuildingInfiltrated
-		TextNotification: Building infiltrated.
+		TextNotification: 建筑已被渗透。
 	-WithInfantryBody:
 	WithDisguisingInfantryBody:
 		DefaultAttackSequence: shoot
@@ -2388,7 +2388,7 @@ SAB:
 		Voice: Move
 	Infiltrates:
 		Types: ResetSupportPowerInfiltrate, PowerOutageInfiltrate, StealTechInfiltrate, TechLockInfiltrate, VisionInfiltrate
-		TextNotification: Building infiltrated.
+		TextNotification: 建筑已被渗透。
 	Voiced:
 		VoiceSet: InfilVoice
 	WithInfantryBody:

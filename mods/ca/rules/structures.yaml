@@ -204,9 +204,9 @@ SPEN:
 	RepairsUnits:
 		HpPerStep: 1000
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -300,9 +300,9 @@ SYRD:
 	RepairsUnits:
 		HpPerStep: 1000
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -2364,9 +2364,9 @@ FIX:
 		HpPerStep: 1000
 		Interval: 7
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	ProximityExternalCondition@UNITSELL:
 		Condition: unit-sellable
@@ -4172,9 +4172,9 @@ REP:
 		HpPerStep: 1000
 		Interval: 7
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
@@ -4856,9 +4856,9 @@ SPEN.nod:
 	RepairsUnits:
 		HpPerStep: 1000
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -4951,9 +4951,9 @@ SYRD.gdi:
 	RepairsUnits:
 		HpPerStep: 1000
 		StartRepairingNotification: Repairing
-		StartRepairingTextNotification: Repairing.
+		StartRepairingTextNotification: 正在维修。
 		FinishRepairingNotification: UnitRepaired
-		FinishRepairingTextNotification: Unit repaired.
+		FinishRepairingTextNotification: 单位已修复。
 		RequiresCondition: !forceshield && !invulnerability && !being-warped
 	RallyPoint:
 	Power:
@@ -5618,7 +5618,7 @@ CVAT:
 		BuildDurationModifier: 120
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		ShowSelectionBar: true
 		PauseOnCondition: tech-locked || being-warped || disabled
 		RequiresCondition: !global-multiqueue
@@ -5629,7 +5629,7 @@ CVAT:
 		BuildDurationModifier: 80
 		ReadyAudio: UnitReady
 		BlockedAudio: NoBuild
-		BlockedTextNotification: Unable to build more.
+		BlockedTextNotification: 无法建造更多。
 		ShowSelectionBar: true
 		PauseOnCondition: tech-locked || being-warped || disabled
 		RequiresCondition: global-multiqueue

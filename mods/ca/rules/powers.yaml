@@ -302,7 +302,7 @@
 		EndChargeSpeechNotification: CryostormReady
 		EndChargeTextNotification: 冷冻风暴已就绪。
 		IncomingSpeechNotification: CryostormWarning
-		IncomingTextNotification: Cryostorm approaching.
+		IncomingTextNotification: 冷冻风暴来袭。
 		PauseOnCondition: disabled || empdisable || being-warped
 		DisplayRadarPing: True
 		Cursor: ability
@@ -369,7 +369,7 @@
 		EndChargeSpeechNotification: BlackSkyStrikeReady
 		EndChargeTextNotification: 黑天打击已就绪。
 		IncomingSpeechNotification: BlackSkyStrikeWarning
-		IncomingTextNotification: Black Sky missiles approaching.
+		IncomingTextNotification: 黑天导弹来袭。
 		DisplayBeacon: true
 		SupportPowerPaletteOrder: 25
 		ShowSelectionBoxes: true
@@ -472,7 +472,7 @@
 		EndChargeTextNotification: 闪电风暴已就绪。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: StormApproach
-		IncomingTextNotification: Lightning Storm approaching.
+		IncomingTextNotification: 闪电风暴来袭。
 		IncomingSound: sweaintr.aud
 		LaunchSound: sweaintr.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -863,7 +863,7 @@
 		EndChargeTextNotification: 坦克空投已就绪。
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: 侦测到敌方空投。
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
 		BeaconPoster: lrairdropicon
@@ -969,7 +969,7 @@
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSound: nukelaunch.aud
 		IncomingSpeechNotification: AbombLaunchDetected
-		IncomingTextNotification: Atom Bomb launch detected.
+		IncomingTextNotification: 侦测到原子弹发射。
 		LaunchSound: nukelaunch.aud
 		MissileWeapon: atomic
 		MissileImage: atomic
@@ -1357,7 +1357,7 @@
 		EndChargeTextNotification: 离子炮已就绪。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: IonCannonApproach
-		IncomingTextNotification: Ion cannon activated.
+		IncomingTextNotification: 离子炮已启动。
 		IncomingSound: nukelaunch.aud
 		LaunchSound: nukelaunch.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
@@ -1390,7 +1390,7 @@
 		EndChargeTextNotification: 空投已就绪。
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: 侦测到敌方空投。
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1418,7 +1418,7 @@
 		EndChargeTextNotification: 空投已就绪。
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: 侦测到敌方空投。
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1448,7 +1448,7 @@
 		EndChargeTextNotification: 地下突袭已就绪。
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy subterranean units detected.
+		IncomingTextNotification: 侦测到敌方地下部队。
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.dummy
 		CameraRemoveDelay: 1
@@ -1475,7 +1475,7 @@
 		EndChargeTextNotification: 空投已就绪。
 		LaunchSpeechNotification: ReinforcementsArrived
 		IncomingSpeechNotification: EnemyUnitsApproaching
-		IncomingTextNotification: Enemy air drop detected.
+		IncomingTextNotification: 侦测到敌方空投。
 		PauseOnCondition: empdisable || being-warped
 		CameraActor: camera.paradrop
 		DisplayBeacon: true
@@ -1626,7 +1626,7 @@
 		SelectTargetTextNotification: 选择目标。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: ClusMissileWarning
-		IncomingTextNotification: Cluster Missile launch detected.
+		IncomingTextNotification: 侦测到集束导弹发射。
 		MissileWeapon: deathhand
 		MissileImage: deathhand
 		MissilePalette: temptd
@@ -1837,7 +1837,7 @@
 		SelectTargetTextNotification: 选择目标。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: ChemMissileWarning
-		IncomingTextNotification: Chemical Missile launch detected.
+		IncomingTextNotification: 侦测到化学导弹发射。
 		MissileWeapon: Chemicbm
 		MissileImage: Chemicbm
 		MissileDelay: 5
@@ -2147,7 +2147,7 @@
 		SelectTargetTextNotification: 选择目标。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: OverlordsWrathWarning
-		IncomingTextNotification: Tiberium meteor approaching.
+		IncomingTextNotification: 泰伯利亚陨石来袭。
 		ImpactWeapon: OverlordsWrath
 		MeteorImage: tibmeteor
 		MeteorPalette: scrin
@@ -2308,7 +2308,7 @@
 		EndChargeTextNotification: 裂隙发生器已就绪。
 		InsufficientPowerSpeechNotification: InsufficientPower
 		IncomingSpeechNotification: RiftWarning
-		IncomingTextNotification: Rift Generator activated.
+		IncomingTextNotification: 裂隙发生器已启动。
 		IncomingSound: nukelaunch.aud
 		LaunchSound: nukelaunch.aud
 		DisplayTimerRelationships: Ally, Neutral, Enemy
