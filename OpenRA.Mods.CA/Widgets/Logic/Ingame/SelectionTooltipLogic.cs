@@ -121,6 +121,7 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 
 			// Name
 			var name = tooltipInfo != null ? tooltipInfo.Name : char.ToUpper(actorInfo.Name[0]) + actorInfo.Name[1..];
+			name = LocalizeGenericTooltipName(name);
 
 			if (numSelectedActors > 1)
 				name = numSelectedActors.ToString() + "x " + name;
@@ -209,6 +210,22 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 			widget.Bounds.Height = Math.Max(leftHeight, rightHeight);
 			widget.Bounds.X = Game.Renderer.Resolution.Width - widget.Bounds.Width - 12;
 			widget.Bounds.Y = Game.Renderer.Resolution.Height - widget.Bounds.Height - 12;
+		}
+
+		static string LocalizeGenericTooltipName(string name)
+		{
+			return name switch
+			{
+				"Enemy Structure" => "敌方建筑",
+				"Enemy Unit" => "敌方单位",
+				"Ally Structure" => "友方建筑",
+				"Ally Unit" => "友方单位",
+				"Neutral Structure" => "中立建筑",
+				"Neutral Unit" => "中立单位",
+				"Structure" => "建筑",
+				"Unit" => "单位",
+				_ => name
+			};
 		}
 
 		public static LabelWidget GetArmorTypeLabel(LabelWidget armorTypeLabel, ActorInfo actor)
