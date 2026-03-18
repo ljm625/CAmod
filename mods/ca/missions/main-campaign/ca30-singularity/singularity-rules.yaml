@@ -265,7 +265,7 @@ SIGN:
 	Tooltip:
 		GenericVisibility: None
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built\n• Cannot be captured
+		Attributes: • 最多可建造 1 个\n• 不可被占领
 	RepairableBuilding:
 		RepairStep: 1500
 		RepairPercent: 0
@@ -460,19 +460,19 @@ ionmam.upgrade:
 	Buildable:
 		Prerequisites: upgc, !mdrone.upgrade, !hovermam.upgrade
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 hovermam.upgrade:
 	Buildable:
 		Prerequisites: upgc, !ionmam.upgrade, !mdrone.upgrade
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 mdrone.upgrade:
 	Buildable:
 		Prerequisites: upgc, !ionmam.upgrade, !hovermam.upgrade
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 GTEK:
 	GrantExternalConditionPowerCA@NREPAIR:

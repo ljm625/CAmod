@@ -77,7 +77,7 @@ SIGN:
 	Tooltip:
 		GenericVisibility: None
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built
+		Attributes: • 最多可建造 1 个
 
 SCOL:
 	Power:

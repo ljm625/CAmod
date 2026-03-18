@@ -329,8 +329,8 @@ faction-traveler =
       • 快速行者（速度 +15%）
 
 faction-harbinger =
-    .name = Harbinger-31
-    .description = Harbinger-31：重型武装
+    .name = 先驱者-31
+    .description = 先驱者-31：重型武装
     单位：
       • 湮灭者
       • 掠夺者（替代入侵者）

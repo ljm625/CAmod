@@ -189,19 +189,19 @@ ionmam.upgrade:
 	Buildable:
 		Prerequisites: upgc, !mdrone.upgrade, !hovermam.upgrade, ~player.gdi
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 hovermam.upgrade:
 	Buildable:
 		Prerequisites: upgc, !ionmam.upgrade, !mdrone.upgrade, ~player.gdi
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 mdrone.upgrade:
 	Buildable:
 		Prerequisites: upgc, !ionmam.upgrade, !hovermam.upgrade, ~player.gdi
 	TooltipExtras:
-		Attributes: \n(!) Only ONE Mammoth Tank upgrade can be chosen
+		Attributes: \n(!) 猛犸坦克升级只能选择一种
 
 # Enable Scrin subfaction specific tech
 

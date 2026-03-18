@@ -172,7 +172,7 @@ GRAD:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮学说。
 
 NUKC:
 	Inherits: ^Tank
@@ -369,7 +369,7 @@ NUKC:
 		Category: 苏军/载具
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮学说。
 
 NUKC.Preview:
 	Inherits: ^PreviewDummy
@@ -1171,7 +1171,7 @@ GTNK.squad:
 		Category: 苏军/载具
 	EncyclopediaExtras:
 		Name: 犀牛重型坦克
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲学说。
 
 3TNK.RHINO.ATOMIC:
 	Inherits: 3TNK.RHINO
@@ -3583,7 +3583,7 @@ RBUG:
 	-WithDecoration@UpgradeOverlay:
 	-WithEjectedCasings:
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要狂热盟约。
 
 ^DecoyUnit:
 	Inherits@selection: ^SelectableSupportUnit
@@ -6143,7 +6143,7 @@ TRPC:
 	Encyclopedia:
 		Category: 苏军/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵学说。
 
 IFV:
 	Inherits: ^Tank
@@ -9180,7 +9180,7 @@ CRYO:
 	Encyclopedia:
 		Category: 盟军/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Sweden Coalition.
+		AdditionalInfo: 需要瑞典联盟。
 
 PBUL:
 	Inherits: ^VehicleTD
@@ -9869,7 +9869,7 @@ APOC:
 	Encyclopedia:
 		Category: 苏军/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲学说。
 
 APOC.ATOMIC:
 	Inherits: APOC
@@ -10113,7 +10113,7 @@ OVLD:
 	Encyclopedia:
 		Category: 苏军/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵学说。
 
 OVLD.ATOMIC:
 	Inherits: OVLD
@@ -10310,7 +10310,7 @@ THWK:
 	Encyclopedia:
 		Category: GDI/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要轰炸战略。
 
 TH:
 	Inherits: ^ShootableMissile
@@ -10452,7 +10452,7 @@ ZEUS:
 	Encyclopedia:
 		Category: 盟军/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Greece Coalition.
+		AdditionalInfo: 需要希腊联盟。
 
 MOLE:
 	Inherits: ^Vehicle-NOUPG
@@ -10705,7 +10705,7 @@ AVTR:
 	Encyclopedia:
 		Category: Nod/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要狂怒盟约。
 
 CUST:
 	Inherits: ^Tank
@@ -10823,4 +10823,4 @@ CUST:
 	Encyclopedia:
 		Category: Nod/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要统一盟约。

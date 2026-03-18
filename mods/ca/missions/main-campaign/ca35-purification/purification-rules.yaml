@@ -146,7 +146,7 @@ TTRK:
 	Valued:
 		Cost: 1000
 	TooltipExtras:
-		Weaknesses: • Very weak armor\n• Extremely volatile when full
+		Weaknesses: • 装甲极弱\n• 满载时极不稳定
 		-Attributes:
 	Tooltip:
 		Name: Liquid Tiberium Tanker

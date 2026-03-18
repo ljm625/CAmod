@@ -44,8 +44,8 @@ KANE:
 		Name: Kane
 	TooltipExtras:
 		Description: Nod兄弟会领袖。
-		Weaknesses: • Unarmed
-		Attributes: • Can create point-to-point wormholes\n• Detects artifact fragments
+		Weaknesses: • 无武装
+		Attributes: • 可创建点对点虫洞\n• 可侦测神器碎片
 	Health:
 		HP: 35000
 	Mobile:

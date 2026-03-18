@@ -134,7 +134,7 @@ SPY:
 	Selectable:
 		Priority: 10
 	TooltipExtras:
-		Attributes: • Disguise as enemy infantry by right-clicking them
+		Attributes: • 右键点击敌方步兵可伪装成其外观
 
 SEAL:
 	Inherits@ActorDifficultyConditions: ^ActorDifficultyConditions

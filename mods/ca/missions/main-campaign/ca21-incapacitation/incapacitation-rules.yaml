@@ -117,7 +117,7 @@ LCHR:
 	GainsExperienceMultiplier@TenPercentXp:
 		Modifier: 10
 	TooltipExtras:
-		Attributes: • Disables power plants and radars\n• Slows vehicles & cyborgs\n• Regenerates and heals allies when in coalescence form\n• Special Ability: Coalescence
+		Attributes: • 可瘫痪发电厂与雷达\n• 减速载具与半机械单位\n• 在聚合形态下可持续再生并治疗友军\n• 特殊技能：聚合
 
 LCHR.Orb:
 	Health:

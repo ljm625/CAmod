@@ -353,7 +353,7 @@ avenger.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: avenger.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要轰炸战略。
 
 sidewinders.upgrade:
 	Inherits: ^GDIUpgrade
@@ -373,7 +373,7 @@ sidewinders.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: sidewinders.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索与摧毁战略。
 
 ceramic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -393,7 +393,7 @@ ceramic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: ceramic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要固守防线战略。
 
 strategic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -431,7 +431,7 @@ thwk.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: thwk.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要轰炸战略。
 
 tow.upgrade:
 	Inherits: ^GDIUpgrade
@@ -451,7 +451,7 @@ tow.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: tow.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索与摧毁战略。
 
 pointdef.upgrade:
 	Inherits: ^GDIUpgrade
@@ -471,7 +471,7 @@ pointdef.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: pointdef.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要固守防线战略。
 
 stratmiss.upgrade:
 	Inherits: ^GDIUpgrade
@@ -509,7 +509,7 @@ hailstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hailstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Bombardment Strategy.
+		AdditionalInfo: 需要轰炸战略。
 
 hypersonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -530,7 +530,7 @@ hypersonic.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hypersonic.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Seek & Destroy Strategy.
+		AdditionalInfo: 需要搜索与摧毁战略。
 
 hammerhead.upgrade:
 	Inherits: ^GDIUpgrade
@@ -551,7 +551,7 @@ hammerhead.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hammerhead.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Hold the Line Strategy.
+		AdditionalInfo: 需要固守防线战略。
 
 sonic.upgrade:
 	Inherits: ^GDIUpgrade
@@ -1112,7 +1112,7 @@ cyborgdmg.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgdmg.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Wrath Covenant.
+		AdditionalInfo: 需要狂怒盟约。
 
 cyborgprod.upgrade:
 	Inherits: ^NodUpgrade
@@ -1132,7 +1132,7 @@ cyborgprod.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgprod.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Unity Covenant.
+		AdditionalInfo: 需要统一盟约。
 
 cyborgspeed.upgrade:
 	Inherits: ^NodUpgrade
@@ -1152,7 +1152,7 @@ cyborgspeed.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: cyborgspeed.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Zeal Covenant.
+		AdditionalInfo: 需要狂热盟约。
 
 #########################SOVIET#########
 ########################################
@@ -1416,7 +1416,7 @@ imppara.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: imppara.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵学说。
 
 impstorm.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1435,7 +1435,7 @@ impstorm.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: impstorm.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵学说。
 
 impmuta.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1454,7 +1454,7 @@ impmuta.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: impmuta.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Infantry Doctrine.
+		AdditionalInfo: 需要步兵学说。
 
 reactive.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1473,7 +1473,7 @@ reactive.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: reactive.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Armor Doctrine.
+		AdditionalInfo: 需要装甲学说。
 
 rocketpods.upgrade:
 	Inherits: ^SovietUpgrade
@@ -1492,7 +1492,7 @@ rocketpods.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: rocketpods.upgrade
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Artillery Doctrine.
+		AdditionalInfo: 需要火炮学说。
 
 atomicengines.upgrade:
 	Inherits: ^SovietUpgrade

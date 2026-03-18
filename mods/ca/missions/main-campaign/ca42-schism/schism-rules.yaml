@@ -66,7 +66,7 @@ ETPD:
 		LocalOffset: 0,0,500
 		Cursor: mc-capture
 	TooltipExtras:
-		Attributes: • Can crush concrete walls.\n• Target Purification device to begin extraction.
+		Attributes: • 可碾压混凝土围墙。\n• 以净化装置为目标开始提取。
 	DamageMultiplier@NORMAL:
 		Modifier: 110
 		RequiresCondition: difficulty-normal

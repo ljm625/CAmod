@@ -146,7 +146,7 @@ HACK:
 	Inherits@DIFFICULTY: ^DifficultyModifiers
 	-WithMindControlArc@HACK:
 	TooltipExtras:
-		Attributes: • Can take control of enemy structures & drones from range\n• Control lost if the Hacker dies
+		Attributes: • 可远程控制敌方建筑与无人机\n• 黑客死亡后会失去控制
 	Selectable:
 		Priority: 10
 

@@ -42,7 +42,7 @@ INDP:
 	CapturableProgressBar:
 	CapturableProgressBlink:
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built
+		Attributes: • 最多可建造 1 个
 
 MUNP:
 	Inherits@KillZone: ^KillZonePower
@@ -55,7 +55,7 @@ MUNP:
 	CapturableProgressBar:
 	CapturableProgressBlink:
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built
+		Attributes: • 最多可建造 1 个
 
 CVAT:
 	Inherits@HeroesOfTheUnion: ^HeroesOfTheUnionPower
@@ -68,7 +68,7 @@ CVAT:
 	CapturableProgressBar:
 	CapturableProgressBlink:
 	TooltipExtras:
-		Attributes: • Maximum 1 can be built
+		Attributes: • 最多可建造 1 个
 
 captured.indp:
 	Inherits@DUMMY: ^InvisibleDummy

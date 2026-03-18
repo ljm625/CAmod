@@ -4193,7 +4193,7 @@ BEAG:
 	Encyclopedia:
 		Category: 盟军/空中单位
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Korea Coalition.
+		AdditionalInfo: 需要韩国联盟。
 
 PHAN:
 	Inherits: ^Helicopter

@@ -942,7 +942,7 @@ EVIS:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: 需要忠诚派派系。
 
 IMPL:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -989,7 +989,7 @@ IMPL:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: 需要反叛派派系。
 
 STLK:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1087,7 +1087,7 @@ STLK:
 	TakeCover:
 		PauseOnCondition: being-warped || phaseshield
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: 需要恶煞派派系。
 
 SMEDI:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -2443,7 +2443,7 @@ DARK:
 	Encyclopedia:
 		Category: Scrin/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Malefic Allegiance.
+		AdditionalInfo: 需要恶煞派派系。
 
 RUIN:
 	Inherits: ^Vehicle
@@ -2549,7 +2549,7 @@ RUIN:
 	Encyclopedia:
 		Category: Scrin/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Loyalist Allegiance.
+		AdditionalInfo: 需要忠诚派派系。
 
 ATMZ:
 	Inherits: ^Vehicle
@@ -3006,7 +3006,7 @@ NULL:
 	Encyclopedia:
 		Category: Scrin/载具
 	EncyclopediaExtras:
-		AdditionalInfo: Requires Rebel Allegiance.
+		AdditionalInfo: 需要反叛派派系。
 
 SMCV:
 	Inherits: ^Vehicle-NOUPG

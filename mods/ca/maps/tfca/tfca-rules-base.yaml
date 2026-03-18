@@ -215,9 +215,9 @@ XO:
 		BuildPaletteOrder: 6
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
-	TooltipExtras:
-		Strengths: • Durable\n• Self repairs
-		Weaknesses: • Slow\n• Must wind up to full damage
+		TooltipExtras:
+			Strengths: • 耐久高\n• 可自我修复
+			Weaknesses: • 移速较慢\n• 需预热后才能打出满额伤害
 	Mobile:
 		Speed: 75
 	RevealsShroud:
@@ -279,10 +279,10 @@ E3:
 	Buildable:
 		Description: Soldier armed with a rocket launcher.
 		BuildPaletteOrder: 3
-	TooltipExtras:
-		Strengths: • Good all-round damage dealer\n• Guided projectiles\n• Decent HP
-		Weaknesses: • Mediocre rate of fire\n• Slow projectiles
-		Attributes: • Frenzy ability
+		TooltipExtras:
+			Strengths: • 综合输出优秀\n• 制导弹体\n• 生命值较高
+			Weaknesses: • 射速一般\n• 弹速较慢
+			Attributes: • 狂暴技能
 	Mobile:
 		Speed: 100
 	RevealsShroud:
@@ -325,7 +325,7 @@ MEDI:
 	Buildable:
 		BuildPaletteOrder: 5
 	TooltipExtras:
-		Attributes: • Can create protective healing zones
+		Attributes: • 可创建保护性治疗区域
 	Mobile:
 		Speed: 100
 	RevealsShroud:
@@ -356,10 +356,10 @@ E4:
 	Buildable:
 		Description: Soldier armed with a flamethrower.
 		BuildPaletteOrder: 7
-	TooltipExtras:
-		Strengths: • High sustained damage
-		Weaknesses: • Short range
-		Attributes: • Pyroblast ability\n• Impervious to fire
+		TooltipExtras:
+			Strengths: • 持续伤害高
+			Weaknesses: • 射程较短
+			Attributes: • 烈焰冲击技能\n• 免疫火焰伤害
 	Mobile:
 		Speed: 100
 	RevealsShroud:
@@ -411,10 +411,10 @@ SEAL:
 	Buildable:
 		Description: Fast soldier armed with a submachinegun.
 		BuildPaletteOrder: 1
-	TooltipExtras:
-		Strengths: • Very fast\n• Large vision radius
-		Weaknesses: • Mediocre damage\n• Fragile
-		Attributes: • Detects cloaked units\n• Teleport ability
+		TooltipExtras:
+			Strengths: • 机动性极高\n• 视野范围大
+			Weaknesses: • 伤害一般\n• 身板较脆
+			Attributes: • 可侦测隐形单位\n• 传送技能
 	Mobile:
 		Speed: 150
 		Locomotor: foot
@@ -463,9 +463,9 @@ E6:
 	Buildable:
 		Description: Soldier that can deploy and repair turrets.
 		BuildPaletteOrder: 9
-	TooltipExtras:
-		Weaknesses: • Unarmed
-		Attributes: • Detects mines\n• Nearby allies deal 15% more damage
+		TooltipExtras:
+			Weaknesses: • 无武装
+			Attributes: • 可侦测地雷\n• 附近友军伤害 +15%
 	Mobile:
 		Speed: 100
 	RevealsShroud:
@@ -547,10 +547,10 @@ SAB:
 		BuildPaletteOrder: 8
 		Queue: InfantrySQ, InfantryMQ
 		BuildAtProductionType: Soldier
-	TooltipExtras:
-		Strengths: • High single-target burst damage
-		Weaknesses: • Short range\n• Fragile
-		Attributes: • Invisible when not attacking\n• Remote reveal ability
+		TooltipExtras:
+			Strengths: • 单体爆发高
+			Weaknesses: • 射程较短\n• 身板较脆
+			Attributes: • 未攻击时隐形\n• 远程侦察技能
 	Mobile:
 		Speed: 100
 	RevealsShroud:
@@ -593,10 +593,10 @@ IVAN:
 	Buildable:
 		Description: Soldier armed with bombs and mines.
 		BuildPaletteOrder: 4
-	TooltipExtras:
-		Strengths: • High area damage
-		Weaknesses: • Has difficulty hitting moving targets
-		Attributes: • Lays mines
+		TooltipExtras:
+			Strengths: • 范围伤害高
+			Weaknesses: • 难以命中移动目标
+			Attributes: • 可布设地雷
 	Mobile:
 		Speed: 125
 	RevealsShroud:
@@ -653,10 +653,10 @@ SNIP:
 	Buildable:
 		Description: Soldier armed with a sniper rifle.
 		BuildPaletteOrder: 2
-	TooltipExtras:
-		Strengths: • Long range\n• High single-target damage
-		Weaknesses: • Fragile\n• Slow
-		Attributes: • Must aim before shooting
+		TooltipExtras:
+			Strengths: • 射程远\n• 单体伤害高
+			Weaknesses: • 身板较脆\n• 移速较慢
+			Attributes: • 射击前需要瞄准
 	Mobile:
 		Speed: 75
 	RevealsShroud:

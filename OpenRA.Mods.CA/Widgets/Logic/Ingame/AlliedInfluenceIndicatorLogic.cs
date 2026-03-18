@@ -109,10 +109,10 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 						tooltip += "\n" + FluentProvider.GetMessage(PlayerInfluenceLevelTime, "time", WidgetUtils.FormatTime(timeline.TicksUntilNextThreshold, world.Timestep));
 
 					if (chosenCoalition != null)
-						tooltip += "\n" + FluentProvider.GetMessage(ChosenCoalition, "coalition", char.ToUpper(chosenCoalition[0]) + chosenCoalition[1..]);
+						tooltip += "\n" + FluentProvider.GetMessage(ChosenCoalition, "coalition", LocalizeCoalition(chosenCoalition));
 
 					if (chosenPolicy != null)
-						tooltip += "\n" + FluentProvider.GetMessage(ChosenPolicy,"policy", char.ToUpper(chosenPolicy[0]) + chosenPolicy[1..]);
+						tooltip += "\n" + FluentProvider.GetMessage(ChosenPolicy, "policy", LocalizePolicy(chosenPolicy));
 
 					return tooltip;
 				});
@@ -179,6 +179,28 @@ namespace OpenRA.Mods.CA.Widgets.Logic
 				timeline.TicksChanged -= HandleTicksChanged;
 				influenceMeter.IsVisible = () => false;
 			}
+		}
+
+		static string LocalizeCoalition(string coalition)
+		{
+			return coalition switch
+			{
+				"greece" => "希腊",
+				"korea" => "韩国",
+				"sweden" => "瑞典",
+				_ => char.ToUpper(coalition[0]) + coalition[1..]
+			};
+		}
+
+		static string LocalizePolicy(string policy)
+		{
+			return policy switch
+			{
+				"economy" => "经济",
+				"defense" => "防御",
+				"development" => "发展",
+				_ => char.ToUpper(policy[0]) + policy[1..]
+			};
 		}
 	}
 }
