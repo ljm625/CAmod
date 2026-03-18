@@ -1664,7 +1664,10 @@
 	Valued:
 		Cost: 1400
 	Tooltip:
-		GenericName: Harvester
+		GenericName: 采矿车
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	Health:
 		HP: 75000
 	Mobile:
@@ -2436,7 +2439,10 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Vehicle
+		GenericName: 载具
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	CaptureManager:
 		BeingCapturedCondition: being-captured
 	Capturable:
@@ -2717,7 +2723,10 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Soldier
+		GenericName: 士兵
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	DeathSounds@NORMAL:
 		Voice: Die
 		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath, FrozenDeath
@@ -3086,7 +3095,10 @@
 	Guard:
 	Guardable:
 	Tooltip:
-		GenericName: Ship
+		GenericName: 舰船
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	MustBeDestroyed:
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
@@ -3230,7 +3242,10 @@
 		Notification: AirUnitLost
 		TextNotification: 空中单位已损失。
 	Tooltip:
-		GenericName: Plane
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
@@ -3367,7 +3382,10 @@
 ^Helicopter:
 	Inherits: ^Plane
 	Tooltip:
-		GenericName: Helicopter
+		GenericName: 直升机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	Aircraft:
 		CanHover: True
 		WaitDistanceFromResupplyBase: 4c0
@@ -3465,7 +3483,10 @@
 	FrozenUnderFogUpdatedByGpsRadar:
 	EdibleByLeap:
 	Tooltip:
-		GenericName: Structure
+		GenericName: 建筑
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	MapEditorData:
 		Categories: Building
 	CommandBarBlacklist:
@@ -4145,7 +4166,7 @@
 		TargetTypes: Ground, Husk, NoAutoTarget
 		RequiresForceFire: true
 	Tooltip:
-		GenericName: Destroyed Vehicle
+		GenericName: 废弃载具
 	FireWarheadsOnDeath:
 		Weapon: VisualExplodeHusk
 		EmptyWeapon: VisualExplodeHusk
@@ -4174,7 +4195,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Plane
+		GenericName: 坠毁飞机
 	Aircraft:
 	FallsToEarth:
 		MaximumSpinSpeed: 0
@@ -4210,7 +4231,7 @@
 		Offset: 43, 128, 0
 		ZOffset: -129
 	Tooltip:
-		GenericName: Destroyed Helicopter
+		GenericName: 坠毁直升机
 	Aircraft:
 		CanHover: True
 		VTOL: true
@@ -4252,7 +4273,7 @@
 	TransformOnCapture:
 		ForceHealthPercentage: 25
 	Tooltip:
-		GenericName: Destroyed Building
+		GenericName: 废墟建筑
 	FireWarheadsOnDeath@NORMAL:
 		Type: Footprint
 		Weapon: BuildingExplode
@@ -4323,7 +4344,7 @@
 	HiddenUnderFog:
 	Tooltip:
 		Name: 补给箱
-		GenericName: Crate
+		GenericName: 补给箱
 		ShowOwnerRow: false
 	CrateCA:
 		Duration: 4500
@@ -4709,7 +4730,7 @@
 		Type: GroundPosition
 	Tooltip:
 		Name: 导弹
-		GenericName: Missile
+		GenericName: 导弹
 		ShowOwnerRow: false
 	HitShape:
 	RejectsOrders:

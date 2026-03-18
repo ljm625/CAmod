@@ -2100,7 +2100,7 @@ MCOR.Husk:
 	Inherits: ^HelicopterHuskTD
 	Tooltip:
 		Name: Manticore
-		GenericName: Destroyed Aircraft
+		GenericName: 坠毁飞机
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 35

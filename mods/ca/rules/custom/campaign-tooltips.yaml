@@ -81,7 +81,7 @@ GNRL:
 
 ^WormholeBase:
 	Tooltip:
-		GenericName: Wormhole
+		GenericName: 虫洞
 		GenericVisibility: Enemy
 		ShowOwnerRow: false
 

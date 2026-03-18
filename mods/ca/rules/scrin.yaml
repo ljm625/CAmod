@@ -3099,7 +3099,10 @@ STMR:
 		Cost: 1650
 	Tooltip:
 		Name: 风暴骑士
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3238,7 +3241,10 @@ TORM:
 		Cost: 900
 	Tooltip:
 		Name: 折磨者
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3382,7 +3388,10 @@ ENRV:
 		Cost: 2000
 	Tooltip:
 		Name: 衰弱者
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3520,7 +3529,10 @@ DEVA:
 		Cost: 2400
 	Tooltip:
 		Name: 毁灭者战舰
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3662,7 +3674,10 @@ PAC:
 		Cost: 2800
 	Tooltip:
 		Name: 行星突击载具
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3898,7 +3913,10 @@ MSHP:
 		Cost: 3000
 	Tooltip:
 		Name: 母舰
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4281,7 +4299,7 @@ ENRV.Husk:
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
 		Name: 衰弱者
-		GenericName: Destroyed Aircraft
+		GenericName: 坠毁飞机
 	Aircraft:
 		TurnSpeed: 14
 		Speed: 170
@@ -4323,7 +4341,7 @@ DEVA.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
 		Name: 毁灭者战舰
-		GenericName: Destroyed Aircraft
+		GenericName: 坠毁飞机
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 35
@@ -4376,7 +4394,7 @@ PAC.Husk:
 	Inherits: ^HelicopterHusk
 	Tooltip:
 		Name: 行星突击载具
-		GenericName: Destroyed Aircraft
+		GenericName: 坠毁飞机
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30
@@ -4432,7 +4450,7 @@ MSHP.Husk:
 	Inherits@ScrinUnitPalette: ^ScrinUnitPalette
 	Tooltip:
 		Name: 母舰
-		GenericName: Destroyed Aircraft
+		GenericName: 坠毁飞机
 	Aircraft:
 		TurnSpeed: 8
 		Speed: 30

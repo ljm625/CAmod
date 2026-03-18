@@ -2342,7 +2342,10 @@ ORCB:
 		Cost: 2000
 	Tooltip:
 		Name: 奥卡轰炸机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2712,7 +2715,10 @@ KIRO:
 		Cost: 2000
 	Tooltip:
 		Name: 基洛夫空艇
-		GenericName: Airship
+		GenericName: 飞艇
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -2906,7 +2912,10 @@ OCAR:
 		Cost: 900
 	Tooltip:
 		Name: 奥卡运载机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Buildable:
@@ -3138,7 +3147,10 @@ HARR:
 		Cost: 2000
 	Tooltip:
 		Name: 鹞式战机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3263,7 +3275,10 @@ SCRN:
 		Cost: 2000
 	Tooltip:
 		Name: 女妖战机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -3938,7 +3953,10 @@ PMAK:
 		Cost: 2500
 	Tooltip:
 		Name: 和平使者
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4086,7 +4104,10 @@ BEAG:
 		Cost: 2000
 	Tooltip:
 		Name: 黑鹰战机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4213,7 +4234,10 @@ PHAN:
 		Cost: 1800
 	Tooltip:
 		Name: 幻影战机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4472,7 +4496,10 @@ SHDE:
 		Cost: 1800
 	Tooltip:
 		Name: 暗影战机
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:
@@ -4604,7 +4631,10 @@ VERT:
 		Cost: 2000
 	Tooltip:
 		Name: 维提戈
-		GenericName: Aircraft
+		GenericName: 飞机
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Health:

@@ -18,7 +18,10 @@ DOG:
 		Cost: 200
 	Tooltip:
 		Name: 攻击犬
-		GenericName: Dog
+		GenericName: 军犬
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	Selectable:
@@ -745,7 +748,10 @@ SPY:
 	-Tooltip:
 	DisguiseTooltip:
 		Name: 间谍
-		GenericName: Soldier
+		GenericName: 士兵
+		EnemyPrefix: 敌方
+		AllyPrefix: 友方
+		NeutralPrefix: 中立
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
 	-Guard:

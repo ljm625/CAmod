@@ -10,7 +10,7 @@ FPWR:
 		Icon: fake-icon
 	Tooltip:
 		Name: 假发电厂
-		GenericName: Power Plant
+		GenericName: 发电厂
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -48,7 +48,7 @@ FREF:
 		Icon: fake-icon
 	Tooltip:
 		Name: 假精炼厂
-		GenericName: Refinery
+		GenericName: 精炼厂
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -108,7 +108,7 @@ WEAF:
 		Icon: fake-icon
 	Tooltip:
 		Name: 假战车工厂
-		GenericName: War Factory
+		GenericName: 战车工厂
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -144,7 +144,7 @@ DOMF:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownOrForceDisable
 	Tooltip:
 		Name: 假雷达站
-		GenericName: Radar Dome
+		GenericName: 雷达站
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -184,7 +184,7 @@ FACF:
 		Icon: fake-icon
 	Tooltip:
 		Name: 假建造场
-		GenericName: Construction Yard
+		GenericName: 建造场
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
@@ -229,7 +229,7 @@ SYRF:
 		Icon: fake-icon
 	Tooltip:
 		Name: 假海军船坞
-		GenericName: Shipyard
+		GenericName: 造船厂
 		GenericVisibility: Enemy
 		GenericStancePrefix: False
 	TooltipExtras:
