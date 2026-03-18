@@ -12,7 +12,7 @@
 	Building:
 		BuildSounds: scrinbuild.aud
 	Encyclopedia:
-		Category: Scrin/Buildings
+		Category: Scrin/建筑
 
 INFANTRY.SCRIN:
 	AlwaysVisible:
@@ -461,7 +461,7 @@ VEHICLES.SCRIN:
 	SpawnActorOnDeath@GMUT:
 		Actor: gscr.mutating
 	Encyclopedia:
-		Category: Scrin/Infantry
+		Category: Scrin/步兵
 
 S1:
 	Inherits@SCRININFANTRY: ^ScrinInfantry
@@ -1514,7 +1514,7 @@ HARV.Scrin:
 	-TransferResourcesOnTransform:
 	-ReplacedInQueue:
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 GUNW:
 	Inherits: ^Tank
@@ -1597,7 +1597,7 @@ GUNW:
 		UpgradeAtActors: fix, rep, srep
 		BuildDuration: 100
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 SHRW:
 	Inherits: GUNW
@@ -1711,7 +1711,7 @@ SEEK:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 LACE:
 	Inherits: ^Vehicle
@@ -1797,7 +1797,7 @@ LACE:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		Subfaction: traveler
 
@@ -1930,7 +1930,7 @@ INTL:
 	Shielded:
 		MaxStrength: 6000
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 INTL.AI:
 	Inherits: INTL
@@ -2015,7 +2015,7 @@ CORR:
 		RequiresCondition: travelerspeed
 		Modifier: 115
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 LCHR:
 	Inherits: ^Tank
@@ -2104,7 +2104,7 @@ LCHR:
 	GivesBountyCA:
 		RequiresCondition: global-bounty && !coalescence-upgrade
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		Subfaction: collector
 
@@ -2270,7 +2270,7 @@ STCR:
 	Shielded:
 		MaxStrength: 10000
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		Subfaction: reaper
 
@@ -2364,7 +2364,7 @@ DEVO:
 		RevokeDelay: 40
 		RequiresCondition: anathema
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 DARK:
 	Inherits: ^Vehicle
@@ -2441,7 +2441,7 @@ DARK:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Malefic Allegiance.
 
@@ -2547,7 +2547,7 @@ RUIN:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Loyalist Allegiance.
 
@@ -2620,7 +2620,7 @@ ATMZ:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		Subfaction: collector
 
@@ -2723,7 +2723,7 @@ TPOD:
 		BlinkInterval: 15
 		BlinkPattern: on, off
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 RTPD:
 	Inherits: TPOD
@@ -2929,7 +2929,7 @@ OBLT:
 	Targetable@Obliterator:
 		TargetTypes: Obliterator
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		Subfaction: harbinger
 
@@ -3004,7 +3004,7 @@ NULL:
 		Actor: NULL.Husk
 		RequiresCondition: !being-warped
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Rebel Allegiance.
 
@@ -3073,7 +3073,7 @@ SMCV:
 	DamageTypeDamageMultiplier@A2GPROTECTION:
 		Modifier: 60
 	Encyclopedia:
-		Category: Scrin/Vehicles
+		Category: Scrin/载具
 
 #
 # ---- Aircraft
@@ -3216,7 +3216,7 @@ STMR:
 		Sequence: Plane
 	-SoundOnDamageTransitionCA:
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 
 TORM:
 	Inherits: ^Helicopter
@@ -3359,7 +3359,7 @@ TORM:
 		Count: 4
 	-SoundOnDamageTransitionCA:
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 
 ENRV:
 	Inherits: ^Helicopter
@@ -3495,7 +3495,7 @@ ENRV:
 		Count: 1
 	-SoundOnDamageTransitionCA:
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 	EncyclopediaExtras:
 		Subfaction: traveler
 
@@ -3637,7 +3637,7 @@ DEVA:
 	Targetable@AirHighValue:
 		TargetTypes: AirHighValue
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 		Scale: 1.5
 
 PAC:
@@ -3777,7 +3777,7 @@ PAC:
 	Targetable@AirHighValue:
 		TargetTypes: AirHighValue
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 		Scale: 1.5
 	EncyclopediaExtras:
 		RenderPreviewActor: pac.preview
@@ -4076,7 +4076,7 @@ MSHP:
 		Multiplier: 90
 		Prerequisites: player.harbinger
 	Encyclopedia:
-		Category: Scrin/Aircraft
+		Category: Scrin/空中单位
 		Scale: 1
 
 #
@@ -4539,7 +4539,7 @@ SWAL:
 	WithWallSpriteBody:
 		Type: scrinwall
 	Encyclopedia:
-		Category: Scrin/Defenses
+		Category: Scrin/防御建筑
 
 SFAC:
 	Inherits: ^ScrinBuilding
@@ -5639,7 +5639,7 @@ PTUR:
 	DetectCloaked:
 		Range: 5c0
 	Encyclopedia:
-		Category: Scrin/Defenses
+		Category: Scrin/防御建筑
 
 SHAR:
 	Inherits: ^Defense
@@ -5706,7 +5706,7 @@ SHAR:
 		Actor: s1
 	-SpawnRandomActorOnDeath:
 	Encyclopedia:
-		Category: Scrin/Defenses
+		Category: Scrin/防御建筑
 
 SCOL:
 	Inherits: ^Defense
@@ -5763,7 +5763,7 @@ SCOL:
 	GrantConditionOnDamage@IONSTORM:
 		RequiresCondition: ioncon-upgrade && !(disabled || empdisable || being-warped)
 	Encyclopedia:
-		Category: Scrin/Defenses
+		Category: Scrin/防御建筑
 
 STRM:
 	Inherits@1: ^ExistsInWorld
@@ -5885,7 +5885,7 @@ SSPK:
 	Tooltip:
 		Name: 风暴尖塔
 	Encyclopedia:
-		Category: Scrin/Support Powers
+		Category: Scrin/支援技能
 	-Sellable:
 	-Buildable:
 	Health:

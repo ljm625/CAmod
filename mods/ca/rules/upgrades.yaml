@@ -33,7 +33,7 @@ hazmat.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: hazmat.upgrade
 	Encyclopedia:
-		Category: Allies/Upgrades; GDI/Upgrades; Nod/Upgrades
+		Category: 盟军/升级; GDI/升级; Nod/升级
 
 flakarmor.upgrade:
 	Inherits: ^Upgrade
@@ -52,7 +52,7 @@ flakarmor.upgrade:
 	WithProductionIconOverlay:
 		Prerequisites: flakarmor.upgrade
 	Encyclopedia:
-		Category: Allies/Upgrades; Soviets/Upgrades; GDI/Upgrades; Nod/Upgrades
+		Category: 盟军/升级; 苏军/升级; GDI/升级; Nod/升级
 
 #########################GDI#########
 ########################################
@@ -69,7 +69,7 @@ ANYSTRATEGY:
 ^GDIUpgrade:
 	Inherits: ^Upgrade
 	Encyclopedia:
-		Category: GDI/Upgrades
+		Category: GDI/升级
 
 bombard.strat:
 	Inherits: ^GDIUpgrade
@@ -764,7 +764,7 @@ ANYCOVENANT:
 ^NodUpgrade:
 	Inherits: ^Upgrade
 	Encyclopedia:
-		Category: Nod/Upgrades
+		Category: Nod/升级
 
 wrath.covenant:
 	Inherits: ^NodUpgrade
@@ -1169,7 +1169,7 @@ ANYDOCTRINE:
 ^SovietUpgrade:
 	Inherits: ^Upgrade
 	Encyclopedia:
-		Category: Soviets/Upgrades
+		Category: 苏军/升级
 
 infantry.doctrine:
 	Inherits: ^SovietUpgrade
@@ -1616,7 +1616,7 @@ ANYCOALITION:
 ^AlliedUpgrade:
 	Inherits: ^Upgrade
 	Encyclopedia:
-		Category: Allies/Upgrades
+		Category: 盟军/升级
 
 economy.policy:
 	Inherits: ^AlliedUpgrade
@@ -1625,7 +1625,7 @@ economy.policy:
 	Buildable:
 		BuildPaletteOrder: 1
 		Prerequisites: ~player.allies, influence.level1, !economy.policy, !defense.policy, !development.policy, ~techlevel.medium
-			Description: 执行经济政策。\n\n• 等级 1：精炼厂、采矿车与机动建造车成本 -15%\n• 等级 2：精炼厂、采矿车与机动建造车成本 -25%，机动建造车移动速度 +20%\n• 等级 3：免费 Chrono采矿车升级，采矿车耐久 +15%，矿石净化器收入 +50%
+			Description: 执行经济政策。\n\n• 等级 1：精炼厂、采矿车与机动建造车成本 -15%\n• 等级 2：精炼厂、采矿车与机动建造车成本 -25%，机动建造车移动速度 +20%\n• 等级 3：免费 超时空采矿车升级，采矿车耐久 +15%，矿石净化器收入 +50%
 	TooltipExtras:
 		Attributes: (!) 只能选择一个政策。
 	Valued:
@@ -1872,9 +1872,9 @@ tflx.upgrade:
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.germany, pdox, ~techlevel.high
-			Description: 升级超时空牢笼，使其获得时空传送能力，并改进 Chrono坦克的时空跃迁。\n\n升级对象：超时空牢笼\n升级对象：Chrono坦克
+			Description: 升级超时空牢笼，使其获得时空传送能力，并改进 超时空坦克的时空跃迁。\n\n升级对象：超时空牢笼\n升级对象：超时空坦克
 	TooltipExtras:
-		Strengths: + 超时空牢笼获得传送能力\n+ 超时空牢笼武器射程提高\n+ Chrono坦克可在充能前连续传送两次
+		Strengths: + 超时空牢笼获得传送能力\n+ 超时空牢笼武器射程提高\n+ 超时空坦克可在充能前连续传送两次
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -1886,11 +1886,11 @@ charv.upgrade:
 	Inherits: ^AlliedUpgrade
 	Inherits@DevelopmentPolicyDiscount: ^DevelopmentPolicyDiscount
 	Tooltip:
-		Name: 升级：Chrono采矿车
+		Name: 升级：超时空采矿车
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.allies, alhq, ~techlevel.high, !charv.upgrade
-			Description: 允许建造 Chrono采矿车，可传送回精炼厂。\n\n升级对象：矿车
+			Description: 允许建造 超时空采矿车，可传送回精炼厂。\n\n升级对象：矿车
 	TooltipExtras:
 		Strengths: + 可传送回精炼厂
 	Valued:
@@ -1915,7 +1915,7 @@ ANYALLEGIANCE:
 ^ScrinUpgrade:
 	Inherits: ^Upgrade
 	Encyclopedia:
-		Category: Scrin/Upgrades
+		Category: Scrin/升级
 
 loyalist.allegiance:
 	Inherits: ^ScrinUpgrade

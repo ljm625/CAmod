@@ -328,7 +328,7 @@ MIG:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 
 SUK:
 	Inherits: ^Plane
@@ -462,7 +462,7 @@ SUK:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 
 SUK.UPG:
 	Inherits: SUK
@@ -592,7 +592,7 @@ YAK:
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 
 P51:
 	Inherits: ^NeutralPlane
@@ -765,7 +765,7 @@ TRAN:
 		Condition: dropcargo
 		RevokeDelay: 15
 	Encyclopedia:
-		Category: Allies/Aircraft; GDI/Aircraft; Nod/Aircraft
+		Category: 盟军/空中单位; GDI/空中单位; Nod/空中单位
 
 TRAN.paradrop:
 	Inherits: TRAN
@@ -842,7 +842,7 @@ HALO:
 		DestroyedSounds: vhalodiea.aud
 		RequiresCondition: airborne
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 
 HALO.paradrop:
 	Inherits: HALO
@@ -1022,7 +1022,7 @@ NHAW:
 		Condition: dropcargo
 		ArmamentNames: drop
 	Encyclopedia:
-		Category: Allies/Aircraft
+		Category: 盟军/空中单位
 	EncyclopediaExtras:
 		Subfaction: usa
 
@@ -1194,7 +1194,7 @@ HELI:
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
 	Encyclopedia:
-		Category: Allies/Aircraft
+		Category: 盟军/空中单位
 
 HIND:
 	Inherits: ^Helicopter
@@ -1335,7 +1335,7 @@ HIND:
 		Prerequisites: rocketpods.upgrade
 		Condition: rocketpods-upgrade
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 
 U2:
 	Inherits: ^NeutralPlane
@@ -1645,7 +1645,7 @@ A10:
 		Modifier: 85
 		RequiresCondition: ceramic-upgrade
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 
 A10.SW:
 	Inherits: A10
@@ -2171,7 +2171,7 @@ APCH:
 	GrantConditionOnDamageState@SmokeTrail:
 		Condition: enable-smoke
 	Encyclopedia:
-		Category: Nod/Aircraft
+		Category: Nod/空中单位
 
 ORCA:
 	Inherits: ^HelicopterTD
@@ -2320,7 +2320,7 @@ ORCA:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 
 ORCB:
 	Inherits: ^HelicopterTD
@@ -2487,7 +2487,7 @@ ORCB:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 
 UAV:
 	Inherits: ^NeutralPlane
@@ -2691,7 +2691,7 @@ RAH:
 		Multiplier: 90
 		Prerequisites: player.shadow
 	Encyclopedia:
-		Category: Nod/Aircraft
+		Category: Nod/空中单位
 
 KIRO:
 	Inherits: ^Helicopter
@@ -2894,7 +2894,7 @@ KIRO:
 		Modifier: 0
 		RequiresCondition: empdisable
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 		Scale: 1.8
 
 OCAR:
@@ -3005,7 +3005,7 @@ OCAR:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 
 OCAR.Reinforce:
 	Inherits: OCAR
@@ -3242,7 +3242,7 @@ HARR:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Allies/Aircraft
+		Category: 盟军/空中单位
 
 SCRN:
 	Inherits: ^HelicopterTD
@@ -3398,7 +3398,7 @@ SCRN:
 		Condition: wrath-covenant
 		Prerequisites: wrath.covenant
 	Encyclopedia:
-		Category: Nod/Aircraft
+		Category: Nod/空中单位
 
 HORN:
 	Inherits: ^NeutralPlane
@@ -3746,7 +3746,7 @@ VENM:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Aircraft
+		Category: Nod/空中单位
 	EncyclopediaExtras:
 		Subfaction: marked
 
@@ -3918,7 +3918,7 @@ AURO:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 	EncyclopediaExtras:
 		Subfaction: eagle
 
@@ -4067,7 +4067,7 @@ PMAK:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Allies/Aircraft
+		Category: 盟军/空中单位
 
 BEAG:
 	Inherits: ^Helicopter
@@ -4191,7 +4191,7 @@ BEAG:
 	Voiced:
 		VoiceSet: BlackEagleVoice
 	Encyclopedia:
-		Category: Allies/Aircraft
+		Category: 盟军/空中单位
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Korea Coalition.
 
@@ -4327,7 +4327,7 @@ PHAN:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Allied Helipad.
 
@@ -4450,7 +4450,7 @@ KAMV:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Soviet Airfield.
 
@@ -4581,7 +4581,7 @@ SHDE:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from GDI Helipad.
 
@@ -4734,7 +4734,7 @@ VERT:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Nod Helipad.
 
@@ -4816,7 +4816,7 @@ MCOR:
 	EjectOnDeath:
 		ChuteSound: gejecta.aud
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Scrin Gravity Stabilizer.
 
@@ -4973,7 +4973,7 @@ DISC:
 		Type: Drain
 		ActiveUntilCancelled: true
 	Encyclopedia:
-		Category: Soviets/Aircraft
+		Category: 苏军/空中单位
 	EncyclopediaExtras:
 		Subfaction: yuri
 
@@ -5070,6 +5070,6 @@ JACK:
 	AutoTargetPriority@ATTACKANYTHING:
 		RequiresCondition: stance-attackanything
 	Encyclopedia:
-		Category: GDI/Aircraft
+		Category: GDI/空中单位
 	EncyclopediaExtras:
 		Subfaction: arc

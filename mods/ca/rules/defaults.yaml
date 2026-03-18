@@ -3801,7 +3801,7 @@
 		PlayerExperienceRelationships: Enemy, Neutral
 		SubsequentCaptureModifier: 50
 	Encyclopedia:
-		Category: Other/Tech Buildings
+		Category: 其他/科技建筑
 		Scale: 2
 
 ^CommandoSkull:
@@ -3870,7 +3870,7 @@
 	-InfiltrateToCreateProxyActor@InfiltratorVision:
 	-Targetable@InfiltratorVision:
 	Encyclopedia:
-		Category: Allies/Defenses
+		Category: 盟军/防御建筑
 	EncyclopediaExtras:
 		Subfaction: england
 

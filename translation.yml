@@ -4,6 +4,7 @@ translation:
   # Factions
   Allies: 盟军
   Soviet: 苏军
+  Soviets: 苏军
   GDI: GDI
   Nod: Nod
   Scrin: Scrin
@@ -91,7 +92,7 @@ translation:
   # Support power / effect keywords
   Iron Curtain: 铁幕
   Chronosphere: 超时空传送仪
-  Chrono: Chrono
+  Chrono: 超时空
   EMP: 电磁脉冲
   Lightning Storm: 闪电风暴
   Ion Cannon: 离子炮
@@ -251,8 +252,8 @@ translation:
   Hydra: 九头蛇
   Raufoss: 劳福斯
   GAU-8: GAU-8
-  Chrono Harvester: Chrono采矿车
-  Chrono Prison Tank: Chrono牢笼
+  Chrono Harvester: 超时空采矿车
+  Chrono Prison Tank: 超时空牢笼
   BTR: BTR
   Gattling BTR: 加特林BTR
   MGT-1A: MGT-1A

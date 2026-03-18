@@ -582,7 +582,7 @@ InitChronoTanks = function()
 			return
 		end
 
-		Notification("盟军已提供一支Chrono坦克中队。用它们摧毁东北方向的Scrin反应堆。")
+		Notification("盟军已提供一支超时空坦克中队。用它们摧毁东北方向的Scrin反应堆。")
 		MediaCA.PlaySound(MissionDir .. "/c_chronotanks.aud", 2)
 		local northEastPowerFlare = Actor.Create("flare", true, { Owner = GDI, Location = NorthEastPowerBeacon.Location })
 		Trigger.AfterDelay(DateTime.Seconds(10), function()

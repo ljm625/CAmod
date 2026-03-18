@@ -66,7 +66,7 @@ SS:
 		Modifier: 25
 		RequiresCondition: im-dumb == 3
 	Encyclopedia:
-		Category: Soviets/Naval
+		Category: 苏军/海军
 
 MSUB:
 	Inherits: ^Submarine
@@ -118,7 +118,7 @@ MSUB:
 	Cloak:
 		CloakDelay: 100
 	Encyclopedia:
-		Category: Soviets/Naval
+		Category: 苏军/海军
 
 DD:
 	Inherits: ^Ship
@@ -193,7 +193,7 @@ DD:
 	Selectable:
 		DecorationBounds: 1621, 1621
 	Encyclopedia:
-		Category: Allies/Naval
+		Category: 盟军/海军
 
 CA:
 	Inherits: ^Ship
@@ -266,7 +266,7 @@ CA:
 	Selectable:
 		DecorationBounds: 1877, 1877
 	Encyclopedia:
-		Category: Allies/Naval
+		Category: 盟军/海军
 
 LST:
 	Inherits: ^Ship
@@ -329,7 +329,7 @@ LST:
 	Targetable@MINDCONTROL:
 		RequiresCondition: !cargo && !mindcontrolled
 	Encyclopedia:
-		Category: Allies/Naval; Soviets/Naval; GDI/Naval; Nod/Naval
+		Category: 盟军/海军; 苏军/海军; GDI/海军; Nod/海军
 
 LST.Reinforce:
 	Inherits: LST
@@ -402,7 +402,7 @@ PT:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	Encyclopedia:
-		Category: Allies/Naval
+		Category: 盟军/海军
 
 PT2:
 	Inherits: ^Ship
@@ -477,7 +477,7 @@ PT2:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	Encyclopedia:
-		Category: GDI/Naval
+		Category: GDI/海军
 
 DD2:
 	Inherits: ^Ship
@@ -578,7 +578,7 @@ DD2:
 		Condition: pointdef-upgrade
 		Prerequisites: pointdef.upgrade
 	Encyclopedia:
-		Category: GDI/Naval
+		Category: GDI/海军
 
 SS2:
 	Inherits: ^Submarine
@@ -648,7 +648,7 @@ SS2:
 		Modifier: 25
 		RequiresCondition: im-dumb == 3
 	Encyclopedia:
-		Category: Nod/Naval
+		Category: Nod/海军
 
 ISUB:
 	Inherits: ^Submarine
@@ -717,7 +717,7 @@ ISUB:
 		RangeCircleType: ISUBRange
 		Color: ffdd0060
 	Encyclopedia:
-		Category: Nod/Naval
+		Category: Nod/海军
 
 ICBM:
 	Inherits: ^ShootableMissile
@@ -829,7 +829,7 @@ CV:
 		Multiplier: 90
 		Prerequisites: player.arc
 	Encyclopedia:
-		Category: GDI/Naval
+		Category: GDI/海军
 
 SB:
 	Inherits: ^Ship
@@ -887,7 +887,7 @@ SB:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	Encyclopedia:
-		Category: Nod/Naval
+		Category: Nod/海军
 
 SEAS:
 	Inherits: ^Ship
@@ -945,4 +945,4 @@ SEAS:
 	Selectable:
 		DecorationBounds: 1536, 1536
 	Encyclopedia:
-		Category: Soviets/Naval
+		Category: 苏军/海军

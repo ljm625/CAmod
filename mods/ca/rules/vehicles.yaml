@@ -53,7 +53,7 @@ V2RL:
 	Selectable:
 		DecorationBounds: 1194, 1194
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 KATY:
 	Inherits: ^Vehicle
@@ -123,7 +123,7 @@ KATY:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 GRAD:
 	Inherits: KATY
@@ -366,7 +366,7 @@ NUKC:
 		ValidRelationships: Ally, Enemy, Neutral
 		Color: ff9000
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		RenderPreviewActor: nukc.preview
 		AdditionalInfo: Requires Artillery Doctrine.
@@ -447,7 +447,7 @@ NUKC.Preview:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 2TNK:
 	Inherits: ^Tank
@@ -509,7 +509,7 @@ NUKC.Preview:
 	Selectable:
 		DecorationBounds: 1194, 1194
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 GTNK:
 	Inherits: 2TNK
@@ -888,7 +888,7 @@ GTNK.squad:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 3TNK.ATOMIC:
 	Inherits: 3TNK
@@ -1168,9 +1168,9 @@ GTNK.squad:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
-		Name: Rhino Tank
+		Name: 犀牛重型坦克
 		AdditionalInfo: Requires Armor Doctrine.
 
 3TNK.RHINO.ATOMIC:
@@ -1202,7 +1202,7 @@ GTNK.squad:
 		Actor: 3tnk.rhino.atomicyuri
 	-Upgradeable@ATOMIC:
 	EncyclopediaExtras:
-		Name: 原子 Rhino Tank
+		Name: 原子犀牛重型坦克
 		VariantOf: 3TNK.RHINO
 
 3TNK.RHINO.YURI:
@@ -1242,7 +1242,7 @@ GTNK.squad:
 	-SpeedMultiplier@CRUSHSLOW:
 	-Upgradeable@LASHER:
 	EncyclopediaExtras:
-		Name: Thrasher Tank
+		Name: 撕裂者坦克
 		Subfaction: yuri
 
 3TNK.RHINO.ATOMICYURI:
@@ -1280,7 +1280,7 @@ GTNK.squad:
 	-Upgradeable@LASHER:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: 原子 Thrasher Tank
+		Name: 原子撕裂者坦克
 		Subfaction: yuri
 		VariantOf: 3TNK.RHINO.YURI
 
@@ -1417,7 +1417,7 @@ GTNK.squad:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 4TNK.ATOMIC:
 	Inherits: 4TNK
@@ -1595,7 +1595,7 @@ ARTY:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 ARTY.nod:
 	Inherits: ARTY
@@ -1621,7 +1621,7 @@ ARTY.nod:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 HOWI:
 	Inherits: ARTY.nod
@@ -1818,7 +1818,7 @@ ISU:
 		Actor: ISU.Husk
 		RequiresCondition: !being-warped
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		Subfaction: ukraine
 
@@ -1907,7 +1907,7 @@ SPEC:
 		Condition: inherited-cloak
 		RequiresCondition: hidden || invisibility
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: shadow
 
@@ -2017,7 +2017,7 @@ SAPC:
 	ReplacedInQueue:
 		Actors: cust
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 SAPC.AI:
 	Inherits: SAPC
@@ -2075,7 +2075,7 @@ HARV:
 	ReplacedInQueue:
 		Actors: harv.chrono
 	Encyclopedia:
-		Category: Allies/Vehicles; Soviets/Vehicles
+		Category: 盟军/载具; 苏军/载具
 
 HARV.Chrono:
 	Inherits: HARV
@@ -2087,7 +2087,7 @@ HARV.Chrono:
 	RenderSprites:
 		Image: charv
 	Tooltip:
-		Name: Chrono采矿车
+		Name: 超时空采矿车
 	Mobile:
 		Voice: Move
 	Harvester:
@@ -2115,7 +2115,7 @@ HARV.Chrono:
 	StoresResources:
 		Capacity: 18
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 MCV:
 	Inherits: ^Vehicle-NOUPG
@@ -2174,7 +2174,7 @@ MCV:
 	DamageTypeDamageMultiplier@A2GPROTECTION:
 		Modifier: 60
 	Encyclopedia:
-		Category: Allies/Vehicles; Soviets/Vehicles
+		Category: 盟军/载具; 苏军/载具
 
 JEEP:
 	Inherits: ^Vehicle
@@ -2277,7 +2277,7 @@ JEEP:
 		AlwaysShowMaxRange: true
 		RequiresCondition: optics-active
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 JEEP.TEMP:
 	Inherits: JEEP
@@ -2377,7 +2377,7 @@ APC:
 		UpgradeAtActors: fix, rep, srep
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Name: 装甲运兵车
 
@@ -2518,7 +2518,7 @@ MNLY:
 	-WithDecoration@BOMBARD2:
 	-WithDecoration@BOMBARD3:
 	Encyclopedia:
-		Category: Allies/Vehicles; Soviets/Vehicles; GDI/Vehicles; Nod/Vehicles
+		Category: 盟军/载具; 苏军/载具; GDI/载具; Nod/载具
 
 TRUK:
 	Inherits: ^Vehicle
@@ -2630,7 +2630,7 @@ MGG:
 	Turreted:
 		Offset: -299,0,171
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 MRJ:
 	Inherits: ^Vehicle
@@ -2689,7 +2689,7 @@ MRJ:
 		Offset: -256,0,256
 		IsDecoration: True
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 MSG:
 	Inherits: ^Vehicle
@@ -2768,7 +2768,7 @@ MSG:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: shadow
 
@@ -2839,7 +2839,7 @@ TTRA:
 		Condition: tarc-upgrade
 		Prerequisites: tarc.upgrade
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 TTNK:
 	Inherits: ^Tank
@@ -2907,7 +2907,7 @@ TTNK:
 		Condition: tarc-upgrade
 		Prerequisites: tarc.upgrade
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		Subfaction: russia
 
@@ -2966,7 +2966,7 @@ DTRK:
 		Voice: Build
 		ValidRelationships: Neutral, Ally
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 CTNK:
 	Inherits: ^Vehicle
@@ -3061,7 +3061,7 @@ CTNK:
 		RequiresCondition: chronoprep
 		Interval: 1000
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 QTNK:
 	Inherits: ^Tank
@@ -3126,7 +3126,7 @@ QTNK:
 		TargetTypes: DriverKillImmune
 		RequiresCondition: deployed
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 
 AMCV:
 	Inherits: ^VehicleTD-NOUPG
@@ -3186,7 +3186,7 @@ AMCV:
 	DamageTypeDamageMultiplier@A2GPROTECTION:
 		Modifier: 60
 	Encyclopedia:
-		Category: GDI/Vehicles; Nod/Vehicles
+		Category: GDI/载具; Nod/载具
 
 HMMV:
 	Inherits: ^VehicleTD
@@ -3274,7 +3274,7 @@ HMMV:
 		BuildDuration: 200
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 HMMV.TOW:
 	Inherits: HMMV
@@ -3403,7 +3403,7 @@ GDRN:
 	Sellable:
 		RequiresCondition: unit-sellable && !c4 && !being-warped
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: arc
 
@@ -3556,7 +3556,7 @@ BGGY:
 		UpgradeAtActors: fix, rep, srep
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 RBUG:
 	Inherits: BGGY
@@ -3793,7 +3793,7 @@ APC2:
 		UpgradeAtActors: fix, rep, srep
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Name: 装甲运兵车
 
@@ -3804,7 +3804,7 @@ APC2.Nod.Preview:
 	Buildable:
 		Queue: Encyclopedia
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: legion
 
@@ -4017,7 +4017,7 @@ VULC:
 		TargetTypes: MindControlImmune
 		RequiresCondition: loaded-cmdo
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Name: 火神战车
 
@@ -4147,7 +4147,7 @@ LTNK:
 	ReplacedInQueue:
 		Actors: ltnk.laser
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 LTNK.Laser:
 	Inherits: LTNK
@@ -4319,7 +4319,7 @@ MTNK:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 MTNK.Drone:
 	Inherits: MTNK
@@ -4404,7 +4404,7 @@ MTNK.Drone:
 		RequiresCondition: unit-sellable && !c4 && !being-warped
 	ReclaimsExperience:
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: arc
 
@@ -4416,7 +4416,7 @@ MTNK.Nod.Preview:
 		Queue: Encyclopedia
 		BuildPaletteOrder: 101
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: legion
 
@@ -4454,7 +4454,7 @@ MTNK.Laser:
 	-ReplacedInQueue:
 	-Upgradeable@BDRONE:
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: legion
 		VariantOf: MTNK.Nod.Preview
@@ -4557,7 +4557,7 @@ MDRN:
 	Sellable:
 		RequiresCondition: unit-sellable && !c4 && !being-warped
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: arc
 
@@ -4746,7 +4746,7 @@ HTNK:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 HTNK.Ion:
 	Inherits: HTNK
@@ -5048,7 +5048,7 @@ MSAM:
 	Voiced:
 		VoiceSet: MsamVoice
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 MLRS:
 	Inherits: ^TankTD
@@ -5151,7 +5151,7 @@ MLRS:
 		Condition: blacknapalm-upgrade
 		Prerequisites: blacknapalm.upgrade
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		RenderPreviewActor: mlrs.preview
 
@@ -5284,7 +5284,7 @@ STNK.Nod:
 		Condition: inherited-cloak
 		RequiresCondition: hidden || invisibility
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 HSTK:
 	Inherits: ^TankTD
@@ -5394,7 +5394,7 @@ HSTK:
 		Condition: inherited-cloak
 		RequiresCondition: hidden || invisibility
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: shadow
 
@@ -5477,7 +5477,7 @@ BIKE:
 		RequiresCondition: tibcore-upgrade
 		Sequence: idle-upgrade
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 FTNK:
 	Inherits: ^TankTD
@@ -5534,7 +5534,7 @@ FTNK:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 HFTK:
 	Inherits: ^TankTD
@@ -5640,7 +5640,7 @@ HFTK:
 		Modifier: 82
 		RequiresCondition: burstcount >= 10
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: blackh
 
@@ -5681,7 +5681,7 @@ HARV.TD:
 	ReplacedInQueue:
 		Actors: harv.td.upg
 	Encyclopedia:
-		Category: GDI/Vehicles; Nod/Vehicles
+		Category: GDI/载具; Nod/载具
 
 HARV.TD.UPG:
 	Inherits: HARV.TD
@@ -5718,7 +5718,7 @@ HARV.TD.UPG:
 	-TransferResourcesOnTransform:
 	-ReplacedInQueue:
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 
 BTR:
 	Inherits: ^Tank
@@ -5841,7 +5841,7 @@ BTR:
 	Voiced:
 		VoiceSet: BtrVoice
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		Name: BTR
 
@@ -5986,7 +5986,7 @@ BTR.YURI:
 	-Upgradeable@GATTLING:
 	-WithDecoration@UpgradeOverlay:
 	EncyclopediaExtras:
-		Name: Gattling BTR
+		Name: 加特林BTR
 		Subfaction: yuri
 
 BTR.YURI.AI:
@@ -6141,7 +6141,7 @@ TRPC:
 	Sellable:
 		RefundPercent: 10
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Infantry Doctrine.
 
@@ -7158,7 +7158,7 @@ IFV:
 		CasingSpawnLocalOffset: 0,-225,200
 		CasingTargetOffset: 0, -600, 0
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Name: IFV
 
@@ -7407,7 +7407,7 @@ RECK:
 	SpeedMultiplier@TigerGuard:
 		Modifier: 90
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Allied War Factory.
 		-Name:
@@ -7530,7 +7530,7 @@ TITN:
 	RangeMultiplier@SEEK3:
 		RequiresCondition: seek3 && !gyrostabilizers
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: talon
 
@@ -7683,7 +7683,7 @@ JUGG:
 	WithIdleOverlay@MINDCONTROL:
 		Offset: 0,0,512
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: talon
 
@@ -7704,7 +7704,7 @@ TTRK:
 		Weapon: UnitExplodeToxinTruck
 		EmptyWeapon: UnitExplodeToxinTruck
 	Encyclopedia:
-		Category: Other/Tech Units
+		Category: 其他/科技单位
 
 DISR:
 	Inherits: ^TankTD
@@ -7792,7 +7792,7 @@ DISR:
 	-RangeMultiplier@SEEK2:
 	-RangeMultiplier@SEEK3:
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: zocom
 
@@ -7942,7 +7942,7 @@ HSAM:
 	Voiced:
 		VoiceSet: MsamVoice
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: eagle
 
@@ -8056,7 +8056,7 @@ RTNK:
 		Condition: inherited-cloak
 		RequiresCondition: hidden || invisibility
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Subfaction: england
 
@@ -8134,7 +8134,7 @@ V3RL:
 	Voiced:
 		VoiceSet: V3Voice
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		RenderPreviewActor: v3rl.preview
 		Subfaction: ukraine
@@ -8241,7 +8241,7 @@ TNKD:
 	Selectable:
 		DecorationBounds: 1194, 1194
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Subfaction: germany
 
@@ -8354,7 +8354,7 @@ MSAR:
 	-WithDecoration@BOMBARD2:
 	-WithDecoration@BOMBARD3:
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 PTNK:
 	Inherits: ^Tank
@@ -8430,7 +8430,7 @@ PTNK:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 
 PCAN:
 	Inherits: PTNK
@@ -8542,7 +8542,7 @@ WTNK:
 		Condition: microwave-upgrade
 		Prerequisites: microwave.upgrade
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		Subfaction: legion
 
@@ -8761,7 +8761,7 @@ BATF:
 		Reject: Unload
 		RequiresCondition: anathema
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Subfaction: france
 
@@ -8897,7 +8897,7 @@ MEMP:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Vehicle, Defense
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 
 CDRN:
 	Inherits: ^VehicleTD
@@ -8992,7 +8992,7 @@ CDRN:
 		Range: 3c0
 		Color: c33d73
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		Subfaction: yuri
 
@@ -9016,7 +9016,7 @@ CHPR:
 	Valued:
 		Cost: 1550
 	Tooltip:
-		Name: Chrono牢笼
+		Name: 超时空牢笼
 		GenericName: Tank
 	UpdatesPlayerStatistics:
 		AddToArmyValue: true
@@ -9114,7 +9114,7 @@ CHPR:
 		RequiresCondition: tflx-upgrade
 		Modifier: 130
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		Subfaction: germany
 
@@ -9178,7 +9178,7 @@ CRYO:
 		Types: Veterancy
 		Prerequisites: vehicles.upgraded
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Sweden Coalition.
 
@@ -9268,7 +9268,7 @@ PBUL:
 		UseDisabledArmaments: true
 		TargetFrozenActors: true
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: eagle
 
@@ -9322,7 +9322,7 @@ CYCP:
 		Actor: CYCP.Husk
 		RequiresCondition: !being-warped
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Soviet War Factory.
 
@@ -9404,7 +9404,7 @@ BASI:
 		Condition: inherited-cloak
 		RequiresCondition: hidden || invisibility
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from GDI Weapons Factory.
 
@@ -9468,7 +9468,7 @@ MANT:
 	GuardsSelection:
 		ValidTargets: Infantry, Vehicle
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Nod Airstrip.
 
@@ -9539,7 +9539,7 @@ VIPR:
 		TargetTypes: Water, Ship
 		RequiresCondition: onwater
 	Encyclopedia:
-		Category: Nod/Stolen Technology
+		Category: Nod/窃取科技
 	EncyclopediaExtras:
 		AdditionalInfo: Stolen from Scrin Warp Sphere.
 
@@ -9618,7 +9618,7 @@ WOLV:
 	ReloadDelayMultiplier@GYRO:
 		Modifier: 140
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: talon
 
@@ -9742,7 +9742,7 @@ XO:
 		Modifier: 50
 		RequiresCondition: jumping
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		Subfaction: zocom
 
@@ -9867,7 +9867,7 @@ APOC:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Armor Doctrine.
 
@@ -10111,7 +10111,7 @@ OVLD:
 		BuildDuration: 100
 		RequiresCondition: !mindcontrolled
 	Encyclopedia:
-		Category: Soviets/Vehicles
+		Category: 苏军/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Infantry Doctrine.
 
@@ -10308,7 +10308,7 @@ THWK:
 	Selectable:
 		DecorationBounds: 1194, 1194
 	Encyclopedia:
-		Category: GDI/Vehicles
+		Category: GDI/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Bombardment Strategy.
 
@@ -10450,7 +10450,7 @@ ZEUS:
 	Voiced:
 		VoiceSet: ZeusVoice
 	Encyclopedia:
-		Category: Allies/Vehicles
+		Category: 盟军/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Greece Coalition.
 
@@ -10703,7 +10703,7 @@ AVTR:
 		Condition: quantum-upgrade
 		Prerequisites: quantum.upgrade
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Wrath Covenant.
 
@@ -10821,6 +10821,6 @@ CUST:
 	Sellable:
 		RefundPercent: 10
 	Encyclopedia:
-		Category: Nod/Vehicles
+		Category: Nod/载具
 	EncyclopediaExtras:
 		AdditionalInfo: Requires Unity Covenant.

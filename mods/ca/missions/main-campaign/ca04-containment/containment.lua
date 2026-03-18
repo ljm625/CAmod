@@ -451,7 +451,7 @@ DropChronoPrison = function()
 		local entryPath = { CarryallEntryPoint.Location, CarryallDropPoint.Location }
 		local exitPath =  { CarryallEntryPoint.Location }
 		ReinforcementsCA.ReinforceWithTransport(Greece, "ocar.chpr", nil, entryPath, exitPath)
-		Notification("与Chrono牢笼会合并前往超时空传送仪。")
+		Notification("与超时空牢笼会合并前往超时空传送仪。")
 		MediaCA.PlaySound(MissionDir .. "/r_cprendezvous.aud", 2)
 
 		Trigger.OnEnteredProximityTrigger(CarryallDropPoint.CenterPosition, WDist.New(2048), function(a, id)
