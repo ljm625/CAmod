@@ -46,7 +46,7 @@ World:
 		DisplayOrder: 999
 	LobbyMissionInfo@InitialObjectives:
 		Prefix: Initial Objectives
-		Text: • 消灭全部忠于主宰的Scrin部队。
+		Text: • 消灭全部忠于尊王的Scrin部队。
 
 Player:
 	ProvidesPrerequisitesOnCount@ScrinAllegiances:

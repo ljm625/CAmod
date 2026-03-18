@@ -716,9 +716,9 @@ gyro.upgrade:
 		BuildPaletteOrder: 40
 		Prerequisites: ~player.talon, upgc, ~techlevel.high
 		IconPalette: chrometd
-		Description: 允许机甲单位启用陀螺稳定器，提高射程但降低射速。\n\n升级对象：狼獾机甲\n升级对象：泰坦\n升级对象：轨道炮泰坦\n升级对象：主宰者
+		Description: 允许机甲单位启用陀螺稳定器，提高射程但降低射速。\n\n升级对象：狼獾机甲\n升级对象：泰坦\n升级对象：轨道炮泰坦\n升级对象：神像
 	TooltipExtras:
-		Strengths: + 新增陀螺稳定器能力（提高射程、降低射速）\n+ 主宰者射程提升 50%
+		Strengths: + 新增陀螺稳定器能力（提高射程、降低射速）\n+ 神像射程提升 50%
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -1349,7 +1349,7 @@ tarc.upgrade:
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: ~player.russia, stek, ~techlevel.medium
-			Description: 升级特斯拉坦克与特斯拉履带车的武器。\n\n升级对象：特斯拉坦克\n升级对象：特斯拉履带车
+			Description: 升级磁能坦克与特斯拉履带车的武器。\n\n升级对象：磁能坦克\n升级对象：特斯拉履带车
 	TooltipExtras:
 		Strengths: + 攻击可连锁至最多 2 个额外目标
 	Valued:

@@ -832,7 +832,7 @@ TITN.RAIL.Husk:
 JUGG.Husk:
 	Inherits: ^HuskTD
 	Tooltip:
-		Name: 残骸（主宰者）
+		Name: 残骸（神像）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:

@@ -175,18 +175,18 @@ WorldLoaded = function()
 	InitScrin()
 	InitScrinRebels()
 
-	ObjectiveDestroyOverlordForces = Nod.AddObjective("消灭忠于主宰的Scrin部队。")
+	ObjectiveDestroyOverlordForces = Nod.AddObjective("消灭忠于尊王的Scrin部队。")
 
 	if not IsCoop then
 		ObjectiveDefendRebels = Nod.AddObjective("保护Scrin反抗军部队。")
 	end
 
 	Trigger.AfterDelay(DateTime.Seconds(3), function()
-		Media.DisplayMessage("主宰的暴政将在今天终结，指挥官，一个新时代将由此开启。其他战场仍在激战，但决定性一击必须在此地打出，他最精锐的部队都聚集于此。不要留情，指挥官。以力量换取和平。", "凯恩", HSLColor.FromHex("FF0000"))
+		Media.DisplayMessage("尊王的暴政将在今天终结，指挥官，一个新时代将由此开启。其他战场仍在激战，但决定性一击必须在此地打出，他最精锐的部队都聚集于此。不要留情，指挥官。以力量换取和平。", "凯恩", HSLColor.FromHex("FF0000"))
 		MediaCA.PlaySound(MissionDir .. "/kane_nomercy.aud", 2)
 
 		Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(14)), function()
-			Media.DisplayMessage("愚蠢的人类！你们的军队将被碾碎，叛乱将被镇压，而你们都会死在这里！", "Scrin主宰", HSLColor.FromHex("7700FF"))
+			Media.DisplayMessage("愚蠢的人类！你们的军队将被碾碎，叛乱将被镇压，而你们都会死在这里！", "Scrin尊王", HSLColor.FromHex("7700FF"))
 			MediaCA.PlaySound(MissionDir .. "/overlordwarning.aud", 2)
 
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(60)), function()
@@ -237,7 +237,7 @@ OncePerFiveSecondChecks = function()
 
 		if not PlayerHasBuildings(Scrin) and #Scrin.GetActorsByType("etpd") == 0 and not Victory then
 			Victory = true
-			Media.DisplayMessage("主宰的命运已定，Scrin已获解放。现在我们必须返回地球，为人类开创新的起点。净化后的泰伯利亚潜力无穷，拥抱其光辉者将共享其赐福；拒绝者，只会被留在黑暗中。", "凯恩", HSLColor.FromHex("FF0000"))
+			Media.DisplayMessage("尊王的命运已定，Scrin已获解放。现在我们必须返回地球，为人类开创新的起点。净化后的泰伯利亚潜力无穷，拥抱其光辉者将共享其赐福；拒绝者，只会被留在黑暗中。", "凯恩", HSLColor.FromHex("FF0000"))
 			MediaCA.PlaySound(MissionDir .. "/kane_newbeginning.aud", 2)
 			Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(19)), function()
 				Nod.MarkCompletedObjective(ObjectiveDestroyOverlordForces)
@@ -399,7 +399,7 @@ SendNextExterminator = function()
 
 			if NextExterminatorIndex == 1 then
 				Trigger.AfterDelay(AdjustTimeForGameSpeed(DateTime.Seconds(2)), function()
-					Media.DisplayMessage("指挥官，主宰最强大的武器正在部署。动用你手中一切力量摧毁它们。", "凯恩", HSLColor.FromHex("FF0000"))
+					Media.DisplayMessage("指挥官，尊王最强大的武器正在部署。动用你手中一切力量摧毁它们。", "凯恩", HSLColor.FromHex("FF0000"))
 					MediaCA.PlaySound(MissionDir .. "/kane_exterminators.aud", 2)
 				end)
 			else
