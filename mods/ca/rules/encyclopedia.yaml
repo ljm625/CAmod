@@ -62,7 +62,7 @@ encyclopedia.power.veilofwar:
 	Encyclopedia:
 		Category: 盟军/支援技能
 	EncyclopediaExtras:
-		Description: 生成不断扩张的迷雾区域，降低敌方单位与防御建筑的视野和射程。
+		Description: 生成不断扩张的迷雾区域，\n降低敌方单位与防御建筑的视野和射程。
 		Subfaction: england
 
 encyclopedia.power.clustermines:
@@ -133,7 +133,7 @@ encyclopedia.power.bsky:
 	Encyclopedia:
 		Category: 盟军/支援技能
 	EncyclopediaExtras:
-		Description: 向多个地面目标发射远程制导导弹，并按价值优先打击。若目标偏离初始位置过远，导引可能丢失。
+		Description: 向多个地面目标发射远程制导导弹，并按价值优先打击。\n若目标偏离初始位置过远，导引可能丢失。
 		AdditionalInfo: 需要韩国联盟。
 
 encyclopedia.power.spysatellite:
@@ -174,7 +174,7 @@ encyclopedia.power.timewarp:
 	Encyclopedia:
 		Category: 盟军/支援技能
 	EncyclopediaExtras:
-		Description: 扰乱目标区域的时间与空间。受影响单位与建筑会被时间冻结，无法行动，但免疫伤害。
+		Description: 扰乱目标区域的时间与空间。受影响单位与建筑会被时间冻结，\n无法行动，但免疫伤害。
 		Subfaction: germany
 
 encyclopedia.power.chronoshift:
@@ -298,7 +298,7 @@ encyclopedia.power.mutabomb:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫獾式轰炸机在你的目标区域投下基因突变炸弹，将步兵转化为你控制的狂兽人。
+		Description: 呼叫獾式轰炸机在你的目标区域投下基因突变炸弹，\n将步兵转化为你控制的狂兽人。
 		Subfaction: yuri
 
 encyclopedia.power.chaosbombs:
@@ -364,7 +364,7 @@ encyclopedia.power.killzone:
 	Encyclopedia:
 		Category: 苏军/支援技能
 	EncyclopediaExtras:
-		Description: 呼叫间谍飞机标记目标区域。区域内所有敌方单位都会承受额外伤害。
+		Description: 呼叫间谍飞机标记目标区域。\n区域内所有敌方单位都会承受额外伤害。
 		AdditionalInfo: 需要火炮学说。
 
 encyclopedia.power.ironcurtain:
@@ -449,7 +449,7 @@ encyclopedia.power.reinforcements:
 	Encyclopedia:
 		Category: GDI/支援技能
 	EncyclopediaExtras:
-		Description: 一架奥卡运载机会在目标位置投放一辆载有步兵小队的装甲运兵车。
+		Description: 一架奥卡运载机会在目标位置投放一辆载有步兵小队的\n装甲运兵车。
 		Subfaction: eagle
 
 encyclopedia.power.interceptors:
@@ -463,7 +463,7 @@ encyclopedia.power.interceptors:
 	Encyclopedia:
 		Category: GDI/支援技能
 	EncyclopediaExtras:
-		Description: 一支拦截机中队在目标区域提供空中掩护，并攻击范围内所有敌机。
+		Description: 一支拦截机中队在目标区域提供空中掩护，\n并攻击范围内所有敌机。
 
 encyclopedia.power.naniterepair:
 	Inherits: ^SupportPowerPreview
@@ -860,7 +860,7 @@ encyclopedia.power.buzzerswarm:
 	Encyclopedia:
 		Category: Scrin/支援技能
 	EncyclopediaExtras:
-		Description: 生成一群可控制的虫群，可致盲并伤害附近所有目标；对步兵尤为致命。
+		Description: 生成一群可控制的虫群，可致盲并伤害附近所有目标；\n对步兵尤为致命。
 		Subfaction: harbinger
 
 encyclopedia.power.ichorseed:
@@ -932,7 +932,7 @@ encyclopedia.power.owrath:
 	Encyclopedia:
 		Category: Scrin/支援技能
 	EncyclopediaExtras:
-		Description: 一颗泰伯利亚陨石坠落目标位置，造成重度伤害并生成一片泰伯利亚。
+		Description: 一颗泰伯利亚陨石坠落目标位置，\n造成重度伤害并生成一片泰伯利亚。
 		AdditionalInfo: 需要忠诚派阵营。
 
 encyclopedia.power.fleetrecall:
@@ -1218,7 +1218,7 @@ encyclopedia.ifv.cmdo:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Allies
-		Description: IFV 搭载突击队员（谭雅/鲍里斯/突击队员），快速发射高伤害狙击连射。
+		Description: IFV 搭载突击队员（谭雅/鲍里斯/突击队员），\n快速发射高伤害狙击连射。
 	TooltipExtras:
 		Strengths: • 对步兵强势
 		Weaknesses: • 无法攻击空中单位、载具与建筑
@@ -1324,7 +1324,7 @@ encyclopedia.ifv.psy:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载尤里或主脑，可心灵控制敌方单位，乘员离开后会失去控制。
+		Description: IFV 搭载尤里或主脑，可心灵控制敌方单位，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对步兵、载具强势
 		Weaknesses: • 无法造成伤害\n• 无法攻击空中单位
@@ -1464,7 +1464,7 @@ encyclopedia.ifv.hack:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载黑客，可黑入敌方防御与建筑，乘员离开后会失去控制。
+		Description: IFV 搭载黑客，可黑入敌方防御与建筑，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对防御建筑、建筑强势
 		Weaknesses: • 无法造成伤害\n• 乘员离开后失去控制
@@ -1605,7 +1605,7 @@ encyclopedia.ifv.mortchem:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载化学迫击炮步兵，发射会留下毒性残留的化学迫击炮弹。
+		Description: IFV 搭载化学迫击炮步兵，\n发射会留下毒性残留的化学迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -1620,7 +1620,7 @@ encyclopedia.ifv.mortcryo:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载冷冻迫击炮步兵，发射可减速并冻结敌人的冷冻迫击炮弹。
+		Description: IFV 搭载冷冻迫击炮步兵，\n发射可减速并冻结敌人的冷冻迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -1635,7 +1635,7 @@ encyclopedia.ifv.mortsonic:
 	EncyclopediaExtras:
 		VariantOf: IFV
 		VariantGroup: Other Factions
-		Description: IFV 搭载声波迫击炮步兵，发射造成震荡效果的声波迫击炮弹。
+		Description: IFV 搭载声波迫击炮步兵，\n发射造成震荡效果的声波迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -1858,7 +1858,7 @@ encyclopedia.reck.cmdo:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Allies
-		Description: 清算者搭载突击队员（谭雅/鲍里斯/突击队员），快速发射高伤害狙击连射。
+		Description: 清算者搭载突击队员（谭雅/鲍里斯/突击队员），\n快速发射高伤害狙击连射。
 	TooltipExtras:
 		Strengths: • 对步兵强势
 		Weaknesses: • 无法攻击空中单位、载具与建筑
@@ -1964,7 +1964,7 @@ encyclopedia.reck.psy:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载尤里或主脑，可心灵控制敌方单位，乘员离开后会失去控制。
+		Description: 清算者搭载尤里或主脑，可心灵控制敌方单位，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对步兵、载具强势
 		Weaknesses: • 无法造成伤害\n• 无法攻击空中单位
@@ -2104,7 +2104,7 @@ encyclopedia.reck.hack:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载黑客，可黑入敌方防御与建筑，乘员离开后会失去控制。
+		Description: 清算者搭载黑客，可黑入敌方防御与建筑，\n乘员离开后会失去控制。
 	TooltipExtras:
 		Strengths: • 对防御建筑、建筑强势
 		Weaknesses: • 无法造成伤害\n• 乘员离开后失去控制
@@ -2245,7 +2245,7 @@ encyclopedia.reck.mortchem:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载化学迫击炮步兵，发射会留下毒性残留的化学迫击炮弹。
+		Description: 清算者搭载化学迫击炮步兵，\n发射会留下毒性残留的化学迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -2260,7 +2260,7 @@ encyclopedia.reck.mortcryo:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载冷冻迫击炮步兵，发射可减速并冻结敌人的冷冻迫击炮弹。
+		Description: 清算者搭载冷冻迫击炮步兵，\n发射可减速并冻结敌人的冷冻迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -2275,7 +2275,7 @@ encyclopedia.reck.mortsonic:
 	EncyclopediaExtras:
 		VariantOf: RECK
 		VariantGroup: Other Factions
-		Description: 清算者搭载声波迫击炮步兵，发射造成震荡效果的声波迫击炮弹。
+		Description: 清算者搭载声波迫击炮步兵，\n发射造成震荡效果的声波迫击炮弹。
 	TooltipExtras:
 		Strengths: • 对步兵、建筑强势
 		Weaknesses: • 对重甲单位弱势\n• 无法攻击空中单位\n• 难以命中移动目标
@@ -2288,7 +2288,7 @@ encyclopedia.buffs.anathema:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 邪恶Scrin支援技能施加的效果。30 秒内逐步提高伤害与速度，但效果结束后单位会被摧毁。火力增益与受影响单位价值成反比。
+		Description: 邪恶Scrin支援技能施加的效果。\n30 秒内逐步提高伤害与速度，\n但效果结束后单位会被摧毁。\n火力增益与受影响单位价值成反比。
 	TooltipExtras:
 		Strengths: • 在 30 秒内逐步提升火力、射速与速度
 		Weaknesses: • 效果结束后被摧毁
@@ -2308,7 +2308,7 @@ encyclopedia.buffs.defensematrix:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由 GDI 区域防卫兵赋予附近友军步兵，提高其有效生命值。
+		Description: 由 GDI 区域防卫兵赋予附近友军步兵，\n提高其有效生命值。
 	TooltipExtras:
 		Strengths: • 每层提高 1250 点有效生命值（最多 6 层）
 	WithIdleOverlay@ZoneDefenderShield:
@@ -2324,7 +2324,7 @@ encyclopedia.buffs.frenzy:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由同名“凯恩烙印”支援技能赋予。提高射速与移动速度，但效果结束后会反向削弱。
+		Description: 由同名“凯恩烙印”支援技能赋予。提高射速与移动速度，\n但效果结束后会反向削弱。
 	TooltipExtras:
 		Strengths: +33% 射速\n+25% 移动速度
 		Weaknesses: -15% 射速（效果结束后）\n-15% 移动速度（效果结束后）
@@ -2351,7 +2351,7 @@ encyclopedia.buffs.gyro:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 启动“陀螺稳定器”后获得的效果（利爪机甲升级解锁）。可提升射程，但会降低射速。
+		Description: 启动“陀螺稳定器”后获得的效果（利爪机甲升级解锁）。\n可提升射程，但会降低射速。
 	TooltipExtras:
 		Strengths: +33% 武器射程
 		Weaknesses: -25% 射速
@@ -2366,7 +2366,7 @@ encyclopedia.buffs.hotu:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由苏军采用步兵学说后解锁的“联盟英雄”支援技能赋予。提高有效生命、速度、射速与射程。
+		Description: 由苏军采用步兵学说后解锁的“联盟英雄”支援技能赋予。\n提高有效生命、速度、 射速与射程。
 	TooltipExtras:
 		Strengths: 有效生命值提升至 28000\n+20% 移动速度\n+50% 射程\n+50% 射速
 	WithIdleOverlay@HeroOfTheUnionCrest:
@@ -2389,7 +2389,7 @@ encyclopedia.buffs.hypercharge:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 通过激活“超载”能力获得的效果（Scrin 追猎者与裂伤者升级解锁）。可在短时间内持续开火，但会承受更高伤害；效果结束后会短暂降低速度、伤害与射速。
+		Description: 通过激活“超载”能力获得的效果（Scrin 追猎\n者与裂伤者升级解锁）。可在短时间内持续开火，\n但会承受更高伤害；效果结束后会短暂降低速度、\n伤害与射速。
 	TooltipExtras:
 		Strengths: • 持续开火
 		Weaknesses: +20% 所受伤害
@@ -2408,7 +2408,7 @@ encyclopedia.buffs.inspiration:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 施加于苏军政委、部队爬行者或霸主坦克范围内的基础步兵。提高移动速度与射速。
+		Description: 施加于苏军政委、部队爬行者或霸主坦克范围内的基础步兵。\n提高移动速度与射速。
 	TooltipExtras:
 		Strengths: +30% 移动速度\n+10% 射速
 	WithIdleOverlay@Inspiration1:
@@ -2424,7 +2424,7 @@ encyclopedia.buffs.inspiration2:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 施加于受到两种或以上“鼓舞”来源影响的基础步兵。进一步提高移动速度与射速。
+		Description: 施加于受到两种或以上“鼓舞”来源影响的基础步兵。\n进一步提高移动速度与射速。
 	TooltipExtras:
 		Strengths: +40% 移动速度\n+20% 射速
 	WithIdleOverlay@Inspiration2:
@@ -2493,7 +2493,7 @@ encyclopedia.buffs.naniteshield:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由 GDI “坚守阵线”战略三级解锁的支援技能赋予。可吸收一部分受到的伤害。
+		Description: 由 GDI “坚守阵线”战略三级解锁的支援技能赋予。\n可吸收一部分受到的伤害。
 	TooltipExtras:
 		Strengths: • 吸收 50% 受到的伤害
 	WithIdleOverlay@NSHIELD:
@@ -2511,7 +2511,7 @@ encyclopedia.buffs.tibstealth:
 	Encyclopedia:
 		Category: 其他/增益
 	EncyclopediaExtras:
-		Description: 由 Nod 隐形发生器提供的小型超级武器施加。使单位在攻击或被攻击前对敌隐形，并降低所受伤害。
+		Description: 由 Nod 隐形发生器提供的小型超级武器施加。\n使单位在攻击或被攻击前对敌隐形，并降低所受伤害。
 	TooltipExtras:
 		Strengths: • 对敌方隐形\n-10% 所受伤害
 
@@ -2523,7 +2523,7 @@ encyclopedia.debuffs.atomized:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 仅可由收藏者-73的原子裂解者施加。造成持续伤害，并降低移动速度与火力。
+		Description: 仅可由收藏者-73的原子裂解者施加。造成持续伤害，\n并降低移动速度与火力。
 	TooltipExtras:
 		Weaknesses: • 造成周期性伤害\n-33% 移动速度\n-33% 伤害输出
 	WithIdleOverlay@ATOMIZED:
@@ -2537,7 +2537,7 @@ encyclopedia.debuffs.berserk:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由尤里的混沌气体或 Nod 凯恩神像的狂怒发生器施加。使受影响单位失控并攻击附近单位。
+		Description: 由尤里的混沌气体或 Nod 凯恩神像的狂怒发生器施加。\n使受影响单位失控并攻击附近单位。
 	TooltipExtras:
 		Weaknesses: • 会无差别攻击单位
 		Attributes: +25% 移动速度\n+100% 射速
@@ -2568,7 +2568,7 @@ encyclopedia.debuffs.chill:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由盟军冷冻武器施加。降低移动速度并使受影响单位承受更多伤害。
+		Description: 由盟军冷冻武器施加。\n降低移动速度并使受影响单位承受更多伤害。
 	TooltipExtras:
 		Attributes: • 最多可叠加 10 层
 		Weaknesses: -25/35/43/50/56/59/62/65/68/70% 移动速度\n每层 +10% 所受伤害
@@ -2601,7 +2601,7 @@ encyclopedia.debuffs.emp:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 完全瘫痪载具、重型半机械单位与防御建筑。未受护盾保护的飞行器会坠毁。
+		Description: 完全瘫痪载具、重型半机械单位与防御建筑。\n未受护盾保护的飞行器会坠毁。
 	TooltipExtras:
 		Weaknesses: • 移动禁用\n• 武器禁用\n• 技能禁用\n• 无护盾飞行器会坠毁
 	WithColoredOverlayCA@EMPDISABLE:
@@ -2620,7 +2620,7 @@ encyclopedia.debuffs.irradiated:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由伊拉克辐射毁灭者与歼灭者施加。造成周期性范围伤害，降低输出并提高受伤害。
+		Description: 由伊拉克辐射毁灭者与歼灭者施加。造成周期性范围伤害，\n降低输出并提高受伤害。
 	TooltipExtras:
 		Weaknesses: • 对附近单位造成周期性伤害\n• 使地面辐照\n-10% 伤害输出\n+10% 所受伤害
 	WithPalettedOverlay@IRRADIATABLE:
@@ -2665,7 +2665,7 @@ encyclopedia.debuffs.reapersnared:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由 Nod 收割者半机械人的束缚能力施加。可完全瘫痪步兵。
+		Description: 由 Nod 收割者半机械人的束缚能力施加。\n可完全瘫痪步兵。
 	TooltipExtras:
 		Weaknesses: • 移动禁用\n• 武器禁用\n• 技能禁用
 	WithIdleOverlay@ReaperSnare:
@@ -2682,7 +2682,7 @@ encyclopedia.debuffs.suppression:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由 Scrin “压制”技能、主脑与衰弱者施加。降低移动速度与射速。
+		Description: 由 Scrin “压制”技能、主脑与衰弱者施加。\n降低移动速度与射速。
 	TooltipExtras:
 		Weaknesses: -60% 移动速度\n-20% 射速
 	WithPalettedOverlay@SUPPRESSION:
@@ -2696,7 +2696,7 @@ encyclopedia.debuffs.veiled:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由盟军裂缝产生器、黑鹰、虎卫以及英国“战争迷雾”支援技能施加。降低武器射程与视野范围。
+		Description: 由盟军裂缝产生器、黑鹰、\n虎卫以及英国“战争迷雾”支援技能施加。\n降低武器射程与视野范围。
 	TooltipExtras:
 		Weaknesses: -20% 武器射程\n-20% 视野范围
 	WithIdleOverlay@VEILED:
@@ -2712,7 +2712,7 @@ encyclopedia.debuffs.warped:
 	Encyclopedia:
 		Category: 其他/减益
 	EncyclopediaExtras:
-		Description: 由盟军时空监牢与德国“时间扭曲”能力施加。可完全瘫痪目标，但使其免疫非时空伤害。
+		Description: 由盟军时空监牢与德国“时间扭曲”能力施加。\n可完全瘫痪目标，但使其免疫非时空伤害。
 	TooltipExtras:
 		Strengths: • 免疫非时空伤害
 		Weaknesses: • 移动禁用\n• 武器禁用\n• 技能禁用
