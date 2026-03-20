@@ -8,6 +8,10 @@ translation:
   GDI: GDI
   Nod: NOD
   Scrin: 思金人
+  Steel Talons: 钢爪
+  ZOCOM: ZOCOM
+  Black Hand: 黑手
+  Marked of Kane: 凯恩之印
 
   # Core gameplay terms
   Upgrade: 升级
@@ -150,7 +154,7 @@ translation:
   Longbow: 长弓
   Hind: 雌鹿
   Apache: 阿帕奇
-  Orca: 奥卡
+  Orca: 奥卡战机
   Orca Bomber: 奥卡轰炸机
   Orca Carryall: 奥卡运载机
   Harrier: 鹞式战机
@@ -159,7 +163,7 @@ translation:
   Phantom: 幻影战机
   Kamov: 卡莫夫
   Shade: 暗影战机
-  Vertigo: 维提戈
+  Vertigo: 眩晕轰炸机
   Manticore: 蝎尾兽
 
   Attack Plane: 攻击机
@@ -173,8 +177,8 @@ translation:
   Point Defense Systems: 点防御系统
   Point Defense Shield: 点防御护盾
   Point Defense Laser: 点防御激光
-  Zone Trooper: 区域突击兵
-  Zone Raider: 区域袭击者
+  Zone Trooper: 重装机兵
+  Zone Raider: 重装奇袭兵
   Zone Defender: 区域防御者
   Firestorm Missile Barrage: 火焰风暴导弹齐射
   Firestorm Missiles Power: 火焰风暴导弹技能
@@ -217,8 +221,8 @@ translation:
   Impaler: 穿刺者
   Stalker: 潜行者
   Shard Walker: 碎晶行者
-  Ravager: 掠夺者
-  Reaper Tripod: 收割者三足机甲
+  Ravager: 蹂躏者
+  Reaper Tripod: 三脚收割机甲
   Devastator Warship: 毁灭战舰
   Planetary Assault Carrier: 行星突击母舰
   Mothership: 母舰
@@ -245,8 +249,8 @@ translation:
   Subterranean APC: 地下装甲运兵车
   Disruptor: 破坏者
   Cryo Launcher: 冰冻发射车
-  Wolverine: 狼獾机甲
-  Avatar: 圣灵机甲
+  Wolverine: 狼獾
+  Avatar: 圣灵战斗机甲
   Custodian: 维护者
   X-O Powersuit: X-O动力装甲
   V2: V2
@@ -265,6 +269,27 @@ translation:
   BTR: BTR
   Gattling BTR: 加特林BTR
   MGT-1A: MGT-1A
+  Pitbull: 斗犬
+  Shatterer: 震裂者
+  Slingshot: 弹弓
+  Hammerhead: 锤头鲨
+  Firehawk: 火鹰战机
+  Venom: 毒液战机
+  Specter: 幽魂
+  Awakened: 苏醒者
+  Enlightened: 启明者
+  Confessor: 信徒密党
+  Purifier: 净化者战斗机甲
+  Redeemer: 救世圣灵
+  Buzzer: 机械蜂
+  Buzzers: 机械蜂
+  Gun Walker: 粉碎行者
+  Disintegrator: 突袭兵
+  Assimilator: 吸收者
+  Seeker: 搜索者
+  Corruptor: 腐灭者
+  Annihilator Tripod: 三脚毁灭机甲
+  Eradicator Hexapod: 六脚灭绝机甲
 
   # Campaign proper nouns
   Brotherhood of Nod: NOD兄弟会

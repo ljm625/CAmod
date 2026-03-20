@@ -1347,7 +1347,7 @@ TTRA.Husk:
 TTNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
-		Name: 残骸（磁暴坦克）
+		Name: 残骸（磁能坦克）
 	ThrowsParticle@turret:
 		Anim: turret
 	RenderSprites:
